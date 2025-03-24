@@ -8,7 +8,7 @@ from matplotlib import rcParams
 rcParams['font.family'] = 'serif'
 
 # Load the Excel file
-file_path = "/data/jzr5814/sourmash_dnds_estimation/thesis_figures/gtdb/log_analysis.xlsx"
+file_path = "log_analysis.xlsx"
 xls = pd.ExcelFile(file_path)
 
 # Function to convert time format (hh:mm:ss) to total seconds
