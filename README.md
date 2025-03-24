@@ -24,6 +24,12 @@ Figure 2B
 
 Figure 3A
 
+    python figure_scripts/disk_usage_figure.py
+
+Figure 3B
+
+    python figure_scripts/runtimes_stackplot_figure.py
+
 ## Supplemental Figures:
 
 Figure 6:
