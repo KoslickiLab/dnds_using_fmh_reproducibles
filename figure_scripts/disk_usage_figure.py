@@ -8,7 +8,7 @@ from matplotlib import rcParams
 rcParams['font.family'] = 'serif'
 
 # Load the Excel file
-file_path = "log_analysis.xlsx"
+file_path = "../data/log_analysis.xlsx"
 xls = pd.ExcelFile(file_path)
 
 # Function to convert time format (hh:mm:ss) to total seconds
@@ -61,7 +61,7 @@ thresholds = sorted(df_cleaned["t_threshold"].unique())
 
 # Define colormap and normalization
 cmap = plt.get_cmap("viridis", len(ksizes))
-selected_colors = [plt.get_cmap("viridis")(0.0), plt.get_cmap("viridis")(0.4), plt.get_cmap("viridis")(0.7)]
+selected_colors = [plt.get_cmap("viridis")(0.5), plt.get_cmap("viridis")(0.7), plt.get_cmap("viridis")(0.9)]
 cmap = lambda i: selected_colors[i % len(selected_colors)]
 
 norm_opacity = plt.Normalize(min(thresholds), max(thresholds))

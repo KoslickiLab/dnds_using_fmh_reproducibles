@@ -8,7 +8,7 @@ import matplotlib.patches as mpatches
 rcParams['font.family'] = 'serif'
 
 # Load the Excel file
-file_path = "log_analysis.xlsx"
+file_path = "../data/log_analysis.xlsx"
 xls = pd.ExcelFile(file_path)
 
 # Function to convert hh:mm:ss to seconds
@@ -66,9 +66,9 @@ thresholds = sorted(df_cleaned["t_threshold"].unique())
 
 # Color map and opacity functions
 selected_colors = [
-    plt.get_cmap("viridis")(0.0),
-    plt.get_cmap("viridis")(0.4),
-    plt.get_cmap("viridis")(0.7)
+    plt.get_cmap("viridis")(0.5),
+    plt.get_cmap("viridis")(0.7),
+    plt.get_cmap("viridis")(0.9)
 ]
 color_map = lambda i: selected_colors[i % len(selected_colors)]
 norm_opacity = plt.Normalize(min(thresholds), max(thresholds))
@@ -94,12 +94,18 @@ for idx, ((ksize, t), row) in enumerate(pivot_df.iterrows()):
     for step in step_order:
         height = row[step] / 3600  # Convert to hours
         if height > 0:
+            # Draw the bar with the fill color and desired opacity
             ax.bar(
                 idx, height, bottom=bottom[idx],
-                color=rgba_color, edgecolor='black',
-                hatch=step_hatch[step]
+                color=rgba_color, edgecolor='none'
+            )
+            # Draw the hatch overlay with no fill (ensuring full hatch opacity)
+            ax.bar(
+                idx, height, bottom=bottom[idx],
+                color='none', edgecolor='black', hatch=step_hatch[step]
             )
         bottom[idx] += height
+
 
 # Format x-axis
 x_labels = [f'k={k}, t={t}' for k, t in pivot_df.index]
@@ -108,7 +114,7 @@ ax.set_xticklabels(x_labels, rotation=45, ha="right")
 
 # Labels and title
 ax.set_ylabel("Runtime (Hours)")
-ax.set_title("FMH Omega Runtimes")
+ax.set_title("FMH dN/dS Runtimes")
 
 # Legend for hatch patterns
 legend_handles = [
