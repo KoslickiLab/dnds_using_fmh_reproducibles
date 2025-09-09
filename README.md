@@ -32,7 +32,7 @@ Figure 3B
 
 Figure 5A:
 
-    To reproduce hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
+To reproduce hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
 ## Supplemental Figures:
 
