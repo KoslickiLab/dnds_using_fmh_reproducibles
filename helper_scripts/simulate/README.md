@@ -10,6 +10,8 @@ In our manuscript, we validated that FracMinHash was producing the correct infer
 - [Datasets](#datasets)
 - [Quick start](#quick-start)
 - [Usage](#usage)
+- [Output](#output)
+- [Reference](#references)
 
 # Environment setup
 
