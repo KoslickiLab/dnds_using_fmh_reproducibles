@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ## Simulated data
 
-You can download our simulated dataset for this manuscript here: XYZ
+You can download our simulated dataset for this manuscript here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/blob/main/helper_scripts/simulate/README.md)
 
 ## Genome Taxonomy Database download 
 
