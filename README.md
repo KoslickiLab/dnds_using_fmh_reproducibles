@@ -8,9 +8,10 @@
 - [Datasets](#Datasets)
     - [Simulations](#Simulations)
     - [GTDB](#GTDB)
-- [Reproduce dN/dS estimations](#Reproduce)
-    - [FracMinHash dN/dS](#fracminhash-dnds-estimations)
-    - [Traditional dN/dS models](#traditional-dnds-models)
+- [Reproduce](#Reproduce)
+    - [FracMinHash dN/dS estimations](#fracminhash-dnds-estimations)
+    - [Traditional dN/dS model estimations](#traditional-dnds-models)
+    - [Main figures](#main-figures)
 
 # Environment setup
 
@@ -57,13 +58,13 @@ To generate random sequence simulations please refer to:
 ## Real dataset (GTDB)
 -->
 
-# Reproduce dN/dS estimations
+# Reproduce 
 
-## FracMinHash dN/dS
+## FracMinHash dN/dS estimations
 
 
 
-## Traditional dN/dS models
+## Traditional dN/dS model estimations
 
 From the simulated sequences, produce an AXT from FASTA file and apply KaKs_Calculator [1] on generated AXT dataset.
 
@@ -71,11 +72,11 @@ From the simulated sequences, produce an AXT from FASTA file and apply KaKs_Calc
 python helper_scripts/mutation_simulation_on_random_data/apply_kaks_calculator_on_random_sequence.py
 ```
 
-# Main figures
+## Main figures
 
 These are the scripts to generate the main figures of our manuscript.
 
-## Figure 2
+### Figure 2
 
 Figure 2A represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, on random sequences. Additionally, the figure compares varying k-sizes and sequence lengths. Please execute the following command to produce the figure for random sequence simulations.
 
@@ -93,7 +94,7 @@ python figure_scripts/figure2b.py
 
 ![Figure 2B](manuscript_figures/figure2b.png)
 
-## Figure 3
+### Figure 3
 
 Figure 3A
 
@@ -103,16 +104,16 @@ Figure 3B
 
     python figure_scripts/runtimes_stackplot_figure.py
 
-## Figure 4
+### Figure 4
 
-## Figure 5
+### Figure 5
 
 To reproduce Figure 5A, the hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
 ![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
 
-# Supplemental figures
+## Supplemental figures
 
 Figure 6:
 
