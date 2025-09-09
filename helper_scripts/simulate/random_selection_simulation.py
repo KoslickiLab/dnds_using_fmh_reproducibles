@@ -8,13 +8,8 @@ from pathlib import Path
 
 def main(args):
     
-    #WD=args.wd # working directory
-    #WD='/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/'
     WD = Path(args.wd).expanduser().resolve()
     str_len = args.len #sequence length
-    #str_len = 5001
-
-    #mutation rate p for mutation purposes
     mutation_rate_p = args.prate
 
     #output files
