@@ -1,5 +1,7 @@
 # Generate simulated datasets for FracMinHash dN/dS validation
 
+In our manuscript, we validated that FracMinHash was producing the correct inference of selection, that is, positive or negative selection by generating simulations on a random sequence. This simulation is based off of the suggestion that 5% and 72% of synonymous mutations occur in the first and third position of the codon [1]. Please follow the instructions below to start simulating positive and negative selection!
+
 ![simulation](simulation.png)
 
 # Table of Contents
@@ -62,3 +64,6 @@ This script produces 6 files.
 | negative_selection_queries_{len}_{prate}.fna | Negative selection was applied using the same mutation p rate. |
 | negative_selection_translated_queries_{len}_{prate}.faa | The negative selected nucleotide sequence was translated to a protein sequence. |
 
+# References
+
+[1] Nei, M., & Gojobori, T. (1986). Simple methods for estimating the numbers of synonymous and nonsynonymous nucleotide substitutions. Molecular Biology and Evolution, 3(5), 418–426.
