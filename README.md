@@ -1,6 +1,10 @@
 # This repo is for the reproducibles of manuscript on fmh dnds
 
-## Simulation dataset generation:
+# Table of Contents
+
+# Environment setup
+
+# Simulation dataset generation:
 
 Generate random sequences:
 
@@ -12,11 +16,15 @@ From the simulated random sequences, produce an AXT from FASTA file and apply Ka
 
     python helper_scripts/mutation_simulation_on_random_data/apply_kaks_calculator_on_random_sequence.py
 
-## Figures:
+# Main figures
 
-Figure 2A
+## Figure 2
+
+## Figure 2 (Panel A)
 
     python helper_scripts/mutation_simulation_on_random_data/pairplot_against_NG86_different_lengths_and_ksizes_v3.py
+
+![Figure 2A](dnds_using_fmh_reproducibles/manuscript_figures/figure2a.png)
 
 Figure 2B
 
@@ -30,14 +38,16 @@ Figure 3B
 
     python figure_scripts/runtimes_stackplot_figure.py
 
-Figure 5A:
+## Figure 5
+
+### Figure 5 (Panel A): Hierarchical Edge Bundling Figure
 
 To reproduce hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
 ![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
 
-## Supplemental Figures:
+# Supplemental figures
 
 Figure 6:
 
