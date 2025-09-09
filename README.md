@@ -30,6 +30,10 @@ Figure 3B
 
     python figure_scripts/runtimes_stackplot_figure.py
 
+Figure 5A:
+
+    To reproduce hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
+
 ## Supplemental Figures:
 
 Figure 6:
