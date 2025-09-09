@@ -58,24 +58,6 @@ tar -xvzf gtdb_proteins_aa_reps_r214.tar.gz
 tar -xvzf gtdb_proteins_nt_reps_r214.tar.gz
 ```
 
-<!-- ### Random
-
-To generate random sequence simulations please refer to:
-
-
-#### Negative
-
-#### Positive
-
-### Real (LAMA3)
-
-#### Negative
-
-#### Positive
-
-## Real dataset (GTDB)
--->
-
 # Reproduce 
 
 ## Simulations
@@ -106,7 +88,7 @@ Figure 2A represents how well FracMinHash dN/dS estimations are being made when 
 python figure_scripts/figure2a.py
 ```
 
-![Figure 2A](manuscript_figures/figure2a.png)
+![Figure 2A](manuscript_figures/png/figure2a.png)
 
 Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for a real sequence simulations.
 
@@ -114,17 +96,25 @@ Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimation
 python figure_scripts/figure2b.py
 ```
 
-![Figure 2B](manuscript_figures/figure2b.png)
+![Figure 2B](manuscript_figures/png/figure2b.png)
 
 ### Figure 3
 
-Figure 3A
+Figure 3A represents disk usage when running FracMinHash dN/dS on varying k-sizes and scale factors at different steps.
 
-    python figure_scripts/disk_usage_figure.py
+```
+python figure_scripts/disk_usage_figure.py
+```
 
-Figure 3B
+![Figure 3A](manuscript_figures/png/disk_usage.png)
 
-    python figure_scripts/runtimes_stackplot_figure.py
+Figure 3B represents runtimes when running FracMinHash dN/dS on varying k-sizes and scale factors. Additionally, the time is takes to run each step and the program in total is also shown.
+
+```
+python figure_scripts/runtimes_stackplot_figure.py
+```
+
+![Figure 3B](manuscript_figures/png/runtimes.png)
 
 ### Figure 4
 
