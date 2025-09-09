@@ -18,17 +18,21 @@ From the simulated random sequences, produce an AXT from FASTA file and apply Ka
 
 # Main figures
 
+These are the scripts to generate the main figures of our manuscript.
+
 ## Figure 2
 
-## Figure 2 (Panel A)
+Figure 2A represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, on random sequences. Additionally, the figure compares varying k-sizes and sequence lengths. Please execute the following command to produce the figure for random sequence simulations.
 
-    python helper_scripts/mutation_simulation_on_random_data/pairplot_against_NG86_different_lengths_and_ksizes_v3.py
+```python figure_scripts/figure2a.py```
 
-![Figure 2A](dnds_using_fmh_reproducibles/manuscript_figures/figure2a.png)
+![Figure 2A](manuscript_figures/figure2a.png)
 
-Figure 2B
+Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for a real sequence simulations.
 
-    python helper_scripts/mutation_simulations_on_real_data/pairplot_against_NG86_different_ksizes_LAMA3.py
+```python figure_scripts/figure2b.py```
+
+![Figure 2B](manuscript_figures/figure2b.png)
 
 Figure 3A
 
