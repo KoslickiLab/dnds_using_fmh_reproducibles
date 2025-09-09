@@ -1,74 +1,212 @@
+import pickle
 import pandas as pd
-import argparse
-from fmh_omega.helperfuncs import get_coding_sequence_from_nucleotide_sequence, positive_selection_based_on_mutation_rate_p, negative_selection_based_on_mutation_rate_p
-import random
+from Bio import SeqIO
 from Bio.Seq import Seq
+import os
+import gzip
+import random
 
-WD='/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/'
-#sequence length
-str_len = 5001
+def extract_containment_matrix(mat_csv):
+    #read in df
+    df = pd.read_csv(mat_csv,sep=',')
+    #record gene header into list
+    gene_name_header_list = df.T.index.to_list()
+    subset_number = int(len(gene_name_header_list)/2) #containment matrix produced by sourmash is not perfect square
+    subset = df.iloc[0:subset_number, 0:subset_number]
+    #make the gene header list into a column to set as index
+    subset['A'] = gene_name_header_list[:subset_number]
+    subset = subset.set_index('A').stack().reset_index().rename(columns={'level_1':'B',0:'containment'})
+    return(subset)
 
-#mutation rate p for mutation purposes
-mutation_rate_p = 0.01
+def extract_axi_matrix(mat_csv,axi):
+    #read in df
+    df = pd.read_csv(mat_csv,sep=',')
+    #record gene header into list
+    gene_name_header_list = df.T.index.to_list()
+    subset_number = int(len(gene_name_header_list)/2) #containment matrix produced by sourmash is not perfect square
+    subset = df.iloc[0:subset_number, 0:subset_number]
+    #make the gene header list into a column to set as index
+    subset['A'] = gene_name_header_list[:subset_number]
+    subset = subset.set_index('A').stack().reset_index().rename(columns={'level_1':'B',0:f'{axi}'})
+    return(subset)
 
-#output files
-RANDOM_REF = open(f'{WD}ref_{str_len}.fna','w')
-RANDOM_REF_PROT = open(f'{WD}ref_translated_{str_len}.faa','w')
+def extract_filename_without_extension(file_path):
+    #return file_path.split('/')[-1].split('.')[0]
+    return file_path.split('/')[-1].split('.')[0]
 
-POSITIVE_SELECTION_QUERIES_NT = open(f'{WD}positive_selection_queries_{str_len}_{mutation_rate_p}.fna','w')
-POSITIVE_SELECTION_QUERIES_PROTEIN = open(f'{WD}positive_selection_translated_queries_{str_len}_{mutation_rate_p}.faa','w')
+def containments(mat_df,ksize,multiple):
+    """This function converts matrix into df removes pairwise information"""
+    """When running sourmash compare, a matrix via a csv file is produced"""
+    #read in df
+    df = pd.read_csv(mat_df,sep=',')
+    #record gene header into list
+    gene_name_header_list = df.T.index.to_list()
+    subset_number = int(len(gene_name_header_list)/2) #containment matrix produced by sourmash is not perfect square
+    subset = df.iloc[0:subset_number, 0:subset_number]
+    #make the gene header list into a column to set as index
+    subset['A'] = gene_name_header_list[:subset_number]
+    subset = subset.set_index('A').stack().reset_index().rename(columns={'level_1':'B',0:'containment'})
+    if multiple=='yes':
+        subset['A']=subset['A'].apply(extract_filename_without_extension)
+        print('change A')
+        print(subset['A'])
+        subset['B']=subset['B'].apply(extract_filename_without_extension)
+        print('change B')
+        print(subset['B'])
+    #dont forget to add ksize column!
+    subset['ksize']=ksize
+    return(subset)
 
-NEGATIVE_SELECTION_QUERIES_NT = open(f'{WD}negative_selection_queries_{str_len}_{mutation_rate_p}.fna','w')
-NEGATIVE_SELECTION_QUERIES_PROTEIN = open(f'{WD}negative_selection_translated_queries_{str_len}_{mutation_rate_p}.faa','w')
+def divisible_by_3(sequence):
+    #makes sure a sequence is divisible by 3 for translation
+    if len(sequence) % 3 != 0:
+        if len(sequence+'N') % 3 != 0:
+            return(sequence+'NN')
+        else:
+            return(sequence+'N')
+    else:
+        return(sequence)
 
-# Create 100 random mutated sequences
-ITERATIONS = 100
+def translate_CDS(cds_fasta, out_name):
+    """User has input fasta file with CDS sequences of a genome"""
+    """This function translates each CDS found in the FASTA file"""
+    sequences = SeqIO.parse(open(cds_fasta),'fasta')
+    with open(f'{out_name}','w') as out_file:
+        for cds in sequences:
+            name, nt_seq = cds.id, str(cds.seq)
+            cds_seq = divisible_by_3(nt_seq)
+            aa_seq = str(Seq(cds_seq).translate())
+            out_file.write(''.join(['>',name,'\n']))
+            out_file.write(''.join([aa_seq,'\n']))
+        out_file.close()
 
-#Create a random X nt long sequence for simulation
-REF = ''.join(random.choices(['A', 'C', 'G', 'T'], k=str_len))
+def return_protein_klist_parameters(kmer_list):
+    sm_klist = ',k='.join(kmer_list.split(','))
+    return(sm_klist)
 
-#Get coding sequence and filter stop codons
-REF_coding_sequence = ''.join(get_coding_sequence_from_nucleotide_sequence(REF))
+def return_dna_klist_parameters(kmer_list):
+    temp_klist = kmer_list.split(',')
+    sm_klist=[]
+    for k in temp_klist:
+        sm_klist.append(str(int(k)*3))
+    return(',k='.join(sm_klist))
 
-#Save nt ref sequence to the following files
-RANDOM_REF.write(f'>ref_gene\n')
-RANDOM_REF.write(f'{REF_coding_sequence}\n')
+def return_signature_list(working_dir, molecule):
+    sigs = []
+    for file in os.listdir(f"{working_dir}/signatures"):
+        if file.endswith(f".{molecule}.sig.gzip"):
+            sigs.append(file)
+    return sigs
 
-POSITIVE_SELECTION_QUERIES_NT.write(f'>ref_gene\n')
-POSITIVE_SELECTION_QUERIES_NT.write(f'{REF_coding_sequence}\n')
+#The following functions create a random sequence for selection
+def slice_sequence(sequence, length):
+    return [sequence[i:i+length] for i in range(0, len(sequence), length)]
 
-NEGATIVE_SELECTION_QUERIES_NT.write(f'>ref_gene\n')
-NEGATIVE_SELECTION_QUERIES_NT.write(f'{REF_coding_sequence}\n')
+def get_coding_sequence_from_nucleotide_sequence(nt_sequence):
+    """This functioin returns the coding sequence as a list when given a nucleotide sequence.
+    nt_sequence: nucleotide sequence, preferably a protein coding gene sequence"""
+    coding_sequence = slice_sequence(nt_sequence,3)
+#    coding_sequence = list(sliced(nt_sequence,3))     #coding sequence
+    codons_to_remove = ['TGA', 'TAA', 'TAG']     #list of stop codons
+    filtered_codons = [codon for codon in coding_sequence if codon not in codons_to_remove]     # Remove stop codons
+    return(filtered_codons)
 
-#save translated ref sequence to the following files
-ref_seq_translated = Seq(REF_coding_sequence).translate()
-RANDOM_REF_PROT.write(f'>ref_gene\n')
-RANDOM_REF_PROT.write(str(ref_seq_translated)+"\n")
+def mutate_position_based_on_mutation_rate_p(p_mutation_rate):
+    """This function returns a boolean probability of a mutation based off a given mutation rate p
+    p_mutation_rate = 1 - Cfrac(a,B)**(1/k)
+    Cfrac is the containment index between two sequences"""
+    p = random.random()
+    if p <= p_mutation_rate:
+        return(True)
+    else:
+        return(False)
 
-POSITIVE_SELECTION_QUERIES_PROTEIN.write(f'>ref_gene\n')
-POSITIVE_SELECTION_QUERIES_PROTEIN.write(str(ref_seq_translated)+"\n")
+def mutate_with_nucleotides(mutate_nucleotide):
+    """If the probability is that a mutation occurs, 
+    then this function makes sure that the random choice of a nucloetide mutation is not the same nucleotide of the position being changed.
+    This function removes the nucleotide that will be changed from the nucleotide mutation choices
+    and returns a list of three nucleotides that does not include the nucleotide to be mutated.
+    The function takes in a nucleotide. 
+    nucleotide: the nucleotide to be mutated"""
+    nucleotides = ['A','G','C','T']
+    nucleotides.remove(mutate_nucleotide)
+    return(nucleotides)
 
-NEGATIVE_SELECTION_QUERIES_PROTEIN.write(f'>ref_gene\n')
-NEGATIVE_SELECTION_QUERIES_PROTEIN.write(str(ref_seq_translated)+"\n")
+def mutate_position(nt_position, p_mutation_rate):
+    prate = mutate_position_based_on_mutation_rate_p(p_mutation_rate)
+    if prate:
+        mutate_with = random.choice(mutate_with_nucleotides(nt_position.upper()))
+        return(mutate_with)
+    else:
+        return(nt_position)
 
-for i in range(ITERATIONS):
-    #ref sequence is mutated with mutation rate p
-    query_positive_nt_seq = positive_selection_based_on_mutation_rate_p(REF_coding_sequence,float(mutation_rate_p))
-    POSITIVE_SELECTION_QUERIES_NT.write(f'>positive_{mutation_rate_p}_{i}\n')
-    POSITIVE_SELECTION_QUERIES_NT.write(f'{query_positive_nt_seq}\n')
+def positive_selection_outcome(codon,p_mutation_rate):
+    mutated_codon = ''
+    if random.choice([0, 1, 2])==random.choice([0, 1, 2]): 
+        for position in range(len(codon)):
+            nt_position = codon[position]
+            if position == 0 or position == 1:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+            elif position == 2:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+    else:
+        for position in range(len(codon)):
+            nt_position = codon[position]
+            if position == 0 or position == 1:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+            else:
+                mutated_codon+=nt_position
+    return(mutated_codon)
 
-    #Translated mutated sequences 
-    translated_positive_queries = Seq(query_positive_nt_seq).translate()
-    POSITIVE_SELECTION_QUERIES_PROTEIN.write(f'>positive_{mutation_rate_p}_{i}\n')
-    POSITIVE_SELECTION_QUERIES_PROTEIN.write(f'{translated_positive_queries}\n')
+def negative_selection_outcome(codon,p_mutation_rate):
+    mutated_codon = ''
+    if random.choice([0, 1, 2])==random.choice([0, 1, 2]): 
+        for position in range(len(codon)):
+            nt_position = codon[position]
+            if position == 0 or position == 1:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+            elif position == 2:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+    else:
+        for position in range(len(codon)):
+            nt_position = codon[position]
+            if position == 2:
+                mutated_codon += mutate_position(nt_position, p_mutation_rate)
+            else:
+                mutated_codon+=nt_position
+    return(mutated_codon)
 
-    #ref sequence is mutated with mutation rate p
-    query_negative_nt_seq = negative_selection_based_on_mutation_rate_p(REF_coding_sequence,float(mutation_rate_p))
-    NEGATIVE_SELECTION_QUERIES_NT.write(f'>negative_{mutation_rate_p}_{i}\n')
-    NEGATIVE_SELECTION_QUERIES_NT.write(f'{query_negative_nt_seq}\n')
+def positive_selection_based_on_mutation_rate_p(sequence,p_mutation_rate):
+    """This function takes in a sequence to be mutated based on the mutation rate p, which is another argument of the function. 
+    The function loops through each position of the sequence,
+    decides whether the nucleotide at that position is mutated, 
+    and adds on to the newly mutated sequence, which will then be return in the end."""
+    mutated_sequence = ''
+    coding_sequence = get_coding_sequence(sequence)
+    for codon in coding_sequence:
+        mutated_sequence+=positive_selection_outcome(codon.upper(), p_mutation_rate)
+    return(mutated_sequence.upper())
 
-    #Translated mutated sequences 
-    translated_negative_queries = Seq(query_negative_nt_seq).translate()
-    NEGATIVE_SELECTION_QUERIES_PROTEIN.write(f'>negative_{mutation_rate_p}_{i}\n')
-    NEGATIVE_SELECTION_QUERIES_PROTEIN.write(f'{translated_negative_queries}\n')
+def negative_selection_based_on_mutation_rate_p(sequence,p_mutation_rate):
+    """This function takes in a sequence to be mutated based on the mutation rate p, which is another argument of the function. 
+    The function loops through each position of the sequence,
+    decides whether the nucleotide at that position is mutated, 
+    and adds on to the newly mutated sequence, which will then be return in the end."""
+    mutated_sequence = ''
+    coding_sequence = get_coding_sequence(sequence)
+    for codon in coding_sequence:
+        mutated_sequence+=negative_selection_outcome(codon.upper(), p_mutation_rate)
+    return(mutated_sequence.upper())
 
+# read in a fasta.gz format file
+def read_fasta_gz(file_path):
+    sequences = {}
+    with gzip.open(file_path, "rt") as handle:
+        for record in SeqIO.parse(handle, "fasta"):
+            sequences[str(record.name)] = str(record.seq)
+    return(sequences)
+
+def get_coding_sequence(sequence):
+    coding_seq = [sequence[i:i+3] for i in range(0, len(sequence), 3)]
+    return(coding_seq)
+    
