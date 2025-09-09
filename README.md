@@ -6,12 +6,16 @@
     - [Conda](#Conda-environment)
     - [Pip](#Pip-environment)
 - [Datasets](#Datasets)
-    - [Simulations](#Simulations)
+    - [Simulated data](#simulated-data)
     - [GTDB](#GTDB)
 - [Reproduce](#Reproduce)
+    - [Simulations](#Simulations) 
     - [FracMinHash dN/dS estimations](#fracminhash-dnds-estimations)
     - [Traditional dN/dS model estimations](#traditional-dnds-models)
     - [Main figures](#main-figures)
+    - [Supplemental figures](#supplemental-figures)
+- [References](#references)
+- [Please, cite us!](#please-cite-us)
 
 # Environment setup
 
@@ -34,11 +38,25 @@ pip install -r requirements.txt
 
 # Datasets 
 
-## Simulations
+## Simulated data
 
-While using a scale factor of 1, we produce FracMinHash dN/dS estimation employing varying k-sizes to compare with the traditional dn/ds model, NG86. Please follow instructions here to generate these and more simulations.
+You can download our simulated dataset for this manuscript here: XYZ
 
-## GTDB 
+## Genome Taxonomy Database download 
+
+In our validation of FracMinHash dN/dS, we use representative genome sequence data from the Genome Taxonomy Database (Release 214). These are big files so make sure you have space! Please follow the following instructions to obtain these files.
+
+```
+# Download amino acid sequences
+wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/genomic_files_reps/gtdb_proteins_aa_reps_r214.tar.gz
+
+# Download protein-coding sequences
+wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/genomic_files_reps/gtdb_proteins_nt_reps_r214.tar.gz
+
+# Extract
+tar -xvzf gtdb_proteins_aa_reps_r214.tar.gz
+tar -xvzf gtdb_proteins_nt_reps_r214.tar.gz
+```
 
 <!-- ### Random
 
@@ -59,6 +77,10 @@ To generate random sequence simulations please refer to:
 -->
 
 # Reproduce 
+
+## Simulations
+
+While using a scale factor of 1, we produce FracMinHash dN/dS estimation employing varying k-sizes to compare with the traditional dn/ds model, NG86. Please follow instructions here to generate these and more simulations.
 
 ## FracMinHash dN/dS estimations
 
@@ -127,6 +149,6 @@ Figure 7:
 
 [1] Zhang, Z., Li, J., Zhao, X.-Q., Wang, J., Wong, G. K.-S., & Yu, J. (2006). KaKs_Calculator: Calculating Ka and Ks through model selection and model averaging. Genomics, Proteomics & Bioinformatics, 4(4), 259–263. Oxford University Press.
 
-# Please cite
+# Please, cite us!
 
 Leveraging FracMinHash Containment for Genomic dN /dS. Judith S. Rodriguez, Mahmudur Rahman Hera, and David Koslicki. In preparation.
