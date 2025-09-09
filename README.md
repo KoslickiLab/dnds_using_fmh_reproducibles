@@ -34,6 +34,9 @@ Figure 5A:
 
 To reproduce hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
+![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
+
+
 ## Supplemental Figures:
 
 Figure 6:
