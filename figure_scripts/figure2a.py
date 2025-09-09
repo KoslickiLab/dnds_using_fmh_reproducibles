@@ -201,4 +201,5 @@ plt.subplots_adjust(left=0.9,
                     top=1, 
                     wspace=0.1, 
                     hspace=0.2)  # Increase right margin
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/figure2a.pdf",bbox_inches='tight') 
+#fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/figure2a.pdf",bbox_inches='tight')
+fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/real_gene_sequence_selection_simulation/figure2a.png",bbox_inches='tight') 

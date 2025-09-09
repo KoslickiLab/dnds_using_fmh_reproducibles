@@ -87,4 +87,4 @@ for k in range(3):
 
 plt.subplots_adjust(right=1)  # Increase right margin
 plt.subplots_adjust(wspace=0.1, hspace=0.15)
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/figure2b.pdf",bbox_inches='tight') 
+fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/real_gene_sequence_selection_simulation/figure2b.png",bbox_inches='tight') 
