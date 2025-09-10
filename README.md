@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-- [Environment setupe](#Environment-Setup)
+- [Environment setup](#Environment-Setup)
     - [Conda](#Conda-environment)
     - [Pip](#Pip-environment)
 - [Quick start](#quick-start)
@@ -72,7 +72,7 @@ tar -xvzf gtdb_proteins_nt_reps_r214.tar.gz
 
 ## Martinez-Gutierrez (2022) dataset
 
-We were able to compare our FracMinHash dN/dS estimaions of GTDB representative genomes by comparing them to a published dataset [2]. Martinez-Gutierrez (2022) obtained values with using maximum-likelihood models (CodeML), and genus-level median dN/dS estimates were related to genome size to study gene loss [2]. Visit Martinez-Gutierrez publication for this and other supplemental information here: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010220#sec013  
+We were able to compare our FracMinHash dN/dS estimaions of GTDB representative genomes by comparing them to a published dataset [2]. Martinez-Gutierrez (2022) obtained values using a maximum-likelihood model (CodeML), and genus-level median dN/dS estimates were related to genome size to study gene loss [2]. Visit Martinez-Gutierrez publication for this and other supplemental information here: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010220#sec013  
 
 ```
 # Download TSV file for dN/dS estimations from Martinez-Gutierrez (2022) [2]
@@ -111,7 +111,7 @@ python figure_scripts/figure2a.py
 
 ![Figure 2A](manuscript_figures/png/figure2a.png)
 
-Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for a real sequence simulations.
+Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for the real sequence simulations.
 
 ```
 python figure_scripts/figure2b.py
@@ -129,7 +129,7 @@ python figure_scripts/disk_usage_figure.py
 
 ![Figure 3A](manuscript_figures/png/disk_usage.png)
 
-Figure 3B represents runtimes when running FracMinHash dN/dS on varying k-sizes and scale factors. Additionally, the time is takes to run each step and the program in total is also shown.
+Figure 3B represents runtimes when running FracMinHash dN/dS on varying k-sizes and scale factors. Additionally, the time it takes to run at each step and the program in total is also shown.
 
 ```
 python figure_scripts/runtimes_stackplot_figure.py
@@ -141,7 +141,7 @@ python figure_scripts/runtimes_stackplot_figure.py
 
 Ensure to have this dataset in your working directory! 
 
-We need to compare out FracMinHash dN/dS estimaions of GTDB representative genomes to a real world research question. Check back to the [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset) section and download the Martinez-Gutierrez (2022) dataset!
+To compare FracMinHash dN/dS estimaions of GTDB representative genomes to a real world research question, check back to the [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset) section and download the Martinez-Gutierrez (2022) dataset!
 
 Figure 4A compares estimations made by FracMinHash dN/dS to an implemented maximum likelihood model, CodeML. 
 
@@ -166,6 +166,17 @@ To reproduce Figure 5A, the hierarchical edge bundling figure, please refer to t
 
 ![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
+Figure 5B:
+
+```
+python figure_scripts/figure5b.py
+```
+
+![Figure 5B: A vs B genomes](manuscript_figures/png/figure5b.png)
+
+Figure 5C: [Instructions to Figure 5c](figure_scripts/figure5c/)
+
+![Figure 5C: kaks values for orthologs](manuscript_figures/png/figure5c.png)
 
 ## Supplemental figures
 
