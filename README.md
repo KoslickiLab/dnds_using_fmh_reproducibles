@@ -5,9 +5,11 @@
 - [Environment setupe](#Environment-Setup)
     - [Conda](#Conda-environment)
     - [Pip](#Pip-environment)
+- [Quick start](#quick-start)
 - [Datasets](#Datasets)
     - [Simulated data](#simulated-data)
     - [GTDB](#GTDB)
+    - [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset)
 - [Reproduce](#Reproduce)
     - [Simulations](#Simulations) 
     - [FracMinHash dN/dS estimations](#fracminhash-dnds-estimations)
@@ -36,6 +38,16 @@ source reproduce_pip_env/bin/activate
 pip install -r requirements.txt
 ```
 
+# Quick start
+
+To quickly start reproducing figures from our maanuscript, execute the following bash script. Please note that simulated data generated from our lab cannot be downloaded from this bash script, currently.
+
+<!--MAKE SURE BASH SCRIPT INCLUDES A PLACE TO DOWNLOAD OUR DATA TOO-->
+
+```
+bash data_download.sh
+```
+
 # Datasets 
 
 ## Simulated data
@@ -56,6 +68,15 @@ wget https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.0/genom
 # Extract
 tar -xvzf gtdb_proteins_aa_reps_r214.tar.gz
 tar -xvzf gtdb_proteins_nt_reps_r214.tar.gz
+```
+
+## Martinez-Gutierrez (2022) dataset
+
+We were able to compare our FracMinHash dN/dS estimaions of GTDB representative genomes by comparing them to a published dataset [2]. Martinez-Gutierrez (2022) obtained values with using maximum-likelihood models (CodeML), and genus-level median dN/dS estimates were related to genome size to study gene loss [2]. Visit Martinez-Gutierrez publication for this and other supplemental information here: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010220#sec013  
+
+```
+# Download TSV file for dN/dS estimations from Martinez-Gutierrez (2022) [2]
+wget https://doi.org/10.1371/journal.pgen.1010220.s002
 ```
 
 # Reproduce 
@@ -80,7 +101,7 @@ python helper_scripts/mutation_simulation_on_random_data/apply_kaks_calculator_o
 
 These are the scripts to generate the main figures of our manuscript.
 
-### Figure 2
+### Figure 2: Selection simulations
 
 Figure 2A represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, on random sequences. Additionally, the figure compares varying k-sizes and sequence lengths. Please execute the following command to produce the figure for random sequence simulations.
 
@@ -98,7 +119,7 @@ python figure_scripts/figure2b.py
 
 ![Figure 2B](manuscript_figures/png/figure2b.png)
 
-### Figure 3
+### Figure 3: Disk usage and runtimes
 
 Figure 3A represents disk usage when running FracMinHash dN/dS on varying k-sizes and scale factors at different steps.
 
@@ -116,7 +137,20 @@ python figure_scripts/runtimes_stackplot_figure.py
 
 ![Figure 3B](manuscript_figures/png/runtimes.png)
 
-### Figure 4
+### Figure 4: Comparing FracMinHash dN/dS results to published data
+
+Ensure to have this dataset in your working directory! 
+
+We need to compare out FracMinHash dN/dS estimaions of GTDB representative genomes to a real world research question. Check back to the [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset) section and download the Martinez-Gutierrez (2022) dataset!
+
+Figure 4A compares estimations made by FracMinHash dN/dS to an implemented maximum likelihood model, CodeML. 
+
+![Figure 4A](manuscript_figures/png/figure4a.png)
+
+Figure 4B evaluates the interpretations made by FracMinHash dN/dS when compared to genus genome size.
+
+![Figure 4B](manuscript_figures/png/figure4b.png)
+
 
 ### Figure 5
 
@@ -138,6 +172,7 @@ Figure 7:
 # References
 
 [1] Zhang, Z., Li, J., Zhao, X.-Q., Wang, J., Wong, G. K.-S., & Yu, J. (2006). KaKs_Calculator: Calculating Ka and Ks through model selection and model averaging. Genomics, Proteomics & Bioinformatics, 4(4), 259–263. Oxford University Press.
+[2] Martinez-Gutierrez, C. A., & Aylward, F. O. (2022). Genome size distributions in bacteria and archaea are strongly linked to evolutionary history at broad phylogenetic scales. PLoS Genetics, 18(5), e1010220.
 
 # Please, cite us!
 
