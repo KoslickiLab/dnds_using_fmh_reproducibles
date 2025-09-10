@@ -160,13 +160,15 @@ python figure_scripts/figure4b.py
 ![Figure 4B](manuscript_figures/png/figure4b.png)
 
 
-### Figure 5
+### Figure 5: Identifying regions under selection between Methanobrevibacter sp. and Candidatus Saccharibacteria
+
+Hierarchical edge bundling visualization of pairwise selection between archaeal and bacterial genomes. B. Orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. Genes including uvrA, LytR/CpsA/Psr (LCP), yidC, rnpA, rpmH, dnaA, and RNA methyltransferases appear in conserved order across both genomes. This arrangement suggests a vertically inherited genomic island maintained across archaeal and bacterial domains. Gene order and synteny support the functional conservation of this region. C. 
 
 To reproduce Figure 5A, the hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
 ![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
-Figure 5B:
+Figure 5B represents the identification of orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. 
 
 ```
 python figure_scripts/figure5b.py
@@ -174,7 +176,9 @@ python figure_scripts/figure5b.py
 
 ![Figure 5B: A vs B genomes](manuscript_figures/png/figure5b.png)
 
-Figure 5C: [Instructions to Figure 5c](figure_scripts/figure5c/)
+Figure 5C shows results when performing traditional dN/dS analyses to study selection across evaluated orthologs.
+
+Please visit [instructions to Figure 5c](figure_scripts/figure5c/) for reproducibility.
 
 ![Figure 5C: kaks values for orthologs](manuscript_figures/png/figure5c.png)
 
