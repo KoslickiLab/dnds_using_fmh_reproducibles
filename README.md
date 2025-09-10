@@ -145,9 +145,17 @@ We need to compare out FracMinHash dN/dS estimaions of GTDB representative genom
 
 Figure 4A compares estimations made by FracMinHash dN/dS to an implemented maximum likelihood model, CodeML. 
 
+```
+python figure_scripts/figure4a.py 
+```
+
 ![Figure 4A](manuscript_figures/png/figure4a.png)
 
 Figure 4B evaluates the interpretations made by FracMinHash dN/dS when compared to genus genome size.
+
+```
+python figure_scripts/figure4b.py 
+```
 
 ![Figure 4B](manuscript_figures/png/figure4b.png)
 
