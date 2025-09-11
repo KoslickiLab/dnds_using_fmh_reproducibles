@@ -8,7 +8,7 @@
 - [Quick start](#quick-start)
 - [Datasets](#Datasets)
     - [Simulated data](#simulated-data)
-    - [GTDB](#GTDB)
+    - [GTDB](#Genome-Taxonomy-Database-download)
     - [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset)
 - [Reproduce](#Reproduce)
     - [Simulations](#Simulations) 
