@@ -8,7 +8,7 @@
 - [Quick start](#quick-start)
 - [Datasets](#Datasets)
     - [Simulated data](#simulated-data)
-    - [GTDB](#Genome-Taxonomy-Database-download)
+    - [GTDB](#genome-taxonomy-database-download)
     - [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset)
 - [Reproduce](#Reproduce)
     - [Simulations](#Simulations) 
@@ -54,7 +54,7 @@ bash data_download.sh
 
 You can download our simulated dataset for this manuscript here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/blob/main/helper_scripts/simulate/README.md)
 
-## Genome Taxonomy Database download 
+## Genome Taxonomy Database download
 
 In our validation of FracMinHash dN/dS, we use representative genome sequence data from the Genome Taxonomy Database (Release 214). These are big files so make sure you have space! Please follow the following instructions to obtain these files.
 
