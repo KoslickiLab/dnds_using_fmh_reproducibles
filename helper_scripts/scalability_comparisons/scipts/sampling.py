@@ -3,6 +3,7 @@
 
 import re
 import random
+import argparse
 from pathlib import Path
 
 # -----------------------
@@ -24,6 +25,8 @@ base_out = Path("/data/jzr5814/dnds_scalability_comparison")
 # -----------------------
 # Helpers
 # -----------------------
+
+# All runtime parameters now come from CLI args (see main()).
 
 CORE_ID_RE = re.compile(r'(cds_WP_\d+\.\d)')
 

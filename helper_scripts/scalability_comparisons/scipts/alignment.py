@@ -5,6 +5,7 @@ import argparse
 import re
 import shutil
 import subprocess
+import time
 from pathlib import Path
 
 # Try clustalw2 first, then clustalw
@@ -91,6 +92,32 @@ def enumerate_pairs(records, include_self=True, unique=False):
                 continue
             yield i, j
 
+def ensure_summary(path: Path):
+    """Create summary TSV with header if it doesn't exist."""
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w") as sf:
+            sf.write("\t".join([
+                "fasta_file",
+                "i_idx",
+                "j_idx",
+                "labelA",
+                "labelB",
+                "pair_fasta",
+                "aln_file",
+                "seconds",
+                "status",
+                "note"
+            ]) + "\n")
+
+def append_summary(path: Path, row: list):
+    with open(path, "a") as sf:
+        sf.write("\t".join(row) + "\n")
+
+def fmt_mmss(seconds_float: float) -> str:
+    secs = int(round(seconds_float))
+    return f"{secs // 60}:{secs % 60}"
+
 def main():
     ap = argparse.ArgumentParser(description="Run pairwise ClustalW alignments within each FASTA.")
     ap.add_argument("--input", required=True,
@@ -105,6 +132,8 @@ def main():
                     help="Use unordered unique pairs (i<j); gives N choose 2 alignments.")
     ap.add_argument("--exts", nargs="+", default=[".fa", ".fna", ".fasta"],
                     help="File extensions to scan when --input is a directory.")
+    ap.add_argument("--summary_name", default="timing_alignments.tsv",
+                    help="Filename for the timing summary TSV in out_dir.")
     args = ap.parse_args()
 
     clw = which_clustalw()
@@ -114,6 +143,10 @@ def main():
     in_path = Path(args.input)
     out_base = Path(args.out_dir)
     out_base.mkdir(parents=True, exist_ok=True)
+
+# Prepare timing summary
+    summary_path = out_base / args.summary_name
+    ensure_summary(summary_path)
 
     # Determine FASTA list
     fasta_list = []
@@ -155,13 +188,35 @@ def main():
             aln_out = fa_dir / f"{pair_prefix}.aln"
 
             write_pair_fasta(pair_fa, recA, recB)
+
+            t0 = time.monotonic()
+            status, note = "OK", ""
+
             try:
                 run_clustalw(clw, pair_fa, aln_out, is_dna=not args.protein, quiet=True)
-                print(f"[OK] {fa.name}: {labA} vs {labB} -> {aln_out.name}")
+                elapsed = time.monotonic() - t0
+                print(f"[OK] {fa.name}: {labA} vs {labB} -> {aln_out.name}  ({elapsed:.3f}s, {fmt_mmss(elapsed)})")
             except Exception as e:
-                print(f"[FAIL] {fa.name}: {labA} vs {labB} -> {e}")
+                elapsed = time.monotonic() - t0
+                status, note = "FAIL", str(e).replace("\n", " ")
+                print(f"[FAIL] {fa.name}: {labA} vs {labB} -> {note}  ({elapsed:.3f}s, {fmt_mmss(elapsed)})")
+
+            # Record row in summary
+            append_summary(summary_path, [
+                str(fa),
+                str(i),
+                str(j),
+                labA,
+                labB,
+                str(pair_fa),
+                str(aln_out),
+                f"{elapsed:.6f}",
+                status,
+                note
+            ])
 
     print(f"\nDone. Alignments are in: {out_base.resolve()}")
+    print(f"Timing summary: {summary_path.resolve()}")
 
 if __name__ == "__main__":
     main()
