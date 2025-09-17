@@ -1,0 +1,186 @@
+import os
+from pathlib import Path
+
+def cfg(path):
+    # simple formatter for {wd} usage in config
+    return str(config[path]).format(**config)
+
+base       = config["base_dir"]
+samples    = [str(s) for s in config["samples"]]
+replicates = int(config["replicates"])
+methods    = [str(m) for m in config["methods"]]
+
+fasta_dir  = config["fasta_dir"]
+align_dir  = config["align_dir"]
+axt_dir    = config["axt_dir"]
+kaks_dir   = config["kaks_dir"]
+
+alignment_script   = config["alignment_script"]
+axt_convert_script = config["axt_convert_script"]
+kaks_bin           = config.get("kaks_bin", "KaKs_Calculator")
+min_len            = int(config.get("min_len", 1000))
+base_seed          = int(config.get("base_seed", 42))
+
+strain1 = cfg("strain1")
+strain2 = cfg("strain2")
+strain3 = cfg("strain3")
+
+# ---------- Targets (built dynamically after checkpoint) ----------
+rule all:
+    input:
+        lambda wc: final_targets()
+
+def final_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            # ensure conversion happened
+            outs.append(f"{base}/sample_{s}/rep_{r}/{axt_dir}/all_pairs_combined.axt")
+            # if AXT exists, enumerate per-AXT KaKs targets
+            aroot = Path(f"{base}/sample_{s}/rep_{r}/{axt_dir}")
+            if aroot.exists():
+                for p in aroot.rglob("*.axt"):
+                    if p.name == "all_pairs_combined.axt":
+                        continue
+                    gene = p.parent.name
+                    pair = p.stem
+                    for m in methods:
+                        outs.append(f"{base}/sample_{s}/rep_{r}/{kaks_dir}/{gene}/{pair}_{m}.axt.kaks")
+    return outs
+
+# ---------- 1) Sample K core IDs → fasta/ ----------
+rule sample_coreids:
+    output:
+        marker = touch(f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK")
+    params:
+        outdir  = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}",
+        k       = lambda wc: int(wc.s),
+        seed    = lambda wc: base_seed + int(wc.r)
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/.bench_sample.txt"
+    shell:
+        r"""
+        python3 scripts/sample_coreids.py \
+          --strain1 "{strain1}" \
+          --strain2 "{strain2}" \
+          --strain3 "{strain3}" \
+          --sample_n {params.k} \
+          --min_len {min_len} \
+          --seed {params.seed} \
+          --out_dir "{params.outdir}"
+        """
+
+# ---------- 2) Pairwise alignments (per FASTA dir) ----------
+rule pairwise_alignments:
+    input:
+        f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK"
+    output:
+        tsv = temp(f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv")
+    params:
+        inroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}",
+        outdir = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}"
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/.bench_alignments.txt"
+    threads: 1
+    shell:
+        r"""
+        python3 {alignment_script} \
+          --input "{params.inroot}" \
+          --out_dir "{params.outdir}" \
+          >> "{params.outdir}/alignment.log" 2>&1
+        """
+
+# ---------- 3) Convert .aln → .axt (recursive) ----------
+checkpoint make_axts:
+    input:
+        f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv"
+    output:
+        axtroot = directory(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}")
+    params:
+        inroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}",
+        outroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}"
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/.bench_axt_convert.txt"
+    shell:
+        r"""
+        mkdir -p "{params.outroot}"
+        python3 {axt_convert_script} \
+          --input "{params.inroot}" \
+          --out_dir "{params.outroot}"
+        """
+
+# helper to list all per-pair AXT after conversion
+def list_axts(sample, rep):
+    ck = checkpoints.make_axts.get(s=sample, r=rep)
+    root = Path(f"{base}/sample_{sample}/rep_{rep}/{axt_dir}")
+    return sorted([p for p in root.rglob("*.axt") if p.name != "all_pairs_combined.axt"])
+
+# ---------- 4) KaKs per AXT → kaks/<gene>/<pair>_{method}.axt.kaks ----------
+rule kaks_per_axt:
+    input:
+        axt = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{wc.gene}/{wc.pair}.axt"
+    output:
+        kaks = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.axt.kaks",
+        log  = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.kaks.log"
+    params:
+        bin = kaks_bin
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.benchmark.txt"
+    threads: 1
+    shell:
+        r"""
+        mkdir -p "$(dirname {output.kaks})"
+        /usr/bin/time -v {params.bin} -i "{input.axt}" -o "{output.kaks}" -m {wildcards.method} > "{output.log}" 2>&1
+        """
+
+# dynamic expansion after checkpoint
+def expand_kaks_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            for p in list_axts(s, r):
+                gene = p.parent.name
+                pair = p.stem
+                for m in methods:
+                    outs.append(f"{base}/sample_{s}/rep_{r}/{kaks_dir}/{gene}/{pair}_{m}.axt.kaks")
+    return outs
+
+# === Final aggregation: one TSV with total times per sample/rep ===
+rule summarize_timings:
+    input:
+        # ensure all upstream work has finished
+        kaks=lambda wc: expand_kaks_targets(),
+        combined_axTs=expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt",
+                             s=samples, r=range(1, replicates+1)),
+        align_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv",
+                        s=samples, r=range(1, replicates+1)),
+        axt_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/timing_summary.tsv",
+                      s=samples, r=range(1, replicates+1))
+    output:
+        overall=f"{base}/timing_summary_overall.tsv"
+    params:
+        base_dir=base,
+        samples=",".join(samples),
+        replicates=replicates,
+        # pass a fallback KaKs timing TSV; script will ignore if missing
+        global_kaks_tsv=f"{base}/timing_kaks_per_axt.tsv"
+    benchmark:
+        f"{base}/.bench_summarize_timings.txt"
+    shell:
+        r"""
+        python3 scripts/summarize_timings.py \
+          --base_dir "{params.base_dir}" \
+          --samples "{params.samples}" \
+          --replicates {params.replicates} \
+          --prefer_benchmarks \
+          --global_kaks_tsv "{params.global_kaks_tsv}" \
+          --out "{output.overall}"
+        """
+
+
+use rule all as all_dynamic with:
+    input:
+        expand_kaks_targets,
+        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt", s=samples, r=range(1, replicates+1)),
+        f"{base}/timing_summary_overall.tsv"
+
