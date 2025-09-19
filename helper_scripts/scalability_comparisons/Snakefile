@@ -5,7 +5,12 @@ def cfg(path):
     # simple formatter for {wd} usage in config
     return str(config[path]).format(**config)
 
-base       = config["base_dir"]
+# read/allow an override, default to what your converter writes
+combined_axt_name = config.get("combined_axt_name", "sequences.axt")
+
+#base       = config["base_dir"]
+base       = '/data/jzr5814/dnds_scalability_comparison/snakemake_traditional_results'
+configfile: "config.yaml"
 samples    = [str(s) for s in config["samples"]]
 replicates = int(config["replicates"])
 methods    = [str(m) for m in config["methods"]]
@@ -28,7 +33,15 @@ strain3 = cfg("strain3")
 # ---------- Targets (built dynamically after checkpoint) ----------
 rule all:
     input:
-        lambda wc: final_targets()
+        # make sure each sample/rep produced the combined AXT
+        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/{combined_axt_name}",
+               s=samples, r=range(1, replicates+1)),
+        # all KaKs outputs (resolved after checkpoint)
+        lambda wc: expand_kaks_targets(),
+        # final timing roll-up
+        f"{base}/timing_summary_overall.tsv"
+
+
 
 def final_targets():
     outs = []
@@ -95,9 +108,10 @@ checkpoint make_axts:
     input:
         f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv"
     output:
-        axtroot = directory(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}")
+        combined = f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/{combined_axt_name}",
+        summary  = f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/timing_summary.tsv"
     params:
-        inroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}",
+        inroot  = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}",
         outroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}"
     benchmark:
         f"{base}/sample_{{s}}/rep_{{r}}/.bench_axt_convert.txt"
@@ -107,13 +121,22 @@ checkpoint make_axts:
         python3 {axt_convert_script} \
           --input "{params.inroot}" \
           --out_dir "{params.outroot}"
+
+        # Ensure declared outputs exist even if nothing converted:
+        [[ -e "{output.combined}" ]] || : > "{output.combined}"
+        [[ -s "{output.summary}"  ]] || echo -e "input_file\taxt_file\tconvert_seconds\tstatus\tnote" > "{output.summary}"
         """
+
 
 # helper to list all per-pair AXT after conversion
 def list_axts(sample, rep):
     ck = checkpoints.make_axts.get(s=sample, r=rep)
-    root = Path(f"{base}/sample_{sample}/rep_{rep}/{axt_dir}")
-    return sorted([p for p in root.rglob("*.axt") if p.name != "all_pairs_combined.axt"])
+    axt_root = Path(ck.output.combined).parent
+    return sorted(
+        p for p in axt_root.rglob("*.axt")
+        if p.name != combined_axt_name  # exclude the concatenated file
+    )
+
 
 # ---------- 4) KaKs per AXT → kaks/<gene>/<pair>_{method}.axt.kaks ----------
 rule kaks_per_axt:
@@ -129,7 +152,7 @@ rule kaks_per_axt:
     threads: 1
     shell:
         r"""
-        mkdir -p "$(dirname {output.kaks})"
+        mkdir -p "$(dirname '{output.kaks}')"
         /usr/bin/time -v {params.bin} -i "{input.axt}" -o "{output.kaks}" -m {wildcards.method} > "{output.log}" 2>&1
         """
 
@@ -146,12 +169,18 @@ def expand_kaks_targets():
     return outs
 
 # === Final aggregation: one TSV with total times per sample/rep ===
+def expand_combined_axt_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            ck = checkpoints.make_axts.get(s=s, r=r)
+            outs.append(ck.output.combined)
+    return outs
+
 rule summarize_timings:
     input:
-        # ensure all upstream work has finished
         kaks=lambda wc: expand_kaks_targets(),
-        combined_axTs=expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt",
-                             s=samples, r=range(1, replicates+1)),
+        combined_axTs=lambda wc: expand_combined_axt_targets(),
         align_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv",
                         s=samples, r=range(1, replicates+1)),
         axt_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/timing_summary.tsv",
@@ -168,7 +197,7 @@ rule summarize_timings:
         f"{base}/.bench_summarize_timings.txt"
     shell:
         r"""
-        python3 scripts/summarize_timings.py \
+        python3 scripts/time_summary.py \
           --base_dir "{params.base_dir}" \
           --samples "{params.samples}" \
           --replicates {params.replicates} \
