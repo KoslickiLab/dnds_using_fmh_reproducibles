@@ -39,7 +39,11 @@ rule all:
         # all KaKs outputs (resolved after checkpoint)
         lambda wc: expand_kaks_targets(),
         # final timing roll-up
-        f"{base}/timing_summary_overall.tsv"
+        f"{base}/timing_summary_overall.tsv",
+        # new AA targets
+        lambda wc: expand_aa_targets()
+#        expand(f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/dataset.csv",
+#               s=samples, r=range(1, replicates+1))
 
 
 
@@ -82,6 +86,19 @@ rule sample_coreids:
           --seed {params.seed} \
           --out_dir "{params.outdir}"
         """
+
+def list_cds_ids(sample, rep):
+    cds_root = Path(f"{base}/sample_{sample}/rep_{rep}/{fasta_dir}")
+    return [p.stem.replace("cds_", "") for p in cds_root.glob("cds_*.fasta")]
+
+def expand_aa_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            for cid in list_cds_ids(s, r):
+                outs.append(f"{base}/sample_{s}/rep_{r}/{fasta_dir}/aa_{cid}.fasta")
+    return outs
+
 
 # ---------- 2) Pairwise alignments (per FASTA dir) ----------
 rule pairwise_alignments:
@@ -207,9 +224,47 @@ rule summarize_timings:
         """
 
 
-use rule all as all_dynamic with:
+# ---------- NEW RULE: Translate CDS to AA with transeq ----------
+rule translate_cds:
     input:
-        expand_kaks_targets,
-        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt", s=samples, r=range(1, replicates+1)),
-        f"{base}/timing_summary_overall.tsv"
+        lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/cds_{wc.id}.fasta"
+    output:
+        f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/aa_{{id}}.fasta"
+    log:
+        f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/aa_{{id}}.transeq.log"
+    threads: 1
+    shell:
+        r"""
+        mkdir -p "$(dirname {output})"
+        transeq -sequence {input} -outseq {output} > {log} 2>&1
+        """
 
+
+#rule make_dataset_csv:
+#    input:
+#        marker = f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK"
+#    output:
+#        csv = f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/dataset.csv"
+#    params:
+#        root = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}"
+#    shell:
+#        r"""
+#        mkdir -p "$(dirname {output.csv})"
+#        (
+#          echo "name,genome_filename,protein_filename"
+#          find "{params.root}" -type f -name "cds_*.fasta" | while read -r cds; do
+#            id=$(basename "$cds" .fasta | sed 's/^cds_//')
+#            aa="$(dirname "$cds")/aa_${id}.fasta"
+#            echo "$id,$(realpath "$cds"),$(realpath "$aa")"
+#          done
+#        ) > {output.csv}
+#        """
+
+
+
+#use rule all as all_dynamic with:
+#    input:
+#        expand_kaks_targets,
+#        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt", s=samples, r=range(1, replicates+1)),
+#        f"{base}/timing_summary_overall.tsv"
+       
