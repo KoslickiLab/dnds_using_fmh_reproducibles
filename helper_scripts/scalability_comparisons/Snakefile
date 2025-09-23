@@ -41,7 +41,8 @@ rule all:
         # final timing roll-up
         f"{base}/timing_summary_overall.tsv",
         # new AA targets
-        lambda wc: expand_aa_targets()
+        lambda wc: expand_aa_targets(),
+        lambda wc: expand_dataset_targets()
 #        expand(f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/dataset.csv",
 #               s=samples, r=range(1, replicates+1))
 
@@ -144,6 +145,13 @@ checkpoint make_axts:
         [[ -s "{output.summary}"  ]] || echo -e "input_file\taxt_file\tconvert_seconds\tstatus\tnote" > "{output.summary}"
         """
 
+# helper to expand dataset targets
+def expand_dataset_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            outs.append(f"{base}/sample_{s}/rep_{r}/fmh_dnds/{combined_axt_name}_dataset.csv")
+    return outs
 
 # helper to list all per-pair AXT after conversion
 def list_axts(sample, rep):
@@ -193,6 +201,33 @@ def expand_combined_axt_targets():
             ck = checkpoints.make_axts.get(s=s, r=r)
             outs.append(ck.output.combined)
     return outs
+
+# make datasset csv files
+rule make_dataset_csv:
+    input:
+        cds=lambda wc: expand(f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/cds_{{id}}.fasta",
+                              id=list_cds_ids(wc.s, wc.r)),
+        aa=lambda wc: expand(f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/aa_{{id}}.fasta",
+                             id=list_cds_ids(wc.s, wc.r)),
+        combined=lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{combined_axt_name}"
+    output:
+        f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/{combined_axt_name}_dataset.csv"
+    run:
+        import csv
+        from pathlib import Path
+        outdir = Path(output[0]).parent
+        outdir.mkdir(parents=True, exist_ok=True)
+
+        cds_files = sorted(map(str, input.cds))
+        aa_files  = sorted(map(str, input.aa))
+
+        with open(output[0], "w", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(["name", "genome_filename", "protein_filename"])
+            for cds, aa in zip(cds_files, aa_files):
+                name = Path(cds).stem.replace("cds_", "")
+                writer.writerow([name, cds, aa])
+
 
 rule summarize_timings:
     input:
