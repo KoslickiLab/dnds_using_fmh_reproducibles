@@ -1,0 +1,480 @@
+import os
+from pathlib import Path
+
+
+#def cfg(path):
+    # simple formatter for {wd} usage in config
+#    return str(config[path]).format(**config)
+
+# read/allow an override, default to what your converter writes
+combined_axt_name = config.get("combined_axt_name", "sequences.axt")
+
+#base       = config["base_dir"]
+base       = '/data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison'
+configfile: "config.yaml"
+samples    = [str(s) for s in config["samples"]]
+replicates = int(config["replicates"])
+methods    = [str(m) for m in config["methods"]]
+#fmh_scales = [1, 10, 100, 1000]
+
+
+#fasta_dir  = config["fasta_dir"]
+align_dir  = config["align_dir"]
+axt_dir    = config["axt_dir"]
+kaks_dir   = config["kaks_dir"]
+input_fna   = config["input_fasta"]
+
+alignment_script   = config["alignment_script"]
+axt_convert_script = config["axt_convert_script"]
+kaks_bin           = config.get("kaks_bin", "KaKs_Calculator")
+#min_len            = int(config.get("min_len", 1000))
+base_seed          = int(config.get("base_seed", 42))
+
+#strain1 = cfg("strain1")
+#strain2 = cfg("strain2")
+#strain3 = cfg("strain3")
+
+
+
+
+# ---------- Targets (built dynamically after checkpoint) ----------
+
+rule all:
+    input:
+        expand(
+            f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv",
+            s=samples,
+            r=range(1, replicates + 1)
+        ),
+        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/{combined_axt_name}",
+               s=samples, r=range(1, replicates+1)),
+        # all KaKs outputs (resolved after checkpoint)
+        lambda wc: expand_kaks_targets(),
+        f"{base}/kaks_benchmarks_summary.tsv"
+
+
+
+#rule all:
+#    input:
+        # make sure each sample/rep produced the combined AXT
+#        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/{combined_axt_name}",
+#               s=samples, r=range(1, replicates+1)),
+        # all KaKs outputs (resolved after checkpoint)
+#        lambda wc: expand_kaks_targets(),
+        # final timing roll-up
+#        f"{base}/timing_summary_overall.tsv",
+        # new AA targets
+#        lambda wc: expand_aa_targets(),
+#        lambda wc: expand_dataset_targets(),
+#        lambda wc: expand_fmh_targets()
+#        expand(f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/dataset.csv",
+#               s=samples, r=range(1, replicates+1))
+
+
+#rule setup_base:
+#    output:
+#        directory(base)
+#    shell:
+#       "mkdir -p {output}"
+
+
+#def final_targets():
+#    outs = []
+#    for s in samples:
+#        for r in range(1, replicates+1):
+            # ensure conversion happened
+#            outs.append(f"{base}/sample_{s}/rep_{r}/{axt_dir}/all_pairs_combined.axt")
+            # if AXT exists, enumerate per-AXT KaKs targets
+#            aroot = Path(f"{base}/sample_{s}/rep_{r}/{axt_dir}")
+#            if aroot.exists():
+#                for p in aroot.rglob("*.axt"):
+#                    if p.name == "all_pairs_combined.axt":
+#                        continue
+#                    gene = p.parent.name
+#                    pair = p.stem
+#                    for m in methods:
+#                        outs.append(f"{base}/sample_{s}/rep_{r}/{kaks_dir}/{gene}/{pair}_{m}.axt.kaks")
+#    return outs
+
+# ---------- 1) Sample ----------
+rule sample_genes:
+    input:
+        fasta = f"{input_fna}"
+    output:
+        sampled = f"{base}/sample_{{s}}/rep_{{r}}/sampled_cds.fna"
+    params:
+        outdir = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/",
+        k      = lambda wc: int(wc.s),
+        seed   = lambda wc: base_seed + int(wc.r)
+    threads: 1
+    shell:
+        r"""
+        mkdir -p {params.outdir}
+        python3 scripts/sample_fasta.py \
+          --input {input.fasta} \
+          --output {output.sampled} \
+          --sample_n {params.k} \
+          --seed {params.seed} \
+          > {params.outdir}/sample.log 2>&1
+        """
+
+
+
+#rule sample_coreids:
+#    output:
+#        marker = touch(f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK")
+#    params:
+#        outdir  = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}",
+#        k       = lambda wc: int(wc.s),
+#        seed    = lambda wc: base_seed + int(wc.r)
+#    benchmark:
+#        f"{base}/sample_{{s}}/rep_{{r}}/.bench_sample.txt"
+#    shell:
+#        r"""
+#        python3 scripts/sample_coreids.py \
+#          --strain1 "{strain1}" \
+#          --strain2 "{strain2}" \
+#          --strain3 "{strain3}" \
+#          --sample_n {params.k} \
+#          --min_len {min_len} \
+#          --seed {params.seed} \
+#          --out_dir "{params.outdir}"
+#        """
+
+#rule sample_genes:
+#    output:
+#        marker = touch(f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK")
+#    params:
+#        outdir  = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}",
+#        k       = lambda wc: int(wc.s),
+#        seed    = lambda wc: base_seed + int(wc.r),
+#        infile  = config["input_fasta"]
+#    benchmark:
+#        f"{base}/sample_{{s}}/rep_{{r}}/.bench_sample.txt"
+#    shell:
+#        r"""
+#        mkdir -p {params.outdir}
+#        python3 scripts/sample_fasta.py \
+#          --input "{params.infile}" \
+#          --sample_n {params.k} \
+#          --seed {params.seed} \
+#          --out_dir "{params.outdir}"
+#        """
+
+
+
+#def list_cds_ids(sample, rep):
+#    cds_root = Path(f"{base}/sample_{sample}/rep_{rep}/{fasta_dir}")
+#    return [p.stem.replace("cds_", "") for p in cds_root.glob("cds_*.fasta")]
+
+#def expand_aa_targets():
+#    outs = []
+#    for s in samples:
+#        for r in range(1, replicates+1):
+#            for cid in list_cds_ids(s, r):
+#                outs.append(f"{base}/sample_{s}/rep_{r}/{fasta_dir}/aa_{cid}.fasta")
+#    return outs
+
+
+# ---------- 2) Pairwise alignments (per FASTA dir) ----------
+rule pairwise_alignments:
+    input:
+        #f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK"
+        #sampled = f"{base}/sample_{{s}}/rep_{{r}}/sampled_cds.fna"
+        sampled = f"{base}/sample_{{s}}/rep_{{r}}/sampled_cds.fna"
+    output:
+        tsv = f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv"
+    params:
+        #inroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/",
+        outdir = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}"
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/.bench_alignments.txt"
+    threads: 1
+    shell:
+        r"""
+        mkdir -p {params.outdir}
+        python3 {alignment_script} \
+          --input {input.sampled} \
+          --out_dir {params.outdir} \
+          > "{params.outdir}/alignment.log" 2>&1
+        """
+
+# ---------- 3) Convert .aln → .axt (recursive) ----------
+checkpoint make_axts:
+    input:
+        f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv"
+    output:
+        combined = f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/{combined_axt_name}",
+        summary  = f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/timing_axt.tsv"
+    params:
+        inroot  = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{align_dir}",
+        outroot = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}"
+    benchmark:
+        f"{base}/sample_{{s}}/rep_{{r}}/.bench_axt_convert.txt"
+    shell:
+        r"""
+        mkdir -p "{params.outroot}"
+        python3 {axt_convert_script} \
+          --input "{params.inroot}" \
+          --out_dir "{params.outroot}"
+
+        # Ensure declared outputs exist even if nothing converted:
+        [[ -e "{output.combined}" ]] || : > "{output.combined}"
+        [[ -s "{output.summary}"  ]] || echo -e "input_file\taxt_file\tconvert_seconds\tstatus\tnote" > "{output.summary}"
+        """
+
+# helper to expand dataset targets
+#def expand_dataset_targets():
+#    outs = []
+#    for s in samples:
+#        for r in range(1, replicates+1):
+#            outs.append(f"{base}/sample_{s}/rep_{r}/fmh_dnds/{combined_axt_name}_dataset.csv")
+#    return outs
+
+# helper to list all per-pair AXT after conversion
+def list_axts(sample, rep):
+    ck = checkpoints.make_axts.get(s=sample, r=rep)
+    axt_root = Path(ck.output.combined).parent
+    return sorted(
+        p for p in axt_root.rglob("*.axt")
+        if p.name != combined_axt_name  # exclude the concatenated file
+    )
+
+
+# ---------- 4) KaKs per AXT → kaks/<gene>/<pair>_{method}.axt.kaks ----------
+rule kaks_per_axt:
+    input:
+        #axt = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{wc.gene}/{wc.pair}.axt"
+        axt = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{wc.pair}.axt"
+    output:
+        #kaks = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.axt.kaks",
+        #log  = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.kaks.log"
+        kaks = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{pair}}_{{method}}.axt.kaks",
+        log  = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{pair}}_{{method}}.kaks.log"
+    params:
+        bin = kaks_bin
+    benchmark:
+        #f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{gene}}/{{pair}}_{{method}}.benchmark.txt"
+        f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{pair}}_{{method}}.benchmark.txt"
+    threads: 1
+    shell:
+        r"""
+        mkdir -p "$(dirname '{output.kaks}')"
+        /usr/bin/time -v {params.bin} -i "{input.axt}" -o "{output.kaks}" -m {wildcards.method} > "{output.log}" 2>&1
+        """
+
+#checkpoint kaks_per_axt_checkpoint:
+#    input:
+#        axt = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{wc.pair}.axt"
+#    output:
+#        kaks = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{pair}}_{{method}}.axt.kaks",
+#        benchmark = f"{base}/sample_{{s}}/rep_{{r}}/{kaks_dir}/{{pair}}_{{method}}.benchmark.txt"
+#    shell:
+#        "/usr/bin/time -v {kaks_bin} -i {input.axt} -o {output.kaks} -m {wildcards.method} > {output.benchmark} 2>&1"
+
+#def get_all_pairs(s, r):
+#    import glob
+#    import re
+#    pattern = f"{base}/sample_{s}/rep_{r}/{kaks_dir}/*.benchmark.txt"
+#    files = glob.glob(pattern)
+    
+    # Extract "seq1_seq2" part from filenames like "seq1_seq2_YN.benchmark.txt"
+#    pairs = set()
+#    for f in files:
+#        m = re.search(r"/([^/]+)_[^/]+\.benchmark\.txt$", f)
+#        if m:
+#            pairs.add(m.group(1))
+#    return sorted(pairs)
+
+
+
+# ---------- 5) summarize KaKs times ----------
+#rule summarize_kaks:
+#    input:
+#        # dynamically generate the list of benchmark files
+#        lambda wc: [
+#            f"{base}/sample_{s}/rep_{r}/{kaks_dir}/{pair}_{method}.benchmark.txt"
+#            for s in [5,10]  # or use your samples list
+#            for r in range(1, replicates+1)
+#            for method in ["YN", "NG"]
+#            for pair in get_all_pairs(s, r)  # get_all_pairs should return a list of pair strings for this sample/rep
+#        ]
+#    output:
+#        summary = f"{base}/kaks_benchmarks_summary.tsv"
+#    shell:
+#        "python3 scripts/summarize_kaks_benchmarks.py "
+#        "--input {input} "
+#        "--output {output.summary}"
+
+
+
+
+
+
+# dynamic expansion after checkpoint
+def expand_kaks_targets():
+    outs = []
+    for s in samples:
+        for r in range(1, replicates+1):
+            for p in list_axts(s, r):
+                #gene = p.parent.name
+                pair = p.stem
+                for m in methods:
+                    outs.append(f"{base}/sample_{s}/rep_{r}/{kaks_dir}/{pair}_{m}.axt.kaks")
+    return outs
+
+# === Final aggregation: one TSV with total times per sample/rep ===
+#def expand_combined_axt_targets():
+#    outs = []
+#    for s in samples:
+#        for r in range(1, replicates+1):
+#            ck = checkpoints.make_axts.get(s=s, r=r)
+#            outs.append(ck.output.combined)
+#    return outs
+
+## exapnd for fmh files
+#def expand_fmh_targets():
+#    outs = []
+#    for s in samples:
+#        for r in range(1, replicates+1):
+#            for sc in fmh_scales:
+#                outs.append(f"{base}/sample_{s}/rep_{r}/fmh_dnds/scale_{sc}/demo_branchwater.results.tsv")
+#    return outs
+
+
+# make datasset csv files
+#rule make_dataset_csv:
+#    input:
+#        cds=lambda wc: expand(f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/cds_{{id}}.fasta",
+#                              id=list_cds_ids(wc.s, wc.r)),
+#        aa=lambda wc: expand(f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/aa_{{id}}.fasta",
+#                             id=list_cds_ids(wc.s, wc.r)),
+#        combined=lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{axt_dir}/{combined_axt_name}"
+#    output:
+#        f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/{combined_axt_name}_dataset.csv"
+#    run:
+#        import csv
+#        from pathlib import Path
+#        outdir = Path(output[0]).parent
+#        outdir.mkdir(parents=True, exist_ok=True)
+
+#        cds_files = sorted(map(str, input.cds))
+#        aa_files  = sorted(map(str, input.aa))
+
+#        with open(output[0], "w", newline="") as csvfile:
+#            writer = csv.writer(csvfile)
+#            writer.writerow(["name", "genome_filename", "protein_filename"])
+#            for cds, aa in zip(cds_files, aa_files):
+#                name = Path(cds).stem.replace("cds_", "")
+#                writer.writerow([name, cds, aa])
+
+
+#rule run_fmh_omega:
+#    input:
+#        dataset=lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/fmh_dnds/sequences.axt_dataset.csv"
+#    output:
+#        results=f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/scale_{{scale}}/demo_branchwater.results.tsv",
+#        timing=f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/scale_{{scale}}/fmh_timing.log"
+#    params:
+#        wd=lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/fmh_dnds/scale_{wc.scale}",
+#        k=7,
+#        m="bwpair",
+#        c=100,
+#        out=lambda wc: f"{wc.s}_{wc.r}_{wc.scale}"
+#    benchmark:
+#        f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/scale_{{scale}}/.bench_fmh_omega.txt"
+#    threads: 4
+#    shell:
+#        r"""
+#        mkdir -p "{params.wd}"
+#        /usr/bin/time -v -o {output.timing} \
+#          python3 /data/jzr5814/repositories/dnds-using-fmh/src/script_fmh_omega.py \
+#            --fasta_input_list {input.dataset} \
+#            --scaled_input {wildcards.scale} \
+#            --ksize {params.k} \
+#            --mode {params.m} \
+#            --directory {params.wd} \
+#            --cores {params.c}
+        # Ensure the expected results file exists
+#        if [ -f {params.wd}/{params.out}.results.tsv ]; then
+#            cp {params.wd}/{params.out}.results.tsv {output.results}
+#        else
+#            echo "Missing {params.out}.results.tsv" > {output.results}
+#        fi
+#        """
+
+
+#rule summarize_timings:
+#    input:
+#        kaks=lambda wc: expand_kaks_targets(),
+#        combined_axTs=lambda wc: expand_combined_axt_targets(),
+#        align_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{align_dir}/timing_alignments.tsv",
+#                        s=samples, r=range(1, replicates+1)),
+#        axt_ts=expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/timing_summary.tsv",
+#                      s=samples, r=range(1, replicates+1))
+#    output:
+#        overall=f"{base}/timing_summary_overall.tsv"
+#    params:
+#        base_dir=base,
+#        samples=",".join(samples),
+#        replicates=replicates,
+        # pass a fallback KaKs timing TSV; script will ignore if missing
+#        global_kaks_tsv=f"{base}/timing_kaks_per_axt.tsv"
+#    benchmark:
+#        f"{base}/.bench_summarize_timings.txt"
+#    shell:
+#        r"""
+#        python3 scripts/time_summary.py \
+#          --base_dir "{params.base_dir}" \
+#          --samples "{params.samples}" \
+#          --replicates {params.replicates} \
+#          --prefer_benchmarks \
+#          --global_kaks_tsv "{params.global_kaks_tsv}" \
+#          --out "{output.overall}"
+#        """
+
+
+# ---------- NEW RULE: Translate CDS to AA with transeq ----------
+#rule translate_cds:
+#    input:
+#        lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}/{fasta_dir}/cds_{wc.id}.fasta"
+#    output:
+#        f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/aa_{{id}}.fasta"
+#    log:
+#        f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/aa_{{id}}.transeq.log"
+#    threads: 1
+#    shell:
+#        r"""
+#        mkdir -p "$(dirname {output})"
+#        transeq -sequence {input} -outseq {output} > {log} 2>&1
+#        """
+
+
+#rule make_dataset_csv:
+#    input:
+#        marker = f"{base}/sample_{{s}}/rep_{{r}}/{fasta_dir}/_SAMPLED.OK"
+#    output:
+#        csv = f"{base}/sample_{{s}}/rep_{{r}}/fmh_dnds/dataset.csv"
+#    params:
+#        root = lambda wc: f"{base}/sample_{wc.s}/rep_{wc.r}"
+#    shell:
+#        r"""
+#        mkdir -p "$(dirname {output.csv})"
+#        (
+#          echo "name,genome_filename,protein_filename"
+#          find "{params.root}" -type f -name "cds_*.fasta" | while read -r cds; do
+#            id=$(basename "$cds" .fasta | sed 's/^cds_//')
+#            aa="$(dirname "$cds")/aa_${id}.fasta"
+#            echo "$id,$(realpath "$cds"),$(realpath "$aa")"
+#          done
+#        ) > {output.csv}
+#        """
+
+
+
+#use rule all as all_dynamic with:
+#    input:
+#        expand_kaks_targets,
+#        expand(f"{base}/sample_{{s}}/rep_{{r}}/{axt_dir}/all_pairs_combined.axt", s=samples, r=range(1, replicates+1)),
+#        f"{base}/timing_summary_overall.tsv"
+       

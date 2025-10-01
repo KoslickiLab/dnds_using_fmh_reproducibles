@@ -1,0 +1,42 @@
+#base_dir: /data/jzr5814/dnds_scalability_comparison/snakemake_traditional_results
+base_dir: /data/jzr5814/repositories/dnds_using_fmh_reproducibles/helper_scripts/scalability_comparisons
+
+# sample sizes you want to run
+samples: [5, 10]
+
+# replicate count (run the whole pipeline this many times)
+replicates: 10
+
+# KaKs methods to run
+methods: [NG, GY]
+
+# strains (from your script)
+#wd: /data/jzr5814/sourmash_dnds_estimation/tests/data/ecoli_10strains_refseq_redownload
+#strain1: "{wd}/GCF_027925825.1/cds_from_genomic.fna"
+#strain2: "{wd}/GCF_027925805.1/cds_from_genomic.fna"
+#strain3: "{wd}/GCF_024300685.1/cds_from_genomic.fna"
+input_fasta: "/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/2001/positive_selection_queries_2001_0.01.fna"
+
+min_len: 1000
+base_seed: 42
+
+# Where to take random FASTA files **from** (pool of 3-seq or multi-seq FASTAs)
+# Use a glob that matches many per-gene FASTA files you’ve already prepared.
+# Example: "/path/to/master_pairs/**/*.fa"
+#pool_glob: "/data/jzr5814/dnds_scalability_comparison/snakemake_traditional_results/master_pairs/**/*.fasta"
+
+# Directory names inside each sample_<N>/rep_<r>/
+#fasta_dir: fasta
+align_dir: alignments
+axt_dir: axt
+kaks_dir: kaks
+
+# Your existing scripts
+alignment_script: scripts/alignment.py
+axt_convert_script: scripts/axt_convert.py
+
+# KaKs binary
+kaks_bin: KaKs_Calculator
+
+# optional: base seed; per-replicate seed will be base_seed + replicate index
+base_seed: 1337
