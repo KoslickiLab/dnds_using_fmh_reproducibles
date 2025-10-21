@@ -1,0 +1,30 @@
+configfile: "config.yaml"
+
+base = config["base"]
+samples = config["samples"]
+replicates = config["replicates"]
+translator = config["translator"]
+
+rule translate_and_generate_csv:
+    output:
+        dataset = f"{base}/dataset.csv"
+    params:
+        samples=samples,
+        replicates=replicates,
+        base=base,
+        translator=translator
+    shell:
+        """
+        python3 scripts/translate_and_generate_csv.py \
+            --samples {params.samples} \
+            --replicates {params.replicates} \
+            --base {params.base} \
+            --translator {params.translator} \
+            --dataset {output.dataset}
+        """
+
+rule all:
+    input:
+        f"{base}/dataset.csv"
+
+

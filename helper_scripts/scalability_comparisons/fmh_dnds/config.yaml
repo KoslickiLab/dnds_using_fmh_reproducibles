@@ -1,0 +1,4 @@
+base: /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison
+samples: [5, 10]
+replicates: 10
+translator: transeq   # or your custom translator program
