@@ -5,6 +5,12 @@ samples = config["samples"]
 replicates = config["replicates"]
 translator = config["translator"]
 
+
+rule all:
+    input:
+        f"{base}/sketches_done.txt"
+
+
 rule translate_and_generate_csv:
     output:
         dataset = f"{base}/dataset.csv"
@@ -23,8 +29,10 @@ rule translate_and_generate_csv:
             --dataset {output.dataset}
         """
 
-rule all:
+rule sketch:
     input:
-        f"{base}/dataset.csv"
-
-
+        dataset = f"{base}/dataset.csv"  # <-- use the path produced by translate_and_generate_csv
+    output:
+        touch(f"{base}/sketches_done.txt")  # global done file
+    shell:
+        "python scripts/sketch.py --dataset {input.dataset} --outdir {base}"
