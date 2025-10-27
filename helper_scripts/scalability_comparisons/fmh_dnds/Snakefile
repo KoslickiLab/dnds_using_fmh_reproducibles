@@ -8,8 +8,15 @@ translator = config["translator"]
 
 rule all:
     input:
-        f"{base}/sketches_done.txt"
-
+        f"{base}/sketches_done.txt",
+        expand(
+            f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.dna.7.csv",
+            s=samples, r=replicates
+        ),
+        expand(
+            f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv",
+            s=samples, r=replicates
+        )
 
 rule translate_and_generate_csv:
     output:
@@ -36,3 +43,20 @@ rule sketch:
         touch(f"{base}/sketches_done.txt")  # global done file
     shell:
         "python scripts/sketch.py --dataset {input.dataset} --outdir {base}"
+
+rule compare_containments:
+    input:
+        dna_sig = f"{base}/sample_{{s}}/rep_{{r}}/signatures/sample{{s}}_rep{{r}}_dna.sig",
+        protein_sig = f"{base}/sample_{{s}}/rep_{{r}}/signatures/sample{{s}}_rep{{r}}_protein.sig"
+    output:
+        dna_csv = f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.dna.7.csv",
+        protein_csv = f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv"
+    params:
+        base=base
+    shell:
+        """
+        python scripts/compare.py \
+        --base /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison \
+        --ksize 7 \
+        --outcsv /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison/containment_times.csv
+        """
