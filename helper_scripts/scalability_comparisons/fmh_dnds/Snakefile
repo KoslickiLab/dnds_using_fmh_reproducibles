@@ -17,7 +17,9 @@ rule all:
             f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv",
             s=samples, r=replicates
         ),
-        expand(f"{base}/fmh_omega_times.csv",)
+        f"{base}/fmh_omega_times.csv",
+        f"{base}/all_timings_merged.csv"
+
 
 rule translate_and_generate_csv:
     output:
@@ -77,3 +79,17 @@ rule fmh_omega_summary:
         python3 scripts/fmh.py
         """
 
+
+rule merge_timings:
+    input:
+        sig = f"{base}/signature_generation_times.csv",
+        cont = f"{base}/containment_times.csv",
+        fmh = f"{base}/fmh_omega_times.csv",
+    output:
+        merged = f"{base}/all_timings_merged.csv"
+    params:
+        base_dir = base
+    shell:
+        """
+        python3 scripts/merge_timings.py --base {params.base_dir}
+        """
