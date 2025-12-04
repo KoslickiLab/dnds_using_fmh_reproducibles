@@ -16,7 +16,8 @@ rule all:
         expand(
             f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv",
             s=samples, r=replicates
-        )
+        ),
+        expand(f"{base}/fmh_omega_times.csv",)
 
 rule translate_and_generate_csv:
     output:
@@ -60,3 +61,19 @@ rule compare_containments:
         --ksize 7 \
         --outcsv /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison/containment_times.csv
         """
+
+rule fmh_omega_summary:
+    input:
+        f"{base}/dataset.csv"
+    output:
+        f"{base}/fmh_omega_times.csv"
+    params:
+        samples = samples,
+        replicates = replicates,
+        base = base
+    threads: 4
+    shell:
+        """
+        python3 scripts/fmh.py
+        """
+
