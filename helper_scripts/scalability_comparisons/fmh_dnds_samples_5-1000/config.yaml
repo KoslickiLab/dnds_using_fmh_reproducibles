@@ -1,0 +1,4 @@
+base: /data/jzr5814/dnds_scalability_comparison
+samples: [5, 10, 100, 1000]
+replicates: 10
+translator: transeq   # or your custom translator program
