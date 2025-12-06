@@ -8,17 +8,10 @@ translator = config["translator"]
 
 rule all:
     input:
-        f"{base}/sketches_done.txt",
-        expand(
-            f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.dna.7.csv",
-            s=samples, r=replicates
-        ),
-        expand(
-            f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv",
-            s=samples, r=replicates
-        ),
-        f"{base}/fmh_omega_times.csv",
-        f"{base}/all_timings_merged.csv"
+        f"{base}/snakemake_fmh_comparison_samples_10-1000/signature_generation_times.csv",
+        f"{base}/snakemake_fmh_comparison_samples_10-1000/containment_times.csv",
+        f"{base}/snakemake_fmh_comparison_samples_10-1000/fmh_omega_times.csv",
+        f"{base}/snakemake_fmh_comparison_samples_10-1000/all_timings_merged.csv"
 
 
 rule translate_and_generate_csv:
@@ -47,20 +40,19 @@ rule sketch:
 
 rule compare_containments:
     input:
-        dna_sig = f"{base}/sample_{{s}}/rep_{{r}}/signatures/sample{{s}}_rep{{r}}_dna.sig",
-        protein_sig = f"{base}/sample_{{s}}/rep_{{r}}/signatures/sample{{s}}_rep{{r}}_protein.sig"
+        sig_dir = os.path.join(base, "snakemake_fmh_comparison_samples_10-1000")  # all sample_X folders live here
     output:
-        dna_csv = f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.dna.7.csv",
-        protein_csv = f"{base}/sample_{{s}}/rep_{{r}}/containments/compare.protein.7.csv"
+        containment_times = os.path.join(base, "snakemake_fmh_comparison_samples_10-1000", "containment_times.csv")
     params:
-        base=base
+        ksize = 7
     shell:
         """
         python scripts/compare.py \
-        --base /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison \
-        --ksize 7 \
-        --outcsv /data/jzr5814/dnds_scalability_comparison/snakemake_method_comparison/containment_times.csv
+            --base {input.sig_dir} \
+            --ksize {params.ksize} \
+            --outcsv {output.containment_times}
         """
+
 
 rule fmh_omega_summary:
     input:
@@ -69,7 +61,6 @@ rule fmh_omega_summary:
         f"{base}/fmh_omega_times.csv"
     params:
         samples = samples,
-        replicates = replicates,
         base = base
     threads: 4
     shell:
