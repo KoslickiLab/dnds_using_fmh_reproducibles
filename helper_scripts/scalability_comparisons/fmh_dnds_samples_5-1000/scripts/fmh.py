@@ -16,7 +16,7 @@ def run_command(cmd):
     except subprocess.CalledProcessError as e:
         print(f"❌ Command failed: {e}")
         status = "failed"
-    duration = round(time.time() - start, 2)
+    duration = round(time.time() - start, 5)
     print(f"✓ Completed in {duration} seconds ({status})")
     return duration, status
 

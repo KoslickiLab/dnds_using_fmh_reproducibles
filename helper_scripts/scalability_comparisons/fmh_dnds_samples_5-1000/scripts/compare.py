@@ -66,7 +66,7 @@ def main():
                     "wp_id": wp_id,
                     "molecule": molecule,
                     "ksize": args.ksize,
-                    "duration_sec": round(duration, 2)
+                    "duration_sec": round(duration, 5)
                 })
 
     # Save all timing records to the consolidated CSV

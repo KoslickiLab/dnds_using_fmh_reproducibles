@@ -62,8 +62,8 @@ def main():
             "sample": name,
             "dna_fasta": dna_fasta,
             "protein_fasta": protein_fasta,
-            "dna_runtime_sec": round(dna_elapsed, 2),
-            "protein_runtime_sec": round(protein_elapsed, 2)
+            "dna_runtime_sec": round(dna_elapsed, 5),
+            "protein_runtime_sec": round(protein_elapsed, 5)
         })
 
     # Write timing results to CSV
