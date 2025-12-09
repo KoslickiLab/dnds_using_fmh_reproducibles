@@ -1,22 +1,23 @@
 configfile: "config.yaml"
 
 base = config["base"]
+results_folder = config["results_folder"]
 samples = config["samples"]
-replicates = config["replicates"]
+ksize = config["ksize"]
 translator = config["translator"]
 
 
 rule all:
     input:
-        f"{base}/snakemake_fmh_comparison_samples_10-1000/signature_generation_times.csv",
-        f"{base}/snakemake_fmh_comparison_samples_10-1000/containment_times.csv",
-        f"{base}/snakemake_fmh_comparison_samples_10-1000/fmh_omega_times.csv",
-        f"{base}/snakemake_fmh_comparison_samples_10-1000/all_timings_merged.csv"
+        f"{base}/{results_folder}/signature_generation_times.csv",
+        f"{base}/{results_folder}/containment_times.csv",
+        f"{base}/{results_folder}/fmh_omega_times.csv",
+        f"{base}/{results_folder}/all_timings_merged.csv"
 
 
 rule translate_and_generate_csv:
     output:
-        dataset = f"{base}/snakemake_fmh_comparison_samples_10-1000/dataset.csv"
+        dataset = f"{base}/{results_folder}/dataset.csv"
     params:
         samples=samples,
         base=base,
@@ -32,52 +33,60 @@ rule translate_and_generate_csv:
 
 rule sketch:
     input:
-        dataset = f"{base}/snakemake_fmh_comparison_samples_10-1000/dataset.csv"  # <-- use the path produced by translate_and_generate_csv
+        dataset = f"{base}/{results_folder}/dataset.csv"  # <-- use the path produced by translate_and_generate_csv
     output:
-        touch(f"{base}/snakemake_fmh_comparison_samples_10-1000/sketches_done.txt")  # global done file
+        touch(f"{base}/{results_folder}/sketches_done.txt")  # global done file
+    params:
+        k = {ksize}
     shell:
-        "python scripts/sketch.py --dataset {input.dataset} --outdir {base}/snakemake_fmh_comparison_samples_10-1000"
+        "python scripts/sketch.py --dataset {input.dataset} --ksize {params.k} --outdir {base}/{results_folder}"
 
 rule compare_containments:
     input:
-        sig_dir = os.path.join(base, "snakemake_fmh_comparison_samples_10-1000")  # all sample_X folders live here
+        sig_dir = os.path.join(base, results_folder)  # all sample_X folders live here
     output:
-        containment_times = os.path.join(base, "snakemake_fmh_comparison_samples_10-1000", "containment_times.csv")
+        containment_times = os.path.join(base, results_folder, "containment_times.csv")
     params:
-        ksize = 7
+        k = {ksize}
     shell:
         """
         python scripts/compare.py \
             --base {input.sig_dir} \
-            --ksize {params.ksize} \
+            --ksize {params.k} \
             --outcsv {output.containment_times}
         """
 
 
 rule fmh_omega_summary:
     input:
-        f"{base}/dataset.csv"
+        data = f"{base}/{results_folder}/dataset.csv"
     output:
-        f"{base}/fmh_omega_times.csv"
+        out_fmh_summary = f"{base}/{results_folder}/fmh_omega_times.csv"
     params:
         samples = samples,
-        base = base
+        base = base,
+        k = ksize,
+        results = results_folder
     threads: 4
     shell:
         """
-        python3 scripts/fmh.py
+        python3 scripts/fmh.py \
+        --base {params.base} --samples {params.samples} \
+        --dataset_csv {input.data} --ksize {params.k} \
+        --results_dir {params.results} \
+        --out_log {output.out_fmh_summary}
         """
 
 
 rule merge_timings:
     input:
-        sig = f"{base}/signature_generation_times.csv",
-        cont = f"{base}/containment_times.csv",
-        fmh = f"{base}/fmh_omega_times.csv",
+        sig = f"{base}/{results_folder}/signature_generation_times.csv",
+        cont = f"{base}/{results_folder}/containment_times.csv",
+        fmh = f"{base}/{results_folder}/fmh_omega_times.csv",
     output:
-        merged = f"{base}/all_timings_merged.csv"
+        merged = f"{base}/{results_folder}/all_timings_merged.csv"
     params:
-        base_dir = base
+        base_dir = f"{base}/{results_folder}"
     shell:
         """
         python3 scripts/merge_timings.py --base {params.base_dir}
