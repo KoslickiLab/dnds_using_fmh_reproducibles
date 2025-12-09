@@ -45,6 +45,8 @@ def main():
             # Extract WP_ID from filename
             # e.g., 'sample5_cds_WP_000040453.1_dna.sig' -> 'WP_000040453.1'
             wp_id = os.path.basename(dna_ref).split("_cds_")[1].split("_dna")[0]
+            print(dna_ref)
+            print(wp_id)
 
             # Loop over DNA and protein
             for molecule, ref in [("dna", dna_ref), ("protein", prot_ref)]:
@@ -69,6 +71,7 @@ def main():
 
     # Save all timing records to the consolidated CSV
     df = pd.DataFrame(all_records)
+    print(df)
     df.to_csv(args.outcsv, index=False)
     print(f"✅ All comparison timings saved to {args.outcsv}")
 
