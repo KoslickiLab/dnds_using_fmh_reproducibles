@@ -1,4 +1,5 @@
 base: /data/jzr5814/dnds_scalability_comparison
+results_folder: fmh_dnds_k21_samples_5-1000
 samples: [5, 10, 100, 1000]
-replicates: 10
+ksize: 21
 translator: transeq   # or your custom translator program
