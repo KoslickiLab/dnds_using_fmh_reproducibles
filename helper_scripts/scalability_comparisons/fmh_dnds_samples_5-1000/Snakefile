@@ -35,7 +35,8 @@ rule sketch:
     input:
         dataset = f"{base}/{results_folder}/dataset.csv"  # <-- use the path produced by translate_and_generate_csv
     output:
-        touch(f"{base}/{results_folder}/sketches_done.txt")  # global done file
+        sig_times = f"{base}/{results_folder}/signature_generation_times.csv"
+        #touch(f"{base}/{results_folder}/sketches_done.txt")  # global done file
     params:
         k = {ksize}
     shell:
