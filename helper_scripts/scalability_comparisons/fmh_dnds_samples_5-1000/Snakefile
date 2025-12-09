@@ -44,7 +44,8 @@ rule sketch:
 
 rule compare_containments:
     input:
-        sig_dir = os.path.join(base, results_folder)  # all sample_X folders live here
+        sig_dir = os.path.join(base, results_folder),  # all sample_X folders live here
+        sig_times = os.path.join(base, results_folder, "signature_generation_times.csv")  # <-- dependency
     output:
         containment_times = os.path.join(base, results_folder, "containment_times.csv")
     params:
@@ -60,7 +61,9 @@ rule compare_containments:
 
 rule fmh_omega_summary:
     input:
-        data = f"{base}/{results_folder}/dataset.csv"
+        data = f"{base}/{results_folder}/dataset.csv",
+        sig_times = f"{base}/{results_folder}/signature_generation_times.csv",
+        containment_times = os.path.join(base, results_folder, "containment_times.csv")
     output:
         out_fmh_summary = f"{base}/{results_folder}/fmh_omega_times.csv"
     params:
@@ -83,7 +86,7 @@ rule merge_timings:
     input:
         sig = f"{base}/{results_folder}/signature_generation_times.csv",
         cont = f"{base}/{results_folder}/containment_times.csv",
-        fmh = f"{base}/{results_folder}/fmh_omega_times.csv",
+        fmh = f"{base}/{results_folder}/fmh_omega_times.csv"
     output:
         merged = f"{base}/{results_folder}/all_timings_merged.csv"
     params:
