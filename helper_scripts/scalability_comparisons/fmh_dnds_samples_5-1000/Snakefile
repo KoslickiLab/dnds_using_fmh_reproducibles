@@ -75,7 +75,7 @@ rule fmh_omega_summary:
     shell:
         """
         python3 scripts/fmh.py \
-        --base {params.base} --samples {params.samples} \
+        --base {params.base} \
         --dataset_csv {input.data} --ksize {params.k} \
         --results_dir {params.results} \
         --out_log {output.out_fmh_summary}
