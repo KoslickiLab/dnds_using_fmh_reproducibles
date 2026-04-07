@@ -27,7 +27,7 @@ ng86_dnds_negative_files = '/data/jzr5814/sourmash_dnds_estimation/tests/test/re
 
 # SUBPLOT
 fig, axes = plt.subplots(1, 3,sharex=True, sharey=True, figsize=(6, 2))
-fs=10
+fs=8.5
 fs_label=fs
 
 # AXES
@@ -37,10 +37,10 @@ for i in range(3):
 
 for i in range(3):
 
-        axes[i].set_yticks([0,1,2,5,8])
-        axes[i].set_ylim(0,8)
-        axes[i].set_xlim(0,8)  
-        axes[i].set_xticks([0,1,2,5,8])
+        axes[i].set_yticks([0,1,2,5,10])
+        axes[i].set_ylim(0,11)
+        axes[i].set_xlim(0,11)  
+        axes[i].set_xticks([0,1,2,5,10])
         axes[i].tick_params(axis='both', which='major', labelsize=fs-2)
         axes[i].set_xlabel('FMH dN/dS estimates',fontsize=fs)
 
@@ -82,9 +82,9 @@ for k in range(3):
 
         tmp = [negative_df['Ka/Ks'].min(), positive_df['Ka/Ks'].max()]
         axes[k].plot([tmp[0], tmp[1]], [tmp[0], tmp[1]], linestyle='--', color='grey')
-        axes[k].text(3, 7.3, f'Pearson R: {round(combined_corr,3)}',fontsize=fs-2)
+        axes[k].text(4, 10, f'Pearson R: {round(combined_corr,3)}',fontsize=fs-2)
         
 
 plt.subplots_adjust(right=1)  # Increase right margin
 plt.subplots_adjust(wspace=0.1, hspace=0.15)
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/real_gene_sequence_selection_simulation/figure2b.png",bbox_inches='tight') 
+fig.figure.savefig(f"/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2b.pdf",bbox_inches='tight') 
