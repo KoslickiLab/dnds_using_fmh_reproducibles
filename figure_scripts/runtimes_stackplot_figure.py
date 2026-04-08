@@ -7,6 +7,16 @@ import matplotlib.patches as mpatches
 # Set font style
 rcParams['font.family'] = 'serif'
 
+fs=16
+rcParams.update({
+    'font.size': fs,          # base size
+    'axes.labelsize': fs,     # axis labels
+    'xtick.labelsize': fs-2,
+    'ytick.labelsize': fs-2,
+    'legend.fontsize': fs-2,
+    'legend.title_fontsize': fs-2
+})
+
 # Load the Excel file
 file_path = "../data/log_analysis.xlsx"
 xls = pd.ExcelFile(file_path)
@@ -64,47 +74,33 @@ pivot_df = df_cleaned.pivot_table(
 ksizes = sorted(df_cleaned["ksize"].unique())
 thresholds = sorted(df_cleaned["t_threshold"].unique())
 
-# Color map and opacity functions
-selected_colors = [
-    plt.get_cmap("viridis")(0.5),
-    plt.get_cmap("viridis")(0.7),
-    plt.get_cmap("viridis")(0.9)
-]
-color_map = lambda i: selected_colors[i % len(selected_colors)]
-norm_opacity = plt.Normalize(min(thresholds), max(thresholds))
-
-def adjust_opacity(value, min_opacity=0.3, max_opacity=1.0):
-    return max(min_opacity, norm_opacity(value) * (max_opacity - min_opacity) + min_opacity)
-
-# Hatch patterns for each step
-hatch_patterns = ["////", "\\\\\\\\", "....", "xxxx"]
-step_hatch = {step: hatch_patterns[i % len(hatch_patterns)] for i, step in enumerate(step_order)}
+step_colors = {
+    "DNA & Protein Sketches": "#E69F00",  # orange
+    "DNA Containment": "#56B4E9",         # sky blue
+    "Protein Containment": "#009E73",     # bluish green
+    "FracMinHash dN/dS": "#D55E00",       # vermillion
+}
 
 # Plot
 fig, ax = plt.subplots(figsize=(14, 8))
 bar_positions = np.arange(len(pivot_df))
+
 bottom = np.zeros(len(pivot_df))
 
-for idx, ((ksize, t), row) in enumerate(pivot_df.iterrows()):
-    color_idx = ksizes.index(ksize)
-    base_color = np.array(color_map(color_idx))
-    alpha = adjust_opacity(t)
-    rgba_color = (*base_color[:3], alpha)
+for step in step_order:
+    heights = pivot_df[step].values / 3600  # convert to hours
 
-    for step in step_order:
-        height = row[step] / 3600  # Convert to hours
-        if height > 0:
-            # Draw the bar with the fill color and desired opacity
-            ax.bar(
-                idx, height, bottom=bottom[idx],
-                color=rgba_color, edgecolor='none'
-            )
-            # Draw the hatch overlay with no fill (ensuring full hatch opacity)
-            ax.bar(
-                idx, height, bottom=bottom[idx],
-                color='none', edgecolor='black', hatch=step_hatch[step]
-            )
-        bottom[idx] += height
+    ax.bar(
+        bar_positions,
+        heights,
+        bottom=bottom,
+        color=step_colors[step],
+        edgecolor='black',
+        label=step,
+        linewidth=0.5
+    )
+
+    bottom += heights
 
 
 # Format x-axis
@@ -114,16 +110,11 @@ ax.set_xticklabels(x_labels, rotation=45, ha="right")
 
 # Labels and title
 ax.set_ylabel("Runtime (Hours)")
-ax.set_title("FMH dN/dS Runtimes")
 
-# Legend for hatch patterns
-legend_handles = [
-    mpatches.Patch(facecolor='white', edgecolor='black', hatch=step_hatch[step], label=step)
-    for step in step_order
-]
-ax.legend(handles=legend_handles, title="Step", loc="upper left", bbox_to_anchor=(1, 1))
+
+ax.legend(title="Step", loc="upper left", bbox_to_anchor=(1, 1))
 
 plt.tight_layout()
 
 # Save the figure
-fig.savefig("runtimes.pdf") 
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/runtimes_update.png") 

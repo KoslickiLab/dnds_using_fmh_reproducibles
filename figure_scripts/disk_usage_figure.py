@@ -7,6 +7,16 @@ from matplotlib import rcParams
 # Set font to Times New Roman
 rcParams['font.family'] = 'serif'
 
+fs=12
+rcParams.update({
+    'font.size': fs,          # base size
+    'axes.labelsize': fs,     # axis labels
+    'xtick.labelsize': fs-2,
+    'ytick.labelsize': fs-2,
+    'legend.fontsize': fs-2,
+    'legend.title_fontsize': fs-2
+})
+
 # Load the Excel file
 file_path = "../data/log_analysis.xlsx"
 xls = pd.ExcelFile(file_path)
@@ -60,19 +70,25 @@ ksizes = sorted(df_cleaned["ksize"].unique())
 thresholds = sorted(df_cleaned["t_threshold"].unique())
 
 # Define colormap and normalization
-cmap = plt.get_cmap("viridis", len(ksizes))
-selected_colors = [plt.get_cmap("viridis")(0.5), plt.get_cmap("viridis")(0.7), plt.get_cmap("viridis")(0.9)]
-cmap = lambda i: selected_colors[i % len(selected_colors)]
+#cmap = plt.get_cmap("viridis", len(ksizes))
+#selected_colors = [plt.get_cmap("viridis")(0.5), plt.get_cmap("viridis")(0.7), plt.get_cmap("viridis")(0.9)]
+#cmap = lambda i: selected_colors[i % len(selected_colors)]
 
-norm_opacity = plt.Normalize(min(thresholds), max(thresholds))
+#norm_opacity = plt.Normalize(min(thresholds), max(thresholds))
 
-def adjust_opacity(value, min_opacity=0.3, max_opacity=1.0):
-    """Adjusts opacity to ensure values are visible."""
-    return max(min_opacity, norm_opacity(value) * (max_opacity - min_opacity) + min_opacity)
+#def adjust_opacity(value, min_opacity=0.3, max_opacity=1.0):
+#    """Adjusts opacity to ensure values are visible."""
+#    return max(min_opacity, norm_opacity(value) * (max_opacity - min_opacity) + min_opacity)
 
 bar_width = 0.2
 spacing = 1.0  # Further increase spacing between categories
 indices = np.arange(len(steps)) * (bar_width * len(ksizes) * len(thresholds) + spacing)
+
+colors = [ "#E69F00", "#56B4E9", "#009E73",  "#D55E00"]
+cmap = lambda i: colors[i % len(colors)]
+
+hatches = ["", "//", "xx", "..", "++"]  # for thresholds
+
 
 # Create first bar plot (Disk Usage)
 fig, ax = plt.subplots(figsize=(12, 6))
@@ -82,12 +98,19 @@ for i, ksize in enumerate(ksizes):
     for j, t in enumerate(thresholds):
         subset = df_cleaned[(df_cleaned["ksize"] == ksize) & (df_cleaned["t_threshold"] == t)]
         positions = indices + (i * len(thresholds) + j) * bar_width
+        
         label = f"k={ksize}, t={t}"
-        opacity = adjust_opacity(t)
+        
         ax.bar(
-            positions, np.log10(subset["Disk Usage (MB)"] + 1), width=bar_width,
-            color=cmap(i), alpha=opacity, label=label if label not in legend_labels else ""
+            positions,
+            np.log10(subset["Disk Usage (MB)"] + 1),
+            width=bar_width,
+            color=cmap(i),
+            hatch=hatches[j % len(hatches)],
+            edgecolor="black",   # improves visibility
+            label=label if label not in legend_labels else ""
         )
+        
         legend_labels[label] = True
 
 # Add extended x-ticks to encompass the category
@@ -97,10 +120,10 @@ ax.set_xticks(indices + (len(ksizes) * len(thresholds) * bar_width) / 2, minor=T
 ax.set_xticklabels(steps, minor=True, rotation=360, ha="center" )
 ax.tick_params(axis='x', which='major', length=20)
 ax.set_ylabel("Disk Usage Log10(MB)")
-ax.set_title("FMH dN/dS Disk Usage")
+#ax.set_title("FMH dN/dS Disk Usage")
 ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
 plt.tight_layout()
 
 
 # Save the figure
-fig.savefig("disk_usage.pdf") 
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/disk_usage.png") 
