@@ -36,28 +36,27 @@ paper_df = paper_df[paper_df.Genus != 'Nonomuraea'].set_index('Genus')
 
 # Create subplots
 scale_factor=2
-fig, axes = plt.subplots(2, 2,sharey=True,sharex=True, figsize=(8, 6))
-fs=10
-fs_labels=fs-3
+fig, axes = plt.subplots(1, 4,sharey=True,sharex=True, figsize=(16, 4))
+fs=15
+fs_labels=fs-5
 
-for i in range(2):
-    for j in range(2):
-        axes[i,j].set_xlim(-0.2,1.1)
-        axes[i,j].axvline(x=1, color='black', linestyle='--', linewidth=1)
-        axes[i,j].grid(False)
-        axes[i,j].set_xticks([0, 1])
-        axes[i,j].set_xlabel('FMH dN/dS estimates',fontsize=fs)
+for i in range(4):
+    axes[i].set_xlim(-0.05,1.05)
+    axes[i].axvline(x=1, color='black', linestyle='--', linewidth=1)
+    axes[i].grid(False)
+    axes[i].set_xticks([0, 1])
+    axes[i].set_xlabel('FMH dN/dS estimates',fontsize=fs)
 
-axes[0,0].set_title("t=0.02,k=7",fontsize=fs)
-axes[0,1].set_title("t=0.05,k=7",fontsize=fs)
-axes[1,0].set_title("t=0.1,k=7",fontsize=fs)
-axes[1,1].set_title("t=0.2,k=7",fontsize=fs)
+axes[0].set_title("t=0.02,k=7",fontsize=fs)
+axes[1].set_title("t=0.05,k=7",fontsize=fs)
+axes[2].set_title("t=0.1,k=7",fontsize=fs)
+axes[3].set_title("t=0.2,k=7",fontsize=fs)
 
 # Create scatter plot for containment threshold 0.02
 results = pd.concat([data_df1,paper_df],axis=1).dropna().reset_index()
-axes[0,0].scatter(results['median1'], results['Genome_Size_Mbp'], color='lightgrey', 
+axes[0].scatter(results['median1'], results['Genome_Size_Mbp'], color='lightgrey', 
                 edgecolor='lightgrey')  # Adjust bins as needed
-axes[0,0].set_ylabel('Genome Size (Mbp)',fontsize=fs)
+axes[0].set_ylabel('Genome Size (Mbp)',fontsize=fs)
 
 labels=['Buchnera','Blattabacterium','Myxococcus','Actinomyces','Prochlorococcus','Pelagibacter']
 
@@ -75,18 +74,18 @@ for genus in labels:
         value_col1 = None
     
     #highlight genus of interest
-    axes[0,0].scatter(value_col3, value_col1, color='blue',label=genus)
+    axes[0].scatter(value_col3, value_col1, color='blue',label=genus)
     if value_col1 != None and value_col3 != None:
         if genus == "Blattabacterium" or genus == "Pelagibacter":
-            axes[0,0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
+            axes[0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
         elif genus == "Buchnera":
-            axes[0,0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(-5,-3), ha='right',fontsize=fs_labels)
+            axes[0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(-5,-3), ha='right',fontsize=fs_labels)
         else:
-            axes[0,0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
+            axes[0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
 
 # Create scatter plot for containment threshold 0.05
 results = pd.concat([data_df2,paper_df],axis=1).dropna().reset_index()
-axes[0,1].scatter(results['median2'], results['Genome_Size_Mbp'], color='lightgrey', 
+axes[1].scatter(results['median2'], results['Genome_Size_Mbp'], color='lightgrey', 
                 edgecolor='lightgrey')  # Adjust bins as needed
 
 for genus in labels:
@@ -103,75 +102,69 @@ for genus in labels:
         value_col1 = None
 
     #highlight genus of interest
-    axes[0,1].scatter(value_col3, value_col1, color='blue')
+    axes[1].scatter(value_col3, value_col1, color='blue')
     if value_col1 != None and value_col3 != None:
         if genus == "Blattabacterium":
-            axes[0,1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
+            axes[1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
         elif genus == "Buchnera":
-            axes[0,1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(-5,-3), ha='right',fontsize=fs_labels)
+            axes[1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(-5,-3), ha='right',fontsize=fs_labels)
         else:
-            axes[0,1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
+            axes[1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
 
 # Create scatter plot for containment threshold 0.1
 results = pd.concat([data_df3,paper_df],axis=1).dropna().reset_index()
-axes[1,0].scatter(results['median3'], results['Genome_Size_Mbp'], color='lightgrey', 
+axes[2].scatter(results['median3'], results['Genome_Size_Mbp'], color='lightgrey', 
                 edgecolor='lightgrey')  # Adjust bins as needed
-axes[1,0].set_ylabel('Genome Size (Mbp)',fontsize=fs)
+#axes[2].set_ylabel('Genome Size (Mbp)',fontsize=fs)
 
 for genus in labels:
     coordinates_col3 = results.loc[results['Genus'] == genus, f'median3']
-    print("################################")
-    print("Median dN/dS", genus, coordinates_col3)
     if not coordinates_col3.empty:
         value_col3 = coordinates_col3.values[0]
     if coordinates_col3.empty:
         value_col3=None
 
     coordinates_col1 = results.loc[results['Genus'] == genus, 'Genome_Size_Mbp']
-    print("Genome size", genus, coordinates_col1)
     if not coordinates_col1.empty:
         value_col1 = coordinates_col1.values[0]
     if coordinates_col1.empty:
         value_col1=None
     
     #highlight genus of interest
-    axes[1,0].scatter(value_col3, value_col1, color='blue')
+    axes[2].scatter(value_col3, value_col1, color='blue')
     if value_col1 != None and value_col3 != None:
         if genus == "Blattabacterium":
-            axes[1,0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
+            axes[2].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
         else:
-            axes[1,0].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
+            axes[2].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
 
 # Create scatter plot for containment threshold 0.2
 results = pd.concat([data_df4,paper_df],axis=1).dropna().reset_index()
-axes[1,1].scatter(results['median3'], results['Genome_Size_Mbp'], color='lightgrey', 
+axes[3].scatter(results['median3'], results['Genome_Size_Mbp'], color='lightgrey', 
                 edgecolor='lightgrey')  # Adjust bins as needed
 
 for genus in labels:
     coordinates_col3 = results.loc[results['Genus'] == genus, f'median3']
-    print("################################")
-    print("Median dN/dS", genus, coordinates_col3)
     if not coordinates_col3.empty:
         value_col3 = coordinates_col3.values[0]
     if coordinates_col3.empty:
         value_col3=None
 
     coordinates_col1 = results.loc[results['Genus'] == genus, 'Genome_Size_Mbp']
-    print("Genome size", genus, coordinates_col1)
     if not coordinates_col1.empty:
         value_col1 = coordinates_col1.values[0]
     if coordinates_col1.empty:
         value_col1=None
     
     #highlight genus of interest
-    axes[1,1].scatter(value_col3, value_col1, color='blue')
+    axes[3].scatter(value_col3, value_col1, color='blue')
     if value_col1 != None and value_col3 != None:
         if genus == "Blattabacterium":
-            axes[1,1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
+            axes[3].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels)
         else:
-            axes[1,1].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
+            axes[3].annotate(genus, (value_col3, value_col1), textcoords="offset points", xytext=(5,-3), ha='left',fontsize=fs_labels) 
 
 
 plt.subplots_adjust(wspace=0.01)
 plt.tight_layout()
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/figure3b.pdf",bbox_inches='tight') 
+fig.figure.savefig(f"/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure4b.png",bbox_inches='tight') 

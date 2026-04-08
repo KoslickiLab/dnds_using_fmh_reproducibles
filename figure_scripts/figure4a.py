@@ -28,7 +28,7 @@ data_k7_t020=f'/data/jzr5814/sourmash_dnds_estimation/tests/results/genomic_dnds
 
 paper='/data/jzr5814/sourmash_dnds_estimation/tests/data/GTDB/martinez-gutierrez_2022paper/pgen.1010220.s002.tsv'
 paper_df=pd.read_csv(f'{paper}',sep='\t')[['Genome','Genus','Mediandnds','Meandnds']].set_index('Genome')
-tmp = [min(paper_df['Mediandnds']), max(paper_df['Mediandnds'])]
+#tmp = [min(paper_df['Mediandnds']), max(paper_df['Mediandnds'])]
 
 data={"data_k7_t0.02":{"filename":data_k7_t002},
       "data_k7_t0.05":{"filename":data_k7_t005},
@@ -63,9 +63,9 @@ for t in range(len(thresholds)):
 
 for t in range(len(thresholds)):
     for x in range(3):
-        axes[t].plot(tmp, tmp, linestyle='--', color='black', alpha=1)
-        axes[t].set_xlim(-0.04,0.5)
-        axes[t].set_ylim(-0.04,0.5)
+        #axes[t].plot(tmp, tmp, linestyle='--', color='black', alpha=1)
+        axes[t].set_xlim(-0.04,0.54)
+        axes[t].set_ylim(-0.01,0.51)
         axes[t].set_xticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5])
         axes[t].set_yticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5])
         axes[t].tick_params(axis='x', labelsize=fs-2)  
@@ -73,10 +73,10 @@ for t in range(len(thresholds)):
         axes[t].set_title(f"t={thresholds[t]},k=7",fontsize=fs)
         correlation = data[f"data_k7_t{thresholds[t]}"]['median_dnds_r']
         axes[t].text(0.2, 0.4, f'Pearson R: {round(correlation,3)}', fontsize = fs-2)
-        axes[t].text(0.21, 0.21, f'x=y', fontsize = fs-2)
+        #axes[t].text(0.21, 0.21, f'x=y', fontsize = fs-2)
 
 axes[0].set_ylabel('CodeML dN/dS estimates',fontsize=fs)
 
 # Adjust layout
 plt.tight_layout()
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/figure3a.pdf",bbox_inches='tight') 
+fig.figure.savefig(f"/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure4a.pdf",bbox_inches='tight') 
