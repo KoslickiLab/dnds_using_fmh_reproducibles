@@ -107,10 +107,18 @@ def plot_panelA(axes, data, paper_df):
 # -----------------------------
 def plot_panelB(axes, data, paper_df):
     fs = 14
-    fs_labels = fs - 4
+    fs_labels = fs - 5
 
     highlight = ['Buchnera','Blattabacterium','Myxococcus',
                  'Actinomyces','Prochlorococcus','Pelagibacter']
+    
+    # define custom offsets and alignment
+    label_offsets = {
+        "Blattabacterium": ((5, -3), 'left'),
+        "Pelagibacter": ((5, -3), 'left'),
+        "Buchnera": ((-5, -3), 'right'),
+        # default handled below
+    }
 
     for i, t in enumerate(thresholds):
         results = pd.concat([data[t], paper_df], axis=1).dropna().reset_index()
@@ -120,11 +128,13 @@ def plot_panelB(axes, data, paper_df):
         axes[i].scatter(
             results[median_col],
             results['Genome_Size_Mbp'],
-            color='lightgrey',
-            edgecolor='lightgrey'
+            color='blue',
+            edgecolor='blue',
+            alpha=0.05,
+            linewidths=0
         )
 
-        axes[i].set_xlim(-0.05, 1.05)
+        axes[i].set_xlim(-0.08, 1.08)
         axes[i].axvline(x=1, linestyle='--', color='black')
         axes[i].set_title(f"t={t}, k={ksize}", fontsize=fs)
         axes[i].set_xlabel('FMH dN/dS estimates', fontsize=fs)
@@ -140,10 +150,19 @@ def plot_panelB(axes, data, paper_df):
                 y = row['Genome_Size_Mbp'].values[0]
 
                 axes[i].scatter(x, y, color='blue')
-                axes[i].annotate(genus, (x, y),
-                                 xytext=(5, -3),
-                                 textcoords='offset points',
-                                 fontsize=fs_labels)
+
+                # get custom offset or default
+                (dx, dy), ha = label_offsets.get(genus, ((5, -3), 'left'))
+
+                axes[i].annotate(
+                    genus,
+                    (x, y),
+                    xytext=(dx, dy),
+                    textcoords='offset points',
+                    ha=ha,
+                    fontsize=fs_labels
+                )
+
 
     axes[0].set_ylabel('Genome Size (Mbp)', fontsize=fs)
 
