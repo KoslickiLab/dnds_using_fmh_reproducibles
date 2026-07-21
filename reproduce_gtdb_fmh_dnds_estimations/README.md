@@ -9,7 +9,7 @@ A `dataset.csv` file:
 
 This file includes the file pathways of genome and protein fasta files for each genome.
 
-Your dataset file should look like this:
+An example of a `dataset.csv` file:
 
 ```
 name,genome_filename,protein_filename
