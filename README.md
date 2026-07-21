@@ -87,7 +87,11 @@ While using a scale factor of 1, we produce FracMinHash dN/dS estimation employi
 
 ## FracMinHash dN/dS estimations
 
+Random
 
+Real
+
+GTDB
 
 ## Traditional dN/dS model estimations
 
@@ -105,37 +109,24 @@ These are the scripts to generate the main figures of our manuscript.
 
 Figure 2A represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, on random sequences. Additionally, the figure compares varying k-sizes and sequence lengths. Please execute the following command to produce the figure for random sequence simulations.
 
-```
-python figure_scripts/figure2a.py
-```
-
-![Figure 2A](manuscript_figures/png/figure2a.png)
-
-Similar to Figure 2A, Figure 3b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for the real sequence simulations.
+Similar to Figure 2A, Figure 2b represents how well FracMinHash dN/dS estimations are being made when compared to the traditional dN/dS model, NG86, but this time we run simulations on a real sequence. The figure also compares varying k-sizes. Please execute the following command to produce the figure for the real sequence simulations.
 
 ```
-python figure_scripts/figure2b.py
+python figure_scripts/figure2.py
 ```
 
-![Figure 2B](manuscript_figures/png/figure2b.png)
+![Figure 2](manuscript_figures/updated_pdf/figure2.png)
 
-### Figure 3: Disk usage and runtimes
+### Figure 3: Disk usage
 
-Figure 3A represents disk usage when running FracMinHash dN/dS on varying k-sizes and scale factors at different steps.
+Figure 3 represents disk usage when running FracMinHash dN/dS on varying k-sizes and scale factors at different steps.
 
 ```
 python figure_scripts/disk_usage_figure.py
 ```
 
-![Figure 3A](manuscript_figures/png/disk_usage.png)
+![Figure 3](manuscript_figures/updated_pdf/disk_usage.png)
 
-Figure 3B represents runtimes when running FracMinHash dN/dS on varying k-sizes and scale factors. Additionally, the time it takes to run at each step and the program in total is also shown.
-
-```
-python figure_scripts/runtimes_stackplot_figure.py
-```
-
-![Figure 3B](manuscript_figures/png/runtimes.png)
 
 ### Figure 4: Comparing FracMinHash dN/dS results to published data
 
@@ -143,21 +134,14 @@ Ensure to have this dataset in your working directory!
 
 To compare FracMinHash dN/dS estimaions of GTDB representative genomes to a real world research question, check back to the [Martinez-Gutierrez,2022](#martinez-gutierrez-2022-dataset) section and download the Martinez-Gutierrez (2022) dataset!
 
-Figure 4A compares estimations made by FracMinHash dN/dS to an implemented maximum likelihood model, CodeML. 
+Figure 5A compares estimations made by FracMinHash dN/dS to an implemented maximum likelihood model, CodeML. Figure 5B evaluates the interpretations made by FracMinHash dN/dS when compared to genus genome size.
+
 
 ```
-python figure_scripts/figure4a.py 
+python figure_scripts/figure4_now5.py 
 ```
 
-![Figure 4A](manuscript_figures/png/figure4a.png)
-
-Figure 4B evaluates the interpretations made by FracMinHash dN/dS when compared to genus genome size.
-
-```
-python figure_scripts/figure4b.py 
-```
-
-![Figure 4B](manuscript_figures/png/figure4b.png)
+![Figure 4](manuscript_figures/updated_pdf/figure4_now5.png)
 
 
 ### Figure 5: Identifying regions under selection between Methanobrevibacter sp. and Candidatus Saccharibacteria
@@ -168,22 +152,23 @@ To reproduce Figure 5A, the hierarchical edge bundling figure, please refer to t
 
 ![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
-Figure 5B represents the identification of orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. 
+## Supplemental figures
+
+Figure S9 represents the identification of orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. 
 
 ```
 python figure_scripts/figure5b.py
 ```
 
-![Figure 5B: A vs B genomes](manuscript_figures/png/figure5b.png)
+![Figure S9: A vs B genomes](manuscript_figures/png/figure5b.png)
 
-Figure 5C shows results when performing traditional dN/dS analyses to study selection across evaluated orthologs.
+Figure S10 shows results when performing traditional dN/dS analyses to study selection across evaluated orthologs.
 
-Please visit [instructions to Figure 5c](figure_scripts/figure5c/) for reproducibility.
+Please visit [instructions to Figure S10](figure_scripts/figure5c/) for reproducibility.
 
-![Figure 5C: kaks values for orthologs](manuscript_figures/png/figure5c.png)
+![Figure S10: kaks values for orthologs](manuscript_figures/png/figure5c.png)
 
-## Supplemental figures
-
+<!-->
 Figure 6:
 
     python helper_scripts/mutation_simulation_on_random_data/histogram_kaks_test.py
@@ -191,6 +176,7 @@ Figure 6:
 Figure 7:
 
     python helper_scripts/mutation_simulations_on_real_data/histogram_different_scales_ecoli.py
+-->
 
 # References
 
