@@ -18,6 +18,8 @@ GB_GCA_000016605.1,/GTDB/protein_fna_reps/archaea/GB_GCA_000016605.1_protein.fna
 GB_GCA_000145985.1,/GTDB/protein_fna_reps/archaea/GB_GCA_000145985.1_protein.fna.gz,/GTDB/protein_faa_reps/archaea/GB_GCA_000145985.1_protein.faa.gz
 ```
 
+You can use `bash generate_dataset_file.sh` to produce your own file.
+
 FMH Omega Program available on your environment:
 
 Please refer to our FMH Omega repo here: [FMH Omega](https://github.com/KoslickiLab/dnds-using-fmh/tree/dev_jzr2/src)
