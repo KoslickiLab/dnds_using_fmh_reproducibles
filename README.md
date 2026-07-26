@@ -52,7 +52,7 @@ bash data_download.sh
 
 ## Simulated data
 
-You can download our simulated dataset for this manuscript here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/tree/main/helper_scripts/simulate/README.md)
+You can download our simulated dataset for this manuscript here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/tree/main/helper_scripts/simulate)
 
 ## Genome Taxonomy Database download
 
