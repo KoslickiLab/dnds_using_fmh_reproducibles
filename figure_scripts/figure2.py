@@ -181,6 +181,20 @@ axes_B = [ax_master_B if j == 0
 # This "holds" the 4th column open so plots 0, 1, and 2 don't stretch to fill the row
 ghost_ax = fig.add_subplot(gs[4, 3])
 ghost_ax.set_visible(False)
+
+titles_A = [
+    r"$k_{\mathrm{aa}} = 5$",
+    r"$k_{\mathrm{aa}} = 7$",
+    r"$k_{\mathrm{aa}} = 15$",
+    r"$k_{\mathrm{aa}} = 21$"
+]
+
+titles_B = [
+    r"$k_{\mathrm{aa}} = 7$",
+    r"$k_{\mathrm{aa}} = 9$",
+    r"$k_{\mathrm{aa}} = 11$"
+]
+
 # =========================
 # -------- PANEL A --------
 # =========================
@@ -188,6 +202,10 @@ ghost_ax.set_visible(False)
 for i in range(3):        # i = row (0, 1, 2)
     for j in range(4):    # j = col (0, 1, 2, 3)
         ax = axes_A[i][j]
+
+        # Add column titles to the first row only
+        if i == 0:
+            ax.set_title(titles_A[j], fontsize=14, pad=10)
 
         # Load data (using your existing logic)
         fmh_pos = load_fmh(fmh_dnds_positive_files[j][i], 'ref_gene')
@@ -223,6 +241,8 @@ for i in range(3):        # i = row (0, 1, 2)
 for k in range(3):
     ax = axes_B[k]
 
+    ax.set_title(titles_B[k], fontsize=14, pad=10)
+
     # Load data (using your existing logic)
     fmh_pos = load_fmh(fmh_dnds_positive_files_B[k], 'positive_0.01_ref', upper=8)
     fmh_neg = load_fmh(fmh_dnds_negative_files_B[k], 'negative_0.01_ref', upper=8)
@@ -257,5 +277,5 @@ plt.subplots_adjust(left=0.08, right=0.98, top=0.95, bottom=0.08)
 fig.text(0.02, 0.95, 'A', fontsize=20, fontweight='bold')
 fig.text(0.02, 0.26, 'B', fontsize=20, fontweight='bold')
 
-fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.pdf",
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.png",
             bbox_inches='tight')
