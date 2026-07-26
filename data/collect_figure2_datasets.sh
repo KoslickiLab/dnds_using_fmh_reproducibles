@@ -1,75 +1,75 @@
 #!/bin/bash
 set -euo pipefail
 
-mkdir -p figure2datasets
+mkdir -p figure2_datasets
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k5/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_negative_5001bp.csv
+   figure2_datasets/fmh_omega_5_negative_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/5/negative/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_negative_10002bp.csv
+   figure2_datasets/fmh_omega_5_negative_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k5/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_negative_20001bp.csv
+   figure2_datasets/fmh_omega_5_negative_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/fmh_omega_7.csv \
-   figure2datasets/fmh_omega_7_negative_5001bp.csv
+   figure2_datasets/fmh_omega_7_negative_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/fmh_dnds_sketch_protein/negative_selection_redo_sketch_protein_using_faa/dnds.k7.approximations_included.csv \
-   figure2datasets/fmh_omega_7_negative_10002bp.csv
+   figure2_datasets/fmh_omega_7_negative_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/fmh_omega_7.csv \
-   figure2datasets/fmh_omega_7_negative_20001bp.csv
+   figure2_datasets/fmh_omega_7_negative_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k15/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_negative_5001bp.csv
+   figure2_datasets/fmh_omega_15_negative_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/15/negative/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_negative_10002bp.csv
+   figure2_datasets/fmh_omega_15_negative_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k15/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_negative_20001bp.csv
+   figure2_datasets/fmh_omega_15_negative_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k21/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_negative_5001bp.csv
+   figure2_datasets/fmh_omega_21_negative_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/21/negative/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_negative_10002bp.csv
+   figure2_datasets/fmh_omega_21_negative_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k21/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_negative_20001bp.csv
+   figure2_datasets/fmh_omega_21_negative_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k5/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_positive_5001bp.csv
+   figure2_datasets/fmh_omega_5_positive_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/5/positive/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_positive_10002bp.csv
+   figure2_datasets/fmh_omega_5_positive_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k5/fmh_omega_5.csv \
-   figure2datasets/fmh_omega_5_positive_20001bp.csv
+   figure2_datasets/fmh_omega_5_positive_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/fmh_omega_7.csv \
-   figure2datasets/fmh_omega_7_positive_5001bp.csv
+   figure2_datasets/fmh_omega_7_positive_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/fmh_dnds_sketch_protein/positive_selection_redo_sketch_protein_using_faa/dnds.k7.approximations_included.csv \
-   figure2datasets/fmh_omega_7_positive_10002bp.csv
+   figure2_datasets/fmh_omega_7_positive_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/fmh_omega_7.csv \
-   figure2datasets/fmh_omega_7_positive_20001bp.csv
+   figure2_datasets/fmh_omega_7_positive_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k15/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_positive_5001bp.csv
+   figure2_datasets/fmh_omega_15_positive_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/15/positive/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_positive_10002bp.csv
+   figure2_datasets/fmh_omega_15_positive_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k15/fmh_omega_15.csv \
-   figure2datasets/fmh_omega_15_positive_20001bp.csv
+   figure2_datasets/fmh_omega_15_positive_20001bp.csv
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k21/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_positive_5001bp.csv
+   figure2_datasets/fmh_omega_21_positive_5001bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/21/positive/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_positive_10002bp.csv
+   figure2_datasets/fmh_omega_21_positive_10002bp.csv
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k21/fmh_omega_21.csv \
-   figure2datasets/fmh_omega_21_positive_20001bp.csv
+   figure2_datasets/fmh_omega_21_positive_20001bp.csv
 
 # NG86 datasets (keep original names)
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/kaks_NG/positive_selection_queries_5001_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
 cp /data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/kaks_NG/positive_selection_queries_10002_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/kaks_NG/positive_selection_queries_20001_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
 
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/kaks_NG/negative_selection_queries_5001_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
 cp /data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/kaks_NG/negative_selection_queries_10002_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/kaks_NG/negative_selection_queries_20001_0.01.axt.kaks \
-   figure2datasets/
+   figure2_datasets/
