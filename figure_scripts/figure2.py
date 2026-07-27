@@ -5,7 +5,8 @@ from matplotlib import rcParams
 import matplotlib.pyplot as plt
 
 rcParams['font.family'] = 'serif'
-
+#ylabeling = r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$"
+ylabeling = "FMH Omega"
 # =========================
 # -------- HELPERS --------
 # =========================
@@ -35,7 +36,7 @@ def plot_panel(ax, pos, neg, r, fs=12):
     ax.scatter(pos['dN/dS'], pos['Ka/Ks'], color='darkorange', alpha=0.5)
     tmp = [neg['Ka/Ks'].min(), pos['Ka/Ks'].max()]
     ax.plot(tmp, tmp, linestyle='--', color='grey')
-    ax.text(4, 10, f'Pearson R: {r:.3f}', fontsize=fs-2)
+    ax.text(4, 9, f'Pearson R: {r:.3f}', fontsize=fs-2)
 
 def format_ax(ax, xlim, ylim, fs=12, xlabel=False, ylabel=False):
     ax.set_xlim(xlim)
@@ -44,60 +45,60 @@ def format_ax(ax, xlim, ylim, fs=12, xlabel=False, ylabel=False):
     ax.set_yticks([0,1,2,5,10])
     ax.tick_params(axis='both', labelsize=fs-2)
     if xlabel:
-        ax.set_xlabel('FMH dN/dS estimates', fontsize=fs)
+        ax.set_xlabel(ylabeling, fontsize=fs)
     if ylabel:
-        ax.set_ylabel('NG86 dN/dS estimates', fontsize=fs)
+        ax.set_ylabel('NG86', fontsize=fs)
 
 # =========================
 # -------- FILES A --------
 # =========================
 
 fmh_dnds_k5_negative_files = [
-    "../data/fmh_omega_5_negative_5001bp.csv",
-    "../data/fmh_omega_5_negative_10002bp.csv",
-    "../data/fmh_omega_5_negative_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_negative_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_negative_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_negative_20001bp.csv",
 ]
 
 fmh_dnds_k7_negative_files = [
-    "../data/fmh_omega_7_negative_5001bp.csv",
-    "../data/fmh_omega_7_negative_10002bp.csv",
-    "../data/fmh_omega_7_negative_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_negative_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_negative_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_negative_20001bp.csv",
 ]
 
 fmh_dnds_k15_negative_files = [
-    "../data/fmh_omega_15_negative_5001bp.csv",
-    "../data/fmh_omega_15_negative_10002bp.csv",
-    "../data/fmh_omega_15_negative_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_negative_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_negative_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_negative_20001bp.csv",
 ]
 
 fmh_dnds_k21_negative_files = [
-    "../data/fmh_omega_21_negative_5001bp.csv",
-    "../data/fmh_omega_21_negative_10002bp.csv",
-    "../data/fmh_omega_21_negative_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_negative_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_negative_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_negative_20001bp.csv",
 ]
 
 fmh_dnds_k5_positive_files = [
-    "../data/fmh_omega_5_positive_5001bp.csv",
-    "../data/fmh_omega_5_positive_10002bp.csv",
-    "../data/fmh_omega_5_positive_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_positive_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_positive_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_5_positive_20001bp.csv",
 ]
 
 fmh_dnds_k7_positive_files = [
-    "../data/fmh_omega_7_positive_5001bp.csv",
-    "../data/fmh_omega_7_positive_10002bp.csv",
-    "../data/fmh_omega_7_positive_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_positive_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_positive_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_7_positive_20001bp.csv",
 ]
 
 fmh_dnds_k15_positive_files = [
-    "../data/fmh_omega_15_positive_5001bp.csv",
-    "../data/fmh_omega_15_positive_10002bp.csv",
-    "../data/fmh_omega_15_positive_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_positive_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_positive_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_15_positive_20001bp.csv",
 ]
 
 fmh_dnds_k21_positive_files = [
-    "../data/fmh_omega_21_positive_5001bp.csv",
-    "../data/fmh_omega_21_positive_10002bp.csv",
-    "../data/fmh_omega_21_positive_20001bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_positive_5001bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_positive_10002bp.csv",
+    "../data/figure2_datasets/fmh_omega_21_positive_20001bp.csv",
 ]
 
 fmh_dnds_negative_files = [
@@ -115,15 +116,15 @@ fmh_dnds_positive_files = [
 ]
 
 ng_dnds_positive_files = [
-    "../data/positive_selection_queries_5001_0.01.axt.kaks",
-    "../data/positive_selection_queries_10002_0.01.axt.kaks",
-    "../data/positive_selection_queries_20001_0.01.axt.kaks",
+    "../data/figure2_datasets/positive_selection_queries_5001_0.01.axt.kaks",
+    "../data/figure2_datasets/positive_selection_queries_10002_0.01.axt.kaks",
+    "../data/figure2_datasets/positive_selection_queries_20001_0.01.axt.kaks",
 ]
 
 ng_dnds_negative_files = [
-    "../data/negative_selection_queries_5001_0.01.axt.kaks",
-    "../data/negative_selection_queries_10002_0.01.axt.kaks",
-    "../data/negative_selection_queries_20001_0.01.axt.kaks",
+    "../data/figure2_datasets/negative_selection_queries_5001_0.01.axt.kaks",
+    "../data/figure2_datasets/negative_selection_queries_10002_0.01.axt.kaks",
+    "../data/figure2_datasets/negative_selection_queries_20001_0.01.axt.kaks",
 ]
 
 # =========================
@@ -131,22 +132,19 @@ ng_dnds_negative_files = [
 # =========================
 
 fmh_dnds_positive_files_B = [
-    "../data/fmh_omega_7_positive_LAMA3.csv",
-    "../data/fmh_omega_9_positive_LAMA3.csv",
-    "../data/fmh_omega_11_positive_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_7_positive_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_9_positive_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_11_positive_LAMA3.csv",
 ]
 
 fmh_dnds_negative_files_B = [
-    "../data/fmh_omega_7_negative_LAMA3.csv",
-    "../data/fmh_omega_9_negative_LAMA3.csv",
-    "../data/fmh_omega_11_negative_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_7_negative_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_9_negative_LAMA3.csv",
+    "../data/figure2_datasets/fmh_omega_11_negative_LAMA3.csv",
 ]
 
-ng86_dnds_positive_files = "../data/kaks_sequences_positive_LAMA3.axt.kaks"
-ng86_dnds_negative_files = "../data/kaks_sequences_negative_LAMA3.axt.kaks"
-# =========================
-# -------- FIGURE ---------
-# =========================
+ng86_dnds_positive_files = "../data/figure2_datasets/kaks_sequences_positive_LAMA3.axt.kaks"
+ng86_dnds_negative_files = "../data/figure2_datasets/kaks_sequences_negative_LAMA3.axt.kaks"
 
 # =========================
 # -------- FIGURE ---------
@@ -158,10 +156,13 @@ fig = plt.figure(figsize=(12, 12))
 # 2. Set height_ratios so all data rows (0,1,2 and 4) are EXACTLY 1.
 # The spacer (row 3) is 0.4.
 # hspace=0.1 provides a small uniform gap between all rows.
-gs = fig.add_gridspec(5, 4, 
-                      height_ratios=[1, 1, 1, 0.3, 1], 
-                      hspace=0.3, 
-                      wspace=0.1)
+gs = fig.add_gridspec(
+    7,
+    4,
+    height_ratios=[1,1,1,0.3,1,0.3,1],
+    hspace=0.4,
+    wspace=0.1
+)
 
 # --- Define axes_A (Rows 0, 1, 2) ---
 ax_master_A = fig.add_subplot(gs[0, 0])
@@ -175,6 +176,21 @@ ax_master_B = fig.add_subplot(gs[4, 0])
 axes_B = [ax_master_B if j == 0 
           else fig.add_subplot(gs[4, j], sharex=ax_master_B, sharey=ax_master_B) 
           for j in range(3)]
+
+# Panel C axes
+ax_master_C = fig.add_subplot(gs[6,0])
+axes_C = [
+    ax_master_C if i == 0
+    else fig.add_subplot(
+        gs[6,i],
+        sharex=ax_master_C,
+        sharey=ax_master_C
+    )
+    for i in range(3)
+]
+
+ghost_ax_C = fig.add_subplot(gs[5,3])
+ghost_ax_C.set_visible(False)
 
 # --- Add the Ghost Plot in Column 3 ---
 # This "holds" the 4th column open so plots 0, 1, and 2 don't stretch to fill the row
@@ -203,6 +219,7 @@ titles_B = [
     r"$k_{\mathrm{aa}} = 9$",
     r"$k_{\mathrm{aa}} = 11$"
 ]
+
 
 # =========================
 # -------- PANEL A --------
@@ -276,13 +293,102 @@ for k in range(3):
         ax.tick_params(labelleft=False)
 
 # =========================
+# -------- PANEL C --------
+# =========================
+
+def load_hist_fmh(file, ref_label='ref_ecoli', upper=10):
+    df = pd.read_csv(file, sep=',')
+    df = df[df['query_name'] == ref_label][['match_name', 'dN/dS']]
+    df = df[(df['dN/dS'] >= 0) & (df['dN/dS'] <= upper)]
+    return df
+
+
+fmh_negative_files_C = [
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/negative_k9_10scale_cores1_includes_ref/fmh_omega_9.csv",
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/negative_k9_100scale_cores1_includes_ref/fmh_omega_9.csv",
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/negative_k9_1000scale_cores1_includes_ref/fmh_omega_9.csv"
+]
+
+fmh_positive_files_C = [
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/positive_k9_10scale_cores1_includes_ref/fmh_omega_9.csv",
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/positive_k9_100scale_cores1_includes_ref/fmh_omega_9.csv",
+    "/data/jzr5814/sourmash_dnds_estimation/tests/test/genome_selection/positive_k9_1000scale_cores1_includes_ref/fmh_omega_9.csv"
+]
+
+
+negative_C = [
+    load_hist_fmh(f)
+    for f in fmh_negative_files_C
+]
+
+positive_C = [
+    load_hist_fmh(f)
+    for f in fmh_positive_files_C
+]
+
+scales=[10,100,1000]
+
+for i in range(3):
+
+    ax = axes_C[i]
+
+    ax.hist(
+        negative_C[i]['dN/dS'],
+        bins=50,
+        range=(0,8),
+        alpha=0.5,
+        color='blue',
+        edgecolor='blue'
+    )
+
+    ax.hist(
+        positive_C[i]['dN/dS'],
+        bins=50,
+        range=(0,8),
+        alpha=0.5,
+        color='darkorange',
+        edgecolor='darkorange'
+    )
+
+    ax.axvline(
+        x=1,
+        linestyle='--',
+        color='grey'
+    )
+
+    ax.set_title(
+        f"scaled={scales[i]}",
+        fontsize=14
+    )
+
+    ax.set_xlim(-0.5,8.5)
+    ax.set_xticks([0,2,4,6,8])
+    ax.tick_params(axis='both', labelsize=10)
+
+    ax.set_xlabel(
+        ylabeling,
+        fontsize=12
+    )
+
+    if i != 0:
+        ax.tick_params(axis='y', labelleft=False)
+
+    if i == 0:
+        ax.set_ylabel(
+            "Frequency",
+            fontsize=12
+        )
+    
+
+# =========================
 # -------- FINAL ---------
 # =========================
 
 plt.subplots_adjust(left=0.08, right=0.98, top=0.95, bottom=0.08)
 
-fig.text(0.02, 0.96, 'A', fontsize=20, fontweight='bold')
-fig.text(0.02, 0.26, 'B', fontsize=20, fontweight='bold')
+fig.text(0.02, 0.98, 'A', fontsize=20, fontweight='bold')
+fig.text(0.02, 0.46, 'B', fontsize=20, fontweight='bold')
+fig.text(0.02, 0.22, "C", fontsize=20, fontweight="bold")
 
-fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.pdf",
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.png",
             bbox_inches='tight')
