@@ -113,7 +113,7 @@ fig = plt.figure(figsize=(12, 12))
 # hspace=0.1 provides a small uniform gap between all rows.
 gs = fig.add_gridspec(5, 4, 
                       height_ratios=[1, 1, 1, 0.3, 1], 
-                      hspace=0.1, 
+                      hspace=0.3, 
                       wspace=0.1)
 
 # --- Define axes_A (Rows 0, 1, 2) ---
@@ -134,6 +134,29 @@ axes_B = [ax_master_B if j == 0
 ghost_ax = fig.add_subplot(gs[4, 3])
 ghost_ax.set_visible(False)
 
+titles_A = [
+    [r"$k_{\mathrm{aa}} = 5,\ 5001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 7,\ 5001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 15,\ 5001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 21,\ 5001\ \mathrm{bp}$"],
+
+    [r"$k_{\mathrm{aa}} = 5,\ 10002\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 7,\ 10002\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 15,\ 10002\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 21,\ 10002\ \mathrm{bp}$"],
+
+    [r"$k_{\mathrm{aa}} = 5,\ 20001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 7,\ 20001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 15,\ 20001\ \mathrm{bp}$",
+     r"$k_{\mathrm{aa}} = 21,\ 20001\ \mathrm{bp}$"]
+]
+
+titles_B = [
+    r"$k_{\mathrm{aa}} = 7$",
+    r"$k_{\mathrm{aa}} = 9$",
+    r"$k_{\mathrm{aa}} = 11$"
+]
+
 # =========================
 # -------- PANEL A --------
 # =========================
@@ -141,6 +164,8 @@ ghost_ax.set_visible(False)
 for i in range(3):        # i = row (0, 1, 2)
     for j in range(4):    # j = col (0, 1, 2, 3)
         ax = axes_A[i][j]
+
+        ax.set_title(titles_A[i][j], fontsize=14, pad=8)
 
         # Load data (using your existing logic)
         fmh_neg = load_fmh(fmh_dnds_negative_files[j][i], 'ref_gene')
@@ -174,6 +199,8 @@ for i in range(3):        # i = row (0, 1, 2)
 for k in range(3):
     ax = axes_B[k]
 
+    ax.set_title(titles_B[k], fontsize=14, pad=10)
+
     # Load data (using your existing logic)
 #    fmh_pos = load_fmh(fmh_dnds_positive_files_B[k], 'positive_0.01_ref', upper=8)
     fmh_neg = load_fmh(fmh_dnds_negative_files_B[k], 'negative_0.01_ref', upper=8)
@@ -205,7 +232,7 @@ for k in range(3):
 
 plt.subplots_adjust(left=0.08, right=0.98, top=0.95, bottom=0.08)
 
-fig.text(0.02, 0.95, 'A', fontsize=20, fontweight='bold')
+fig.text(0.02, 0.96, 'A', fontsize=20, fontweight='bold')
 fig.text(0.02, 0.26, 'B', fontsize=20, fontweight='bold')
 
 fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2_sup_negative.pdf",
