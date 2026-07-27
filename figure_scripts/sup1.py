@@ -7,7 +7,9 @@ from matplotlib import rcParams
 rcParams['font.family'] = 'serif'
 
 
-xlabel="NG86 dN/dS estimates"
+
+xlabel = r"$\mathrm{NG86}\ d_{\mathrm{N}}/d_{\mathrm{S}}$"
+
 # Create subplots
 fig, axes = plt.subplots(1, 3,sharex=True, sharey=True, figsize=(6, 2))
 plt.subplots_adjust(right=1)  # Increase right margin
@@ -77,6 +79,6 @@ axes[2].set_title(r'$\it{p}$'+'=0.001',fontsize=fs)
 axes[2].grid(False)
 axes[2].tick_params(axis='both', labelsize=fs-2)
 
-fig.figure.savefig(f"/data/jzr5814/sourmash_dnds_estimation/thesis_figures/sup1.pdf",bbox_inches='tight') 
+fig.figure.savefig(f"/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/sup1.png",bbox_inches='tight') 
 
 
