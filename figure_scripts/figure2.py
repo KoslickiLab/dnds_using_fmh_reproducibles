@@ -53,77 +53,77 @@ def format_ax(ax, xlim, ylim, fs=12, xlabel=False, ylabel=False):
 # =========================
 
 fmh_dnds_k5_negative_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k5/fmh_omega_5.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/5/negative/fmh_omega_5.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k5/fmh_omega_5.csv'
+    "../data/fmh_omega_5_negative_5001bp.csv",
+    "../data/fmh_omega_5_negative_10002bp.csv",
+    "../data/fmh_omega_5_negative_20001bp.csv",
 ]
 
 fmh_dnds_k7_negative_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/fmh_omega_7.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/fmh_dnds_sketch_protein/negative_selection_redo_sketch_protein_using_faa/dnds.k7.approximations_included.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/fmh_omega_7.csv'
+    "../data/fmh_omega_7_negative_5001bp.csv",
+    "../data/fmh_omega_7_negative_10002bp.csv",
+    "../data/fmh_omega_7_negative_20001bp.csv",
 ]
 
 fmh_dnds_k15_negative_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k15/fmh_omega_15.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/15/negative/fmh_omega_15.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k15/fmh_omega_15.csv'
+    "../data/fmh_omega_15_negative_5001bp.csv",
+    "../data/fmh_omega_15_negative_10002bp.csv",
+    "../data/fmh_omega_15_negative_20001bp.csv",
 ]
 
 fmh_dnds_k21_negative_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/negative/k21/fmh_omega_21.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/21/negative/fmh_omega_21.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/negative/k21/fmh_omega_21.csv'
+    "../data/fmh_omega_21_negative_5001bp.csv",
+    "../data/fmh_omega_21_negative_10002bp.csv",
+    "../data/fmh_omega_21_negative_20001bp.csv",
 ]
 
 fmh_dnds_k5_positive_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k5/fmh_omega_5.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/5/positive/fmh_omega_5.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k5/fmh_omega_5.csv'
+    "../data/fmh_omega_5_positive_5001bp.csv",
+    "../data/fmh_omega_5_positive_10002bp.csv",
+    "../data/fmh_omega_5_positive_20001bp.csv",
 ]
 
 fmh_dnds_k7_positive_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/fmh_omega_7.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/fmh_dnds_sketch_protein/positive_selection_redo_sketch_protein_using_faa/dnds.k7.approximations_included.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/fmh_omega_7.csv'
+    "../data/fmh_omega_7_positive_5001bp.csv",
+    "../data/fmh_omega_7_positive_10002bp.csv",
+    "../data/fmh_omega_7_positive_20001bp.csv",
 ]
 
 fmh_dnds_k15_positive_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k15/fmh_omega_15.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/15/positive/fmh_omega_15.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k15/fmh_omega_15.csv'
+    "../data/fmh_omega_15_positive_5001bp.csv",
+    "../data/fmh_omega_15_positive_10002bp.csv",
+    "../data/fmh_omega_15_positive_20001bp.csv",
 ]
 
 fmh_dnds_k21_positive_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/positive/k21/fmh_omega_21.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/ksizes/21/positive/fmh_omega_21.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/positive/k21/fmh_omega_21.csv'
+    "../data/fmh_omega_21_positive_5001bp.csv",
+    "../data/fmh_omega_21_positive_10002bp.csv",
+    "../data/fmh_omega_21_positive_20001bp.csv",
 ]
 
 fmh_dnds_negative_files = [
     fmh_dnds_k5_negative_files,
     fmh_dnds_k7_negative_files,
     fmh_dnds_k15_negative_files,
-    fmh_dnds_k21_negative_files
+    fmh_dnds_k21_negative_files,
 ]
 
 fmh_dnds_positive_files = [
     fmh_dnds_k5_positive_files,
     fmh_dnds_k7_positive_files,
     fmh_dnds_k15_positive_files,
-    fmh_dnds_k21_positive_files
+    fmh_dnds_k21_positive_files,
 ]
 
 ng_dnds_positive_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/kaks_NG/positive_selection_queries_5001_0.01.axt.kaks',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/kaks_NG/positive_selection_queries_10002_0.01.axt.kaks',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/kaks_NG/positive_selection_queries_20001_0.01.axt.kaks'
+    "../data/positive_selection_queries_5001_0.01.axt.kaks",
+    "../data/positive_selection_queries_10002_0.01.axt.kaks",
+    "../data/positive_selection_queries_20001_0.01.axt.kaks",
 ]
 
 ng_dnds_negative_files = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/5001/kaks_NG/negative_selection_queries_5001_0.01.axt.kaks',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_assumption/0.01/kaks_NG/negative_selection_queries_10002_0.01.axt.kaks',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/kaks_NG/negative_selection_queries_20001_0.01.axt.kaks'
+    "../data/negative_selection_queries_5001_0.01.axt.kaks",
+    "../data/negative_selection_queries_10002_0.01.axt.kaks",
+    "../data/negative_selection_queries_20001_0.01.axt.kaks",
 ]
 
 # =========================
@@ -131,20 +131,19 @@ ng_dnds_negative_files = [
 # =========================
 
 fmh_dnds_positive_files_B = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k7/fmh_omega_7_modified.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k9/fmh_omega_9.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k11/fmh_omega_11.csv'
+    "../data/fmh_omega_7_positive_LAMA3.csv",
+    "../data/fmh_omega_9_positive_LAMA3.csv",
+    "../data/fmh_omega_11_positive_LAMA3.csv",
 ]
 
 fmh_dnds_negative_files_B = [
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k7/fmh_omega_7_modified.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k9/fmh_omega_9.csv',
-    '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k11/fmh_omega_11.csv'
+    "../data/fmh_omega_7_negative_LAMA3.csv",
+    "../data/fmh_omega_9_negative_LAMA3.csv",
+    "../data/fmh_omega_11_negative_LAMA3.csv",
 ]
 
-ng86_dnds_positive_files = '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/kaks/kaks_sequences.axt.kaks'
-ng86_dnds_negative_files = '/data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/kaks/kaks_sequences.axt.kaks'
-
+ng86_dnds_positive_files = "../data/kaks_sequences_positive_LAMA3.axt.kaks"
+ng86_dnds_negative_files = "../data/kaks_sequences_negative_LAMA3.axt.kaks"
 # =========================
 # -------- FIGURE ---------
 # =========================
