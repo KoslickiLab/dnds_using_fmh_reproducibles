@@ -73,3 +73,28 @@ cp /data/jzr5814/sourmash_dnds_estimation/tests/test/create_sequence_using_NG_as
    figure2_datasets/
 cp /data/jzr5814/sourmash_dnds_estimation/tests/results/dnds_practical_considerations/lengths/20001/kaks_NG/negative_selection_queries_20001_0.01.axt.kaks \
    figure2_datasets/
+
+# Panel B (LAMA3) datasets
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k7/fmh_omega_7_modified.csv \
+   figure2_datasets/fmh_omega_7_positive_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k9/fmh_omega_9.csv \
+   figure2_datasets/fmh_omega_9_positive_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/fmh_k11/fmh_omega_11.csv \
+   figure2_datasets/fmh_omega_11_positive_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k7/fmh_omega_7_modified.csv \
+   figure2_datasets/fmh_omega_7_negative_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k9/fmh_omega_9.csv \
+   figure2_datasets/fmh_omega_9_negative_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/fmh_k11/fmh_omega_11.csv \
+   figure2_datasets/fmh_omega_11_negative_LAMA3.csv
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/positive/kaks/kaks_sequences.axt.kaks \
+   figure2_datasets/kaks_sequences_positive_LAMA3.axt.kaks
+
+cp /data/jzr5814/sourmash_dnds_estimation/tests/test/real_sequence_selection_mutation_0.01/negative/kaks/kaks_sequences.axt.kaks \
+   figure2_datasets/kaks_sequences_negative_LAMA3.axt.kaks
