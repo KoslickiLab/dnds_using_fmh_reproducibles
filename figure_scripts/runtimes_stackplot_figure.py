@@ -104,7 +104,7 @@ for step in step_order:
 
 
 # Format x-axis
-x_labels = [f'k={k}, t={t}' for k, t in pivot_df.index]
+x_labels = [fr'$k_{{\mathrm{{aa}}}}={k},\ t={t}$' for k, t in pivot_df.index]
 ax.set_xticks(bar_positions)
 ax.set_xticklabels(x_labels, rotation=45, ha="right")
 
@@ -117,4 +117,4 @@ ax.legend(title="Step", loc="upper left", bbox_to_anchor=(1, 1))
 plt.tight_layout()
 
 # Save the figure
-fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/runtimes_update.png") 
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/runtimes_update.pdf") 
