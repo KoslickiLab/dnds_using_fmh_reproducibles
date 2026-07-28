@@ -58,7 +58,7 @@ step_mapping = {
     "dN/dS Estimation": "FracMinHash dN/dS"
 }
 df_cleaned["Step"] = df_cleaned["Step"].replace(step_mapping)
-step_order = ["DNA & Protein Sketches", "DNA Containment", "Protein Containment", "FracMinHash dN/dS"]
+step_order = ["DNA & Protein Sketches", "DNA Containment", "Protein Containment", r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$"]
 df_cleaned["Step"] = pd.Categorical(df_cleaned["Step"], categories=step_order, ordered=True)
 
 # Pivot for stacked bar
@@ -78,7 +78,7 @@ step_colors = {
     "DNA & Protein Sketches": "#E69F00",  # orange
     "DNA Containment": "#56B4E9",         # sky blue
     "Protein Containment": "#009E73",     # bluish green
-    "FracMinHash dN/dS": "#D55E00",       # vermillion
+    r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$" : "#D55E00",       # vermillion
 }
 
 # Plot
@@ -117,4 +117,4 @@ ax.legend(title="Step", loc="upper left", bbox_to_anchor=(1, 1))
 plt.tight_layout()
 
 # Save the figure
-fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/runtimes_update.pdf") 
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/runtimes_update.png") 
