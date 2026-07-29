@@ -25,12 +25,12 @@ fig, ax = plt.subplots(figsize=(7, 6))
 
 offset = 0.05
 
-ax.plot(x, fmh, marker="o", label="FMH dN/dS", color="#448EB9FF")
-ax.plot(x - offset, kaks_ng, marker="s", label="NG dN/dS", color="#E69F00")
-ax.plot(x + offset, kaks_yn, marker="*", label="YN dN/dS", color="#009E73")
+ax.plot(x, fmh, marker="o", label=r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", color="#448EB9FF")
+ax.plot(x - offset, kaks_ng, marker="s", label=r"$\mathrm{NG86}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", color="#E69F00")
+ax.plot(x + offset, kaks_yn, marker="*", label=r"$\mathrm{YN00}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", color="#009E73")
 
 #ax.set_title("Traditional vs FMH dN/dS Walltimes")
-ax.set_xlabel("Sample",fontsize=fs)
+ax.set_xlabel("Sample Size",fontsize=fs)
 ax.set_xticks(x)
 ax.set_xticklabels(samples,fontsize=fs-2)
 ax.set_ylim(bottom=1, top=10000)
