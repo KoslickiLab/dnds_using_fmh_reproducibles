@@ -85,7 +85,7 @@ def plot_panelA(axes, data, paper_df):
             alpha=0.5
         )
 
-        axes[i].set_title(f"t={t}, k={ksize}", fontsize=fs)
+        axes[i].set_title(fr"t={t}, $k_{{\mathrm{{aa}}}}={ksize}$", fontsize=fs)
         axes[i].set_xlim(-0.04, 0.54)
         axes[i].set_ylim(-0.01, 0.51)
 
@@ -93,13 +93,13 @@ def plot_panelA(axes, data, paper_df):
 
         axes[i].tick_params(labelsize=fs-2)
 
-        axes[i].set_xlabel('FMH dN/dS estimates', fontsize=fs)
+        axes[i].set_xlabel(r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", fontsize=fs)
 
         axes[i].tick_params(axis='y', labelleft=(i == 0))
         axes[i].set_xticks(xticks)
         axes[i].set_xticklabels([f"{x:.1f}" for x in xticks])
 
-    axes[0].set_ylabel('CodeML dN/dS estimates', fontsize=fs)
+    axes[0].set_ylabel(r"$\mathrm{CodeML}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", fontsize=fs)
 
 
 # -----------------------------
@@ -136,8 +136,8 @@ def plot_panelB(axes, data, paper_df):
 
         axes[i].set_xlim(-0.08, 1.08)
         axes[i].axvline(x=1, linestyle='--', color='black')
-        axes[i].set_title(f"t={t}, k={ksize}", fontsize=fs)
-        axes[i].set_xlabel('FMH dN/dS estimates', fontsize=fs)
+        axes[i].set_title(fr"t={t}, $k_{{\mathrm{{aa}}}}={ksize}$", fontsize=fs)
+        axes[i].set_xlabel(r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$", fontsize=fs)
         axes[i].tick_params(axis='y', labelleft=(i == 0))
         
 
@@ -192,7 +192,7 @@ def make_figure():
     fig.text(0.07, 0.92, 'A', fontsize=18, fontweight='bold')
     fig.text(0.07, 0.47, 'B', fontsize=18, fontweight='bold')
 
-    plt.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure4_now5.pdf", bbox_inches='tight')
+    plt.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure4_now5.png", bbox_inches='tight')
     plt.show()
 
 
