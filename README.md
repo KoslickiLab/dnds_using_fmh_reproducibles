@@ -52,7 +52,7 @@ bash data_download.sh
 
 ## Simulated data
 
-To simulate a random sequence that is under negative and positive selection of specific lengths please refer to our simulations section here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/tree/main/helper_scripts/simulate)
+To simulate random negative and positive selection on random and real sequences, please refer to our simulations section here: [simulation datasets](https://github.com/KoslickiLab/dnds_using_fmh_reproducibles/tree/main/helper_scripts/simulate)
 
 ## Genome Taxonomy Database download
 
