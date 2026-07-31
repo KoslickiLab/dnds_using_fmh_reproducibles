@@ -18,3 +18,17 @@ python random_selection_simulation.py --len 20001 --prate 0.01 --wd ../
 python random_selection_simulation.py --len 20001 --prate 0.1 --wd ../
 # Change p-rate to 0.001
 python random_selection_simulation.py --len 20001 --prate 0.001 --wd ../
+
+# Real sequence LAMA3 using the a mutation rate (p) of 0.01
+python produce_selection_on_sequence.py --prate 0.01 --wd ../
+# Change p-rate to 0.1
+python produce_selection_on_sequence.py --prate 0.1 --wd ../
+# Change p-rate to 0.001
+python produce_selection_on_sequence.py --prate 0.001 --wd ../
+
+# Genome sequence LAMA3 using the a mutation rate (p) of 0.01
+python produce_selection_on_genome.py --prate 0.01 --wd ../
+# Change p-rate to 0.1
+python produce_selection_on_genome.py --prate 0.1 --wd ../
+# Change p-rate to 0.001
+python produce_selection_on_genome.py --prate 0.001 --wd ../
