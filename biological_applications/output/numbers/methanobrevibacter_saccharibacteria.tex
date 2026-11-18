@@ -1,0 +1,71 @@
+% Generated file -- do not edit by hand. Re-run the analysis instead (see the code repository).
+\providecommand{\MBFmhDnds}{1.87}  % FracMinHash dN/dS of the pair, all genes
+\providecommand{\MBFmhDndsWithout}{no estimate}  % FracMinHash dN/dS after removing near-identical genes from both genomes
+\providecommand{\MBFmhDndsWithoutLoose}{no estimate}  % the same when genes sharing at least 25 percent of their 21-mers are removed
+\providecommand{\MBFmhDndsWithoutStrict}{no estimate}  % the same when only genes sharing at least 75 percent of their 21-mers are removed
+\providecommand{\MBFmhDndsEveryKmer}{8.97}  % FracMinHash dN/dS of the pair computed from every k-mer (scale factor 1)
+\providecommand{\MBContainmentNt}{0.051}  % nucleotide 21-mer containment, all genes
+\providecommand{\MBContainmentAa}{0.088}  % protein 7-mer containment, all genes
+\providecommand{\MBContainmentNtWithout}{0.000}  % nucleotide containment without near-identical genes
+\providecommand{\MBContainmentAaWithout}{0.000}  % protein containment without near-identical genes
+\providecommand{\MBGenomeMbA}{0.72}  % genome A: assembly size (Mb)
+\providecommand{\MBContigsA}{14}  % genome A: number of contigs or scaffolds
+\providecommand{\MBGcA}{40.8}  % genome A: G+C content (percent)
+\providecommand{\MBGenesA}{705}  % genome A: predicted genes
+\providecommand{\MBNearGenesA}{31}  % genome A: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\MBNearPercentGenesA}{4.4}  % genome A: near-identical genes as percent of all genes
+\providecommand{\MBNearKbA}{34}  % genome A: total length of near-identical genes (kb)
+\providecommand{\MBNearShareA}{99}  % genome A: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\MBGenomeMbB}{3.15}  % genome B: assembly size (Mb)
+\providecommand{\MBContigsB}{146}  % genome B: number of contigs or scaffolds
+\providecommand{\MBGcB}{32.3}  % genome B: G+C content (percent)
+\providecommand{\MBGenesB}{3{,}317}  % genome B: predicted genes
+\providecommand{\MBNearGenesB}{32}  % genome B: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\MBNearPercentGenesB}{1.0}  % genome B: near-identical genes as percent of all genes
+\providecommand{\MBNearKbB}{34}  % genome B: total length of near-identical genes (kb)
+\providecommand{\MBNearShareB}{100}  % genome B: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\MBCheckmCompletenessA}{62.7}  % genome A: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\MBCheckmContaminationA}{0.00}  % genome A: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\MBCheckmCompletenessB}{98.8}  % genome B: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\MBCheckmContaminationB}{0.77}  % genome B: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\MBOrthologs}{139}  % reciprocal-best-hit orthologs that could be aligned
+\providecommand{\MBNearOrthologs}{30}  % orthologs that are near-identical genes
+\providecommand{\MBBackgroundOrthologs}{109}  % orthologs that are not near-identical
+\providecommand{\MBBackgroundEstimable}{109}  % background orthologs with an estimable dN/dS
+\providecommand{\MBAaIdentity}{37}  % median amino-acid identity of background orthologs (percent)
+\providecommand{\MBConvDnds}{0.16}  % conventional dN/dS (YN), median over background orthologs
+\providecommand{\MBConvDs}{4.0}  % conventional dS (YN), median over background orthologs
+\providecommand{\MBConvAboveOne}{0}  % background orthologs with conventional dN/dS above 1
+\providecommand{\MBRegions}{1}  % number of shared regions (blocks >= 1 kb and >= 95 percent identical, merged within 10 kb)
+\providecommand{\MBRegionsKb}{36}  % total span of the shared regions in genome A (kb)
+\providecommand{\MBRegionsPercentA}{5.0}  % shared regions as percent of genome A
+\providecommand{\MBAlignedKb}{36}  % aligned at >= 95 percent identity (kb)
+\providecommand{\MBAlignedNearPerfectKb}{0}  % aligned at >= 99.9 percent identity (kb)
+\providecommand{\MBLongestBlockKb}{35.8}  % longest single alignment block (kb)
+\providecommand{\MBLongestBlockIdentity}{99.82}  % identity of the longest block (percent; capped at 99.99)
+\providecommand{\MBPartnerContigs}{1}  % contigs of genome B that carry shared DNA
+\providecommand{\MBPartnerContigsEmbedded}{0}  % of those, contigs with >= 10 kb of other sequence as well
+\providecommand{\MBLargestPartnerContigKb}{36}  % largest contig of genome B that carries shared DNA (kb)
+\providecommand{\MBPartnerContigsWhollyShared}{1}  % contigs of genome B that consist of shared DNA only
+\providecommand{\MBGapsNearA}{0}  % genome A: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\MBGapsNearB}{0}  % genome B: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\MBRegionsGcMin}{35.2}  % lowest G+C content among the shared regions (percent)
+\providecommand{\MBRegionsGcMax}{35.2}  % highest G+C content among the shared regions (percent)
+\providecommand{\MBRegionsIdentityMin}{99.8}  % lowest identity to genome B among the shared regions (percent)
+\providecommand{\MBRegionsIdentityMax}{99.8}  % highest identity to genome B among the shared regions (percent; capped at 99.9)
+\providecommand{\MBRegionOneKb}{36}  % E1: span (kb)
+\providecommand{\MBRegionOneIdentity}{99.82}  % E1: identity to genome B (percent; capped at 99.99)
+\providecommand{\MBRegionOneGc}{35.2}  % E1: G+C content (percent)
+\providecommand{\MBRegionOneGenes}{33}  % E1: annotated genes
+\providecommand{\MBRegionOneIntegrases}{0}  % E1: genes annotated as integrase or recombinase
+\providecommand{\MBRegionOneContigKb}{164}  % E1: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MBPresentB}{1}  % regions at least 90 percent present in Methanobrevibacter sp. RGIG2411 (GCA_017434555.1)
+\providecommand{\MBSmallestHostContigKbB}{36}  % smallest contig of Methanobrevibacter sp. RGIG2411 that carries one of these regions (kb)
+\providecommand{\MBDepthRegion}{132}  % median read depth of the shared region in the source metagenome of genome B
+\providecommand{\MBDepthFlank}{142}  % median read depth of the rest of the genome-A scaffold that carries the region
+\providecommand{\MBDepthGenomeB}{157}  % median read depth of genome B
+\providecommand{\MBDepthExpectedBoth}{299}  % depth expected for the region if both genomes carried it
+\providecommand{\MBPairsEnd}{90}  % read pairs with one read within 500 bp of an end of the region and the other read outside the region
+\providecommand{\MBPairsEndFlank}{89}  % of those, pairs whose other read lies in the flanking sequence of genome A
+\providecommand{\MBPairsEndGenomeB}{1}  % of those, pairs whose other read lies on a contig of genome B
+\providecommand{\MBPairsInteriorGenomeB}{16}  % read pairs with one read in the interior of the region and the other on a contig of genome B (chimeric pairs)

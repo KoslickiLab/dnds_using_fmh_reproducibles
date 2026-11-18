@@ -1,0 +1,155 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_CAKMRI010000001.1	200	565	+	pseudogene	L6651_RS09450	pseudogene	other
+E1	NZ_CAKMRI010000001.1	539	2206	+	CDS	L6651_RS09455	ATP-binding cassette domain-containing protein	other
+E1	NZ_CAKMRI010000001.1	2225	2806	+	CDS	L6651_RS00015	MptD family putative ECF transporter S component	other
+E1	NZ_CAKMRI010000001.1	2816	4537	+	CDS	L6651_RS00020	ABC transporter ATP-binding protein	other
+E1	NZ_CAKMRI010000001.1	4552	6282	+	CDS	L6651_RS00025	ABC transporter ATP-binding protein	other
+E2	NZ_CAKMRI010000001.1	17626	17787	+	CDS	L6651_RS00085	hypothetical protein	hypothetical
+E2	NZ_CAKMRI010000001.1	17884	19560	+	CDS	L6651_RS00090	recombinase family protein	integration
+E2	NZ_CAKMRI010000001.1	19872	20459	+	CDS	L6651_RS00095	type IV toxin-antitoxin system AbiEi family antitoxin domain-containing protein	defence
+E2	NZ_CAKMRI010000001.1	20456	21298	+	CDS	L6651_RS00100	nucleotidyl transferase AbiEii/AbiGii toxin family protein	defence
+E2	NZ_CAKMRI010000001.1	21471	22370	+	CDS	L6651_RS00105	FRG domain-containing protein	other
+E2	NZ_CAKMRI010000001.1	22752	23071	+	pseudogene	L6651_RS09335	pseudogene	other
+E2	NZ_CAKMRI010000001.1	23217	23433	+	pseudogene	L6651_RS00110	pseudogene	other
+E2	NZ_CAKMRI010000001.1	23513	23968	+	CDS	L6651_RS00115	hypothetical protein	hypothetical
+E2	NZ_CAKMRI010000001.1	23958	24761	+	CDS	L6651_RS00120	hypothetical protein	hypothetical
+E2	NZ_CAKMRI010000001.1	24770	25591	+	CDS	L6651_RS00125	abortive infection family protein	defence
+E2	NZ_CAKMRI010000001.1	25610	26941	-	CDS	L6651_RS00130	relaxase/mobilization nuclease domain-containing protein	conjugation
+E2	NZ_CAKMRI010000001.1	26943	27299	-	CDS	L6651_RS00135	plasmid mobilization protein	conjugation
+E2	NZ_CAKMRI010000001.1	27594	28232	+	CDS	L6651_RS00140	TetR/AcrR family transcriptional regulator	other
+E2	NZ_CAKMRI010000001.1	28356	28952	+	CDS	L6651_RS00145	MptD family putative ECF transporter S component	other
+E2	NZ_CAKMRI010000001.1	28942	29655	+	CDS	L6651_RS00150	energy-coupling factor transporter transmembrane component T family protein	other
+E2	NZ_CAKMRI010000001.1	29640	31109	+	CDS	L6651_RS00155	ABC transporter ATP-binding protein	other
+E2	NZ_CAKMRI010000001.1	31099	32889	+	CDS	L6651_RS00160	ABC transporter ATP-binding protein	other
+E2	NZ_CAKMRI010000001.1	32882	34627	+	CDS	L6651_RS00165	ABC transporter ATP-binding protein	other
+E2	NZ_CAKMRI010000001.1	34653	36005	+	CDS	L6651_RS00170	MATE family efflux transporter	other
+E2	NZ_CAKMRI010000001.1	36317	36727	+	CDS	L6651_RS00175	sigma-70 RNA polymerase sigma factor region 4 domain-containing protein	other
+E2	NZ_CAKMRI010000001.1	37164	37373	+	CDS	L6651_RS00180	excisionase	integration
+E2	NZ_CAKMRI010000001.1	37451	38686	+	CDS	L6651_RS00185	tyrosine-type recombinase/integrase	integration
+E2	NZ_CAKMRI010000001.1	38843	39298	+	CDS	L6651_RS00190	methionine--tRNA ligase	other
+E3	NZ_CAKMRI010000001.1	631117	631773	-	CDS	L6651_RS03145	DNA-binding protein	other
+E3	NZ_CAKMRI010000001.1	633269	639460	-	pseudogene	L6651_RS03150	pseudogene	other
+E3	NZ_CAKMRI010000001.1	639447	640412	-	CDS	L6651_RS03155	DNA cytosine methyltransferase	other
+E3	NZ_CAKMRI010000001.1	640405	642126	-	CDS	L6651_RS03160	DNA topoisomerase 3	other
+E3	NZ_CAKMRI010000001.1	642190	643056	-	CDS	L6651_RS03165	CD1107 family mobile element protein	conjugation
+E3	NZ_CAKMRI010000001.1	643071	645422	-	CDS	L6651_RS03170	leucine-rich repeat protein	other
+E3	NZ_CAKMRI010000001.1	645409	645648	-	CDS	L6651_RS03175	hypothetical protein	hypothetical
+E3	NZ_CAKMRI010000001.1	645663	648239	-	CDS	L6651_RS03180	CD1108 family mobile element protein	conjugation
+E3	NZ_CAKMRI010000001.1	648247	650670	-	CDS	L6651_RS03185	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E3	NZ_CAKMRI010000001.1	650561	650971	-	CDS	L6651_RS03190	PrgI family protein	conjugation
+E3	NZ_CAKMRI010000001.1	650973	651263	-	CDS	L6651_RS03195	hypothetical protein	hypothetical
+E3	NZ_CAKMRI010000001.1	651273	652136	-	CDS	L6651_RS03200	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E3	NZ_CAKMRI010000001.1	652147	652230	-	pseudogene	L6651_RS03205	pseudogene	other
+E3	NZ_CAKMRI010000001.1	652234	653880	-	CDS	L6651_RS03210	recombinase family protein	integration
+E3	NZ_CAKMRI010000001.1	653884	654108	-	CDS	L6651_RS03215	hypothetical protein	hypothetical
+E3	NZ_CAKMRI010000001.1	654262	654963	-	CDS	L6651_RS03220	replisome organizer	other
+E3	NZ_CAKMRI010000001.1	655045	656115	-	CDS	L6651_RS03225	PDDEXK nuclease domain-containing protein	other
+E3	NZ_CAKMRI010000001.1	656507	657034	-	CDS	L6651_RS03230	PcfB family protein	conjugation
+E3	NZ_CAKMRI010000001.1	657216	657389	-	CDS	L6651_RS03235	hypothetical protein	hypothetical
+E3	NZ_CAKMRI010000001.1	657463	659103	-	CDS	L6651_RS03240	MobQ family relaxase	conjugation
+E4	NZ_CAKMRI010000001.1	668161	668313	-	pseudogene	L6651_RS03275	pseudogene	other
+E4	NZ_CAKMRI010000001.1	668314	668637	-	CDS	L6651_RS03280	single-stranded DNA-binding protein	other
+E4	NZ_CAKMRI010000001.1	668828	669691	-	CDS	L6651_RS03285	Abi family protein	other
+E4	NZ_CAKMRI010000001.1	669848	670663	-	pseudogene	L6651_RS03290	pseudogene	other
+E4	NZ_CAKMRI010000001.1	670675	670860	-	CDS	L6651_RS03295	transposon-encoded TnpW family protein	conjugation
+E4	NZ_CAKMRI010000001.1	670972	671979	-	CDS	L6651_RS03300	ORF6N domain-containing protein	other
+E4	NZ_CAKMRI010000001.1	672051	672374	-	CDS	L6651_RS03305	hypothetical protein	hypothetical
+E4	NZ_CAKMRI010000001.1	672548	673300	-	CDS	L6651_RS03310	phage replisome organizer N-terminal domain-containing protein	phage
+E4	NZ_CAKMRI010000001.1	673303	674955	-	CDS	L6651_RS03315	MobQ family relaxase	conjugation
+E4	NZ_CAKMRI010000001.1	675203	675532	-	CDS	L6651_RS03320	DUF3847 domain-containing protein	hypothetical
+E4	NZ_CAKMRI010000001.1	675616	676032	-	CDS	L6651_RS03325	sigma factor-like helix-turn-helix DNA-binding protein	other
+E4	NZ_CAKMRI010000001.1	676288	678030	-	CDS	L6651_RS03330	ABC transporter ATP-binding protein	other
+E4	NZ_CAKMRI010000001.1	678032	679744	-	CDS	L6651_RS03335	ABC transporter ATP-binding protein	other
+E4	NZ_CAKMRI010000001.1	679748	681163	-	CDS	L6651_RS03340	ABC transporter ATP-binding protein	other
+E4	NZ_CAKMRI010000001.1	681176	681862	-	CDS	L6651_RS03345	energy-coupling factor transporter transmembrane component T family protein	other
+E4	NZ_CAKMRI010000001.1	681863	682456	-	CDS	L6651_RS03350	MptD family putative ECF transporter S component	other
+E4	NZ_CAKMRI010000001.1	682628	683026	-	CDS	L6651_RS03355	hypothetical protein	hypothetical
+E4	NZ_CAKMRI010000001.1	683087	683239	-	pseudogene	L6651_RS09420	pseudogene	other
+E4	NZ_CAKMRI010000001.1	683340	685166	-	CDS	L6651_RS03365	recombinase family protein	integration
+E4	NZ_CAKMRI010000001.1	685263	686258	-	pseudogene	L6651_RS03370	pseudogene	other
+E5	NZ_CAKMRI010000001.1	920687	921022	-	CDS	L6651_RS04520	plasmid mobilization protein	conjugation
+E5	NZ_CAKMRI010000001.1	921359	922810	-	CDS	L6651_RS04525	virulence-associated E family protein	other
+E5	NZ_CAKMRI010000001.1	922958	923320	-	CDS	L6651_RS04530	plasmid mobilization protein	conjugation
+E5	NZ_CAKMRI010000001.1	923313	924437	-	CDS	L6651_RS04535	site-specific integrase	integration
+E5	NZ_CAKMRI010000001.1	924439	924633	-	CDS	L6651_RS04540	hypothetical protein	hypothetical
+E5	NZ_CAKMRI010000001.1	924895	925326	+	CDS	L6651_RS04545	helix-turn-helix domain-containing protein	other
+E6	NZ_CAKMRI010000001.1	1256568	1257545	+	CDS	L6651_RS05865	replication initiator protein A	replication
+E6	NZ_CAKMRI010000001.1	1257560	1258417	+	CDS	L6651_RS05870	ATP-binding protein	other
+E6	NZ_CAKMRI010000001.1	1258432	1258923	+	CDS	L6651_RS05875	PcfB family protein	conjugation
+E6	NZ_CAKMRI010000001.1	1259112	1259315	+	CDS	L6651_RS05880	hypothetical protein	hypothetical
+E6	NZ_CAKMRI010000001.1	1259360	1261162	+	CDS	L6651_RS05885	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E6	NZ_CAKMRI010000001.1	1261319	1262182	+	CDS	L6651_RS05890	Abi family protein	other
+E6	NZ_CAKMRI010000001.1	1262373	1262696	+	CDS	L6651_RS05895	single-stranded DNA-binding protein	other
+E6	NZ_CAKMRI010000001.1	1262697	1262912	+	CDS	L6651_RS05900	Maff2 family mobile element protein	conjugation
+E6	NZ_CAKMRI010000001.1	1262914	1263777	+	CDS	L6651_RS05905	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E6	NZ_CAKMRI010000001.1	1263795	1264052	+	CDS	L6651_RS05910	hypothetical protein	hypothetical
+E6	NZ_CAKMRI010000001.1	1264052	1264390	+	CDS	L6651_RS05915	PrgI family protein	conjugation
+E6	NZ_CAKMRI010000001.1	1264387	1266882	+	CDS	L6651_RS05920	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E6	NZ_CAKMRI010000001.1	1266854	1267819	+	CDS	L6651_RS05925	DNA-methyltransferase	defence
+E6	NZ_CAKMRI010000001.1	1269404	1270795	+	CDS	L6651_RS09510	C40 family peptidase	other
+E6	NZ_CAKMRI010000001.1	1270816	1271073	+	CDS	L6651_RS05935	hypothetical protein	hypothetical
+E6	NZ_CAKMRI010000001.1	1271070	1273424	+	CDS	L6651_RS05940	leucine-rich repeat protein	other
+E6	NZ_CAKMRI010000001.1	1273440	1274318	+	CDS	L6651_RS05945	CD1107 family mobile element protein	conjugation
+E6	NZ_CAKMRI010000001.1	1274745	1276451	+	CDS	L6651_RS05950	DNA topoisomerase 3	other
+E6	NZ_CAKMRI010000001.1	1276781	1277119	+	CDS	L6651_RS05955	type III toxin-antitoxin system ToxN/AbiQ family toxin	defence
+E6	NZ_CAKMRI010000001.1	1278299	1278607	+	CDS	L6651_RS09485	TnpV protein	conjugation
+E6	NZ_CAKMRI010000001.1	1279870	1288236	+	CDS	L6651_RS05960	SNF2-related protein	other
+E6	NZ_CAKMRI010000001.1	1288270	1289412	+	CDS	L6651_RS05965	single-stranded DNA-binding protein	other
+E6	NZ_CAKMRI010000001.1	1289543	1290913	-	CDS	L6651_RS05970	relaxase/mobilization nuclease domain-containing protein	conjugation
+E6	NZ_CAKMRI010000001.1	1290913	1291281	-	CDS	L6651_RS05975	plasmid mobilization protein	conjugation
+E7	NZ_CAKMRI010000001.1	1313569	1313979	+	CDS	L6651_RS06055	sigma factor-like helix-turn-helix DNA-binding protein	other
+E7	NZ_CAKMRI010000001.1	1314396	1314563	+	CDS	L6651_RS06060	hypothetical protein	hypothetical
+E7	NZ_CAKMRI010000001.1	1314662	1316380	+	CDS	L6651_RS06065	recombinase family protein	integration
+E7	NZ_CAKMRI010000001.1	1316373	1318115	+	CDS	L6651_RS06070	recombinase family protein	integration
+E7	NZ_CAKMRI010000001.1	1318108	1319628	+	CDS	L6651_RS06075	recombinase family protein	integration
+E7	NZ_CAKMRI010000001.1	1319818	1320621	+	CDS	L6651_RS06080	KilA-N domain-containing protein	other
+E7	NZ_CAKMRI010000001.1	1320691	1321311	+	pseudogene	L6651_RS06085	pseudogene	other
+E8	NZ_CAKMRI010000001.1	1699671	1700156	+	pseudogene	L6651_RS08030	pseudogene	other
+E8	NZ_CAKMRI010000001.1	1700153	1700842	+	CDS	L6651_RS08035	BRO-N domain-containing protein	other
+E9	NZ_CAKMRI010000001.1	1921980	1922474	+	CDS	L6651_RS09030	hypothetical protein	hypothetical
+E9	NZ_CAKMRI010000001.1	1922818	1923246	-	CDS	L6651_RS09035	Dps family protein	other
+E9	NZ_CAKMRI010000001.1	1923566	1923856	+	CDS	L6651_RS09040	DUF3847 domain-containing protein	hypothetical
+E9	NZ_CAKMRI010000001.1	1924191	1925825	+	CDS	L6651_RS09045	MobQ family relaxase	conjugation
+E9	NZ_CAKMRI010000001.1	1925899	1926072	+	CDS	L6651_RS09050	hypothetical protein	hypothetical
+E9	NZ_CAKMRI010000001.1	1926398	1926760	+	CDS	L6651_RS09060	DUF4368 domain-containing protein	hypothetical
+E9	NZ_CAKMRI010000001.1	1927068	1927694	+	CDS	L6651_RS09065	TetR/AcrR family transcriptional regulator	other
+E9	NZ_CAKMRI010000001.1	1927699	1927968	+	CDS	L6651_RS09070	hypothetical protein	hypothetical
+E10	NZ_CAKMRI010000001.1	1939004	1939420	+	CDS	L6651_RS09125	sigma-70 RNA polymerase sigma factor region 4 domain-containing protein	other
+E10	NZ_CAKMRI010000001.1	1939507	1939881	+	CDS	L6651_RS09130	hypothetical protein	hypothetical
+E10	NZ_CAKMRI010000001.1	1940197	1941837	+	CDS	L6651_RS09135	MobQ family relaxase	conjugation
+E10	NZ_CAKMRI010000001.1	1941911	1942084	+	CDS	L6651_RS09140	hypothetical protein	hypothetical
+E10	NZ_CAKMRI010000001.1	1942272	1942799	+	CDS	L6651_RS09145	PcfB family protein	conjugation
+E10	NZ_CAKMRI010000001.1	1943235	1944230	+	CDS	L6651_RS09150	ORF6N domain-containing protein	other
+E10	NZ_CAKMRI010000001.1	1944318	1945031	+	CDS	L6651_RS09155	replisome organizer	other
+E10	NZ_CAKMRI010000001.1	1945189	1945374	+	CDS	L6651_RS09160	transposon-encoded TnpW family protein	conjugation
+E10	NZ_CAKMRI010000001.1	1945386	1946201	+	pseudogene	L6651_RS09165	pseudogene	other
+E10	NZ_CAKMRI010000001.1	1946353	1947219	+	CDS	L6651_RS09170	Abi family protein	other
+E10	NZ_CAKMRI010000001.1	1947410	1947733	+	CDS	L6651_RS09175	single-stranded DNA-binding protein	other
+E10	NZ_CAKMRI010000001.1	1947734	1947862	+	pseudogene	L6651_RS09180	pseudogene	other
+E10	NZ_CAKMRI010000001.1	1948779	1949888	+	pseudogene	L6651_RS09520	pseudogene	other
+E10	NZ_CAKMRI010000001.1	1950129	1950449	+	CDS	L6651_RS09525	HNH endonuclease signature motif containing protein	other
+E10	NZ_CAKMRI010000001.1	1950601	1950699	+	pseudogene	L6651_RS09190	pseudogene	other
+E11	NZ_CAKMRI010000002.1	161	9406	+	CDS	L6651_RS09195	SNF2-related protein	other
+E11	NZ_CAKMRI010000002.1	9440	10582	+	CDS	L6651_RS09200	single-stranded DNA-binding protein	other
+E11	NZ_CAKMRI010000002.1	10698	12068	-	CDS	L6651_RS09205	relaxase/mobilization nuclease domain-containing protein	conjugation
+E11	NZ_CAKMRI010000002.1	12068	12436	-	CDS	L6651_RS09210	plasmid mobilization protein	conjugation
+E11	NZ_CAKMRI010000002.1	13236	13607	+	CDS	L6651_RS09215	metal-dependent transcriptional regulator	other
+E11	NZ_CAKMRI010000002.1	13770	14522	+	CDS	L6651_RS09220	thioesterase II family protein	other
+E11	NZ_CAKMRI010000002.1	14512	15204	+	CDS	L6651_RS09225	4'-phosphopantetheinyl transferase family protein	other
+E11	NZ_CAKMRI010000002.1	15204	16796	+	CDS	L6651_RS09230	AMP-binding protein	other
+E11	NZ_CAKMRI010000002.1	16820	20260	+	CDS	L6651_RS09235	amino acid adenylation domain-containing protein	other
+E11	NZ_CAKMRI010000002.1	20280	25790	+	CDS	L6651_RS09240	non-ribosomal peptide synthetase	other
+E11	NZ_CAKMRI010000002.1	25839	26918	+	CDS	L6651_RS09245	NAD-dependent epimerase/dehydratase family protein	other
+E11	NZ_CAKMRI010000002.1	26902	27663	+	CDS	L6651_RS09250	alpha/beta fold hydrolase	other
+E11	NZ_CAKMRI010000002.1	27678	28664	+	CDS	L6651_RS09255	helix-turn-helix domain-containing protein	other
+E11	NZ_CAKMRI010000002.1	28806	29408	+	CDS	L6651_RS09260	MptD family putative ECF transporter S component	other
+E11	NZ_CAKMRI010000002.1	29426	30100	+	CDS	L6651_RS09265	energy-coupling factor transporter transmembrane component T family protein	other
+E11	NZ_CAKMRI010000002.1	30112	31596	+	CDS	L6651_RS09270	energy-coupling factor ABC transporter ATP-binding protein	other
+E11	NZ_CAKMRI010000002.1	31612	33324	+	CDS	L6651_RS09275	ABC transporter ATP-binding protein	other
+E11	NZ_CAKMRI010000002.1	33325	35070	+	CDS	L6651_RS09280	ABC transporter ATP-binding protein	other
+E11	NZ_CAKMRI010000002.1	35092	36456	+	CDS	L6651_RS09285	MATE family efflux transporter	other
+E11	NZ_CAKMRI010000002.1	36695	37105	+	CDS	L6651_RS09290	sigma factor-like helix-turn-helix DNA-binding protein	other
+E11	NZ_CAKMRI010000002.1	37520	37687	+	CDS	L6651_RS09295	aminoacyl-tRNA hydrolase	other
+E11	NZ_CAKMRI010000002.1	37786	39504	+	CDS	L6651_RS09300	recombinase family protein	integration
+E11	NZ_CAKMRI010000002.1	39497	41239	+	CDS	L6651_RS09305	recombinase family protein	integration
+E12	NZ_CAKMRI010000004.1	1	1218	-	CDS	L6651_RS09320	hypothetical protein	hypothetical

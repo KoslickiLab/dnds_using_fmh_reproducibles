@@ -1,0 +1,231 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_LT594621.1	1040978	1042213	+	CDS	BN8908_RS05520	site-specific integrase	integration
+E1	NZ_LT594621.1	1042225	1042587	+	CDS	BN8908_RS05525	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1042665	1042970	-	CDS	BN8908_RS05530	helix-turn-helix domain-containing protein	other
+E1	NZ_LT594621.1	1043002	1043301	-	CDS	BN8908_RS05535	helix-turn-helix domain-containing protein	other
+E1	NZ_LT594621.1	1043440	1043865	+	CDS	BN8908_RS05540	helix-turn-helix domain-containing protein	other
+E1	NZ_LT594621.1	1043869	1044219	+	CDS	BN8908_RS05545	helix-turn-helix domain-containing protein	other
+E1	NZ_LT594621.1	1044240	1045811	+	CDS	BN8908_RS05550	DUF3945 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1045872	1047959	+	CDS	BN8908_RS05555	type IA DNA topoisomerase	other
+E1	NZ_LT594621.1	1048122	1048574	+	CDS	BN8908_RS05560	DUF1896 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1048564	1054380	+	CDS	BN8908_RS05565	N-6 DNA methylase	defence
+E1	NZ_LT594621.1	1055038	1056963	+	CDS	BN8908_RS05570	tetracycline resistance ribosomal protection protein Tet(Q)	resistance
+E1	NZ_LT594621.1	1056963	1059281	+	CDS	BN8908_RS05575	hybrid sensor histidine kinase/response regulator	other
+E1	NZ_LT594621.1	1059274	1060596	+	CDS	BN8908_RS05580	sigma-54-dependent transcriptional regulator	other
+E1	NZ_LT594621.1	1060876	1061298	+	CDS	BN8908_RS05585	dihydrofolate reductase family protein	other
+E1	NZ_LT594621.1	1061537	1062142	+	CDS	BN8908_RS05590	RteC domain-containing protein	other
+E1	NZ_LT594621.1	1062444	1063574	+	CDS	BN8908_RS05595	ATP-binding protein	other
+E1	NZ_LT594621.1	1063591	1066845	+	CDS	BN8908_RS05600	P-loop NTPase fold protein	other
+E1	NZ_LT594621.1	1066977	1068995	-	CDS	BN8908_RS05605	conjugal transfer protein MobC	conjugation
+E1	NZ_LT594621.1	1069026	1070273	-	CDS	BN8908_RS05610	conjugal transfer protein MobB	conjugation
+E1	NZ_LT594621.1	1070252	1070680	-	CDS	BN8908_RS05615	conjugal transfer protein MobA	conjugation
+E1	NZ_LT594621.1	1071102	1072151	+	CDS	BN8908_RS05620	ParA family protein	replication
+E1	NZ_LT594621.1	1072154	1072594	+	CDS	BN8908_RS05625	DUF3408 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1072597	1072950	+	CDS	BN8908_RS05630	DUF3408 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1072967	1073695	+	CDS	BN8908_RS05635	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1073897	1074214	+	CDS	BN8908_RS05640	DUF4134 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1074225	1074557	+	CDS	BN8908_RS05645	DUF4133 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1074554	1077058	+	CDS	BN8908_RS05650	TraG family conjugative transposon ATPase	conjugation
+E1	NZ_LT594621.1	1077099	1077479	+	CDS	BN8908_RS05655	DUF3876 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1077503	1078132	+	CDS	BN8908_RS05660	DUF4141 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1078136	1079140	+	CDS	BN8908_RS05665	conjugative transposon protein TraJ	conjugation
+E1	NZ_LT594621.1	1079172	1079795	+	CDS	BN8908_RS05670	conjugative transposon protein TraK	conjugation
+E1	NZ_LT594621.1	1079823	1080110	+	CDS	BN8908_RS05675	TraL conjugative transposon family protein	conjugation
+E1	NZ_LT594621.1	1080091	1081443	+	CDS	BN8908_RS05680	conjugative transposon protein TraM	conjugation
+E1	NZ_LT594621.1	1081478	1082464	+	CDS	BN8908_RS05685	conjugative transposon protein TraN	conjugation
+E1	NZ_LT594621.1	1082467	1083042	+	CDS	BN8908_RS05690	conjugal transfer protein TraO	conjugation
+E1	NZ_LT594621.1	1083050	1083226	+	pseudogene	BN8908_RS05695	pseudogene	other
+E1	NZ_LT594621.1	1083786	1085594	+	CDS	BN8908_RS05700	reverse transcriptase/maturase family protein	other
+E1	NZ_LT594621.1	1085707	1086432	+	pseudogene	BN8908_RS05705	pseudogene	other
+E1	NZ_LT594621.1	1086429	1086932	+	CDS	BN8908_RS05710	DUF3872 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1086929	1087456	+	CDS	BN8908_RS05715	glycoside hydrolase family protein	other
+E1	NZ_LT594621.1	1087521	1087910	+	CDS	BN8908_RS19080	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1087944	1088252	-	CDS	BN8908_RS05725	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1088306	1088551	-	CDS	BN8908_RS05730	DUF6956 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1088548	1088781	-	CDS	BN8908_RS05735	DUF3873 domain-containing protein	hypothetical
+E1	NZ_LT594621.1	1088801	1089058	-	CDS	BN8908_RS05740	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1089083	1090414	-	CDS	BN8908_RS05745	PcfJ domain-containing protein	conjugation
+E1	NZ_LT594621.1	1090411	1090827	-	CDS	BN8908_RS05750	PcfK-like family protein	other
+E1	NZ_LT594621.1	1090841	1091062	-	CDS	BN8908_RS05755	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1091074	1091289	-	CDS	BN8908_RS05760	hypothetical protein	hypothetical
+E1	NZ_LT594621.1	1091586	1091849	+	CDS	BN8908_RS19195	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1334424	1335701	+	CDS	BN8908_RS06805	phage integrase SAM-like domain-containing protein	integration
+E2	NZ_LT594621.1	1335880	1336056	+	CDS	BN8908_RS06810	histone H1	other
+E2	NZ_LT594621.1	1336352	1336588	+	CDS	BN8908_RS06815	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1336612	1336893	-	CDS	BN8908_RS06820	HU family DNA-binding protein	other
+E2	NZ_LT594621.1	1337030	1337464	+	CDS	BN8908_RS06825	DUF5675 family protein	hypothetical
+E2	NZ_LT594621.1	1337470	1339059	+	CDS	BN8908_RS06830	phage terminase large subunit	phage
+E2	NZ_LT594621.1	1339075	1340094	+	CDS	BN8908_RS06835	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1340548	1341246	-	CDS	BN8908_RS06840	DUF4276 family protein	hypothetical
+E2	NZ_LT594621.1	1341243	1342367	-	CDS	BN8908_RS06845	AAA family ATPase	other
+E2	NZ_LT594621.1	1342698	1343063	-	CDS	BN8908_RS06850	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1343100	1344260	-	CDS	BN8908_RS06855	non-hydrolyzing UDP-N-acetylglucosamine 2-epimerase	other
+E2	NZ_LT594621.1	1344265	1344963	-	CDS	BN8908_RS06860	WecB/TagA/CpsF family glycosyltransferase	other
+E2	NZ_LT594621.1	1344978	1346171	-	CDS	BN8908_RS06865	glycoside hydrolase family 88 protein	other
+E2	NZ_LT594621.1	1346181	1346669	-	CDS	BN8908_RS06870	serine O-acetyltransferase	other
+E2	NZ_LT594621.1	1346681	1347109	-	CDS	BN8908_RS06875	acyltransferase	other
+E2	NZ_LT594621.1	1347106	1348188	-	CDS	BN8908_RS06880	glycosyltransferase family 4 protein	other
+E2	NZ_LT594621.1	1348311	1349462	-	CDS	BN8908_RS06885	EpsG family protein	other
+E2	NZ_LT594621.1	1349536	1350792	-	CDS	BN8908_RS06890	oligosaccharide flippase family protein	other
+E2	NZ_LT594621.1	1350889	1352094	-	CDS	BN8908_RS06895	UDP-N-acetyl-D-mannosamine dehydrogenase	other
+E2	NZ_LT594621.1	1352091	1352252	-	CDS	BN8908_RS18770	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1352316	1353011	-	CDS	BN8908_RS06900	tyrosine-protein phosphatase	other
+E2	NZ_LT594621.1	1353101	1353334	-	CDS	BN8908_RS06905	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1353414	1355831	-	CDS	BN8908_RS06910	GumC family protein	other
+E2	NZ_LT594621.1	1355846	1356637	-	CDS	BN8908_RS06915	polysaccharide biosynthesis/export family protein	other
+E2	NZ_LT594621.1	1356651	1357772	-	CDS	BN8908_RS06920	MraY family glycosyltransferase	other
+E2	NZ_LT594621.1	1357807	1358202	-	CDS	BN8908_RS06925	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1358475	1359023	-	CDS	BN8908_RS06930	UpxY family transcription antiterminator	other
+E2	NZ_LT594621.1	1360258	1361010	-	CDS	BN8908_RS06935	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1361139	1361540	-	CDS	BN8908_RS06940	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1361561	1362451	-	CDS	BN8908_RS06945	DUF5106 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1362523	1364991	-	CDS	BN8908_RS06950	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1365014	1365265	+	CDS	BN8908_RS18915	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1365742	1368024	-	CDS	BN8908_RS06955	fimbrial tip adhesin FimD	other
+E2	NZ_LT594621.1	1368031	1369584	-	CDS	BN8908_RS06960	fimbrial protein	other
+E2	NZ_LT594621.1	1369602	1370507	-	CDS	BN8908_RS06965	FimB/Mfa2 family fimbrial subunit	other
+E2	NZ_LT594621.1	1370575	1371702	-	CDS	BN8908_RS06970	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1371763	1373244	-	CDS	BN8908_RS06975	DUF3868 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1373258	1373833	-	CDS	BN8908_RS06980	DUF3575 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1374577	1375785	-	CDS	BN8908_RS06985	site-specific integrase	integration
+E2	NZ_LT594621.1	1375957	1376283	+	CDS	BN8908_RS06990	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1376416	1377015	-	CDS	BN8908_RS06995	DUF6549 family protein	hypothetical
+E2	NZ_LT594621.1	1377008	1377214	-	CDS	BN8908_RS07000	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1377237	1377536	-	CDS	BN8908_RS07005	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1377541	1377699	-	CDS	BN8908_RS18775	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1377680	1378201	-	CDS	BN8908_RS07010	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1378170	1378532	-	CDS	BN8908_RS07015	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1378529	1379296	-	CDS	BN8908_RS07020	3'-5' exonuclease	other
+E2	NZ_LT594621.1	1379303	1381411	-	CDS	BN8908_RS07025	helix-hairpin-helix domain-containing protein	other
+E2	NZ_LT594621.1	1381484	1382020	-	CDS	BN8908_RS07030	HNH endonuclease	other
+E2	NZ_LT594621.1	1382020	1382562	-	CDS	BN8908_RS07035	HNH endonuclease	other
+E2	NZ_LT594621.1	1382555	1383322	-	CDS	BN8908_RS07040	DNA-methyltransferase	defence
+E2	NZ_LT594621.1	1383288	1385045	-	CDS	BN8908_RS07045	PHP domain-containing protein	other
+E2	NZ_LT594621.1	1385042	1386082	-	CDS	BN8908_RS07050	toprim domain-containing protein	other
+E2	NZ_LT594621.1	1386717	1388072	-	CDS	BN8908_RS07060	DnaB-like helicase C-terminal domain-containing protein	replication
+E2	NZ_LT594621.1	1388069	1388686	-	CDS	BN8908_RS07065	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1388664	1389266	-	CDS	BN8908_RS07070	RNA polymerase sigma factor	other
+E2	NZ_LT594621.1	1389411	1389896	-	CDS	BN8908_RS07075	crossover junction endodeoxyribonuclease RuvC	other
+E2	NZ_LT594621.1	1389871	1392195	-	CDS	BN8908_RS07080	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1392183	1393250	-	CDS	BN8908_RS07085	metallophosphoesterase family protein	other
+E2	NZ_LT594621.1	1393325	1394584	-	CDS	BN8908_RS07090	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1394599	1394757	+	CDS	BN8908_RS18780	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1394866	1395210	-	CDS	BN8908_RS18920	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1395260	1395472	-	CDS	BN8908_RS18925	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1395475	1398057	-	CDS	BN8908_RS07100	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1398054	1398458	-	CDS	BN8908_RS07105	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1398610	1399503	-	CDS	BN8908_RS07110	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1399500	1400432	-	CDS	BN8908_RS07115	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1400425	1401102	-	CDS	BN8908_RS07120	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1401213	1401536	-	CDS	BN8908_RS07125	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1401542	1401829	-	CDS	BN8908_RS07130	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1401881	1406650	-	CDS	BN8908_RS07135	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1407087	1408046	+	CDS	BN8908_RS07140	DUF4465 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1408100	1409908	+	CDS	BN8908_RS07145	PKD-like domain-containing protein	other
+E2	NZ_LT594621.1	1409910	1412036	+	CDS	BN8908_RS07150	receptor L domain-containing protein	other
+E2	NZ_LT594621.1	1412108	1413178	+	CDS	BN8908_RS07155	glutaminyl-peptide cyclotransferase	other
+E2	NZ_LT594621.1	1413178	1413675	+	CDS	BN8908_RS07160	transposase	transposase
+E2	NZ_LT594621.1	1413672	1415729	+	CDS	BN8908_RS07165	TonB-dependent receptor	other
+E2	NZ_LT594621.1	1415754	1416893	+	CDS	BN8908_RS07170	ABC transporter substrate-binding protein	other
+E2	NZ_LT594621.1	1416894	1417874	+	CDS	BN8908_RS07175	FecCD family ABC transporter permease	other
+E2	NZ_LT594621.1	1417871	1418635	+	CDS	BN8908_RS07180	ABC transporter ATP-binding protein	other
+E2	NZ_LT594621.1	1418721	1420031	-	CDS	BN8908_RS07185	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1420038	1421450	-	CDS	BN8908_RS18930	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1421710	1421889	+	CDS	BN8908_RS18935	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1422309	1423997	-	CDS	BN8908_RS07195	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1423994	1424884	-	CDS	BN8908_RS07200	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1424966	1426156	+	CDS	BN8908_RS07205	toll/interleukin-1 receptor domain-containing protein	other
+E2	NZ_LT594621.1	1426166	1427491	-	CDS	BN8908_RS07210	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1427482	1428459	-	CDS	BN8908_RS07215	DUF6046 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1428472	1432314	-	CDS	BN8908_RS07220	phage tail tape measure protein	phage
+E2	NZ_LT594621.1	1432408	1432593	-	CDS	BN8908_RS07225	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1432605	1432961	-	CDS	BN8908_RS07230	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1433186	1434163	+	CDS	BN8908_RS07235	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1434157	1434939	+	CDS	BN8908_RS07240	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1434936	1435700	+	CDS	BN8908_RS07245	metallophosphoesterase	other
+E2	NZ_LT594621.1	1435785	1436276	-	CDS	BN8908_RS07250	DNA N-6-adenine-methyltransferase	other
+E2	NZ_LT594621.1	1436283	1436738	-	CDS	BN8908_RS07255	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1436742	1438094	-	CDS	BN8908_RS07260	DUF2586 family protein	hypothetical
+E2	NZ_LT594621.1	1438094	1438441	-	CDS	BN8908_RS07265	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1438517	1439566	-	CDS	BN8908_RS07270	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1439693	1440931	-	CDS	BN8908_RS07275	Clp protease ClpP	other
+E2	NZ_LT594621.1	1441215	1441919	-	CDS	BN8908_RS07280	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1441916	1442494	-	CDS	BN8908_RS07285	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1442475	1443110	-	CDS	BN8908_RS07290	phage minor head protein	phage
+E2	NZ_LT594621.1	1443335	1444657	-	CDS	BN8908_RS07295	phage portal protein family protein	phage
+E2	NZ_LT594621.1	1444901	1445398	+	CDS	BN8908_RS07300	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1445409	1445747	+	CDS	BN8908_RS07305	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1445686	1446867	+	CDS	BN8908_RS07310	phage antirepressor KilAC domain-containing protein	phage
+E2	NZ_LT594621.1	1446870	1447307	+	CDS	BN8908_RS19145	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1447464	1447703	+	CDS	BN8908_RS07320	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1447786	1448133	+	CDS	BN8908_RS07325	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1448285	1448917	-	CDS	BN8908_RS07330	RloB family protein	other
+E2	NZ_LT594621.1	1448892	1450139	-	CDS	BN8908_RS07335	AAA family ATPase	other
+E2	NZ_LT594621.1	1450674	1451465	-	CDS	BN8908_RS07340	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1452971	1453126	+	CDS	BN8908_RS18490	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1453358	1453930	+	CDS	BN8908_RS07355	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1454098	1454367	+	CDS	BN8908_RS07360	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1454638	1455030	+	CDS	BN8908_RS07365	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1455047	1455304	+	CDS	BN8908_RS07370	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1455460	1456539	+	CDS	BN8908_RS07375	IS110 family RNA-guided transposase	transposase
+E2	NZ_LT594621.1	1457020	1457232	+	CDS	BN8908_RS07380	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1457237	1457476	+	CDS	BN8908_RS07385	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1457528	1457707	+	CDS	BN8908_RS18945	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1457707	1458009	+	CDS	BN8908_RS18950	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1458050	1459147	+	CDS	BN8908_RS07395	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1459158	1460048	+	CDS	BN8908_RS07400	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1460045	1460503	+	CDS	BN8908_RS07405	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1460519	1460794	+	CDS	BN8908_RS07410	DUF3846 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1460799	1461278	+	CDS	BN8908_RS07415	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1461284	1461604	+	CDS	BN8908_RS07420	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1461615	1461794	+	CDS	BN8908_RS07425	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1461807	1462052	+	CDS	BN8908_RS07430	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1462081	1462728	+	CDS	BN8908_RS07435	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1462742	1463410	+	CDS	BN8908_RS07440	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1463403	1464665	+	CDS	BN8908_RS07445	RNA-directed DNA polymerase	other
+E2	NZ_LT594621.1	1465011	1465289	-	CDS	BN8908_RS18785	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1465535	1466014	+	CDS	BN8908_RS07455	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1466011	1467099	+	CDS	BN8908_RS07460	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1467462	1467641	+	CDS	BN8908_RS18325	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1467654	1467941	+	CDS	BN8908_RS07465	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1467955	1468680	+	CDS	BN8908_RS07470	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1468692	1469276	+	CDS	BN8908_RS07475	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1469310	1469546	+	CDS	BN8908_RS07480	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1469527	1470459	+	CDS	BN8908_RS07485	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1470515	1470805	+	CDS	BN8908_RS07490	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1470857	1471075	+	CDS	BN8908_RS18955	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1471077	1471286	+	CDS	BN8908_RS07500	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1471346	1472368	+	CDS	BN8908_RS07505	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1472371	1472907	+	CDS	BN8908_RS07510	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1472923	1473138	+	CDS	BN8908_RS07515	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1473160	1473972	+	CDS	BN8908_RS07520	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1473951	1474736	+	CDS	BN8908_RS07525	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1474806	1475705	+	CDS	BN8908_RS07530	DUF932 domain-containing protein	hypothetical
+E2	NZ_LT594621.1	1475717	1476307	+	CDS	BN8908_RS07535	tyrosine-type recombinase/integrase	integration
+E2	NZ_LT594621.1	1476389	1477057	+	CDS	BN8908_RS07540	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1477482	1477778	+	CDS	BN8908_RS18960	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1477765	1479669	+	CDS	BN8908_RS07550	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1479666	1480538	+	CDS	BN8908_RS07555	DpnD/PcfM family protein	other
+E2	NZ_LT594621.1	1480679	1481350	+	CDS	BN8908_RS07560	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1481347	1481697	+	CDS	BN8908_RS07565	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1481713	1482018	+	CDS	BN8908_RS07570	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1482029	1482457	+	CDS	BN8908_RS07575	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1482490	1483008	+	CDS	BN8908_RS07580	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1483043	1483222	+	CDS	BN8908_RS07585	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1483203	1483466	+	CDS	BN8908_RS07590	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1483478	1483981	+	CDS	BN8908_RS07595	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1483999	1484703	+	CDS	BN8908_RS07600	radical SAM protein	other
+E2	NZ_LT594621.1	1484724	1485626	+	CDS	BN8908_RS07605	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1485728	1486204	+	CDS	BN8908_RS07610	MutS N-terminal domain-containing protein	other
+E2	NZ_LT594621.1	1486243	1486689	+	CDS	BN8908_RS07615	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1486712	1487218	+	CDS	BN8908_RS07620	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1487234	1487824	+	CDS	BN8908_RS07625	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1487800	1488135	+	CDS	BN8908_RS07630	helix-turn-helix domain-containing protein	other
+E2	NZ_LT594621.1	1488139	1488795	+	CDS	BN8908_RS07635	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1488818	1489126	+	CDS	BN8908_RS07640	LPD28 domain-containing protein	other
+E2	NZ_LT594621.1	1489140	1489550	+	CDS	BN8908_RS07645	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1489705	1490028	+	CDS	BN8908_RS07650	MutS N-terminal domain-containing protein	other
+E2	NZ_LT594621.1	1490000	1490656	+	CDS	BN8908_RS07655	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1490819	1491349	+	CDS	BN8908_RS07660	hypothetical protein	hypothetical
+E2	NZ_LT594621.1	1491346	1491744	+	CDS	BN8908_RS07665	ribonuclease H family protein	other
+E2	NZ_LT594621.1	1491755	1491958	+	CDS	BN8908_RS07670	hypothetical protein	hypothetical

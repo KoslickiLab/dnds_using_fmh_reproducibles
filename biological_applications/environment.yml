@@ -1,0 +1,28 @@
+# Conda environment for all analyses and figures of this repository.
+#   conda env create -f environment.yml && conda activate fmh_dnds_applications
+name: fmh_dnds_applications
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - sourmash=4.9.4                      # FracMinHash sketches (used by fmh_dnds.py)
+  - sourmash_plugin_branchwater=0.9.15  # manysketch / multisearch (used by fmh_dnds.py)
+  - prodigal=2.6.3                      # gene calling, same version and options as GTDB R214
+  - mummer4=4.0.1                       # nucmer whole-genome alignment
+  - diamond=2.2.8                       # protein search for reciprocal best hits
+  - kakscalculator2=2.0.1               # alignment-based dN/dS (Yang-Nielsen model)
+  - ncbi-datasets-cli=18.41.0           # genome downloads from NCBI
+  - biopython=1.88
+  - pandas=3.1.1
+  - numpy=2.5.4
+  - matplotlib-base=3.11.2
+  - loguru                              # imported by fmh_dnds.py
+  - scipy                               # imported by fmh_dnds.py
+  - more-itertools                      # imported by fmh_dnds.py
+  - unzip
+  - git
+  # only needed for the optional read-level steps 16 and 17
+  - bowtie2=2.5.5
+  - samtools=1.25
+  - sra-tools=3.4.1

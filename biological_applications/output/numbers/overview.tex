@@ -1,0 +1,117 @@
+% Generated file -- do not edit by hand. Re-run the analysis instead (see the code repository).
+\providecommand{\OVPairs}{140}  % genome pairs in the hierarchical edge bundling figure
+\providecommand{\OVGenomes}{243}  % genomes in these pairs
+\providecommand{\OVGenomesMagSag}{175}  % of those, metagenome-assembled or single-cell genomes
+\providecommand{\OVPairsAboveOne}{70}  % pairs with FracMinHash dN/dS above 1
+\providecommand{\OVAboveOneNearDriven}{69}  % of those, pairs in which at least half of the shared 21-mers lie in near-identical genes
+\providecommand{\OVNearShareAbove}{96}  % median share of shared 21-mers in near-identical genes, pairs above 1 (percent)
+\providecommand{\OVNearShareBelow}{41}  % the same for pairs at or below 1 (percent)
+\providecommand{\OVMedianAbove}{1.70}  % median FracMinHash dN/dS of the pairs above 1
+\providecommand{\OVMedianAboveWithout}{0.55}  % the same pairs after removing near-identical genes
+\providecommand{\OVFellBelowOne}{59}  % pairs above 1 that fall to 1 or below after removal
+\providecommand{\OVStayedAboveOne}{9}  % pairs above 1 that stay above 1 after removal
+\providecommand{\OVNoEstimateLeft}{2}  % pairs above 1 with no shared k-mers left after removal (no estimate)
+\providecommand{\OVRelatedMedian}{0.55}  % median FracMinHash dN/dS of pairs of related genomes
+\providecommand{\OVRelatedMedianWithout}{0.55}  % the same after removing near-identical genes
+\providecommand{\OVConvMin}{0.004}  % smallest per-pair median of the alignment-based dN/dS
+\providecommand{\OVConvMax}{0.21}  % largest per-pair median of the alignment-based dN/dS
+\providecommand{\OVOrthologs}{175{,}286}  % orthologs aligned over all pairs
+\providecommand{\OVMinContainment}{0.051}  % smallest nucleotide containment among the pairs of the figure
+\providecommand{\OVMinAbove}{1.50}  % smallest FracMinHash dN/dS among the pairs above 1
+\providecommand{\OVMaxBelow}{0.88}  % largest FracMinHash dN/dS among the pairs at or below 1
+\providecommand{\OVEveryKmerAboveOne}{69}  % pairs above 1 that are also above 1 when every k-mer is used
+\providecommand{\OVEveryKmerBelowAboveOne}{1}  % pairs at or below 1 that are above 1 when every k-mer is used
+\providecommand{\OVEveryKmerDifferenceAbove}{0.24}  % median absolute difference between sketch and every-k-mer values, pairs above 1
+\providecommand{\OVEveryKmerDifferenceBelow}{0.04}  % the same for pairs at or below 1
+\providecommand{\OVClassRelated}{41}  % pairs in class 'related genomes'
+\providecommand{\OVClassRelatedAboveOne}{1}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVClassForeign}{60}  % pairs in class 'MAG or SAG, foreign contigs'
+\providecommand{\OVClassForeignAboveOne}{43}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVClassClose}{20}  % pairs in class 'MAG or SAG, close relatives with partial overlap'
+\providecommand{\OVClassCloseAboveOne}{17}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVClassMagInside}{6}  % pairs in class 'MAG or SAG, unresolved'
+\providecommand{\OVClassMagInsideAboveOne}{1}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVClassIsolateContigs}{7}  % pairs in class 'isolates with wholly shared contigs'
+\providecommand{\OVClassIsolateContigsAboveOne}{4}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVClassIsolateInside}{6}  % pairs in class 'isolates with embedded shared DNA'
+\providecommand{\OVClassIsolateInsideAboveOne}{4}  % of those, with FracMinHash dN/dS above 1
+\providecommand{\OVStayedClassRelated}{1}  % pairs that stay above 1 after removal, class 'related genomes'
+\providecommand{\OVStayedClassForeign}{2}  % pairs that stay above 1 after removal, class 'MAG or SAG, foreign contigs'
+\providecommand{\OVStayedClassClose}{5}  % pairs that stay above 1 after removal, class 'MAG or SAG, close relatives with partial overlap'
+\providecommand{\OVStayedClassMagInside}{0}  % pairs that stay above 1 after removal, class 'MAG or SAG, unresolved'
+\providecommand{\OVStayedClassIsolateContigs}{1}  % pairs that stay above 1 after removal, class 'isolates with wholly shared contigs'
+\providecommand{\OVStayedClassIsolateInside}{0}  % pairs that stay above 1 after removal, class 'isolates with embedded shared DNA'
+\providecommand{\OVWhollyShared}{80}  % MAG/SAG pairs whose near-identical genes lie on wholly shared contigs
+\providecommand{\OVWhollySharedAboveOne}{60}  % of those, above 1
+\providecommand{\OVForeignSameGenus}{23}  % foreign-contig pairs within one genus
+\providecommand{\OVForeignSameFamily}{26}  % foreign-contig pairs within one family (different genera)
+\providecommand{\OVForeignHigher}{11}  % foreign-contig pairs from different families or higher taxa
+\providecommand{\OVForeignCrossPhylum}{4}  % of those, pairs from different phyla or different domains
+\providecommand{\OVForeignMedianContigs}{22}  % foreign-contig pairs: median number of wholly shared contigs
+\providecommand{\OVForeignFewContigs}{3}  % foreign-contig pairs with only one or two wholly shared contigs
+\providecommand{\OVForeignMedianKb}{186}  % foreign-contig pairs: median length of near-identical genes (kb)
+\providecommand{\OVForeignNearOrthologs}{20}  % foreign-contig pairs: median percent of orthologs that are near-identical
+\providecommand{\OVForeignBackgroundIdentity}{59}  % foreign-contig pairs: median amino-acid identity of the other orthologs (percent)
+\providecommand{\OVCloseNearOrthologs}{67}  % close-relative pairs: median percent of orthologs that are near-identical
+\providecommand{\OVCloseSameGenus}{18}  % close-relative pairs within one genus
+\providecommand{\OVCloseCompleteness}{63}  % close-relative pairs: median CheckM completeness of the less complete genome (percent)
+\providecommand{\OVForeignShareOnContigs}{76}  % foreign-contig pairs: median percent of the near-identical genes of the MAG or SAG that lie on fully shared contigs
+\providecommand{\OVCarrierGenomes}{76}  % MAGs and SAGs that carry the wholly shared contigs of foreign-contig pairs
+\providecommand{\OVCarrierContamination}{1.04}  % their median CheckM contamination (percent)
+\providecommand{\OVCarrierPass}{70}  % of those genomes, with CheckM contamination of at most 5 percent
+\providecommand{\OVIsolateContaminated}{5}  % isolate pairs with at least ten wholly shared contigs
+\providecommand{\OVIsolateContigsMin}{32}  % fewest wholly shared contigs among them
+\providecommand{\OVIsolateContigsMax}{475}  % most wholly shared contigs among them
+\providecommand{\OVBackgroundTwo}{0.54}  % pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedTwo}{1.85}  % pair 2: observed FracMinHash dN/dS
+\providecommand{\OVPredictedTwo}{1.84}  % pair 2: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentTwo}{4.9}  % pair 2: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentTwo}{1.2}  % pair 2: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVBackgroundThree}{0.43}  % pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedThree}{1.75}  % pair 3: observed FracMinHash dN/dS
+\providecommand{\OVPredictedThree}{1.63}  % pair 3: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentThree}{5.3}  % pair 3: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentThree}{1.8}  % pair 3: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVBackgroundFour}{0.69}  % pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedFour}{1.67}  % pair 4: observed FracMinHash dN/dS
+\providecommand{\OVPredictedFour}{1.45}  % pair 4: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentFour}{5.9}  % pair 4: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentFour}{2.0}  % pair 4: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVBackgroundFive}{0.96}  % pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedFive}{1.95}  % pair 5: observed FracMinHash dN/dS
+\providecommand{\OVPredictedFive}{1.73}  % pair 5: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentFive}{4.0}  % pair 5: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentFive}{0.2}  % pair 5: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVBackgroundSix}{0.37}  % pair 6 (R. intestinalis L1-82, R. zhanii BX1005): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedSix}{0.63}  % pair 6: observed FracMinHash dN/dS
+\providecommand{\OVPredictedSix}{0.65}  % pair 6: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentSix}{4.3}  % pair 6: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentSix}{13.4}  % pair 6: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVBackgroundSeven}{0.43}  % pair 7 (L. pacificus DSM 29620, S. pentaromativorans P9): FracMinHash dN/dS without near-identical genes
+\providecommand{\OVObservedSeven}{0.64}  % pair 7: observed FracMinHash dN/dS
+\providecommand{\OVPredictedSeven}{0.65}  % pair 7: value predicted for the observed identical fraction
+\providecommand{\OVIdenticalPercentSeven}{4.9}  % pair 7: identical fraction that reproduces the nucleotide containment (percent)
+\providecommand{\OVCrossingPercentSeven}{17.2}  % pair 7: identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVModelPairsAbove}{4}  % examined pairs above 1 to which the model was applied
+\providecommand{\OVModelPairsBelow}{2}  % examined pairs below 1 to which the model was applied
+\providecommand{\OVModelLargestDeviation}{0.22}  % largest absolute difference between predicted and observed values
+\providecommand{\OVCrossingAboveMin}{0.2}  % pairs above 1: smallest identical fraction at which the estimate exceeds 1 (percent)
+\providecommand{\OVCrossingAboveMax}{2.0}  % pairs above 1: largest such fraction (percent)
+\providecommand{\OVCrossingBelowMin}{13.4}  % pairs below 1: smallest identical fraction at which the estimate would exceed 1 (percent)
+\providecommand{\OVCrossingBelowMax}{17.2}  % pairs below 1: largest such fraction (percent)
+\providecommand{\OVIdentityAboveMin}{49}  % pairs above 1: lowest median amino-acid identity of the diverged orthologs (percent)
+\providecommand{\OVIdentityAboveMax}{53}  % pairs above 1: highest median amino-acid identity of the diverged orthologs (percent)
+\providecommand{\OVIdentityBelowMin}{67}  % pairs below 1: lowest median amino-acid identity of the diverged orthologs (percent)
+\providecommand{\OVIdentityBelowMax}{71}  % pairs below 1: highest median amino-acid identity of the diverged orthologs (percent)
+\providecommand{\OVRemovalOneKeepAll}{0.29}  % gene-removal experiment, F. duncaniae A2-165 vs NB2B-19-DCM: mean FracMinHash dN/dS when each genome keeps 100 percent of its genes
+\providecommand{\OVRemovalOneKeepNinety}{0.45}  % gene-removal experiment, F. duncaniae A2-165 vs NB2B-19-DCM: mean FracMinHash dN/dS when each genome keeps 90 percent of its genes
+\providecommand{\OVRemovalOneKeepSeventy}{0.71}  % gene-removal experiment, F. duncaniae A2-165 vs NB2B-19-DCM: mean FracMinHash dN/dS when each genome keeps 70 percent of its genes
+\providecommand{\OVRemovalOneKeepHalf}{1.17}  % gene-removal experiment, F. duncaniae A2-165 vs NB2B-19-DCM: mean FracMinHash dN/dS when each genome keeps 50 percent of its genes
+\providecommand{\OVRemovalTwoKeepAll}{0.83}  % gene-removal experiment, R. intestinalis L1-82 vs NB2A 31_NB: mean FracMinHash dN/dS when each genome keeps 100 percent of its genes
+\providecommand{\OVRemovalTwoKeepNinety}{1.31}  % gene-removal experiment, R. intestinalis L1-82 vs NB2A 31_NB: mean FracMinHash dN/dS when each genome keeps 90 percent of its genes
+\providecommand{\OVRemovalTwoKeepSeventy}{1.72}  % gene-removal experiment, R. intestinalis L1-82 vs NB2A 31_NB: mean FracMinHash dN/dS when each genome keeps 70 percent of its genes
+\providecommand{\OVRemovalTwoKeepHalf}{6.47}  % gene-removal experiment, R. intestinalis L1-82 vs NB2A 31_NB: mean FracMinHash dN/dS when each genome keeps 50 percent of its genes
+\providecommand{\OVTableFourFmhDnds}{1.72}  % Neisseria pair: FracMinHash dN/dS with the GTDB gene calls of GCA_923184405.1 (translation table 4)
+\providecommand{\OVTableElevenFmhDnds}{0.63}  % Neisseria pair: FracMinHash dN/dS when the genes of GCA_923184405.1 are called with table 11
+\providecommand{\OVTableFourGenes}{3{,}647}  % genes of GCA_923184405.1 predicted with table 4
+\providecommand{\OVTableElevenGenes}{4{,}325}  % genes of GCA_923184405.1 predicted with table 11

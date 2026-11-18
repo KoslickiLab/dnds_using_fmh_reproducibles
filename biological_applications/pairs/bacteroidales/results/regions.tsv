@@ -1,0 +1,3 @@
+region	contig	start	end	span_bp	aligned_bp	contig_length_bp	gc_percent	identity	longest_block_bp	partner_contigs	n_genes	n_resistance	n_conjugation	n_integration	n_transposase	n_defence	n_phage	n_replication	n_hypothetical	n_other
+E1	NZ_LT594621.1	1040649	1092313	51665	49185	4124789	49.8	99.987	36294	NZ_JH815205.1	50	1	11	1	0	1	0	1	19	16
+E2	NZ_LT594621.1	1334203	1492318	158116	148048	4124789	50.6	99.372	70634	NZ_JH815203.1	180	0	0	3	2	1	5	1	118	50

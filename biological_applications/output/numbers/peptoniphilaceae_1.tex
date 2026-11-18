@@ -1,0 +1,152 @@
+% Generated file -- do not edit by hand. Re-run the analysis instead (see the code repository).
+\providecommand{\MAFmhDnds}{1.67}  % FracMinHash dN/dS of the pair, all genes
+\providecommand{\MAFmhDndsWithout}{0.69}  % FracMinHash dN/dS after removing near-identical genes from both genomes
+\providecommand{\MAFmhDndsWithoutLoose}{0.47}  % the same when genes sharing at least 25 percent of their 21-mers are removed
+\providecommand{\MAFmhDndsWithoutStrict}{0.96}  % the same when only genes sharing at least 75 percent of their 21-mers are removed
+\providecommand{\MAFmhDndsEveryKmer}{1.55}  % FracMinHash dN/dS of the pair computed from every k-mer (scale factor 1)
+\providecommand{\MAContainmentNt}{0.070}  % nucleotide 21-mer containment, all genes
+\providecommand{\MAContainmentAa}{0.120}  % protein 7-mer containment, all genes
+\providecommand{\MAContainmentNtWithout}{0.012}  % nucleotide containment without near-identical genes
+\providecommand{\MAContainmentAaWithout}{0.072}  % protein containment without near-identical genes
+\providecommand{\MAGenomeMbA}{2.00}  % genome A: assembly size (Mb)
+\providecommand{\MAContigsA}{4}  % genome A: number of contigs or scaffolds
+\providecommand{\MAGcA}{33.6}  % genome A: G+C content (percent)
+\providecommand{\MAGenesA}{1{,}800}  % genome A: predicted genes
+\providecommand{\MANearGenesA}{120}  % genome A: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\MANearPercentGenesA}{6.7}  % genome A: near-identical genes as percent of all genes
+\providecommand{\MANearKbA}{134}  % genome A: total length of near-identical genes (kb)
+\providecommand{\MANearShareA}{83}  % genome A: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\MAGenomeMbB}{2.05}  % genome B: assembly size (Mb)
+\providecommand{\MAContigsB}{19}  % genome B: number of contigs or scaffolds
+\providecommand{\MAGcB}{28.9}  % genome B: G+C content (percent)
+\providecommand{\MAGenesB}{2{,}059}  % genome B: predicted genes
+\providecommand{\MANearGenesB}{111}  % genome B: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\MANearPercentGenesB}{5.4}  % genome B: near-identical genes as percent of all genes
+\providecommand{\MANearKbB}{110}  % genome B: total length of near-identical genes (kb)
+\providecommand{\MANearShareB}{85}  % genome B: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\MACheckmCompletenessA}{98.2}  % genome A: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\MACheckmContaminationA}{0.00}  % genome A: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\MACheckmCompletenessB}{95.8}  % genome B: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\MACheckmContaminationB}{0.30}  % genome B: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\MAOrthologs}{912}  % reciprocal-best-hit orthologs that could be aligned
+\providecommand{\MANearOrthologs}{87}  % orthologs that are near-identical genes
+\providecommand{\MABackgroundOrthologs}{825}  % orthologs that are not near-identical
+\providecommand{\MABackgroundEstimable}{825}  % background orthologs with an estimable dN/dS
+\providecommand{\MAAaIdentity}{50}  % median amino-acid identity of background orthologs (percent)
+\providecommand{\MAConvDnds}{0.11}  % conventional dN/dS (YN), median over background orthologs
+\providecommand{\MAConvDs}{3.7}  % conventional dS (YN), median over background orthologs
+\providecommand{\MAConvAboveOne}{0}  % background orthologs with conventional dN/dS above 1
+\providecommand{\MARegions}{12}  % number of shared regions (blocks >= 1 kb and >= 95 percent identical, merged within 10 kb)
+\providecommand{\MARegionsKb}{180}  % total span of the shared regions in genome A (kb)
+\providecommand{\MARegionsPercentA}{9.0}  % shared regions as percent of genome A
+\providecommand{\MAAlignedKb}{161}  % aligned at >= 95 percent identity (kb)
+\providecommand{\MAAlignedNearPerfectKb}{7}  % aligned at >= 99.9 percent identity (kb)
+\providecommand{\MALongestBlockKb}{14.7}  % longest single alignment block (kb)
+\providecommand{\MALongestBlockIdentity}{99.47}  % identity of the longest block (percent; capped at 99.99)
+\providecommand{\MAPartnerContigs}{4}  % contigs of genome B that carry shared DNA
+\providecommand{\MAPartnerContigsEmbedded}{3}  % of those, contigs with >= 10 kb of other sequence as well
+\providecommand{\MALargestPartnerContigKb}{829}  % largest contig of genome B that carries shared DNA (kb)
+\providecommand{\MAPartnerContigsWhollyShared}{1}  % contigs of genome B that consist of shared DNA only
+\providecommand{\MAGapsNearA}{0}  % genome A: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\MAGapsNearB}{63}  % genome B: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\MARegionsGcMin}{28.2}  % lowest G+C content among the shared regions (percent)
+\providecommand{\MARegionsGcMax}{32.4}  % highest G+C content among the shared regions (percent)
+\providecommand{\MARegionsIdentityMin}{95.5}  % lowest identity to genome B among the shared regions (percent)
+\providecommand{\MARegionsIdentityMax}{98.7}  % highest identity to genome B among the shared regions (percent; capped at 99.9)
+\providecommand{\MARegionOneKb}{6}  % E1: span (kb)
+\providecommand{\MARegionOneIdentity}{98.46}  % E1: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionOneGc}{31.6}  % E1: G+C content (percent)
+\providecommand{\MARegionOneGenes}{5}  % E1: annotated genes
+\providecommand{\MARegionOneIntegrases}{0}  % E1: genes annotated as integrase or recombinase
+\providecommand{\MARegionOneContigKb}{1{,}951}  % E1: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionTwoKb}{22}  % E2: span (kb)
+\providecommand{\MARegionTwoIdentity}{96.51}  % E2: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionTwoGc}{30.9}  % E2: G+C content (percent)
+\providecommand{\MARegionTwoGenes}{23}  % E2: annotated genes
+\providecommand{\MARegionTwoIntegrases}{3}  % E2: genes annotated as integrase or recombinase
+\providecommand{\MARegionTwoContigKb}{1{,}951}  % E2: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionThreeKb}{26}  % E3: span (kb)
+\providecommand{\MARegionThreeIdentity}{96.67}  % E3: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionThreeGc}{31.2}  % E3: G+C content (percent)
+\providecommand{\MARegionThreeGenes}{20}  % E3: annotated genes
+\providecommand{\MARegionThreeIntegrases}{1}  % E3: genes annotated as integrase or recombinase
+\providecommand{\MARegionThreeContigKb}{1{,}951}  % E3: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionFourKb}{18}  % E4: span (kb)
+\providecommand{\MARegionFourIdentity}{98.22}  % E4: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionFourGc}{31.1}  % E4: G+C content (percent)
+\providecommand{\MARegionFourGenes}{20}  % E4: annotated genes
+\providecommand{\MARegionFourIntegrases}{1}  % E4: genes annotated as integrase or recombinase
+\providecommand{\MARegionFourContigKb}{1{,}951}  % E4: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionFiveKb}{5}  % E5: span (kb)
+\providecommand{\MARegionFiveIdentity}{95.48}  % E5: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionFiveGc}{29.6}  % E5: G+C content (percent)
+\providecommand{\MARegionFiveGenes}{6}  % E5: annotated genes
+\providecommand{\MARegionFiveIntegrases}{1}  % E5: genes annotated as integrase or recombinase
+\providecommand{\MARegionFiveContigKb}{1{,}951}  % E5: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionSixKb}{35}  % E6: span (kb)
+\providecommand{\MARegionSixIdentity}{98.08}  % E6: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionSixGc}{29.0}  % E6: G+C content (percent)
+\providecommand{\MARegionSixGenes}{24}  % E6: annotated genes
+\providecommand{\MARegionSixIntegrases}{0}  % E6: genes annotated as integrase or recombinase
+\providecommand{\MARegionSixContigKb}{1{,}951}  % E6: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionSevenKb}{7}  % E7: span (kb)
+\providecommand{\MARegionSevenIdentity}{97.55}  % E7: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionSevenGc}{28.7}  % E7: G+C content (percent)
+\providecommand{\MARegionSevenGenes}{7}  % E7: annotated genes
+\providecommand{\MARegionSevenIntegrases}{3}  % E7: genes annotated as integrase or recombinase
+\providecommand{\MARegionSevenContigKb}{1{,}951}  % E7: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionEightKb}{1}  % E8: span (kb)
+\providecommand{\MARegionEightIdentity}{96.56}  % E8: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionEightGc}{31.4}  % E8: G+C content (percent)
+\providecommand{\MARegionEightGenes}{2}  % E8: annotated genes
+\providecommand{\MARegionEightIntegrases}{0}  % E8: genes annotated as integrase or recombinase
+\providecommand{\MARegionEightContigKb}{1{,}951}  % E8: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionNineKb}{6}  % E9: span (kb)
+\providecommand{\MARegionNineIdentity}{96.40}  % E9: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionNineGc}{29.7}  % E9: G+C content (percent)
+\providecommand{\MARegionNineGenes}{8}  % E9: annotated genes
+\providecommand{\MARegionNineIntegrases}{0}  % E9: genes annotated as integrase or recombinase
+\providecommand{\MARegionNineContigKb}{1{,}951}  % E9: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionTenKb}{12}  % E10: span (kb)
+\providecommand{\MARegionTenIdentity}{97.06}  % E10: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionTenGc}{32.4}  % E10: G+C content (percent)
+\providecommand{\MARegionTenGenes}{15}  % E10: annotated genes
+\providecommand{\MARegionTenIntegrases}{0}  % E10: genes annotated as integrase or recombinase
+\providecommand{\MARegionTenContigKb}{1{,}951}  % E10: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionElevenKb}{41}  % E11: span (kb)
+\providecommand{\MARegionElevenIdentity}{98.66}  % E11: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionElevenGc}{28.7}  % E11: G+C content (percent)
+\providecommand{\MARegionElevenGenes}{23}  % E11: annotated genes
+\providecommand{\MARegionElevenIntegrases}{2}  % E11: genes annotated as integrase or recombinase
+\providecommand{\MARegionElevenContigKb}{41}  % E11: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MARegionTwelveKb}{1}  % E12: span (kb)
+\providecommand{\MARegionTwelveIdentity}{95.74}  % E12: identity to genome B (percent; capped at 99.99)
+\providecommand{\MARegionTwelveGc}{28.2}  % E12: G+C content (percent)
+\providecommand{\MARegionTwelveGenes}{1}  % E12: annotated genes
+\providecommand{\MARegionTwelveIntegrases}{0}  % E12: genes annotated as integrase or recombinase
+\providecommand{\MARegionTwelveContigKb}{1}  % E12: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\MAPresentB}{11}  % regions at least 90 percent present in A. vaginalis PH9 (GCF_000307225.1)
+\providecommand{\MASmallestHostContigKbB}{192}  % smallest contig of A. vaginalis PH9 that carries one of these regions (kb)
+\providecommand{\MAPresentArgos}{3}  % regions at least 90 percent present in A. vaginalis FDAARGOS_988 (closed) (GCF_016127475.1)
+\providecommand{\MASmallestHostContigKbArgos}{1{,}894}  % smallest contig of A. vaginalis FDAARGOS_988 (closed) that carries one of these regions (kb)
+\providecommand{\MAPresentAvOne}{3}  % regions at least 90 percent present in A. vaginalis BSD2780120874b (GCF_015549525.1)
+\providecommand{\MASmallestHostContigKbAvOne}{10}  % smallest contig of A. vaginalis BSD2780120874b that carries one of these regions (kb)
+\providecommand{\MAPresentAvTwo}{5}  % regions at least 90 percent present in A. vaginalis AM91-12TA (GCF_027698525.1)
+\providecommand{\MASmallestHostContigKbAvTwo}{37}  % smallest contig of A. vaginalis AM91-12TA that carries one of these regions (kb)
+\providecommand{\MAPresentAnaerococcus}{5}  % regions at least 90 percent present in Anaerococcus sp. Marseille-P3625 (GCF_900232825.1)
+\providecommand{\MASmallestHostContigKbAnaerococcus}{721}  % smallest contig of Anaerococcus sp. Marseille-P3625 that carries one of these regions (kb)
+\providecommand{\MAPresentDuerdenii}{5}  % regions at least 90 percent present in P. duerdenii ATCC BAA-1640 (GCF_000146345.1)
+\providecommand{\MASmallestHostContigKbDuerdenii}{2{,}106}  % smallest contig of P. duerdenii ATCC BAA-1640 that carries one of these regions (kb)
+\providecommand{\MACoveredArgosRegionSix}{90}  % E6: percent present in Argos
+\providecommand{\MAIdentityArgosRegionSix}{97.49}  % E6: identity in Argos (percent)
+\providecommand{\MAFlankArgosRegionSix}{23}  % E6: percent of the 10-kb flanks aligned in Argos
+\providecommand{\MACoveredAnaerococcusRegionSix}{100}  % E6: percent present in Anaerococcus
+\providecommand{\MAIdentityAnaerococcusRegionSix}{97.48}  % E6: identity in Anaerococcus (percent)
+\providecommand{\MAFlankAnaerococcusRegionSix}{49}  % E6: percent of the 10-kb flanks aligned in Anaerococcus
+\providecommand{\MACoveredDuerdeniiRegionSix}{93}  % E6: percent present in Duerdenii
+\providecommand{\MAIdentityDuerdeniiRegionSix}{97.87}  % E6: identity in Duerdenii (percent)
+\providecommand{\MAFlankDuerdeniiRegionSix}{8}  % E6: percent of the 10-kb flanks aligned in Duerdenii
+\providecommand{\MACountElementInPairGenomes}{3}  % E6: genomes among B+Anaerococcus+Duerdenii with at least 90 percent of the region
+\providecommand{\MACountElementInPairGenomesOf}{3}  % E6: number of genomes in that list
+\providecommand{\MACountElementInVaginalis}{1}  % E6: genomes among Argos+AvOne+AvTwo with at least 90 percent of the region
+\providecommand{\MACountElementInVaginalisOf}{3}  % E6: number of genomes in that list

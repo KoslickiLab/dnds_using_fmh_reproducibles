@@ -1,0 +1,8 @@
+# downloaded genomes, gene calls and reads (re-created by the analysis scripts)
+/data/
+# intermediate files
+/work/
+# the FracMinHash dN/dS code, cloned by analysis/00_get_lab_code.sh
+/external/
+__pycache__/
+*.pyc

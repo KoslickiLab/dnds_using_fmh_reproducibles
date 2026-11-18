@@ -1,0 +1,9 @@
+role	accession	label	group	key
+A	GCF_900232825.1	Anaerococcus sp. Marseille-P3625	pair	A
+B	GCF_000146345.1	P. duerdenii ATCC BAA-1640	pair	B
+control	GCF_056585935.1	P. duerdenii C0136B5	other strains	PdOne
+control	GCF_056585315.1	P. duerdenii C0173D1	other strains	PdTwo
+control	GCF_030228525.1	P. duerdenii (Loyola)	other strains	PdThree
+control	GCF_928097925.1	M. vaginalis Marseille-Q5883	other species	Mediannikoviicoccus
+control	GCF_000307225.1	A. vaginalis PH9	other species	Vaginalis
+control	GCF_016127475.1	A. vaginalis FDAARGOS_988 (closed)	other species	Argos

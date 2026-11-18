@@ -1,0 +1,3 @@
+region	genome	contig	contig_length	start	end	bp_to_contig_start	bp_to_contig_end	gaps_left_20kb	gaps_inside	gaps_right_20kb	nearest_gap_left_bp	nearest_gap_right_bp
+E1	A	JAFQXV010000014.1	164250	23203	58999	23202	105251	0	0	0		
+E1	B	JAFRFB010000086.1	35797	1	35797	0	0	0	0	0		

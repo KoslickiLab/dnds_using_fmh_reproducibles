@@ -1,0 +1,6 @@
+sequence	median_depth
+shared region	132.0
+rest of the scaffold that carries the region (genome A)	142.0
+genome A without the region	138.0
+genome B (contigs that consist of shared sequence left out)	157.0
+expected for the region if both genomes carried it	299.0
