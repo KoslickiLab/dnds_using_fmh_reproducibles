@@ -1,0 +1,30 @@
+# Conda environment for every step of the M. tuberculosis vignette.
+#   conda env create -f environment.yml && conda activate fmh_dnds_mtb
+# Versions are those of the run behind the manuscript.
+name: fmh_dnds_mtb
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - sourmash-minimal=4.9.4               # FracMinHash sketches (used by fmh_dnds.py)
+  - sourmash_plugin_branchwater=0.9.15   # manysketch / multisearch (used by fmh_dnds.py)
+  - numpy=2.5.5
+  - pandas=3.1.1
+  - scipy=1.18.1                         # also the sparse products of --mode reference
+  - pyarrow=26.0.1                       # parquet output of --mode reference
+  - matplotlib-base=3.11.2
+  - biopython=1.88
+  - openpyxl=3.1.5                       # reads the supplementary tables (.xlsx)
+  - requests=2.34.2
+  - loguru                               # imported by fmh_dnds.py
+  - minimap2=2.31                        # assemblies against the ancestral sequence (step 14)
+  - k8=1.2                               # runs paftools.js (step 14)
+  - prodigal=2.6.3                       # gene calls of the draft assemblies (steps 11, 12)
+  - r-base=4.5.3
+  - r-seqinr=4.2_44                      # the conventional estimate, kaks (step 33)
+  - xz
+  - pigz
+  - curl
+  - unzip
+  - git

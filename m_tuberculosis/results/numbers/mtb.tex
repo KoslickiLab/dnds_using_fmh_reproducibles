@@ -1,0 +1,557 @@
+% Numbers of the M. tuberculosis vignette, written by scripts/43_numbers.py from the
+% FracMinHash dN/dS tool's output. Do not edit by hand: rerun the script instead.
+
+% distinct runs in Gan et al. Table S1
+\providecommand{\mtbRunsGan}{49{,}949}
+% runs with an AllTheBacteria 0.2 assembly
+\providecommand{\mtbWithAssembly}{39{,}381}
+% isolates from assemblies
+\providecommand{\mtbAssemblyIsolates}{39{,}379}
+% isolates from reads only (no assembly)
+\providecommand{\mtbReadIsolates}{10{,}525}
+% isolates in total
+\providecommand{\mtbAllIsolates}{49{,}904}
+% mean substitutions per isolate
+\providecommand{\mtbMeanSubstitutions}{1{,}112}
+% mean percentage of the reference covered by an assembly
+\providecommand{\mtbMeanCoverage}{95.6}
+% coding sequences, essential
+\providecommand{\mtbGenesEssential}{458}
+% coding bases, essential
+\providecommand{\mtbBasesEssential}{540{,}945}
+% coding sequences, nonessential
+\providecommand{\mtbGenesNonessential}{2{,}761}
+% coding bases, nonessential
+\providecommand{\mtbBasesNonessential}{2{,}707{,}767}
+% coding sequences, pe_ppe
+\providecommand{\mtbGenesPeppe}{156}
+% coding bases, pe_ppe
+\providecommand{\mtbBasesPeppe}{272{,}088}
+% coding sequences, pe_ppe_hq
+\providecommand{\mtbGenesPeppehq}{416}
+% coding bases, pe_ppe_hq
+\providecommand{\mtbBasesPeppehq}{180{,}054}
+% isolates, draft-assembly test
+\providecommand{\mtbSmokeIsolates}{50}
+% pairs, draft-assembly test
+\providecommand{\mtbSmokePairs}{1{,}225}
+% median dN/dS from draft assemblies, every k-mer
+\providecommand{\mtbAssemblyMedianDnds}{3.59}
+% percentage of those pairs with no usable value
+\providecommand{\mtbAssemblyUnusable}{17}
+% 1 - C_nt, draft assemblies
+\providecommand{\mtbAssemblyCnt}{0.0148}
+% 1 - C_aa, draft assemblies
+\providecommand{\mtbAssemblyCaa}{0.0139}
+% median dN/dS, all_cds, scale factor 1, every pair
+\providecommand{\mtbMedianWhole}{0.570}
+% quartiles, all_cds
+\providecommand{\mtbQuartilesWhole}{0.534--0.595}
+% percentage of pairs above 1, all_cds
+\providecommand{\mtbAboveOneWhole}{0.0}
+% median dN/dS, essential, scale factor 1, every pair
+\providecommand{\mtbMedianEssential}{0.461}
+% quartiles, essential
+\providecommand{\mtbQuartilesEssential}{0.402--0.516}
+% percentage of pairs above 1, essential
+\providecommand{\mtbAboveOneEssential}{0.8}
+% median dN/dS, nonessential, scale factor 1, every pair
+\providecommand{\mtbMedianNonessential}{0.622}
+% quartiles, nonessential
+\providecommand{\mtbQuartilesNonessential}{0.586--0.655}
+% percentage of pairs above 1, nonessential
+\providecommand{\mtbAboveOneNonessential}{0.3}
+% median dN/dS, pe_ppe, scale factor 1, every pair
+\providecommand{\mtbMedianPeppe}{0.613}
+% quartiles, pe_ppe
+\providecommand{\mtbQuartilesPeppe}{0.509--0.735}
+% percentage of pairs above 1, pe_ppe
+\providecommand{\mtbAboveOnePeppe}{3.7}
+% median dN/dS, pe_ppe_hq, scale factor 1, every pair
+\providecommand{\mtbMedianPeppehq}{0.841}
+% quartiles, pe_ppe_hq
+\providecommand{\mtbQuartilesPeppehq}{0.687--1.035}
+% percentage of pairs above 1, pe_ppe_hq
+\providecommand{\mtbAboveOnePeppehq}{28.5}
+% pairs of assembly-derived isolates
+\providecommand{\mtbPairs}{775{,}333{,}131}
+% the same, in millions
+\providecommand{\mtbPairsMillion}{775}
+% percentage of pairs below 1, whole coding genome
+\providecommand{\mtbBelowOne}{99.97}
+% median dN/dS, same sublineage
+\providecommand{\mtbMedianSameSublineage}{0.518}
+% pairs, same sublineage
+\providecommand{\mtbPairsSameSublineage}{43{,}356{,}554}
+% median dN/dS, same lineage, different sublineage
+\providecommand{\mtbMedianSameLineage}{0.521}
+% pairs, same lineage, different sublineage
+\providecommand{\mtbPairsSameLineage}{234{,}872{,}474}
+% median dN/dS, different lineage
+\providecommand{\mtbMedianDifferentLineage}{0.582}
+% pairs, different lineage
+\providecommand{\mtbPairsDifferentLineage}{497{,}104{,}103}
+% percentage of pairs where all_cds > essential
+\providecommand{\mtbShareWholeOverEssential}{89.7}
+% median of all_cds minus essential
+\providecommand{\mtbShiftWholeOverEssential}{0.107}
+% percentage of pairs where nonessential > essential
+\providecommand{\mtbShareNonessentialOverEssential}{94.5}
+% median of nonessential minus essential
+\providecommand{\mtbShiftNonessentialOverEssential}{0.159}
+% percentage of pairs where pe_ppe > essential
+\providecommand{\mtbSharePeppeOverEssential}{82.6}
+% median of pe_ppe minus essential
+\providecommand{\mtbShiftPeppeOverEssential}{0.159}
+% percentage of pairs where pe_ppe_hq > essential
+\providecommand{\mtbSharePeppehqOverEssential}{94.1}
+% median of pe_ppe_hq minus essential
+\providecommand{\mtbShiftPeppehqOverEssential}{0.374}
+% percentage of pairs where nonessential > all_cds
+\providecommand{\mtbShareNonessentialOverWhole}{98.1}
+% median of nonessential minus all_cds
+\providecommand{\mtbShiftNonessentialOverWhole}{0.052}
+% percentage of pairs where pe_ppe > all_cds
+\providecommand{\mtbSharePeppeOverWhole}{63.4}
+% median of pe_ppe minus all_cds
+\providecommand{\mtbShiftPeppeOverWhole}{0.047}
+% percentage of pairs where pe_ppe_hq > all_cds
+\providecommand{\mtbSharePeppehqOverWhole}{91.7}
+% median of pe_ppe_hq minus all_cds
+\providecommand{\mtbShiftPeppehqOverWhole}{0.273}
+% percentage of pairs where pe_ppe > nonessential
+\providecommand{\mtbSharePeppeOverNonessential}{48.6}
+% median of pe_ppe minus nonessential
+\providecommand{\mtbShiftPeppeOverNonessential}{-0.006}
+% percentage of pairs where pe_ppe_hq > nonessential
+\providecommand{\mtbSharePeppehqOverNonessential}{84.3}
+% median of pe_ppe_hq minus nonessential
+\providecommand{\mtbShiftPeppehqOverNonessential}{0.218}
+% percentage of pairs where pe_ppe_hq > pe_ppe
+\providecommand{\mtbSharePeppehqOverPeppe}{86.7}
+% median of pe_ppe_hq minus pe_ppe
+\providecommand{\mtbShiftPeppehqOverPeppe}{0.211}
+% pairs in the shared subsample, millions
+\providecommand{\mtbPairedPairsMillion}{12.1}
+% pairs in each Wilcoxon signed-rank test
+\providecommand{\mtbWilcoxonPairs}{200{,}000}
+% p < 10^this for both Wilcoxon tests of the ordering
+\providecommand{\mtbWilcoxonPExponent}{-300}
+% rank correlation with scale 1, essential, scale 2
+\providecommand{\mtbSpearmanEssentialScaleTwo}{0.88}
+% median dN/dS, essential, scale 2
+\providecommand{\mtbMedianEssentialScaleTwo}{0.440}
+% percentage above 1, essential, scale 2
+\providecommand{\mtbAboveOneEssentialScaleTwo}{0.8}
+% rank correlation with scale 1, essential, scale 3
+\providecommand{\mtbSpearmanEssentialScaleThree}{0.78}
+% median dN/dS, essential, scale 3
+\providecommand{\mtbMedianEssentialScaleThree}{0.397}
+% percentage above 1, essential, scale 3
+\providecommand{\mtbAboveOneEssentialScaleThree}{0.9}
+% rank correlation with scale 1, essential, scale 5
+\providecommand{\mtbSpearmanEssentialScaleFive}{0.73}
+% median dN/dS, essential, scale 5
+\providecommand{\mtbMedianEssentialScaleFive}{0.403}
+% percentage above 1, essential, scale 5
+\providecommand{\mtbAboveOneEssentialScaleFive}{1.1}
+% rank correlation with scale 1, essential, scale 10
+\providecommand{\mtbSpearmanEssentialScaleTen}{0.62}
+% median dN/dS, essential, scale 10
+\providecommand{\mtbMedianEssentialScaleTen}{0.398}
+% percentage above 1, essential, scale 10
+\providecommand{\mtbAboveOneEssentialScaleTen}{1.7}
+% rank correlation with scale 1, essential, scale 100
+\providecommand{\mtbSpearmanEssentialScaleHundred}{0.30}
+% median dN/dS, essential, scale 100
+\providecommand{\mtbMedianEssentialScaleHundred}{0.221}
+% percentage above 1, essential, scale 100
+\providecommand{\mtbAboveOneEssentialScaleHundred}{5.3}
+% rank correlation with scale 1, essential, scale 1000
+\providecommand{\mtbSpearmanEssentialScaleThousand}{-0.07}
+% median dN/dS, essential, scale 1000
+\providecommand{\mtbMedianEssentialScaleThousand}{0.000}
+% percentage above 1, essential, scale 1000
+\providecommand{\mtbAboveOneEssentialScaleThousand}{2.1}
+% rank correlation with scale 1, all_cds, scale 2
+\providecommand{\mtbSpearmanWholeScaleTwo}{0.90}
+% median dN/dS, all_cds, scale 2
+\providecommand{\mtbMedianWholeScaleTwo}{0.561}
+% percentage above 1, all_cds, scale 2
+\providecommand{\mtbAboveOneWholeScaleTwo}{0.0}
+% rank correlation with scale 1, all_cds, scale 3
+\providecommand{\mtbSpearmanWholeScaleThree}{0.83}
+% median dN/dS, all_cds, scale 3
+\providecommand{\mtbMedianWholeScaleThree}{0.559}
+% percentage above 1, all_cds, scale 3
+\providecommand{\mtbAboveOneWholeScaleThree}{0.0}
+% rank correlation with scale 1, all_cds, scale 5
+\providecommand{\mtbSpearmanWholeScaleFive}{0.72}
+% median dN/dS, all_cds, scale 5
+\providecommand{\mtbMedianWholeScaleFive}{0.548}
+% percentage above 1, all_cds, scale 5
+\providecommand{\mtbAboveOneWholeScaleFive}{0.1}
+% rank correlation with scale 1, all_cds, scale 10
+\providecommand{\mtbSpearmanWholeScaleTen}{0.61}
+% median dN/dS, all_cds, scale 10
+\providecommand{\mtbMedianWholeScaleTen}{0.530}
+% percentage above 1, all_cds, scale 10
+\providecommand{\mtbAboveOneWholeScaleTen}{0.1}
+% rank correlation with scale 1, all_cds, scale 100
+\providecommand{\mtbSpearmanWholeScaleHundred}{0.25}
+% median dN/dS, all_cds, scale 100
+\providecommand{\mtbMedianWholeScaleHundred}{0.432}
+% percentage above 1, all_cds, scale 100
+\providecommand{\mtbAboveOneWholeScaleHundred}{1.8}
+% rank correlation with scale 1, all_cds, scale 1000
+\providecommand{\mtbSpearmanWholeScaleThousand}{0.14}
+% median dN/dS, all_cds, scale 1000
+\providecommand{\mtbMedianWholeScaleThousand}{0.406}
+% percentage above 1, all_cds, scale 1000
+\providecommand{\mtbAboveOneWholeScaleThousand}{19.3}
+% rank correlation with scale 1, nonessential, scale 2
+\providecommand{\mtbSpearmanNonessentialScaleTwo}{0.87}
+% median dN/dS, nonessential, scale 2
+\providecommand{\mtbMedianNonessentialScaleTwo}{0.614}
+% percentage above 1, nonessential, scale 2
+\providecommand{\mtbAboveOneNonessentialScaleTwo}{0.4}
+% rank correlation with scale 1, nonessential, scale 3
+\providecommand{\mtbSpearmanNonessentialScaleThree}{0.79}
+% median dN/dS, nonessential, scale 3
+\providecommand{\mtbMedianNonessentialScaleThree}{0.608}
+% percentage above 1, nonessential, scale 3
+\providecommand{\mtbAboveOneNonessentialScaleThree}{0.7}
+% rank correlation with scale 1, nonessential, scale 5
+\providecommand{\mtbSpearmanNonessentialScaleFive}{0.64}
+% median dN/dS, nonessential, scale 5
+\providecommand{\mtbMedianNonessentialScaleFive}{0.606}
+% percentage above 1, nonessential, scale 5
+\providecommand{\mtbAboveOneNonessentialScaleFive}{1.2}
+% rank correlation with scale 1, nonessential, scale 10
+\providecommand{\mtbSpearmanNonessentialScaleTen}{0.50}
+% median dN/dS, nonessential, scale 10
+\providecommand{\mtbMedianNonessentialScaleTen}{0.571}
+% percentage above 1, nonessential, scale 10
+\providecommand{\mtbAboveOneNonessentialScaleTen}{1.1}
+% rank correlation with scale 1, nonessential, scale 100
+\providecommand{\mtbSpearmanNonessentialScaleHundred}{0.22}
+% median dN/dS, nonessential, scale 100
+\providecommand{\mtbMedianNonessentialScaleHundred}{0.440}
+% percentage above 1, nonessential, scale 100
+\providecommand{\mtbAboveOneNonessentialScaleHundred}{4.6}
+% rank correlation with scale 1, nonessential, scale 1000
+\providecommand{\mtbSpearmanNonessentialScaleThousand}{0.07}
+% median dN/dS, nonessential, scale 1000
+\providecommand{\mtbMedianNonessentialScaleThousand}{0.242}
+% percentage above 1, nonessential, scale 1000
+\providecommand{\mtbAboveOneNonessentialScaleThousand}{15.4}
+% rank correlation with scale 1, pe_ppe, scale 2
+\providecommand{\mtbSpearmanPeppeScaleTwo}{0.90}
+% median dN/dS, pe_ppe, scale 2
+\providecommand{\mtbMedianPeppeScaleTwo}{0.574}
+% percentage above 1, pe_ppe, scale 2
+\providecommand{\mtbAboveOnePeppeScaleTwo}{2.6}
+% rank correlation with scale 1, pe_ppe, scale 3
+\providecommand{\mtbSpearmanPeppeScaleThree}{0.84}
+% median dN/dS, pe_ppe, scale 3
+\providecommand{\mtbMedianPeppeScaleThree}{0.592}
+% percentage above 1, pe_ppe, scale 3
+\providecommand{\mtbAboveOnePeppeScaleThree}{5.4}
+% rank correlation with scale 1, pe_ppe, scale 5
+\providecommand{\mtbSpearmanPeppeScaleFive}{0.74}
+% median dN/dS, pe_ppe, scale 5
+\providecommand{\mtbMedianPeppeScaleFive}{0.531}
+% percentage above 1, pe_ppe, scale 5
+\providecommand{\mtbAboveOnePeppeScaleFive}{4.8}
+% rank correlation with scale 1, pe_ppe, scale 10
+\providecommand{\mtbSpearmanPeppeScaleTen}{0.58}
+% median dN/dS, pe_ppe, scale 10
+\providecommand{\mtbMedianPeppeScaleTen}{0.590}
+% percentage above 1, pe_ppe, scale 10
+\providecommand{\mtbAboveOnePeppeScaleTen}{15.3}
+% rank correlation with scale 1, pe_ppe, scale 100
+\providecommand{\mtbSpearmanPeppeScaleHundred}{0.14}
+% median dN/dS, pe_ppe, scale 100
+\providecommand{\mtbMedianPeppeScaleHundred}{0.227}
+% percentage above 1, pe_ppe, scale 100
+\providecommand{\mtbAboveOnePeppeScaleHundred}{9.1}
+% rank correlation with scale 1, pe_ppe, scale 1000
+\providecommand{\mtbSpearmanPeppeScaleThousand}{-0.08}
+% median dN/dS, pe_ppe, scale 1000
+\providecommand{\mtbMedianPeppeScaleThousand}{0.000}
+% percentage above 1, pe_ppe, scale 1000
+\providecommand{\mtbAboveOnePeppeScaleThousand}{0.7}
+% rank correlation with scale 1, pe_ppe_hq, scale 2
+\providecommand{\mtbSpearmanPeppehqScaleTwo}{0.79}
+% median dN/dS, pe_ppe_hq, scale 2
+\providecommand{\mtbMedianPeppehqScaleTwo}{0.779}
+% percentage above 1, pe_ppe_hq, scale 2
+\providecommand{\mtbAboveOnePeppehqScaleTwo}{17.8}
+% rank correlation with scale 1, pe_ppe_hq, scale 3
+\providecommand{\mtbSpearmanPeppehqScaleThree}{0.65}
+% median dN/dS, pe_ppe_hq, scale 3
+\providecommand{\mtbMedianPeppehqScaleThree}{0.728}
+% percentage above 1, pe_ppe_hq, scale 3
+\providecommand{\mtbAboveOnePeppehqScaleThree}{16.8}
+% rank correlation with scale 1, pe_ppe_hq, scale 5
+\providecommand{\mtbSpearmanPeppehqScaleFive}{0.46}
+% median dN/dS, pe_ppe_hq, scale 5
+\providecommand{\mtbMedianPeppehqScaleFive}{0.712}
+% percentage above 1, pe_ppe_hq, scale 5
+\providecommand{\mtbAboveOnePeppehqScaleFive}{20.5}
+% rank correlation with scale 1, pe_ppe_hq, scale 10
+\providecommand{\mtbSpearmanPeppehqScaleTen}{0.30}
+% median dN/dS, pe_ppe_hq, scale 10
+\providecommand{\mtbMedianPeppehqScaleTen}{0.684}
+% percentage above 1, pe_ppe_hq, scale 10
+\providecommand{\mtbAboveOnePeppehqScaleTen}{26.1}
+% rank correlation with scale 1, pe_ppe_hq, scale 100
+\providecommand{\mtbSpearmanPeppehqScaleHundred}{0.10}
+% median dN/dS, pe_ppe_hq, scale 100
+\providecommand{\mtbMedianPeppehqScaleHundred}{0.145}
+% percentage above 1, pe_ppe_hq, scale 100
+\providecommand{\mtbAboveOnePeppehqScaleHundred}{7.7}
+% rank correlation with scale 1, pe_ppe_hq, scale 1000
+\providecommand{\mtbSpearmanPeppehqScaleThousand}{-0.12}
+% median dN/dS, pe_ppe_hq, scale 1000
+\providecommand{\mtbMedianPeppehqScaleThousand}{0.000}
+% percentage above 1, pe_ppe_hq, scale 1000
+\providecommand{\mtbAboveOnePeppehqScaleThousand}{0.0}
+% percentage of pairs where essential < nonessential, scale 1
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleOne}{94.5}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 1
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleOne}{84.3}
+% percentage of pairs where essential < pe_ppe_hq, scale 1
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleOne}{94.1}
+% percentage of pairs where essential < nonessential, scale 2
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleTwo}{94.8}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 2
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleTwo}{79.1}
+% percentage of pairs where essential < pe_ppe_hq, scale 2
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleTwo}{93.3}
+% percentage of pairs where essential < nonessential, scale 3
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleThree}{96.0}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 3
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleThree}{70.2}
+% percentage of pairs where essential < pe_ppe_hq, scale 3
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleThree}{91.8}
+% percentage of pairs where essential < nonessential, scale 5
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleFive}{90.4}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 5
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleFive}{64.2}
+% percentage of pairs where essential < pe_ppe_hq, scale 5
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleFive}{84.6}
+% percentage of pairs where essential < nonessential, scale 10
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleTen}{85.0}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 10
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleTen}{62.1}
+% percentage of pairs where essential < pe_ppe_hq, scale 10
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleTen}{81.9}
+% percentage of pairs where essential < nonessential, scale 100
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleHundred}{78.0}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 100
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleHundred}{20.7}
+% percentage of pairs where essential < pe_ppe_hq, scale 100
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleHundred}{38.4}
+% percentage of pairs where essential < nonessential, scale 1000
+\providecommand{\mtbHoldsEssentialBelowNonessentialScaleThousand}{74.8}
+% percentage of pairs where nonessential < pe_ppe_hq, scale 1000
+\providecommand{\mtbHoldsNonessentialBelowPeppehqScaleThousand}{16.5}
+% percentage of pairs where essential < pe_ppe_hq, scale 1000
+\providecommand{\mtbHoldsEssentialBelowPeppehqScaleThousand}{10.6}
+% per-nucleotide divergence above which pairs are rare (percent)
+\providecommand{\mtbTailThreshold}{0.06}
+% percentage of pairs above that divergence
+\providecommand{\mtbTailShare}{0.056}
+% isolates that are in that tail for most of their pairs
+\providecommand{\mtbTailIsolates}{8}
+% their median number of substitutions
+\providecommand{\mtbTailSubstitutions}{2{,}488}
+% percentage of tail pairs involving one of them
+\providecommand{\mtbTailWithOutlier}{68}
+% median dN/dS of the least divergent bin shown
+\providecommand{\mtbDivergenceLowMedian}{0.46}
+% pairs over every isolate
+\providecommand{\mtbFullPairs}{1{,}245{,}179{,}656}
+% the same, in billions
+\providecommand{\mtbFullPairsBillion}{1.25}
+% median dN/dS over every isolate
+\providecommand{\mtbFullMedian}{0.568}
+% minutes for the pairs, every isolate
+\providecommand{\mtbFullPairsMinutes}{11.5}
+% minutes to read the sketches, every isolate
+\providecommand{\mtbFullLoadMinutes}{48.9}
+% cores used
+\providecommand{\mtbCores}{250}
+% minutes for all pairs, whole coding genome, scale 1
+\providecommand{\mtbPairsMinutes}{7.9}
+% minutes to read the sketches and form the differences
+\providecommand{\mtbLoadMinutes}{37.0}
+% core-seconds per million pairs, whole coding genome, scale 1
+\providecommand{\mtbCoreSecondsPerMillion}{152.2}
+% minutes the tool took to sketch every genome, scale factor 1
+\providecommand{\mtbSketchMinutes}{38}
+% genomes sketched (the isolates and the reference)
+\providecommand{\mtbSketchGenomes}{49{,}905}
+% shards sketched side by side, one core each
+\providecommand{\mtbSketchShards}{250}
+% core-hours from FASTA files to every pair's dN/dS, every isolate (wall time times cores)
+\providecommand{\mtbToolCoreHours}{410}
+% minutes from FASTA files to every pair's dN/dS, every isolate
+\providecommand{\mtbTotalMinutes}{98}
+% seqinr median, all_cds
+\providecommand{\mtbSeqinrMedianWhole}{0.678}
+% the tool's median on those pairs, all_cds
+\providecommand{\mtbToolMedianWhole}{0.570}
+% rank correlation, tool and seqinr, all_cds
+\providecommand{\mtbSpearmanSeqinrWhole}{0.84}
+% seqinr median, essential
+\providecommand{\mtbSeqinrMedianEssential}{0.603}
+% the tool's median on those pairs, essential
+\providecommand{\mtbToolMedianEssential}{0.472}
+% rank correlation, tool and seqinr, essential
+\providecommand{\mtbSpearmanSeqinrEssential}{0.95}
+% seqinr median, nonessential
+\providecommand{\mtbSeqinrMedianNonessential}{0.750}
+% the tool's median on those pairs, nonessential
+\providecommand{\mtbToolMedianNonessential}{0.623}
+% rank correlation, tool and seqinr, nonessential
+\providecommand{\mtbSpearmanSeqinrNonessential}{0.79}
+% seqinr median, pe_ppe
+\providecommand{\mtbSeqinrMedianPeppe}{0.547}
+% the tool's median on those pairs, pe_ppe
+\providecommand{\mtbToolMedianPeppe}{0.599}
+% rank correlation, tool and seqinr, pe_ppe
+\providecommand{\mtbSpearmanSeqinrPeppe}{0.64}
+% seqinr median, pe_ppe_hq
+\providecommand{\mtbSeqinrMedianPeppehq}{0.853}
+% the tool's median on those pairs, pe_ppe_hq
+\providecommand{\mtbToolMedianPeppehq}{0.820}
+% rank correlation, tool and seqinr, pe_ppe_hq
+\providecommand{\mtbSpearmanSeqinrPeppehq}{0.76}
+% isolates compared with seqinr
+\providecommand{\mtbSeqinrIsolates}{200}
+% pairs compared with seqinr
+\providecommand{\mtbSeqinrPairs}{19{,}900}
+% seconds seqinr took for those pairs, one core
+\providecommand{\mtbSeqinrSeconds}{745.9}
+% pairs per second, seqinr, one core, whole coding genome
+\providecommand{\mtbSeqinrPairsPerSecond}{27}
+% core-years seqinr would need for every pair of the collection
+\providecommand{\mtbSeqinrAllCoreYears}{1.5}
+% core-days seqinr would need for every pair of 5,000 isolates
+\providecommand{\mtbSeqinrFiveThousandCoreDays}{5.4}
+% synonymous over non-synonymous sites in these coding sequences
+\providecommand{\mtbSiteRatioWhole}{0.354}
+% the constant the estimator uses, 0.77/2.23
+\providecommand{\mtbConstant}{0.345}
+% median protein hashes that differ between the two isolates of a pair, essential, scale factor 1
+\providecommand{\mtbDifferingProteinEssential}{433}
+% median nucleotide hashes that differ between the two isolates of a pair, essential, scale factor 1
+\providecommand{\mtbDifferingDnaEssential}{2{,}326}
+% median protein hashes that differ between the two isolates of a pair, all_cds, scale factor 1
+\providecommand{\mtbDifferingProteinWhole}{4{,}488}
+% median nucleotide hashes that differ between the two isolates of a pair, all_cds, scale factor 1
+\providecommand{\mtbDifferingDnaWhole}{22{,}272}
+% median protein hashes that differ between the two isolates of a pair, nonessential, scale factor 1
+\providecommand{\mtbDifferingProteinNonessential}{3{,}191}
+% median nucleotide hashes that differ between the two isolates of a pair, nonessential, scale factor 1
+\providecommand{\mtbDifferingDnaNonessential}{15{,}122}
+% median protein hashes that differ between the two isolates of a pair, pe_ppe, scale factor 1
+\providecommand{\mtbDifferingProteinPeppe}{405}
+% median nucleotide hashes that differ between the two isolates of a pair, pe_ppe, scale factor 1
+\providecommand{\mtbDifferingDnaPeppe}{2{,}474}
+% median protein hashes that differ between the two isolates of a pair, pe_ppe_hq, scale factor 1
+\providecommand{\mtbDifferingProteinPeppehq}{243}
+% median nucleotide hashes that differ between the two isolates of a pair, pe_ppe_hq, scale factor 1
+\providecommand{\mtbDifferingDnaPeppehq}{1{,}147}
+% median differing protein hashes per pair, essential, scale factor 2
+\providecommand{\mtbDifferingProteinEssentialScaleTwo}{211}
+% median differing protein hashes per pair, essential, scale factor 3
+\providecommand{\mtbDifferingProteinEssentialScaleThree}{127}
+% median differing protein hashes per pair, essential, scale factor 5
+\providecommand{\mtbDifferingProteinEssentialScaleFive}{74}
+% median differing protein hashes per pair, essential, scale factor 10
+\providecommand{\mtbDifferingProteinEssentialScaleTen}{37}
+% median differing protein hashes per pair, essential, scale factor 100
+\providecommand{\mtbDifferingProteinEssentialScaleHundred}{3}
+% median differing protein hashes per pair, essential, scale factor 1000
+\providecommand{\mtbDifferingProteinEssentialScaleThousand}{0}
+% median differing protein hashes per pair, all_cds, scale factor 2
+\providecommand{\mtbDifferingProteinWholeScaleTwo}{2{,}220}
+% median differing protein hashes per pair, all_cds, scale factor 3
+\providecommand{\mtbDifferingProteinWholeScaleThree}{1{,}482}
+% median differing protein hashes per pair, all_cds, scale factor 5
+\providecommand{\mtbDifferingProteinWholeScaleFive}{867}
+% median differing protein hashes per pair, all_cds, scale factor 10
+\providecommand{\mtbDifferingProteinWholeScaleTen}{423}
+% median differing protein hashes per pair, all_cds, scale factor 100
+\providecommand{\mtbDifferingProteinWholeScaleHundred}{35}
+% median differing protein hashes per pair, all_cds, scale factor 1000
+\providecommand{\mtbDifferingProteinWholeScaleThousand}{3}
+% median differing protein hashes per pair, nonessential, scale factor 2
+\providecommand{\mtbDifferingProteinNonessentialScaleTwo}{1{,}582}
+% median differing protein hashes per pair, nonessential, scale factor 3
+\providecommand{\mtbDifferingProteinNonessentialScaleThree}{1{,}058}
+% median differing protein hashes per pair, nonessential, scale factor 5
+\providecommand{\mtbDifferingProteinNonessentialScaleFive}{618}
+% median differing protein hashes per pair, nonessential, scale factor 10
+\providecommand{\mtbDifferingProteinNonessentialScaleTen}{301}
+% median differing protein hashes per pair, nonessential, scale factor 100
+\providecommand{\mtbDifferingProteinNonessentialScaleHundred}{24}
+% median differing protein hashes per pair, nonessential, scale factor 1000
+\providecommand{\mtbDifferingProteinNonessentialScaleThousand}{2}
+% median differing protein hashes per pair, pe_ppe, scale factor 2
+\providecommand{\mtbDifferingProteinPeppeScaleTwo}{197}
+% median differing protein hashes per pair, pe_ppe, scale factor 3
+\providecommand{\mtbDifferingProteinPeppeScaleThree}{133}
+% median differing protein hashes per pair, pe_ppe, scale factor 5
+\providecommand{\mtbDifferingProteinPeppeScaleFive}{75}
+% median differing protein hashes per pair, pe_ppe, scale factor 10
+\providecommand{\mtbDifferingProteinPeppeScaleTen}{38}
+% median differing protein hashes per pair, pe_ppe, scale factor 100
+\providecommand{\mtbDifferingProteinPeppeScaleHundred}{2}
+% median differing protein hashes per pair, pe_ppe, scale factor 1000
+\providecommand{\mtbDifferingProteinPeppeScaleThousand}{0}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 2
+\providecommand{\mtbDifferingProteinPeppehqScaleTwo}{116}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 3
+\providecommand{\mtbDifferingProteinPeppehqScaleThree}{75}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 5
+\providecommand{\mtbDifferingProteinPeppehqScaleFive}{43}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 10
+\providecommand{\mtbDifferingProteinPeppehqScaleTen}{21}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 100
+\providecommand{\mtbDifferingProteinPeppehqScaleHundred}{1}
+% median differing protein hashes per pair, pe_ppe_hq, scale factor 1000
+\providecommand{\mtbDifferingProteinPeppehqScaleThousand}{0}
+% isolates with both an assembly and reads
+\providecommand{\mtbReadsAssemblyIsolates}{299}
+% rank correlation of dN/dS from reads and from assemblies, same pairs
+\providecommand{\mtbReadsAssemblySpearman}{0.84}
+% median difference of dN/dS, reads minus assemblies
+\providecommand{\mtbReadsAssemblyShift}{-0.010}
+% whole coding genomes at scale factor 1 that fit in main mode's sketch file below 4 GiB (2^32 bytes)
+\providecommand{\mtbMainModeLimitGenomes}{98}
+% megabytes of sketch per whole coding genome, scale factor 1
+\providecommand{\mtbSketchMegabytesPerGenome}{43}
+% upper limit of both axes of the seqinr panel
+\providecommand{\mtbSeqinrPanelLimit}{1.2}
+% whole-genome pairs beyond the seqinr panel's axes
+\providecommand{\mtbSeqinrPanelOutside}{4}
+% fewest pairs in a divergence bin that is drawn
+\providecommand{\mtbDivergenceMinPairs}{100{,}000}
+% width of the bins of the distribution panel
+\providecommand{\mtbHistogramBinWidth}{0.005}
+% anchored pairs drawn in the containment panel
+\providecommand{\mtbAnchoredPoints}{4{,}000}
+% comparisons of main and reference mode (group x scale factor), all identical
+\providecommand{\mtbEquivalenceComparisons}{5}
+% pairs compared over those comparisons
+\providecommand{\mtbEquivalencePairs}{1{,}507{,}980}
+% pairs per comparison, PE/PPE segments (1,000 isolates)
+\providecommand{\mtbEquivalencePairsSegments}{500{,}500}
+% pairs per comparison, whole coding genome (80 isolates)
+\providecommand{\mtbEquivalencePairsWhole}{3{,}240}
+% pairs whose value falls in a different 0.005-wide bin in the earlier prototype
+\providecommand{\mtbPrototypeDifferentBins}{36{,}994}

@@ -1,0 +1,6 @@
+name	value	meaning
+histogram_bin_width	0.005	width of the bins of main panel a
+seqinr_limit	1.2	upper limit of both axes of main panel c
+seqinr_pairs_outside	4.0	whole-genome pairs beyond those axes, not drawn
+divergence_min_pairs	100000.0	fewest pairs in a divergence bin drawn in main panel d
+anchored_points	4000.0	anchored pairs drawn in scale panel a

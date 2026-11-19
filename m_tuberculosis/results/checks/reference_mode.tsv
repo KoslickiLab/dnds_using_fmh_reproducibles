@@ -1,0 +1,6 @@
+group	scale	pairs	identical	report
+pe_ppe_hq	1	500500	True	identical in every column
+pe_ppe_hq	2	500500	True	identical in every column
+pe_ppe_hq	5	500500	True	identical in every column
+all_cds	1	3240	True	identical in every column
+all_cds	5	3240	True	identical in every column

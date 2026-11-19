@@ -1,0 +1,168 @@
+% ============================================================================
+% Vignette: FracMinHash dN/dS across a collection of M. tuberculosis isolates.
+% Written to be \input by the supplemental information of
+% Leveraging_FracMinHash_Containment_for_Genomic_d_Nd_S.
+%
+% Numbers: tex/numbers/mtb.tex (prefix mtb), written by scripts/43_numbers.py from the output of
+% the FracMinHash dN/dS implementation; none is typed by hand.
+% Figures: tex/mtb_figures.tex (panels in tex/figures/), captions in tex/mtb_captions.tex.
+% TODO (authors): cite the release of dnds-using-fmh that contains --mode reference
+% (pull request KoslickiLab/dnds-using-fmh#18).
+% ============================================================================
+
+\subsection*{A collection of closely related genomes: \textit{Mycobacterium tuberculosis}}
+
+The biological applications above compare genomes of different species or genera. The opposite case,
+thousands of isolates of one species, is where an alignment-free estimator should pay off most,
+because the number of pairs grows as the square of the collection while the cost of each pair does
+not fall. \citet{gan2025} provide a direct test. In a collection of \mtbRunsGan{}
+\textit{M.\ tuberculosis} isolates they found an ordering of the groups of genes: per-gene ratios of
+non-synonymous to synonymous mutations ($p_N/p_S$, counted from mutation events on phylogenies of
+the isolates) of 0.69 for essential genes, 0.84 for non-essential genes and 0.90 for the PE/PPE gene
+family. They also compared pairwise \dnds between groups of genes, with the \texttt{kaks} function of
+the R package \texttt{seqinr} on concatenated gene-group sequences, but restricted that pairwise
+analysis to a random 5,000 isolates because of its computational cost. We asked whether pairwise
+\method, computed over every pair of the collection, recovers the same ordering.
+
+\subsubsection*{Isolates and sequences}
+
+Of the \mtbRunsGan{} sequencing runs listed by \citet{gan2025}, \mtbWithAssembly{} have an assembly
+in AllTheBacteria release 0.2 \citep{hunt2024}, of which we used \mtbAssemblyIsolates{}; for a further
+\mtbReadIsolates{} runs without an assembly we called substitutions from the reads. As in
+\citet{gan2025}, each isolate is represented by the inferred ancestral sequence of the
+\textit{M.\ tuberculosis} complex (MTBC), the group of closely related lineages that cause
+tuberculosis \citep{comas2010,comas2013}, with that isolate's substitutions applied; insertions and
+deletions are not applied. The ancestral sequence has the length and coordinates of H37Rv, the
+laboratory reference strain of \textit{M.\ tuberculosis} \citep{cole1998}, so the coding sequences
+of the H37Rv annotation can be cut from it and translated. Isolates carry \mtbMeanSubstitutions{}
+substitutions on average. Comparing isolates through these sequences, rather than through the gene
+calls of their own draft assemblies, is necessary at this divergence, for the reason given at the end
+of this section. Genes were assigned to groups from published tables only: essentiality from
+\citet{dejesus2017} (\mtbGenesEssential{} essential and \mtbGenesNonessential{} non-essential genes),
+PE/PPE membership from the H37Rv annotation (\mtbGenesPeppe{} genes), and the high-quality segments
+of those genes from \citet{gan2025}, which is the sequence over which they computed their PE/PPE value
+(\mtbBasesPeppehq{} of \mtbBasesPeppe{} bases).
+
+\subsubsection*{Every pair of the collection}
+
+All values were computed with our implementation of \method, with the parameters used throughout
+this work (\kaa{}$= 7$, so $k_{nt} = 21$; max containment; the constant 0.77/2.23), and with every
+\kmer, that is a scale factor of 1, unless stated otherwise. For a collection like this one, many
+genomes that are all close to one reference, the implementation has a mode
+(\texttt{--mode reference}) that computes the containments of all pairs from the same sketches,
+without comparing every pair of sketches in full. Because the sketch $S_i$ of every isolate differs
+from the sketch $R$ of the reference by only a few thousand hashes, the mode keeps for each isolate
+the reference hashes it lacks, $L_i = R \setminus S_i$, and the hashes it adds,
+$A_i = S_i \setminus R$, and uses
+\[
+|S_i \cap S_j| = |R| - |L_i| - |L_j| + |L_i \cap L_j| + |A_i \cap A_j| ,
+\]
+where the last two terms of all pairs come from one sparse matrix product. The identity is exact, so
+the containments, and the \dnds values computed from them, are those of a direct pairwise comparison.
+For all \mtbFullPairs{} pairs of the \mtbAllIsolates{} isolates, sketching took \mtbSketchMinutes{}
+minutes, reading the sketches \mtbFullLoadMinutes{} minutes and computing the pairs
+\mtbFullPairsMinutes{} minutes, on \mtbCores{} cores. \texttt{seqinr}'s \texttt{kaks}, on the same
+sequences, computes \mtbSeqinrPairsPerSecond{} pairs of whole coding genomes per second on one core,
+which is \mtbSeqinrFiveThousandCoreDays{} core-days for every pair of the 5,000 isolates
+\citet{gan2025} used and \mtbSeqinrAllCoreYears{} core-years for the whole collection.
+
+Including the read-derived isolates moves the median whole-genome value only from
+\mtbMedianWhole{} to \mtbFullMedian{}. The analyses below nevertheless use only the
+\mtbAssemblyIsolates{} assembly-derived isolates (\mtbPairs{} pairs), so that the substitutions of
+every isolate were found from the same kind of data.
+
+\subsubsection*{The whole coding genome}
+
+Over the whole coding genome the median is \mtbMedianWhole{} (quartiles \mtbQuartilesWhole{}), and
+\mtbBelowOne\% of pairs fall below 1, as expected when purifying selection dominates. The value rises
+modestly with the distance between the two isolates of a pair: \mtbMedianSameSublineage{} for pairs
+within a sublineage, \mtbMedianSameLineage{} for pairs from different sublineages of one lineage and
+\mtbMedianDifferentLineage{} for pairs from different lineages (Figure~\ref{fig:mtb_main}a and d).
+The rare most divergent pairs, the \mtbTailShare\% that differ at more than \mtbTailThreshold\% of
+sites, reach higher values. Of these, \mtbTailWithOutlier\% involve one of \mtbTailIsolates{}
+isolates that carry a median of \mtbTailSubstitutions{} substitutions, more than twice the usual
+number; substitutions that are errors rather than mutations fall on synonymous and non-synonymous
+sites in proportion to their number and pull the estimate towards 1.
+
+\subsubsection*{The ordering of the gene groups}
+
+The ordering \citet{gan2025} report is recovered (Figure~\ref{fig:mtb_main}b). Essential genes give
+the lowest value (median \mtbMedianEssential{}), the whole coding genome lies above them
+(\mtbMedianWhole{}), non-essential genes higher still (\mtbMedianNonessential{}), and the
+high-quality segments of the PE/PPE genes are the highest (\mtbMedianPeppehq{}). The absolute values
+are not comparable with the $p_N/p_S$ values of \citet{gan2025}, which come from a different
+estimator; the ordering is. It holds pair by pair, not only between
+medians: on a subsample of \mtbPairedPairsMillion{} million pairs shared by all groups, non-essential
+genes exceed essential genes in \mtbShareNonessentialOverEssential\% of pairs, and the PE/PPE segments
+exceed non-essential genes in \mtbSharePeppehqOverNonessential\% (Wilcoxon signed-rank test on
+\mtbWilcoxonPairs{} of those pairs, $p < 10^{\mtbWilcoxonPExponent}$ in both cases). Taken over whole genes instead of the
+high-quality segments, the PE/PPE family is not elevated (\mtbMedianPeppe{}; above the non-essential
+genes in only \mtbSharePeppeOverNonessential\% of pairs). The repetitive remainder of those genes is
+where short-read data is least reliable, which is why \citet{gan2025} restricted their analysis to
+the segments; the conventional estimator gives the same answer on these sequences (below), so this is
+a property of the sequences rather than of the estimator.
+
+\subsubsection*{Agreement with the conventional estimate}
+
+To compare \method with the pairwise estimate \citet{gan2025} used, we ran \texttt{seqinr}'s \texttt{kaks} on
+the same sequences for \mtbSeqinrIsolates{} isolates chosen at random (\mtbSeqinrPairs{} pairs; the
+cost of \texttt{seqinr} rules out many more), and took the \method values of the same pairs from the
+run above. The two estimates rank the pairs alike: the rank correlation between them is
+\mtbSpearmanSeqinrEssential{} for essential genes, \mtbSpearmanSeqinrNonessential{} for non-essential
+genes and \mtbSpearmanSeqinrWhole{} for the whole coding genome (Figure~\ref{fig:mtb_main}c). They
+order four of the groups alike: essential genes, the whole coding genome, non-essential genes and the
+PE/PPE segments, from lowest to highest. Whole PE/PPE genes are placed differently, below every other
+group by \texttt{seqinr} (median \mtbSeqinrMedianPeppe{}) and between the whole coding genome and the
+non-essential genes by \method (\mtbToolMedianPeppe{}); neither places them above the non-essential
+genes. For the other four groups \method returns lower values than \texttt{seqinr}
+(whole coding genome: \mtbToolMedianWhole{} against \mtbSeqinrMedianWhole{}). The ratio of synonymous to
+non-synonymous sites in these sequences, \mtbSiteRatioWhole{}, is close to the \mtbConstant{} the
+estimator assumes, so this offset does not come from that constant.
+
+\subsubsection*{Where sketching breaks down}
+
+Everything above uses every \kmer. Each value rests on the hashes that differ between the two
+isolates of a pair: a median of \mtbDifferingProteinWhole{} protein hashes per pair for the whole
+coding genome, \mtbDifferingProteinEssential{} for the essential genes and
+\mtbDifferingProteinPeppehq{} for the PE/PPE segments. A sketch with scale factor $s$ keeps about
+$1/s$ of them, and the values from a sketch follow those from every \kmer less and less closely as $s$
+grows (Figure~\ref{fig:mtb_scale}b). For the whole coding genome, the rank correlation between the
+values from a sketch and those from every \kmer, over the same pairs, is \mtbSpearmanWholeScaleTwo{},
+\mtbSpearmanWholeScaleFive{} and \mtbSpearmanWholeScaleTen{} at scale factors 2, 5 and 10; for the
+PE/PPE segments, the group with the fewest differing hashes, it is \mtbSpearmanPeppehqScaleTwo{},
+\mtbSpearmanPeppehqScaleFive{} and \mtbSpearmanPeppehqScaleTen{}. The medians drift downwards as well
+(whole coding genome: \mtbMedianWhole{}, \mtbMedianWholeScaleFive{} and \mtbMedianWholeScaleTen{} at
+1, 5 and 10; Figure~\ref{fig:mtb_scale}c). The comparisons between groups last longer than the
+individual values (Figure~\ref{fig:mtb_scale}d). Essential genes stay below non-essential genes in
+\mtbHoldsEssentialBelowNonessentialScaleTen\% of pairs at a scale factor of 10. The elevation of the
+PE/PPE segments over non-essential genes weakens steadily, from
+\mtbHoldsNonessentialBelowPeppehqScaleOne\% of pairs with every \kmer to
+\mtbHoldsNonessentialBelowPeppehqScaleFive\% at 5 and \mtbHoldsNonessentialBelowPeppehqScaleTen\% at
+10, and is reversed at 100 (\mtbHoldsNonessentialBelowPeppehqScaleHundred\%), where a pair has a
+median of \mtbDifferingProteinPeppehqScaleHundred{} differing protein hash left in that group. There
+is no sharp threshold: for isolates of one species, which differ at about one site in several
+thousand, a sketch has to keep every \kmer, or nearly every one, and the scale factors used between
+genera in this work leave too few differing hashes to estimate anything. In this setting the saving
+comes from comparing each genome with a reference once, not from sketching.
+
+\subsubsection*{Comparing draft assemblies directly}
+
+Comparing two independently assembled draft genomes through their own gene calls, with every \kmer,
+gives a median of \mtbAssemblyMedianDnds{} over \mtbSmokePairs{} pairs of \mtbSmokeIsolates{}
+isolates, and \mtbAssemblyUnusable\% of pairs give no usable value. The nucleotide and protein
+containments then come out nearly equal ($1 - C_{nt} = \mtbAssemblyCnt$ against
+$1 - C_{aa} = \mtbAssemblyCaa$; Figure~\ref{fig:mtb_scale}a), because two draft assemblies differ in
+gene content (broken contigs, fragmented genes) as much as in sequence, and a missing gene removes
+nucleotide and protein \kmers in the same proportion. The denominator of the estimate depends on the
+gap between the two containments, so it collapses. This is the same failure as in the genome pairs of
+Figure~\ref{fig:hier_edge}, where most of the difference between two genomes was not substitutions.
+
+\subsubsection*{Limitations}
+
+The sequences compared are the reference with each isolate's substitutions applied, so insertions,
+deletions and genes absent from the reference are not represented, and positions an assembly does not
+cover carry the reference base; the hashes in the identity above are those of these sequences. For the
+\mtbReadsAssemblyIsolates{} isolates that have both an assembly and reads, substitutions found the two
+ways give rank-correlated values (\mtbReadsAssemblySpearman{}; median difference
+$\mtbReadsAssemblyShift$) but not identical ones. The absolute values depend on the estimator and its
+constant, and should be compared with each other rather than with values from a different method.

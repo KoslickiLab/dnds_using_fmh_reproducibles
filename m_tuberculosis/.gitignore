@@ -1,0 +1,10 @@
+# downloaded data: AllTheBacteria archives and assemblies, published tables, reference sequences
+/data/
+# intermediate files: gene calls, sequences of every isolate, sketches, per-pair tables (about 5 TB)
+/work/
+# the FracMinHash dN/dS code, cloned by analysis/00_get_tools.sh
+/external/
+/logs/
+/tmp/
+__pycache__/
+*.pyc

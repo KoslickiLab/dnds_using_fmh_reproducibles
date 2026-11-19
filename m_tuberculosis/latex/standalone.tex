@@ -1,0 +1,39 @@
+% A wrapper that compiles the vignette on its own, to check that it typesets and that every macro
+% it uses is defined. The vignette itself (mtb_text.tex, mtb_captions.tex, mtb_figures.tex) is
+% meant to be \input by the manuscript's supplemental information, which defines \method, \dnds and
+% the rest; the \providecommand lines below are only for this standalone build.
+%
+%   build:  cd tex && ../../envs/tex/bin/tectonic standalone.tex
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+
+% macros the manuscript defines; harmless duplicates here
+\providecommand{\kmer}{$k$-mer\xspace}
+\providecommand{\kmers}{$k$-mers\xspace}
+\providecommand{\kaa}{$k_{aa}$\xspace}
+\providecommand{\dnds}{$d_N/d_S$\xspace}
+\providecommand{\method}{\textit{FracMinHash \dnds}\xspace}
+\providecommand{\fmh}{FracMinHash\xspace}
+
+\input{numbers/mtb}
+% the manuscript's edge-bundling figure, referred to by label; absent from this standalone build
+\makeatletter\@namedef{r@fig:hier_edge}{{5}{}{}{}{}}\makeatother
+\input{mtb_captions}
+
+\title{FracMinHash \textit{dN/dS} across a collection of \textit{Mycobacterium tuberculosis} isolates}
+\author{(vignette, for the supplemental information)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\input{mtb_text}
+\clearpage
+\input{mtb_figures}
+\bibliographystyle{plainnat}
+\bibliography{mtb}
+\end{document}

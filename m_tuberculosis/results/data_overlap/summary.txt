@@ -1,0 +1,66 @@
+Gan et al. Table S1 runs: 49954 (unique 49949)
+runs found in ATB ENA metadata: 39412
+runs with an ATB 0.2 assembly: 39381
+  of which ATB species call M. tuberculosis: 37544
+  of which in the ATB high-quality set: 36889
+  samples with >1 run in ENA (ATB assembles per sample): 0
+  distinct ATB samples: 39379
+species calls among matched runs:
+species_call
+Mycobacterium tuberculosis    37544
+NaN                           10573
+unknown                        1837
+sublineage counts (all runs):
+sublineage
+L23D     6049
+L41B     4375
+L48      4342
+L3B      3848
+L43B     2567
+L212     2558
+L41A     2227
+L44      1971
+L1B      1878
+L42      1856
+L1C      1792
+L43A     1690
+L23B     1647
+L23C     1619
+L43C     1575
+L23A     1496
+L43D     1403
+L3A      1387
+L46      1232
+L5B67    1194
+L49      1045
+L1A       952
+L45       627
+L47       543
+L23        81
+sublineage counts (runs with ATB assembly):
+sublineage
+L23D     4370
+L41B     3541
+L48      3389
+L3B      2937
+L43B     2107
+L212     1851
+L41A     1794
+L44      1528
+L43A     1458
+L1C      1450
+L42      1420
+L43C     1390
+L23B     1387
+L23C     1371
+L1B      1309
+L23A     1303
+L43D     1284
+L3A      1054
+L1A       916
+L5B67     894
+L49       869
+L46       796
+L45       479
+L47       422
+L23        62
