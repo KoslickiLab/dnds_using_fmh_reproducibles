@@ -47,7 +47,7 @@ def format_ax(ax, xlim, ylim, fs=12, xlabel=False, ylabel=False):
     if xlabel:
         ax.set_xlabel(ylabeling, fontsize=fs)
     if ylabel:
-        ax.set_ylabel('NG86', fontsize=fs)
+        ax.set_ylabel('KaKs_Calculator (NG86)', fontsize=fs)
 
 # =========================
 # -------- FILES A --------
