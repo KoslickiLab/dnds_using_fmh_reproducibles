@@ -39,9 +39,9 @@ def format_ax(ax, xlim, ylim, fs=13, xlabel=False, ylabel=False):
     ax.set_yticks([0,1])
     ax.tick_params(axis='both', labelsize=fs-2)
     if xlabel:
-        ax.set_xlabel('FMH dN/dS estimates', fontsize=fs)
+        ax.set_xlabel('FMH dN/dS', fontsize=fs)
     if ylabel:
-        ax.set_ylabel('NG86 dN/dS estimates', fontsize=fs)
+        ax.set_ylabel('KaKs_Calculator (NG86)', fontsize=fs)
 
 # =========================
 # -------- FILES A --------
