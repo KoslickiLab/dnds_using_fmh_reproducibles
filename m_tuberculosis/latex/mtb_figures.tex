@@ -1,0 +1,30 @@
+% ============================================================================
+% Figure environments of the M. tuberculosis vignette. \input by the supplemental information,
+% after tex/mtb_captions.tex. Each panel is its own file in tex/figures/ (copies of
+% results/figures/panels/, written by scripts/42_figures.py); the panels and their letters are put
+% together here.
+% ============================================================================
+
+% one panel: its letter above it, the panel at its natural size (all panels are drawn with the same
+% fonts and fit in half the text width, so the text of every panel prints at the same size)
+\providecommand{\mtbpanel}[2]{%
+  \begin{minipage}[t]{0.49\textwidth}\vspace{0pt}%
+  \textbf{\sffamily #1}\par\vspace{0.2ex}%
+  \includegraphics{#2}%
+  \end{minipage}}
+
+\begin{figure}[htbp]
+\centering
+\mtbpanel{a}{figures/mtb_main_a.pdf}\hfill\mtbpanel{b}{figures/mtb_main_b.pdf}\\[1.5ex]
+\mtbpanel{c}{figures/mtb_main_c.pdf}\hfill\mtbpanel{d}{figures/mtb_main_d.pdf}
+\caption{\CaptionMtbMain}
+\label{fig:mtb_main}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\mtbpanel{a}{figures/mtb_scale_a.pdf}\hfill\mtbpanel{b}{figures/mtb_scale_b.pdf}\\[1.5ex]
+\mtbpanel{c}{figures/mtb_scale_c.pdf}\hfill\mtbpanel{d}{figures/mtb_scale_d.pdf}
+\caption{\CaptionMtbScale}
+\label{fig:mtb_scale}
+\end{figure}

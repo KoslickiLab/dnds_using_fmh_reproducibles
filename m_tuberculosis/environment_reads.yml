@@ -1,0 +1,15 @@
+# Conda environment for the optional read pipeline (steps 07 and 08): SRA download, mapping to the
+# ancestral sequence and variant calls. Separate from environment.yml because samtools and bcftools 1.25
+# cannot be installed together with R 4.5.3.
+#   conda env create -f environment_reads.yml && conda activate fmh_dnds_mtb_reads
+name: fmh_dnds_mtb_reads
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - sra-tools=3.4.1
+  - seqtk=1.5
+  - bwa=0.7.19
+  - samtools=1.25
+  - bcftools=1.25
+  - curl

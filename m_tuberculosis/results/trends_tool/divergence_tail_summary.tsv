@@ -1,0 +1,2 @@
+threshold	tail_pairs	subsample_pairs	tail_share	outlier_isolates	outlier_median_substitutions	all_median_substitutions	tail_share_with_outlier
+0.0006	6741	12114273	0.0005564510557092447	8	2488.5	1114.0	0.6777926123720516

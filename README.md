@@ -17,6 +17,7 @@
     - [Main figures](#main-figures)
     - [Supplemental figures](#supplemental-figures)
 - [Biological applications](#biological-applications)
+- [A collection of closely related genomes: *M. tuberculosis*](#a-collection-of-closely-related-genomes-m-tuberculosis)
 - [References](#references)
 - [Please, cite us!](#please-cite-us)
 
@@ -186,6 +187,26 @@ bash figures/make_all_figures.sh      # only the figures, from the result tables
 
 The result tables, the number files used by the manuscript and the figures of our run are part of
 the folder, so a new run can be compared with ours file by file.
+
+# A collection of closely related genomes: *M. tuberculosis*
+
+The supplementary vignette that computes FracMinHash dN/dS for every pair of the 39,379
+assembly-derived *Mycobacterium tuberculosis* isolates of Gan et al. 2025 (49,904 with the read-derived ones), compares it with `seqinr` on the same
+sequences and measures what sketching costs when isolates differ at about one site in several
+thousand is reproduced by the code in [`m_tuberculosis/`](m_tuberculosis/). It uses the
+`--mode reference` of [dnds-using-fmh](https://github.com/KoslickiLab/dnds-using-fmh) (pull request 18)
+and has its own conda environment and README:
+
+```
+cd m_tuberculosis
+conda env create -f environment.yml
+conda activate fmh_dnds_mtb
+bash reproduce_all.sh                 # everything, from the downloads (a server: about 5 TB of disk, 250 cores)
+python figures/42_figures.py          # only the figure panels, from the result tables in the folder
+python analysis/43_numbers.py         # only the number file
+```
+
+The result tables, the number file and the figure panels of our run are part of the folder.
 
 # References
 

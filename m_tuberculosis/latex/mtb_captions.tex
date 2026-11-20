@@ -1,0 +1,45 @@
+% ============================================================================
+% Captions of the M. tuberculosis vignette's figures, as macros. \input before the figures.
+% Numbers come from tex/numbers/mtb.tex.
+% ============================================================================
+
+\newcommand{\CaptionMtbMain}{\textbf{\method over all pairs of the \mtbAssemblyIsolates{}
+assembly-derived \textit{M.\ tuberculosis} isolates, with every \kmer.}
+\textbf{(a)} Distribution of the whole-coding-genome value over all \mtbPairs{} pairs, by how closely
+the two isolates of a pair are related (sublineages as assigned by \citet{gan2025}), as the share of
+the pairs of each kind in bins \mtbHistogramBinWidth{} wide. Dashed line:
+\dnds{} $= 1$; \mtbBelowOne\% of pairs fall below it.
+\textbf{(b)} The same for each group of genes, over all pairs (box: quartiles; white line: median;
+whiskers: 5th and 95th percentiles; dashed line: \dnds{} $= 1$). Diamonds: the per-gene $p_N/p_S$
+values \citet{gan2025} report for essential genes, non-essential genes and the PE/PPE family, from a
+different estimator, so only their ordering is comparable. Their PE/PPE value was computed over the
+high-quality segments of those genes and is drawn beside that group; they report no value for whole
+PE/PPE genes.
+\textbf{(c)} \method against the conventional estimate (\texttt{seqinr}'s \texttt{kaks}, the function
+\citet{gan2025} used), both computed from the same sequences, for the \mtbSeqinrPairs{} pairs of
+\mtbSeqinrIsolates{} isolates chosen at random. Grey points: the whole coding genome, one per pair
+(\mtbSeqinrPanelOutside{} pairs beyond the axes are not drawn). Circles and bars: for each group of
+genes, the median and the quartiles of both estimates, in the colours of (b); the few pairs whose
+sequences are identical over a group have no value with either estimate. Dashed line: equality.
+\textbf{(d)} Median (line) and quartiles (shaded) of the whole-coding-genome value against the
+divergence between the isolates of a pair, over all pairs. Divergence bins holding fewer than
+\mtbDivergenceMinPairs{} pairs are not drawn.}
+
+\newcommand{\CaptionMtbScale}{\textbf{What sketching costs when isolates differ at about one site in
+several thousand.}
+\textbf{(a)} Nucleotide against protein containment for pairs of isolates compared two ways: through
+the gene calls of their own draft assemblies (orange; \mtbSmokePairs{} pairs of \mtbSmokeIsolates{}
+isolates) and anchored to one reference (blue; \mtbAnchoredPoints{} pairs drawn at random from the
+pairs of b). Dashed
+line: equal containments. The denominator of the estimate depends on the gap between the two
+containments, which nearly vanishes for draft assemblies.
+\textbf{(b)} For each group of genes (PE/PPE segments: the high-quality segments of the PE/PPE genes),
+the rank correlation between the values from a sketch with the given scale factor and the values from
+every \kmer, over the same pairs (a subsample of
+\mtbPairedPairsMillion{} million pairs). A sketch with a scale factor above 1 is obtained by
+downsampling the scale-factor-1 sketch, which gives the same sketch as sketching at that scale factor.
+\textbf{(c)} The median value of each group over all pairs, at each scale factor. Colours as in (b);
+dashed line: \dnds{} $= 1$.
+\textbf{(d)} The share of pairs in which each ordering reported by \citet{gan2025} holds, at each scale
+factor (pairs as in b). Dashed line: 0.5, at which neither group is higher more often than the
+other.}
