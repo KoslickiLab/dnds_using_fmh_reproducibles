@@ -1,0 +1,10 @@
+role	accession	label	group	key
+A	GCF_900537995.1	R. intestinalis L1-82 (closed; INRA)	pair	A
+B	GCF_014287635.1	R. zhanii BX1005	pair	B
+control	GCF_025151715.1	L1-82 (closed; Stanford)	other assemblies of L1-82	Stanford
+control	GCF_000156535.1	L1-82 (draft; WashU)	other assemblies of L1-82	WashU
+control	GCF_061218445.1	R. zhanii Y55	other strains	ZhaniiY
+control	GCF_061218745.1	R. zhanii XZ	other strains	ZhaniiXZ
+control	GCF_000210655.1	R. intestinalis XB6B4	other strains	Xb
+control	GCF_000209995.1	R. intestinalis M50/1	other strains	Mfifty
+control	GCF_023497585.1	R. intestinalis NB2A 31_NB	other strains	Nb

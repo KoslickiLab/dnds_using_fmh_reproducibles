@@ -1,0 +1,275 @@
+accession	used_in	name	gtdb_species	genome_type
+GCA_000193795.2	hierarchical edge bundling figure	Neisseria lactamica NS19	Neisseria lactamica_A	isolate
+GCA_000405345.1	hierarchical edge bundling figure	Atribacteria bacterium SCGC AAA255-N14	34-128 sp000405345	SAG
+GCA_000405605.1	hierarchical edge bundling figure	Atribacteria bacterium SCGC AAA255-G05	34-128 sp000405605	SAG
+GCA_000434835.1	hierarchical edge bundling figure	Clostridium sp. CAG:594	Aphodocola sp000434835	MAG
+GCA_000438155.1	hierarchical edge bundling figure	Firmicutes bacterium CAG:95	CAG-95 sp000438155	MAG
+GCA_000634415.1	hierarchical edge bundling figure	Prochlorococcus sp. scB245a_519A13	Prochlorococcus_A sp000634415	SAG
+GCA_000715635.1	hierarchical edge bundling figure	Streptomyces violaceus	Streptomyces violaceus	isolate
+GCA_002067045.1	hierarchical edge bundling figure	Methanomassiliicoccales archaeon PtaB.Bin134	UBA472 sp002067045	MAG
+GCA_002067635.1	hierarchical edge bundling figure	Methanomassiliicoccales archaeon PtaU1.Bin030	UBA6 sp002067635	MAG
+GCA_002154585.1	hierarchical edge bundling figure	Streptomyces pseudogriseolus	Streptomyces pseudogriseolus	isolate
+GCA_002279065.1	hierarchical edge bundling figure	Xanthomonadales bacterium 15-68-25	Dyella_A sp002279065	MAG
+GCA_002478115.1	hierarchical edge bundling figure	Candidatus Acidoferrum typicum	Acidoferrum typicum	MAG
+GCA_002693165.1	hierarchical edge bundling figure	Thaumarchaeota archaeon	UBA57 sp002693165	MAG
+GCA_002720285.1	hierarchical edge bundling figure	Acidobacteria bacterium	UBA11600 sp002720285	MAG
+GCA_002730735.1	hierarchical edge bundling figure	Acidobacteria bacterium	UBA11600 sp002730735	MAG
+GCA_002894305.1	hierarchical edge bundling figure	Comamonadaceae bacterium CD01	PGEI01 sp002894305	isolate
+GCA_003138975.1	hierarchical edge bundling figure	Acidobacteriaceae bacterium	Sulfotelmatobacter sp003138975	MAG
+GCA_003220225.1	hierarchical edge bundling figure	Candidatus Rokubacteria bacterium	AR12 sp003220225	MAG
+GCA_003222275.1	hierarchical edge bundling figure	Acidobacteria bacterium	AA32 sp003222275	MAG
+GCA_003281285.1	hierarchical edge bundling figure	Prochlorococcus sp. AG-347-K22	Prochlorococcus_A sp003281285	SAG
+GCA_003282885.1	hierarchical edge bundling figure	SAR116 cluster bacterium AG-325-F22	AAA536-G10 sp003282885	SAG
+GCA_003283875.1	hierarchical edge bundling figure	SAR116 cluster bacterium AG-321-A13	AAA536-G10 sp003283875	SAG
+GCA_003336485.1	hierarchical edge bundling figure	Methanophagales archaeon	QENH01 sp003336485	MAG
+GCA_003647525.1	hierarchical edge bundling figure	Deltaproteobacteria bacterium	B13-G4 sp003647525	MAG
+GCA_003663525.1	hierarchical edge bundling figure	Thermococci archaeon	Thermococcus_A sp003663525	MAG
+GCA_003663535.1	hierarchical edge bundling figure	Thermococci archaeon	Thermococcus_A sp003663535	MAG
+GCA_004402895.1	hierarchical edge bundling figure	Candidatus Marinimicrobia bacterium MT.SAG.3	SORT01 sp004402895	SAG
+GCA_005473895.2	hierarchical edge bundling figure	Carideicomes alvinocaridis	Carideicomes alvinocaridis	isolate
+GCA_013180565.1	hierarchical edge bundling figure	ANME-1 cluster archaeon GoMg3.2	QENH01 sp013180565	SAG
+GCA_013378385.1	hierarchical edge bundling figure	Thaumarchaeota archaeon	UBA57 sp013378385	MAG
+GCA_013792055.1	hierarchical edge bundling figure	Desulfobacteraceae bacterium	B13-G4 sp013792055	MAG
+GCA_014204745.1	hierarchical edge bundling figure	Streptomyces collinus	Streptomyces collinus	isolate
+GCA_016703145.1	hierarchical edge bundling figure	Ottowia sp.	Ottowia sp016703145	MAG
+GCA_017405445.1	hierarchical edge bundling figure	Bacilli bacterium	UBA3789 sp017405445	MAG
+GCA_017406775.1	hierarchical edge bundling figure; pair 1 (Methanobrevibacter sp. RGIG2411, Saccharibacteria RGIG2249): genome of the pair	Candidatus Saccharibacteria bacterium	Nanosyncoccus sp017406775	MAG
+GCA_017406955.1	hierarchical edge bundling figure	Bacilli bacterium	CAJMSU01 sp017406955	MAG
+GCA_017416535.1	hierarchical edge bundling figure	Bacilli bacterium	JAEDES01 sp017416535	MAG
+GCA_017417585.1	hierarchical edge bundling figure	Victivallales bacterium	RGIG1601 sp017417585	MAG
+GCA_017431185.1	hierarchical edge bundling figure	Victivallales bacterium	RGIG2581 sp017431185	MAG
+GCA_017434555.1	hierarchical edge bundling figure; pair 1 (Methanobrevibacter sp. RGIG2411, Saccharibacteria RGIG2249): genome of the pair	Methanobrevibacter sp.	Methanobrevibacter_A sp017434555	MAG
+GCA_017434825.1	hierarchical edge bundling figure	Bacilli bacterium	UBA6448 sp017434825	MAG
+GCA_017476705.1	hierarchical edge bundling figure	Bacilli bacterium	CAJOJO01 sp017476705	MAG
+GCA_017478105.1	hierarchical edge bundling figure	Bacilli bacterium	UBA3789 sp017478105	MAG
+GCA_017523995.1	hierarchical edge bundling figure	Oscillospiraceae bacterium	Firm-04 sp017523995	MAG
+GCA_017545185.1	hierarchical edge bundling figure	Oscillospiraceae bacterium	Firm-04 sp017545185	MAG
+GCA_017881985.1	hierarchical edge bundling figure	Chloroflexi bacterium	CTSoil-043 sp017881985	MAG
+GCA_017882855.1	hierarchical edge bundling figure	Cellulomonas sp.	JADGOR01 sp017882855	MAG
+GCA_019118935.1	hierarchical edge bundling figure	Candidatus Oscillibacter pullicola	Dysosmobacter pullicola	MAG
+GCA_019248085.1	hierarchical edge bundling figure	Candidatus Dojkabacteria bacterium S2_J21	UBA12078 sp019248085	SAG
+GCA_019248265.1	hierarchical edge bundling figure	Candidatus Falkowbacteria bacterium S5_I03	UBA12465 sp019248265	SAG
+GCA_019309665.1	hierarchical edge bundling figure	Deltaproteobacteria bacterium	B13-G4 sp019309665	MAG
+GCA_019310725.1	hierarchical edge bundling figure	Deltaproteobacteria bacterium	B33-G16 sp019310725	MAG
+GCA_019410105.1	hierarchical edge bundling figure	Clostridiales bacterium	DXTB01 sp019410105	MAG
+GCA_019412865.1	hierarchical edge bundling figure	Bacteroides sp.	Bacteroides sp019412865	MAG
+GCA_019417795.1	hierarchical edge bundling figure	Clostridiales bacterium	Dysosmobacter sp019417795	MAG
+GCA_020351915.1	hierarchical edge bundling figure	Deltaproteobacteria bacterium	B33-G16 sp020351915	MAG
+GCA_021151525.1	hierarchical edge bundling figure	Cellvibrionaceae bacterium	Cellvibrio sp021151525	MAG
+GCA_021151615.1	hierarchical edge bundling figure	Cellvibrionaceae bacterium	Cellvibrio sp021151615	MAG
+GCA_021502835.1	hierarchical edge bundling figure	Streptomyces thinghirensis	Streptomyces thinghirensis	isolate
+GCA_021568835.1	hierarchical edge bundling figure	Streptomyces sp. Tue 6430	Streptomyces sp021568835	isolate
+GCA_021648845.1	hierarchical edge bundling figure	Mycobacterium sp. MBM	Mycobacterium sp021648845	isolate
+GCA_021780795.1	hierarchical edge bundling figure	Firmicutes bacterium	JAJXYA01 sp021780795	MAG
+GCA_021784205.1	hierarchical edge bundling figure	Actinomycetia bacterium	RAAP-2 sp021784205	MAG
+GCA_021785115.1	hierarchical edge bundling figure	Chloroflexi bacterium	JAJYNJ01 sp021785115	MAG
+GCA_021785735.1	hierarchical edge bundling figure	Thermoplasmata archaeon	JAKAFX01 sp021785735	MAG
+GCA_021787035.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAJZYO01 sp021787035	MAG
+GCA_021787395.1	hierarchical edge bundling figure	Chloroflexi bacterium	CAIXZV01 sp021787395	MAG
+GCA_021789455.1	hierarchical edge bundling figure	bacterium	Acidulodesulfobacterium_A sp021789455	MAG
+GCA_021790415.1	hierarchical edge bundling figure	Thermoplasmata archaeon	GCA-000496135 sp021790415	MAG
+GCA_021790675.1	hierarchical edge bundling figure	Actinomycetia bacterium	RAAP-2 sp021790675	MAG
+GCA_021791235.1	hierarchical edge bundling figure	Proteobacteria bacterium	Thiobacillus sp021791235	MAG
+GCA_021791295.1	hierarchical edge bundling figure	bacterium	Acidulodesulfobacterium_A sp021791295	MAG
+GCA_021791875.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAJYVU01 sp021791875	MAG
+GCA_021792595.1	hierarchical edge bundling figure	Thermoplasmata archaeon	JAMDBT01 sp021792595	MAG
+GCA_021793035.1	hierarchical edge bundling figure	Candidatus Micrarchaeota archaeon	JAMCYB01 sp021793035	MAG
+GCA_021793945.1	hierarchical edge bundling figure	Thermoplasmata archaeon	B-DKE sp021793945	MAG
+GCA_021796545.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAKABX01 sp021796545	MAG
+GCA_021797225.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Ferroplasma sp021797225	MAG
+GCA_021797385.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Ferroplasma sp021797385	MAG
+GCA_021797635.1	hierarchical edge bundling figure	Firmicutes bacterium	JAJZZI01 sp021797635	MAG
+GCA_021797915.1	hierarchical edge bundling figure	Thermoplasmata archaeon	GCA-001856825 sp021797915	MAG
+GCA_021797955.1	hierarchical edge bundling figure	Thermoplasmata archaeon	JAJZYV01 sp021797955	MAG
+GCA_021798075.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAJZYO01 sp021798075	MAG
+GCA_021798675.1	hierarchical edge bundling figure	Proteobacteria bacterium	Rhodanobacter sp021798675	MAG
+GCA_021798735.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAKAAZ01 sp021798735	MAG
+GCA_021799405.1	hierarchical edge bundling figure	Acidobacteria bacterium	Terracidiphilus sp021799405	MAG
+GCA_021799755.1	hierarchical edge bundling figure	Thermoplasmata archaeon	JAKAFX01 sp021799755	MAG
+GCA_021801945.1	hierarchical edge bundling figure	Acidobacteria bacterium	Terracidiphilus sp021801945	MAG
+GCA_021802375.1	hierarchical edge bundling figure	Firmicutes bacterium	JAKAAL01 sp021802375	MAG
+GCA_021803845.1	hierarchical edge bundling figure	bacterium	Acidulodesulfobacterium_A sp021803845	MAG
+GCA_021803885.1	hierarchical edge bundling figure	Planctomycetes bacterium	JAJZKY01 sp021803885	MAG
+GCA_021804195.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAJZKJ01 sp021804195	MAG
+GCA_021805685.1	hierarchical edge bundling figure	Proteobacteria bacterium	Rhodanobacter sp021805685	MAG
+GCA_021805955.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAKAAZ01 sp021805955	MAG
+GCA_021806045.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAJZDI01 sp021806045	MAG
+GCA_021806345.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021806345	MAG
+GCA_021806765.1	hierarchical edge bundling figure	Chloroflexi bacterium	JAJYNT01 sp021806765	MAG
+GCA_021808485.1	hierarchical edge bundling figure	Planctomycetes bacterium	JAJYPG01 sp021808485	MAG
+GCA_021809755.1	hierarchical edge bundling figure	Thermoplasmata archaeon	GCA-000496135 sp021809755	MAG
+GCA_021810175.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAJZJJ01 sp021810175	MAG
+GCA_021810205.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAJYVT01 sp021810205	MAG
+GCA_021810735.1	hierarchical edge bundling figure	Acidobacteria bacterium	JAJZIF01 sp021810735	MAG
+GCA_021811485.1	hierarchical edge bundling figure	archaeon	UBA183 sp021811485	MAG
+GCA_021811745.1	hierarchical edge bundling figure	Acidobacteria bacterium	Terracidiphilus sp021811745	MAG
+GCA_021812785.1	hierarchical edge bundling figure	Nitrospirae bacterium	JAKAEG01 sp021812785	MAG
+GCA_021813525.1	hierarchical edge bundling figure	bacterium	Acidulodesulfobacterium_A sp021813525	MAG
+GCA_021816165.1	hierarchical edge bundling figure	Planctomycetes bacterium	JAKAYZ01 sp021816165	MAG
+GCA_021816385.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021816385	MAG
+GCA_021816955.1	hierarchical edge bundling figure	Thermoplasmata archaeon	UBA184 sp021816955	MAG
+GCA_021816965.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021816965	MAG
+GCA_021819225.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021819225	MAG
+GCA_021823045.1	hierarchical edge bundling figure	Actinomycetia bacterium	JABEUN01 sp021823045	MAG
+GCA_021825785.1	hierarchical edge bundling figure	Nitrospirae bacterium	JAKAEG01 sp021825785	MAG
+GCA_021826655.1	hierarchical edge bundling figure	Actinomycetia bacterium	Bog-756 sp021826655	MAG
+GCA_021826835.1	hierarchical edge bundling figure	Thermoplasmata archaeon	JAKAYH01 sp021826835	MAG
+GCA_021827545.1	hierarchical edge bundling figure	Thermoplasmata archaeon	UBA184 sp021827545	MAG
+GCA_021827865.1	hierarchical edge bundling figure	archaeon	UBA183 sp021827865	MAG
+GCA_021829515.1	hierarchical edge bundling figure	Nitrospirae bacterium	Leptospirillum sp021829515	MAG
+GCA_021833045.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021833045	MAG
+GCA_021835265.1	hierarchical edge bundling figure	Thermoplasmata archaeon	Cuniculiplasma sp021835265	MAG
+GCA_021837545.1	hierarchical edge bundling figure	Firmicutes bacterium	Clostridium sp021837545	MAG
+GCA_021842145.1	hierarchical edge bundling figure	Actinomycetia bacterium	JABEUN01 sp021842145	MAG
+GCA_021844645.1	hierarchical edge bundling figure	Nitrospirae bacterium	Leptospirillum sp021844645	MAG
+GCA_021846065.1	hierarchical edge bundling figure	Acidobacteria bacterium	CAIVDV01 sp021846065	MAG
+GCA_021848095.1	hierarchical edge bundling figure	Candidatus Micrarchaeota archaeon	JAJZOD01 sp021848095	MAG
+GCA_021850345.1	hierarchical edge bundling figure	Actinomycetia bacterium	JAJYVT01 sp021850345	MAG
+GCA_021850955.1	hierarchical edge bundling figure	Candidatus Micrarchaeota archaeon	JAJZOD01 sp021850955	MAG
+GCA_021851335.1	hierarchical edge bundling figure	Acidobacteria bacterium	CAIVDV01 sp021851335	MAG
+GCA_021852275.1	hierarchical edge bundling figure	Planctomycetes bacterium	JABEVA01 sp021852275	MAG
+GCA_022563775.1	hierarchical edge bundling figure	Candidatus Marinimicrobia bacterium	SORT01 sp022563775	MAG
+GCA_023379435.1	hierarchical edge bundling figure	Candidatus Thermoplasmatota archaeon	WAQW01 sp023379435	MAG
+GCA_023379515.1	hierarchical edge bundling figure	Actinobacteria bacterium	JAMCQQ01 sp023379515	MAG
+GCA_023379555.1	hierarchical edge bundling figure	Candidatus Thermoplasmatota archaeon	GCA-001856825 sp023379555	MAG
+GCA_023380955.1	hierarchical edge bundling figure	Chloroflexi bacterium	JAJYNT01 sp023380955	MAG
+GCA_023474385.1	hierarchical edge bundling figure	Candidatus Marsarchaeota archaeon	JAMCYB01 sp023474385	MAG
+GCA_023475455.1	hierarchical edge bundling figure	Candidatus Thermoplasmatota archaeon	Thiobacillus sp023475455	MAG
+GCA_023484045.1	hierarchical edge bundling figure	Patescibacteria group bacterium	JAMCZG01 sp023484045	MAG
+GCA_023488645.1	hierarchical edge bundling figure	Actinobacteria bacterium	JAMDDL01 sp023488645	MAG
+GCA_023489375.1	hierarchical edge bundling figure	Planctomycetes bacterium	JAMDCX01 sp023489375	MAG
+GCA_024235995.1	hierarchical edge bundling figure	Burkholderiaceae bacterium	Ottowia sp018240925	MAG
+GCA_900169505.1	hierarchical edge bundling figure	Arabiibacter massiliensis	Arabiibacter massiliensis	isolate
+GCA_900316555.1	hierarchical edge bundling figure	uncultured Eubacteriales bacterium	Ruminococcus_E sp900316555	MAG
+GCA_900317375.1	hierarchical edge bundling figure	uncultured Eubacteriales bacterium	Limivicinus sp900317375	MAG
+GCA_900540845.1	hierarchical edge bundling figure	uncultured Collinsella sp.	Collinsella sp900540845	MAG
+GCA_900549685.1	hierarchical edge bundling figure	uncultured Alistipes sp.	Alistipes_A sp900549685	MAG
+GCA_900554945.1	hierarchical edge bundling figure	uncultured Coriobacteriaceae bacterium	Ellagibacter sp900554945	MAG
+GCA_900557355.1	hierarchical edge bundling figure	uncultured Bacteroides sp.	Bacteroides sp900557355	MAG
+GCA_900752905.1	hierarchical edge bundling figure	Bacilli bacterium	HGM10857 sp900557305	MAG
+GCA_900753715.1	hierarchical edge bundling figure	uncultured Roseburia sp.	Roseburia sp900753715	MAG
+GCA_900754605.1	hierarchical edge bundling figure	uncultured Oscillospiraceae bacterium	Lawsonibacter sp900754605	MAG
+GCA_900758315.1	hierarchical edge bundling figure	uncultured Oscillospiraceae bacterium	Onthomonas sp900758315	MAG
+GCA_900764955.1	hierarchical edge bundling figure	uncultured Collinsella sp.	Collinsella sp900764955	MAG
+GCA_900771805.1	hierarchical edge bundling figure	Bacilli bacterium	Aphodocola sp900771805	MAG
+GCA_902514865.1	hierarchical edge bundling figure	uncultured SAR116 cluster alpha proteobacterium	AAA536-G10 sp902514865	MAG
+GCA_902516225.1	hierarchical edge bundling figure	Puniceicoccaceae bacterium	UBA7441 sp902516225	MAG
+GCA_902517275.1	hierarchical edge bundling figure	uncultured SAR116 cluster alpha proteobacterium	AAA536-G10 sp902517275	MAG
+GCA_902522015.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	AG-337-I02 sp902522015	MAG
+GCA_902536555.1	hierarchical edge bundling figure	uncultured Prochlorococcus sp.	Prochlorococcus_A sp902536555	MAG
+GCA_902539825.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	AG-337-I02 sp902539825	MAG
+GCA_902539895.1	hierarchical edge bundling figure	uncultured SAR116 cluster alpha proteobacterium	AAA536-G10 sp902539895	MAG
+GCA_902542505.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	HIMB59 sp902542505	MAG
+GCA_902550485.1	hierarchical edge bundling figure	uncultured Prochlorococcus sp.	Prochlorococcus_A sp902550485	MAG
+GCA_902572075.1	hierarchical edge bundling figure	uncultured Prochlorococcus sp.	Prochlorococcus_A sp902572075	MAG
+GCA_902573045.1	hierarchical edge bundling figure	uncultured Prochlorococcus sp.	Prochlorococcus_A sp902573045	MAG
+GCA_902573335.1	hierarchical edge bundling figure	uncultured Synechococcaceae cyanobacterium	Prochlorococcus_A sp902573335	MAG
+GCA_902575725.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	HIMB59 sp902575725	MAG
+GCA_902576905.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	CACIJG01 sp902576905	MAG
+GCA_902581005.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	CACIJG01 sp902581005	MAG
+GCA_902588615.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	HIMB59 sp902588615	MAG
+GCA_902595525.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	HIMB59 sp902595525	MAG
+GCA_902613275.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	AG-337-I02 sp902613275	MAG
+GCA_902615165.1	hierarchical edge bundling figure	uncultured Prochlorococcus sp.	Prochlorococcus_A sp902615165	MAG
+GCA_902619485.1	hierarchical edge bundling figure	uncultured SAR116 cluster alpha proteobacterium	AAA536-G10 sp902619485	MAG
+GCA_902622475.1	hierarchical edge bundling figure	uncultured Alphaproteobacteria bacterium	AG-337-I02 sp902622475	MAG
+GCA_902789835.1	hierarchical edge bundling figure	Oscillospiraceae bacterium	Limivicinus sp902789835	MAG
+GCA_902790525.1	hierarchical edge bundling figure	uncultured Eubacteriales bacterium	UBA2862 sp902790525	MAG
+GCA_902793325.1	hierarchical edge bundling figure	uncultured Eubacteriales bacterium	UBA2862 sp902793325	MAG
+GCA_905188025.1	hierarchical edge bundling figure	uncultured Eubacteriales bacterium	RUG705 sp905188025	MAG
+GCA_905200565.1	hierarchical edge bundling figure	uncultured Lachnospiraceae bacterium	CAG-56 sp905200565	MAG
+GCA_905201705.1	hierarchical edge bundling figure	uncultured Marvinbryantia sp.	Marvinbryantia sp900550755	MAG
+GCA_905209745.1	hierarchical edge bundling figure	uncultured Mycoplasma sp.	Faecimonas sp905209745	MAG
+GCA_913041275.1	hierarchical edge bundling figure	uncultured Opitutae bacterium	UBA7441 sp913041275	MAG
+GCA_915066515.1	hierarchical edge bundling figure	uncultured Neisseria sp.	Neisseria sp915066515	MAG
+GCA_916438535.1	hierarchical edge bundling figure	uncultured Neisseria sp.	Neisseria sp916438535	MAG
+GCA_923184405.1	hierarchical edge bundling figure	Neisseria meningitidis	Neisseria meningitidis_C	isolate
+GCA_934191715.1	hierarchical edge bundling figure	uncultured Prevotella sp.	Prevotella sp934191715	MAG
+GCF_000023205.1	hierarchical edge bundling figure	Micrococcus luteus NCTC 2665	Micrococcus luteus	isolate
+GCF_000024265.1	hierarchical edge bundling figure	Eggerthella lenta DSM 2243	Eggerthella lenta	isolate
+GCF_000146345.1	hierarchical edge bundling figure; pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): compared genome (other species); pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): genome of the pair	Peptoniphilus duerdenii ATCC BAA-1640	Peptoniphilus_B duerdenii	isolate
+GCF_000153045.1	hierarchical edge bundling figure	Synechococcus sp. WH 5701	WH-5701 sp000153045	isolate
+GCF_000153805.1	hierarchical edge bundling figure	Synechococcus sp. BL107	Parasynechococcus sp000153805	isolate
+GCF_000174195.1	hierarchical edge bundling figure; pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): genome of the pair	Roseburia inulinivorans DSM 16841	Roseburia inulinivorans	isolate
+GCF_000210055.1	hierarchical edge bundling figure	Gordonibacter pamelaeae 7-10-1-b	Gordonibacter pamelaeae	isolate
+GCF_000239295.1	hierarchical edge bundling figure	Flavonifractor plautii ATCC 29863	Flavonifractor plautii	isolate
+GCF_000296465.1	hierarchical edge bundling figure; pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): genome of the pair	Barnesiella intestinihominis YIT 11860	Barnesiella intestinihominis	isolate
+GCF_000307225.1	hierarchical edge bundling figure; pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): genome of the pair; pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other species)	Anaerococcus vaginalis	Anaerococcus vaginalis_B	isolate
+GCF_000510725.1	hierarchical edge bundling figure	Pseudoxanthomonas sp. J31	Pseudoxanthomonas sp000510725	isolate
+GCF_000513955.1	hierarchical edge bundling figure	Pseudoxanthomonas suwonensis J47	Pseudoxanthomonas suwonensis_C	isolate
+GCF_000513995.1	hierarchical edge bundling figure	Pseudoxanthomonas sp. J35	Pseudoxanthomonas sp000513995	isolate
+GCF_000559025.1	hierarchical edge bundling figure	Luteimonas huabeiensis HB2	Luteimonas_D huabeiensis	isolate
+GCF_000722875.1	hierarchical edge bundling figure	Sphingobium chlorophenolicum	Sphingobium chlorophenolicum	isolate
+GCF_001043055.1	hierarchical edge bundling figure	Pseudomonas weihenstephanensis	Pseudomonas_E weihenstephanensis	isolate
+GCF_001043115.1	hierarchical edge bundling figure	Xanthomonas sp. NCPPB 1128	Xanthomonas_A sp001043115	isolate
+GCF_001279005.1	hierarchical edge bundling figure	Streptomyces caelestis	Streptomyces caelestis_A	isolate
+GCF_001418415.1	hierarchical edge bundling figure	Streptomyces hirsutus	Streptomyces hirsutus	isolate
+GCF_001419705.1	hierarchical edge bundling figure	Streptomyces prasinus	Streptomyces prasinus	isolate
+GCF_001428405.1	hierarchical edge bundling figure	Frateuria sp. Soil773	Frateuria_A sp001428405	isolate
+GCF_001592225.1	hierarchical edge bundling figure	Castellaniella caeni NBRC 101664	Castellaniella caeni	isolate
+GCF_001757355.1	hierarchical edge bundling figure	Sphingobium phenoxybenzoativorans	Sphingobium phenoxybenzoativorans	isolate
+GCF_002150735.1	hierarchical edge bundling figure	Streptomyces africanus	Streptomyces africanus	isolate
+GCF_002291145.1	hierarchical edge bundling figure	Streptomyces sp. SA15	Streptomyces sp002291145	isolate
+GCF_003112595.1	hierarchical edge bundling figure	Streptomyces rubrogriseus	Streptomyces rubrogriseus	isolate
+GCF_003205495.1	hierarchical edge bundling figure	Pseudomonas alcaligenes	Pseudomonas_E alcaligenes_B	isolate
+GCF_003339815.1	hierarchical edge bundling figure	Eggerthella sinensis	Eggerthella sinensis	isolate
+GCF_003696305.1	hierarchical edge bundling figure	Pseudomonas sp. AOB-7	Pseudomonas_E sp003696305	isolate
+GCF_004521985.1	hierarchical edge bundling figure	Pseudomonas khazarica	Pseudomonas_E khazarica	isolate
+GCF_005121165.3	hierarchical edge bundling figure	Dysosmobacter welbionis	Dysosmobacter welbionis	isolate
+GCF_006542665.1	hierarchical edge bundling figure	Alistipes communis	Alistipes communis	isolate
+GCF_009494135.1	hierarchical edge bundling figure	Prevotella copri	Prevotella copri_B	isolate
+GCF_009496535.1	hierarchical edge bundling figure	Stenotrophomonas sp. MYb238	Stenotrophomonas sp003504055	isolate
+GCF_009789075.1	hierarchical edge bundling figure	Pseudooceanicola pacificus	Pseudooceanicola pacificus	isolate
+GCF_010093225.1	hierarchical edge bundling figure	Pseudoxanthomonas koreensis	Pseudoxanthomonas koreensis	isolate
+GCF_010211755.1	hierarchical edge bundling figure	Pseudoxanthomonas sangjuensis	Pseudoxanthomonas_A sangjuensis	isolate
+GCF_010509575.1	hierarchical edge bundling figure; pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): genome of the pair	Faecalibacterium duncaniae	Faecalibacterium duncaniae	isolate
+GCF_011008945.1	hierarchical edge bundling figure	Streptomyces harenosi	Streptomyces harenosi	isolate
+GCF_014199795.1	hierarchical edge bundling figure	Xanthomonas sp. 3498	Xanthomonas_A sp014199795	isolate
+GCF_014287635.1	hierarchical edge bundling figure; pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other gut Lachnospiraceae); pair 6 (R. intestinalis L1-82, R. zhanii BX1005): genome of the pair	Roseburia sp. BX1005	1XD42-69 sp014287635	isolate
+GCF_014638275.1	hierarchical edge bundling figure	Primorskyibacter flagellatus	Pseudooceanicola flagellatus_A	isolate
+GCF_016680995.1	hierarchical edge bundling figure	Ruminococcus sp. M6(2020)	Ruminococcus_E sp016680995	isolate
+GCF_017163705.1	hierarchical edge bundling figure	Xanthomonas bonasiae	Xanthomonas_A bonasiae	isolate
+GCF_017163755.1	hierarchical edge bundling figure	Xanthomonas sp.	Xanthomonas_A sp017163755	isolate
+GCF_017255015.1	hierarchical edge bundling figure	Bowmanella yangjiangensis	Bowmanella yangjiangensis	isolate
+GCF_021168555.1	hierarchical edge bundling figure	Stenotrophomonas sp. MMGLT7	MMGLT7 sp021168555	isolate
+GCF_024266585.1	hierarchical edge bundling figure	Xanthomonas sacchari	Xanthomonas_A sacchari_C	isolate
+GCF_024721115.1	hierarchical edge bundling figure; pair 7 (L. pacificus DSM 29620, S. pentaromativorans P9): genome of the pair	Salipiger sp. P9	Salipiger sp024721115	isolate
+GCF_900083515.1	hierarchical edge bundling figure	Cuniculiplasma divulgatum	Cuniculiplasma divulgatum	isolate
+GCF_900091655.1	hierarchical edge bundling figure; pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): genome of the pair	Culturomica massiliensis	Odoribacter massiliensis	isolate
+GCF_900104805.1	hierarchical edge bundling figure	Pseudomonas oryzae	Pseudomonas_K oryzae	isolate
+GCF_900109175.1	hierarchical edge bundling figure	Pseudomonas linyingensis	Pseudomonas_K linyingensis	isolate
+GCF_900142185.1	hierarchical edge bundling figure; pair 7 (L. pacificus DSM 29620, S. pentaromativorans P9): genome of the pair	Lutimaribacter pacificus	Lutimaribacter pacificus	isolate
+GCF_900232825.1	hierarchical edge bundling figure; pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): compared genome (other species); pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): genome of the pair	Anaerococcus sp. Marseille-P3625	Anaerococcus sp900232825	isolate
+GCF_900537995.1	hierarchical edge bundling figure; pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other gut Lachnospiraceae); pair 6 (R. intestinalis L1-82, R. zhanii BX1005): genome of the pair	Roseburia intestinalis L1-82	Roseburia intestinalis	isolate
+GCF_928097925.1	hierarchical edge bundling figure; pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): genome of the pair; pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other species)	Mediannikoviicoccus vaginalis	Mediannikoviicoccus vaginalis	isolate
+GCF_002734145.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other assemblies of A2-165)	A2-165 (closed; UFMG)		
+GCF_000162015.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other assemblies of A2-165)	A2-165 (draft; WashU)		
+GCF_032971305.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other assemblies of A2-165)	A2-165 (draft; UMCG)		
+GCF_061129375.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other assemblies of A2-165)	A2-165 (draft; U Chile)		
+GCF_020731525.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other assembly of A2-194)	A2-194 (2 contigs; FDA-ARGOS)		
+GCF_024167885.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other strains)	F. duncaniae NB2B-19-DCM		
+GCF_001406855.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (other strains)	R. inulinivorans L1-83		
+GCF_000225345.1	pair 2 (F. duncaniae A2-165, R. inulinivorans A2-194): compared genome (same fecal sample as A2-165)	R. hominis A2-183		
+GCF_964238885.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other B. intestinihominis strains)	B. intestinihominis (Monash isolate 1)		
+GCF_964241605.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other B. intestinihominis strains)	B. intestinihominis (Monash isolate 2)		
+GCF_046603765.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other B. intestinihominis strains)	B. intestinihominis SFAD78 (closed)		
+GCF_988228745.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other B. intestinihominis strains)	B. intestinihominis AF117-105-WCA (closed)		
+GCF_015555135.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other B. intestinihominis strains)	B. intestinihominis 1001283B150304		
+GCF_048361195.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other C. massiliensis strains)	C. massiliensis (FRCC isolate)		
+GCF_062030091.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other C. massiliensis strains)	C. massiliensis (Sichuan Univ.)		
+GCF_905201065.1	pair 3 (C. massiliensis Marseille-P2698, B. intestinihominis YIT 11860): compared genome (other C. massiliensis strains)	C. massiliensis (EMG)		
+GCF_016127475.1	pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): compared genome (other strains); pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other species)	A. vaginalis FDAARGOS_988 (closed)		
+GCF_015549525.1	pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): compared genome (other strains)	A. vaginalis BSD2780120874b		
+GCF_027698525.1	pair 4 (M. vaginalis Marseille-Q5883, A. vaginalis PH9): compared genome (other strains)	A. vaginalis AM91-12TA		
+GCF_056585935.1	pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other strains)	P. duerdenii C0136B5		
+GCF_056585315.1	pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other strains)	P. duerdenii C0173D1		
+GCF_030228525.1	pair 5 (Anaerococcus sp. Marseille-P3625, P. duerdenii ATCC BAA-1640): compared genome (other strains)	P. duerdenii (Loyola)		
+GCF_025151715.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other assemblies of L1-82)	L1-82 (closed; Stanford)		
+GCF_000156535.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other assemblies of L1-82)	L1-82 (draft; WashU)		
+GCF_061218445.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other strains)	R. zhanii Y55		
+GCF_061218745.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other strains)	R. zhanii XZ		
+GCF_000210655.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other strains)	R. intestinalis XB6B4		
+GCF_000209995.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other strains)	R. intestinalis M50/1		
+GCF_023497585.1	pair 6 (R. intestinalis L1-82, R. zhanii BX1005): compared genome (other strains)	R. intestinalis NB2A 31_NB		
+GCF_900103905.1	pair 7 (L. pacificus DSM 29620, S. pentaromativorans P9): compared genome (type strain, other collection)	L. pacificus CGMCC 1.10970		
+GCF_062000622.1	pair 7 (L. pacificus DSM 29620, S. pentaromativorans P9): compared genome (other strains)	L. pacificus (NUS)		

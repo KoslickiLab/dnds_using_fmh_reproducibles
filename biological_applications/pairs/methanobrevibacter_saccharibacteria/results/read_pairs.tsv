@@ -1,0 +1,7 @@
+inside_read	other_read_lies_on	read_pairs
+at an end of the region	flanking sequence of the same scaffold (genome A)	89
+at an end of the region	another contig of genome A	0
+at an end of the region	a contig of genome B	1
+interior of the region	flanking sequence of the same scaffold (genome A)	1
+interior of the region	another contig of genome A	2
+interior of the region	a contig of genome B	16

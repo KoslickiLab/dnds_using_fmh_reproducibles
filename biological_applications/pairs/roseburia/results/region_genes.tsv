@@ -1,0 +1,296 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_LR027880.1	482424	483032	+	CDS	RIL182_RS02375	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	483022	484674	+	CDS	RIL182_RS02380	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	484792	485037	+	CDS	RIL182_RS21085	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	485002	486453	-	CDS	RIL182_RS02385	DDE-type integrase/transposase/recombinase	integration
+E1	NZ_LR027880.1	486614	486916	+	CDS	RIL182_RS02390	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	486910	487107	+	pseudogene	RIL182_RS22255	pseudogene	other
+E1	NZ_LR027880.1	487405	487497	+	pseudogene	RIL182_RS22260	pseudogene	other
+E1	NZ_LR027880.1	487669	488643	+	CDS	RIL182_RS02400	DNA adenine methylase	other
+E1	NZ_LR027880.1	488666	489115	+	CDS	RIL182_RS02405	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	489096	489383	+	CDS	RIL182_RS02410	AbrB/MazE/SpoVT family DNA-binding domain-containing protein	other
+E1	NZ_LR027880.1	489377	489622	+	CDS	RIL182_RS02415	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	489628	490155	+	CDS	RIL182_RS02420	YodL domain-containing protein	other
+E1	NZ_LR027880.1	490170	490583	+	CDS	RIL182_RS02425	SpoVG family protein	other
+E1	NZ_LR027880.1	490664	490894	+	CDS	RIL182_RS02430	DUF6133 family protein	hypothetical
+E1	NZ_LR027880.1	490955	491371	+	CDS	RIL182_RS02435	septation protein SpoVG family protein	other
+E1	NZ_LR027880.1	491373	491792	+	CDS	RIL182_RS02440	prepilin peptidase	other
+E1	NZ_LR027880.1	491908	492756	+	CDS	RIL182_RS02445	Flp pilus assembly protein CpaB	other
+E1	NZ_LR027880.1	492769	493569	+	CDS	RIL182_RS02450	ParA family protein	replication
+E1	NZ_LR027880.1	493566	494921	+	CDS	RIL182_RS02455	ATPase, T2SS/T4P/T4SS family	conjugation
+E1	NZ_LR027880.1	494915	495844	+	CDS	RIL182_RS02460	type II secretion system F family protein	other
+E1	NZ_LR027880.1	495865	496731	+	CDS	RIL182_RS02465	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	496852	497256	+	CDS	RIL182_RS02475	DUF4320 family protein	hypothetical
+E1	NZ_LR027880.1	497253	497801	+	CDS	RIL182_RS02480	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	497914	498459	+	CDS	RIL182_RS02485	DUF6550 family protein	hypothetical
+E1	NZ_LR027880.1	498566	500335	+	CDS	RIL182_RS02490	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	500343	500810	+	CDS	RIL182_RS02495	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	500840	501178	+	CDS	RIL182_RS02500	DUF3852 domain-containing protein	hypothetical
+E1	NZ_LR027880.1	501204	502064	+	CDS	RIL182_RS02505	conjugal transfer protein TrbL family protein	conjugation
+E1	NZ_LR027880.1	502077	503591	+	CDS	RIL182_RS02510	DNA cytosine methyltransferase	other
+E1	NZ_LR027880.1	503572	503850	+	CDS	RIL182_RS02515	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	503834	504406	+	CDS	RIL182_RS02520	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	504399	506234	+	CDS	RIL182_RS02525	VirB4 family type IV secretion system protein	conjugation
+E1	NZ_LR027880.1	506267	507286	+	CDS	RIL182_RS02530	amidoligase family protein	other
+E1	NZ_LR027880.1	507317	507826	+	CDS	RIL182_RS02535	gamma-glutamylcyclotransferase family protein	other
+E1	NZ_LR027880.1	507802	508887	+	CDS	RIL182_RS02540	C40 family peptidase	other
+E1	NZ_LR027880.1	508948	509301	+	CDS	RIL182_RS02545	DUF6103 family protein	hypothetical
+E1	NZ_LR027880.1	509311	509979	+	CDS	RIL182_RS02550	DUF5688 family protein	hypothetical
+E1	NZ_LR027880.1	510033	510407	+	CDS	RIL182_RS02555	DUF6329 domain-containing protein	hypothetical
+E1	NZ_LR027880.1	510464	510718	+	CDS	RIL182_RS02560	DUF6103 family protein	hypothetical
+E1	NZ_LR027880.1	510733	511095	+	CDS	RIL182_RS02565	DUF3846 domain-containing protein	hypothetical
+E1	NZ_LR027880.1	511597	512235	+	CDS	RIL182_RS02570	DNA cytosine methyltransferase	other
+E1	NZ_LR027880.1	512237	512815	+	CDS	RIL182_RS02575	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	512830	513234	+	CDS	RIL182_RS02580	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	513298	513543	+	CDS	RIL182_RS02585	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	513527	513946	+	CDS	RIL182_RS02590	PIN domain-containing protein	other
+E1	NZ_LR027880.1	514034	515245	+	CDS	RIL182_RS02595	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	515695	516978	+	CDS	RIL182_RS02600	group II intron reverse transcriptase/maturase	other
+E1	NZ_LR027880.1	517140	517373	+	CDS	RIL182_RS02605	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	517384	520194	+	CDS	RIL182_RS02610	MobP3 family relaxase	conjugation
+E1	NZ_LR027880.1	520234	521784	+	CDS	RIL182_RS02615	DUF3991 and toprim domain-containing protein	hypothetical
+E1	NZ_LR027880.1	521769	523559	+	CDS	RIL182_RS02620	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E1	NZ_LR027880.1	523568	523822	+	CDS	RIL182_RS02625	helix-turn-helix domain-containing protein	other
+E1	NZ_LR027880.1	524255	524962	+	CDS	RIL182_RS02630	LytR/AlgR family response regulator transcription factor	other
+E1	NZ_LR027880.1	524964	526220	+	CDS	RIL182_RS02635	sensor histidine kinase	other
+E1	NZ_LR027880.1	526316	527089	+	CDS	RIL182_RS02640	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	527135	527683	+	CDS	RIL182_RS02645	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	527932	528090	+	CDS	RIL182_RS21090	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	528107	528934	+	CDS	RIL182_RS02650	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	528934	529308	+	CDS	RIL182_RS02655	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	529372	530205	+	CDS	RIL182_RS02660	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	530376	530501	+	CDS	RIL182_RS22265	CLI_3235 family bacteriocin precursor	other
+E1	NZ_LR027880.1	530504	532039	+	CDS	RIL182_RS02670	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	532076	533476	+	CDS	RIL182_RS02675	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	533527	534492	+	CDS	RIL182_RS02680	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	534619	535683	+	CDS	RIL182_RS02685	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	535821	536249	+	pseudogene	RIL182_RS02690	pseudogene	other
+E1	NZ_LR027880.1	536276	536926	+	CDS	RIL182_RS02695	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	536955	537194	+	CDS	RIL182_RS22025	HTH domain-containing protein	other
+E1	NZ_LR027880.1	537398	537733	+	CDS	RIL182_RS02700	helix-turn-helix domain-containing protein	other
+E1	NZ_LR027880.1	537792	538496	+	CDS	RIL182_RS02705	LytR/AlgR family response regulator transcription factor	other
+E1	NZ_LR027880.1	538498	539691	+	CDS	RIL182_RS02710	ATP-binding protein	other
+E1	NZ_LR027880.1	539797	539958	+	CDS	RIL182_RS02715	cyclic lactone autoinducer peptide	other
+E1	NZ_LR027880.1	539962	540543	+	CDS	RIL182_RS02720	accessory gene regulator B family protein	other
+E1	NZ_LR027880.1	540918	541343	+	CDS	RIL182_RS02725	RNA polymerase sigma factor	other
+E1	NZ_LR027880.1	542049	542444	+	CDS	RIL182_RS02730	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	542526	542684	+	CDS	RIL182_RS21100	SHOCT domain-containing protein	other
+E1	NZ_LR027880.1	542775	544391	+	CDS	RIL182_RS02735	recombinase family protein	integration
+E1	NZ_LR027880.1	544363	545262	+	CDS	RIL182_RS02740	recombinase family protein	integration
+E1	NZ_LR027880.1	545275	546909	+	CDS	RIL182_RS02745	recombinase family protein	integration
+E1	NZ_LR027880.1	547115	547696	+	CDS	RIL182_RS02750	hypothetical protein	hypothetical
+E1	NZ_LR027880.1	547904	548539	-	pseudogene	RIL182_RS02755	pseudogene	other
+E1	NZ_LR027880.1	548672	549841	-	CDS	RIL182_RS02760	IS110 family RNA-guided transposase	transposase
+E1	NZ_LR027880.1	550112	551203	-	pseudogene	RIL182_RS02765	pseudogene	other
+E1	NZ_LR027880.1	551554	552510	+	CDS	RIL182_RS02770	PD-(D/E)XK nuclease family transposase	transposase
+E2	NZ_LR027880.1	825121	826863	+	CDS	RIL182_RS04025	IS1634 family transposase	transposase
+E3	NZ_LR027880.1	1310493	1312178	+	CDS	RIL182_RS06105	23S rRNA (uracil(1939)-C(5))-methyltransferase RlmD	other
+E3	NZ_LR027880.1	1312203	1312448	+	CDS	RIL182_RS06110	DUF6061 family protein	hypothetical
+E3	NZ_LR027880.1	1312500	1315145	-	CDS	RIL182_RS06115	ABC transporter permease	other
+E3	NZ_LR027880.1	1315161	1315832	-	CDS	RIL182_RS06120	ABC transporter ATP-binding protein	other
+E3	NZ_LR027880.1	1315968	1316777	-	CDS	RIL182_RS06125	sensor histidine kinase	other
+E3	NZ_LR027880.1	1316860	1317537	-	CDS	RIL182_RS06130	response regulator transcription factor	other
+E3	NZ_LR027880.1	1317554	1318726	-	CDS	RIL182_RS06135	sigma-70 family RNA polymerase sigma factor	other
+E4	NZ_LR027880.1	1442071	1442877	-	CDS	RIL182_RS06720	helix-turn-helix domain-containing protein	other
+E4	NZ_LR027880.1	1443362	1443550	+	CDS	RIL182_RS06725	hypothetical protein	hypothetical
+E4	NZ_LR027880.1	1443547	1443888	+	CDS	RIL182_RS06730	helix-turn-helix domain-containing protein	other
+E4	NZ_LR027880.1	1443881	1444177	+	CDS	RIL182_RS06735	DUF3847 domain-containing protein	hypothetical
+E4	NZ_LR027880.1	1444486	1445139	+	CDS	RIL182_RS06740	hypothetical protein	hypothetical
+E4	NZ_LR027880.1	1445326	1446906	+	CDS	RIL182_RS06745	MobQ family relaxase	conjugation
+E4	NZ_LR027880.1	1446972	1447616	+	CDS	RIL182_RS06750	CHC2 zinc finger domain-containing protein	other
+E4	NZ_LR027880.1	1447585	1448922	+	CDS	RIL182_RS06755	virulence-associated E family protein	other
+E4	NZ_LR027880.1	1448951	1449190	-	CDS	RIL182_RS22040	hypothetical protein	hypothetical
+E4	NZ_LR027880.1	1449164	1449361	+	CDS	RIL182_RS06765	hypothetical protein	hypothetical
+E4	NZ_LR027880.1	1449362	1451032	+	CDS	RIL182_RS06770	recombinase family protein	integration
+E4	NZ_LR027880.1	1451138	1451206	+	CDS	RIL182_RS22135	hypothetical protein	hypothetical
+E4	NZ_LR027880.1	1451210	1452082	+	CDS	RIL182_RS06780	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E5	NZ_LR027880.1	1558945	1559166	+	CDS	RIL182_RS21190	hypothetical protein	hypothetical
+E5	NZ_LR027880.1	1559205	1559600	+	CDS	RIL182_RS07235	plasmid mobilization protein	conjugation
+E5	NZ_LR027880.1	1559572	1561197	+	CDS	RIL182_RS07240	relaxase/mobilization nuclease domain-containing protein	conjugation
+E6	NZ_LR027880.1	1661017	1661781	+	CDS	RIL182_RS07720	hypothetical protein	hypothetical
+E6	NZ_LR027880.1	1661825	1662409	+	CDS	RIL182_RS07725	hypothetical protein	hypothetical
+E6	NZ_LR027880.1	1662419	1663006	+	CDS	RIL182_RS07730	hypothetical protein	hypothetical
+E7	NZ_LR027880.1	2175509	2175757	-	CDS	RIL182_RS10150	helix-turn-helix domain-containing protein	other
+E7	NZ_LR027880.1	2175741	2176181	-	CDS	RIL182_RS10155	sigma-70 family RNA polymerase sigma factor	other
+E7	NZ_LR027880.1	2176707	2177057	+	CDS	RIL182_RS10160	helix-turn-helix domain-containing protein	other
+E8	NZ_LR027880.1	2213279	2215396	-	CDS	RIL182_RS10330	type IA DNA topoisomerase	other
+E8	NZ_LR027880.1	2215399	2217153	-	CDS	RIL182_RS10335	CD1107 family mobile element protein	conjugation
+E8	NZ_LR027880.1	2217128	2217391	-	CDS	RIL182_RS10340	DUF4315 family protein	hypothetical
+E8	NZ_LR027880.1	2217410	2220100	-	CDS	RIL182_RS10345	CD1108 family mobile element protein	conjugation
+E8	NZ_LR027880.1	2220102	2222573	-	CDS	RIL182_RS10350	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E8	NZ_LR027880.1	2222521	2222928	-	CDS	RIL182_RS10355	PrgI family protein	conjugation
+E8	NZ_LR027880.1	2222941	2223813	-	CDS	RIL182_RS10360	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E8	NZ_LR027880.1	2223817	2223963	-	CDS	RIL182_RS22305	Maff2 family mobile element protein	conjugation
+E8	NZ_LR027880.1	2224000	2225607	-	CDS	RIL182_RS10370	recombinase family protein	integration
+E8	NZ_LR027880.1	2225742	2225939	-	CDS	RIL182_RS10375	transposon-encoded TnpW family protein	conjugation
+E8	NZ_LR027880.1	2225936	2226793	-	CDS	RIL182_RS10380	ATP-binding protein	other
+E8	NZ_LR027880.1	2226790	2227539	-	CDS	RIL182_RS10385	phage replisome organizer N-terminal domain-containing protein	phage
+E8	NZ_LR027880.1	2227529	2227741	-	CDS	RIL182_RS10390	hypothetical protein	hypothetical
+E8	NZ_LR027880.1	2227926	2229548	-	CDS	RIL182_RS10400	relaxase/mobilization nuclease domain-containing protein	conjugation
+E8	NZ_LR027880.1	2229520	2229915	-	CDS	RIL182_RS10405	plasmid mobilization protein	conjugation
+E8	NZ_LR027880.1	2230502	2230702	-	CDS	RIL182_RS10410	helix-turn-helix domain-containing protein	other
+E8	NZ_LR027880.1	2230695	2230859	-	CDS	RIL182_RS10415	RNA polymerase sigma factor	other
+E8	NZ_LR027880.1	2231043	2232263	-	CDS	RIL182_RS10420	tetracycline efflux MFS transporter Tet(40)	resistance
+E8	NZ_LR027880.1	2232333	2234252	-	CDS	RIL182_RS10425	tetracycline resistance ribosomal protection protein Tet(O)	resistance
+E9	NZ_LR027880.1	2605955	2607229	-	CDS	RIL182_RS12275	recombinase family protein	integration
+E9	NZ_LR027880.1	2607229	2608872	-	CDS	RIL182_RS12280	recombinase family protein	integration
+E9	NZ_LR027880.1	2608873	2610402	-	CDS	RIL182_RS12285	recombinase family protein	integration
+E10	NZ_LR027880.1	2637684	2637884	-	pseudogene	RIL182_RS12445	pseudogene	other
+E10	NZ_LR027880.1	2638044	2638292	-	CDS	RIL182_RS12450	DUF6870 family protein	hypothetical
+E10	NZ_LR027880.1	2638370	2638756	-	CDS	RIL182_RS12455	type II toxin-antitoxin system PemK/MazF family toxin	defence
+E10	NZ_LR027880.1	2638749	2638916	-	CDS	RIL182_RS21705	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2638906	2639226	-	CDS	RIL182_RS12460	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2639235	2639657	-	CDS	RIL182_RS12465	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2640310	2640633	-	CDS	RIL182_RS12470	helix-turn-helix domain-containing protein	other
+E10	NZ_LR027880.1	2640826	2641038	-	CDS	RIL182_RS12475	helix-turn-helix domain-containing protein	other
+E10	NZ_LR027880.1	2641287	2641520	+	CDS	RIL182_RS12480	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2641545	2641889	-	CDS	RIL182_RS12485	helix-turn-helix domain-containing protein	other
+E10	NZ_LR027880.1	2642150	2642764	-	CDS	RIL182_RS12490	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2642771	2643034	-	CDS	RIL182_RS12495	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2643523	2644296	-	CDS	RIL182_RS12500	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2644349	2644888	-	CDS	RIL182_RS12505	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2644954	2645481	-	CDS	RIL182_RS12510	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2645534	2646016	-	CDS	RIL182_RS12515	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2646167	2646316	-	CDS	RIL182_RS12520	AgrD family cyclic lactone autoinducer peptide	other
+E10	NZ_LR027880.1	2646313	2646894	-	CDS	RIL182_RS12525	accessory gene regulator B family protein	other
+E10	NZ_LR027880.1	2647032	2648336	-	CDS	RIL182_RS12530	sensor histidine kinase	other
+E10	NZ_LR027880.1	2648337	2649080	-	CDS	RIL182_RS12535	LytTR family DNA-binding domain-containing protein	other
+E10	NZ_LR027880.1	2649252	2649836	-	CDS	RIL182_RS12540	accessory gene regulator B family protein	other
+E10	NZ_LR027880.1	2649851	2650015	-	CDS	RIL182_RS12545	cyclic lactone autoinducer peptide	other
+E10	NZ_LR027880.1	2650119	2651405	-	CDS	RIL182_RS12550	ATP-binding protein	other
+E10	NZ_LR027880.1	2651408	2652115	-	CDS	RIL182_RS12555	LytR/AlgR family response regulator transcription factor	other
+E10	NZ_LR027880.1	2652160	2652525	-	CDS	RIL182_RS12560	helix-turn-helix domain-containing protein	other
+E10	NZ_LR027880.1	2652714	2653184	-	CDS	RIL182_RS12565	methylglyoxal synthase	other
+E10	NZ_LR027880.1	2653181	2654002	-	CDS	RIL182_RS12570	AraC family transcriptional regulator	other
+E10	NZ_LR027880.1	2654027	2654980	-	CDS	RIL182_RS12575	beta-galactosidase small subunit	other
+E10	NZ_LR027880.1	2654964	2656865	-	CDS	RIL182_RS12580	glycoside hydrolase family 2 TIM barrel-domain containing protein	other
+E10	NZ_LR027880.1	2656932	2657819	-	pseudogene	RIL182_RS12585	pseudogene	other
+E10	NZ_LR027880.1	2657839	2657913	-	pseudogene	RIL182_RS22180	pseudogene	other
+E10	NZ_LR027880.1	2658277	2658525	+	CDS	RIL182_RS12595	transposon-transfer assisting family protein	conjugation
+E10	NZ_LR027880.1	2658608	2659033	-	CDS	RIL182_RS12600	LptM family lipoprotein	other
+E10	NZ_LR027880.1	2659049	2660158	-	CDS	RIL182_RS12605	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2660624	2661133	+	CDS	RIL182_RS12610	RNA polymerase sigma factor	other
+E10	NZ_LR027880.1	2661138	2662070	+	CDS	RIL182_RS12615	DUF4367 domain-containing protein	hypothetical
+E10	NZ_LR027880.1	2662119	2662730	+	CDS	RIL182_RS12620	GNAT family N-acetyltransferase	other
+E10	NZ_LR027880.1	2662868	2663299	+	CDS	RIL182_RS12625	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2663583	2664107	+	CDS	RIL182_RS12630	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2664155	2664439	+	CDS	RIL182_RS12635	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2664545	2664921	-	pseudogene	RIL182_RS22060	pseudogene	other
+E10	NZ_LR027880.1	2665010	2665315	-	CDS	RIL182_RS12650	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2665353	2667059	-	CDS	RIL182_RS12655	methyl-accepting chemotaxis protein	other
+E10	NZ_LR027880.1	2667177	2667482	-	CDS	RIL182_RS21455	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2667871	2669184	+	CDS	RIL182_RS12665	IS4 family transposase	transposase
+E10	NZ_LR027880.1	2669381	2670277	-	CDS	RIL182_RS12670	DUF6674 family protein	hypothetical
+E10	NZ_LR027880.1	2670329	2671012	-	CDS	RIL182_RS12675	SpoVG family protein	other
+E10	NZ_LR027880.1	2671031	2671420	-	CDS	RIL182_RS12680	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2671432	2671773	-	CDS	RIL182_RS12685	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2671786	2677932	-	CDS	RIL182_RS22065	helicase-related protein	replication
+E10	NZ_LR027880.1	2678088	2678519	-	CDS	RIL182_RS22185	TnpV protein	conjugation
+E10	NZ_LR027880.1	2679246	2679614	-	CDS	RIL182_RS12695	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2679611	2679829	-	CDS	RIL182_RS12700	DpnD/PcfM family protein	other
+E10	NZ_LR027880.1	2679859	2680749	-	CDS	RIL182_RS12705	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2680797	2682728	-	CDS	RIL182_RS12710	C40 family peptidase	other
+E10	NZ_LR027880.1	2682843	2684723	-	pseudogene	RIL182_RS12715	pseudogene	other
+E10	NZ_LR027880.1	2684801	2685068	+	CDS	RIL182_RS12720	IS3 family transposase	transposase
+E10	NZ_LR027880.1	2685068	2685930	+	CDS	RIL182_RS12720	IS3 family transposase	transposase
+E10	NZ_LR027880.1	2685942	2686448	-	pseudogene	RIL182_RS12725	pseudogene	other
+E10	NZ_LR027880.1	2686634	2686897	+	CDS	RIL182_RS12730	type II toxin-antitoxin system prevent-host-death family antitoxin	defence
+E10	NZ_LR027880.1	2686894	2687226	+	CDS	RIL182_RS12735	type II toxin-antitoxin system RelE/ParE family toxin	defence
+E10	NZ_LR027880.1	2687254	2687766	-	CDS	RIL182_RS12740	PrgI family protein	conjugation
+E10	NZ_LR027880.1	2687780	2688190	-	CDS	RIL182_RS12745	DUF4313 domain-containing protein	hypothetical
+E10	NZ_LR027880.1	2688203	2689045	-	CDS	RIL182_RS12750	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2689100	2689477	-	CDS	RIL182_RS12755	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2689721	2690377	-	CDS	RIL182_RS12760	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2690474	2692654	-	CDS	RIL182_RS12765	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E10	NZ_LR027880.1	2692661	2693779	-	CDS	RIL182_RS12770	PcfB family protein	conjugation
+E10	NZ_LR027880.1	2693779	2694183	-	CDS	RIL182_RS12775	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2694193	2695386	-	CDS	RIL182_RS12780	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2695417	2696841	-	CDS	RIL182_RS12785	relaxase/mobilization nuclease domain-containing protein	conjugation
+E10	NZ_LR027880.1	2696852	2697184	-	CDS	RIL182_RS12790	plasmid mobilization protein	conjugation
+E10	NZ_LR027880.1	2697189	2697719	-	CDS	RIL182_RS12795	multidrug transporter	resistance
+E10	NZ_LR027880.1	2698090	2699073	-	CDS	RIL182_RS12805	DUF3991 and TOPRIM domain-containing protein	hypothetical
+E10	NZ_LR027880.1	2699078	2699617	-	CDS	RIL182_RS12810	JAB domain-containing protein	other
+E10	NZ_LR027880.1	2699589	2699717	-	CDS	RIL182_RS21985	hypothetical protein	hypothetical
+E10	NZ_LR027880.1	2699727	2700725	-	CDS	RIL182_RS12815	DUF5688 family protein	hypothetical
+E11	NZ_LR027880.1	2716193	2716516	-	CDS	RIL182_RS12910	helix-turn-helix domain-containing protein	other
+E11	NZ_LR027880.1	2716710	2716922	-	CDS	RIL182_RS12915	helix-turn-helix domain-containing protein	other
+E11	NZ_LR027880.1	2717171	2717404	+	CDS	RIL182_RS12920	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2717429	2717773	-	CDS	RIL182_RS12925	helix-turn-helix domain-containing protein	other
+E11	NZ_LR027880.1	2717878	2718111	-	CDS	RIL182_RS12930	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2718095	2719027	-	CDS	RIL182_RS12935	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2719116	2720561	-	CDS	RIL182_RS12940	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2720625	2720765	-	CDS	RIL182_RS12945	cyclic lactone autoinducer peptide	other
+E11	NZ_LR027880.1	2721012	2721590	-	CDS	RIL182_RS12955	accessory gene regulator ArgB-like protein	other
+E11	NZ_LR027880.1	2721600	2721746	-	CDS	RIL182_RS12960	cyclic lactone autoinducer peptide	other
+E11	NZ_LR027880.1	2722162	2723220	-	CDS	RIL182_RS12970	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2723627	2724133	-	CDS	RIL182_RS12975	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2724178	2724765	-	CDS	RIL182_RS12980	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2724775	2725359	-	CDS	RIL182_RS12985	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2725479	2725964	-	CDS	RIL182_RS12990	hypothetical protein	hypothetical
+E11	NZ_LR027880.1	2726254	2727018	-	CDS	RIL182_RS12995	ATP-binding protein	other
+E11	NZ_LR027880.1	2727399	2728070	-	CDS	RIL182_RS13000	IS630 family transposase	transposase
+E11	NZ_LR027880.1	2728040	2728549	-	CDS	RIL182_RS13005	helix-turn-helix domain-containing protein	other
+E11	NZ_LR027880.1	2728834	2729568	-	CDS	RIL182_RS13015	LytR/AlgR family response regulator transcription factor	other
+E11	NZ_LR027880.1	2729940	2730524	-	CDS	RIL182_RS13020	accessory gene regulator B family protein	other
+E11	NZ_LR027880.1	2730539	2730703	-	CDS	RIL182_RS13025	cyclic lactone autoinducer peptide	other
+E11	NZ_LR027880.1	2730807	2732093	-	CDS	RIL182_RS13030	ATP-binding protein	other
+E11	NZ_LR027880.1	2732096	2732803	-	CDS	RIL182_RS13035	LytR/AlgR family response regulator transcription factor	other
+E11	NZ_LR027880.1	2732848	2733213	-	CDS	RIL182_RS13040	helix-turn-helix domain-containing protein	other
+E12	NZ_LR027880.1	2799446	2802292	-	CDS	RIL182_RS13415	DUF4368 domain-containing protein	hypothetical
+E12	NZ_LR027880.1	2802439	2802912	-	CDS	RIL182_RS13420	PcfB family protein	conjugation
+E12	NZ_LR027880.1	2802993	2803178	-	CDS	RIL182_RS13425	hypothetical protein	hypothetical
+E12	NZ_LR027880.1	2803293	2804051	-	CDS	RIL182_RS13430	hypothetical protein	hypothetical
+E12	NZ_LR027880.1	2804088	2804510	-	CDS	RIL182_RS13435	hypothetical protein	hypothetical
+E12	NZ_LR027880.1	2804582	2805232	-	CDS	RIL182_RS13440	hypothetical protein	hypothetical
+E12	NZ_LR027880.1	2805370	2805717	-	CDS	RIL182_RS13445	DUF6050 family protein	hypothetical
+E12	NZ_LR027880.1	2805698	2806762	-	CDS	RIL182_RS13450	DUF6017 domain-containing protein	hypothetical
+E12	NZ_LR027880.1	2806785	2807672	-	CDS	RIL182_RS13455	ParB/RepB/Spo0J family partition protein	replication
+E12	NZ_LR027880.1	2807665	2808447	-	CDS	RIL182_RS13460	ParA family protein	replication
+E12	NZ_LR027880.1	2808480	2808659	-	CDS	RIL182_RS13465	hypothetical protein	hypothetical
+E12	NZ_LR027880.1	2808659	2809132	-	CDS	RIL182_RS13470	DUF6075 family protein	hypothetical
+E13	NZ_LR027880.1	3563030	3564562	-	rRNA	RIL182_RS16740	16S ribosomal RNA	other
+E14	NZ_LR027880.1	3905646	3906941	-	CDS	RIL182_RS18330	tyrosine-type recombinase/integrase	integration
+E14	NZ_LR027880.1	3907028	3907657	-	CDS	RIL182_RS18335	helix-turn-helix domain-containing protein	other
+E14	NZ_LR027880.1	3907829	3908059	+	CDS	RIL182_RS18340	helix-turn-helix domain-containing protein	other
+E14	NZ_LR027880.1	3908200	3908514	+	CDS	RIL182_RS18345	hypothetical protein	hypothetical
+E14	NZ_LR027880.1	3908514	3908885	+	CDS	RIL182_RS18350	hypothetical protein	hypothetical
+E14	NZ_LR027880.1	3908842	3910563	+	CDS	RIL182_RS18355	MobA/MobL family protein	conjugation
+E14	NZ_LR027880.1	3910541	3911248	+	CDS	RIL182_RS18360	DUF6040 family protein	hypothetical
+E14	NZ_LR027880.1	3911444	3913771	-	CDS	RIL182_RS18365	ABC transporter permease	other
+E14	NZ_LR027880.1	3913786	3914451	-	CDS	RIL182_RS18370	ABC transporter ATP-binding protein	other
+E14	NZ_LR027880.1	3914603	3915634	-	CDS	RIL182_RS18375	sensor histidine kinase	other
+E14	NZ_LR027880.1	3915631	3916320	-	CDS	RIL182_RS18380	response regulator transcription factor	other
+E14	NZ_LR027880.1	3916570	3916809	-	CDS	RIL182_RS18385	DUF6061 family protein	hypothetical
+E15	NZ_LR027880.1	3943469	3945001	-	rRNA	RIL182_RS18535	16S ribosomal RNA	other
+E16	NZ_LR027880.1	4105542	4106042	-	CDS	RIL182_RS19265	DUF5597 domain-containing protein	hypothetical
+E16	NZ_LR027880.1	4106247	4107623	-	CDS	RIL182_RS19270	sensor histidine kinase	other
+E16	NZ_LR027880.1	4107611	4108273	-	CDS	RIL182_RS19275	response regulator transcription factor	other
+E16	NZ_LR027880.1	4108288	4109028	-	CDS	RIL182_RS19280	lantibiotic immunity ABC transporter MutG family permease subunit	resistance
+E16	NZ_LR027880.1	4109030	4109761	-	CDS	RIL182_RS19285	lantibiotic immunity ABC transporter MutE/EpiE family permease subunit	resistance
+E16	NZ_LR027880.1	4109754	4110467	-	CDS	RIL182_RS19290	lantibiotic protection ABC transporter ATP-binding protein	resistance
+E16	NZ_LR027880.1	4110572	4111267	-	CDS	RIL182_RS19295	class I SAM-dependent methyltransferase	other
+E16	NZ_LR027880.1	4111366	4111617	-	pseudogene	RIL182_RS19300	pseudogene	other
+E16	NZ_LR027880.1	4111950	4113764	-	CDS	RIL182_RS19305	ATP-dependent zinc metalloprotease FtsH	other
+E16	NZ_LR027880.1	4113815	4114804	-	CDS	RIL182_RS19310	choloylglycine hydrolase	other
+E16	NZ_LR027880.1	4114826	4115008	-	pseudogene	RIL182_RS19315	pseudogene	other
+E16	NZ_LR027880.1	4115169	4115351	+	CDS	RIL182_RS19320	hypothetical protein	hypothetical
+E16	NZ_LR027880.1	4115584	4116156	-	CDS	RIL182_RS19325	CDP-alcohol phosphatidyltransferase family protein	other
+E16	NZ_LR027880.1	4116146	4117210	-	CDS	RIL182_RS19330	FUSC family protein	other
+E16	NZ_LR027880.1	4117242	4118285	-	CDS	RIL182_RS19335	HAMP domain-containing sensor histidine kinase	other
+E16	NZ_LR027880.1	4118285	4118995	-	CDS	RIL182_RS19340	response regulator transcription factor	other
+E16	NZ_LR027880.1	4118974	4120407	-	CDS	RIL182_RS19345	phospholipase D family protein	other
+E17	NZ_LR027880.1	4134023	4137667	-	CDS	RIL182_RS19430	M64 family metallopeptidase	other
+E17	NZ_LR027880.1	4137896	4138651	-	pseudogene	RIL182_RS19435	pseudogene	other
+E17	NZ_LR027880.1	4138743	4139207	+	CDS	RIL182_RS19440	helix-turn-helix domain-containing protein	other
+E17	NZ_LR027880.1	4139204	4139893	+	CDS	RIL182_RS19445	IS630 family transposase	transposase
+E17	NZ_LR027880.1	4139938	4140171	-	pseudogene	RIL182_RS22215	pseudogene	other
+E17	NZ_LR027880.1	4140152	4140409	-	CDS	RIL182_RS19455	zinc-ribbon domain-containing protein	other
+E17	NZ_LR027880.1	4140543	4141427	-	CDS	RIL182_RS19465	MerR family transcriptional regulator	other
+E17	NZ_LR027880.1	4141680	4143617	-	CDS	RIL182_RS19470	lysine--tRNA ligase	other
+E18	NZ_LR027880.1	4453018	4454313	-	CDS	RIL182_RS20810	tyrosine-type recombinase/integrase	integration
+E18	NZ_LR027880.1	4454400	4455029	-	CDS	RIL182_RS20815	helix-turn-helix domain-containing protein	other
+E18	NZ_LR027880.1	4455201	4455431	+	CDS	RIL182_RS20820	helix-turn-helix domain-containing protein	other
+E18	NZ_LR027880.1	4455572	4455886	+	CDS	RIL182_RS20825	hypothetical protein	hypothetical
+E18	NZ_LR027880.1	4455886	4456257	+	CDS	RIL182_RS20830	hypothetical protein	hypothetical
+E18	NZ_LR027880.1	4456214	4457935	+	CDS	RIL182_RS20835	MobA/MobL family protein	conjugation
+E18	NZ_LR027880.1	4457874	4458620	+	CDS	RIL182_RS20840	DUF6040 family protein	hypothetical

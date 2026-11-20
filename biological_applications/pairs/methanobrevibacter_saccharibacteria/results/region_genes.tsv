@@ -1,0 +1,34 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	JAFQXV010000014.1	23114	23821	-	CDS	IJG01_03015	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	23854	26988	-	CDS	IJG01_03020	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	26997	29930	-	CDS	IJG01_03025	excinuclease ABC subunit UvrA	other
+E1	JAFQXV010000014.1	30008	30514	+	CDS	IJG01_03030	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	30507	31454	+	CDS	IJG01_03035	glycosyltransferase family 2 protein	other
+E1	JAFQXV010000014.1	31436	32434	-	CDS	IJG01_03040	UDP-glucose 4-epimerase GalE	other
+E1	JAFQXV010000014.1	32472	33284	+	CDS	IJG01_03045	ABC transporter permease	other
+E1	JAFQXV010000014.1	33284	34534	+	CDS	IJG01_03050	ABC transporter ATP-binding protein	other
+E1	JAFQXV010000014.1	34515	35738	+	CDS	IJG01_03055	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	35728	37023	+	CDS	IJG01_03060	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	37058	37450	+	CDS	IJG01_03065	adenylyltransferase/cytidyltransferase family protein	other
+E1	JAFQXV010000014.1	37457	38479	+	CDS	IJG01_03070	acyltransferase family protein	other
+E1	JAFQXV010000014.1	38492	39661	-	CDS	IJG01_03075	UDP-galactopyranose mutase	other
+E1	JAFQXV010000014.1	39651	40754	-	CDS	IJG01_03080	glycosyltransferase family 2 protein	other
+E1	JAFQXV010000014.1	40751	41896	-	CDS	IJG01_03085	glycosyltransferase	other
+E1	JAFQXV010000014.1	41941	42864	-	CDS	IJG01_03090	glycosyltransferase	other
+E1	JAFQXV010000014.1	42857	44128	-	CDS	IJG01_03095	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	44162	46342	-	CDS	IJG01_03100	RICIN domain-containing protein	other
+E1	JAFQXV010000014.1	46339	46890	-	CDS	IJG01_03105	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	46945	48243	-	CDS	IJG01_03110	CotH kinase family protein	other
+E1	JAFQXV010000014.1	48266	48595	-	CDS	IJG01_03115	hypothetical protein	hypothetical
+E1	JAFQXV010000014.1	48614	50296	+	CDS	IJG01_03120	LCP family protein	other
+E1	JAFQXV010000014.1	50474	50929	-	CDS	IJG01_03125	single-stranded DNA-binding protein	other
+E1	JAFQXV010000014.1	50933	52033	-	CDS	IJG01_03130	YidC/Oxa1 family membrane protein insertase	other
+E1	JAFQXV010000014.1	52042	52386	-	CDS	IJG01_03135	ribonuclease P protein component	other
+E1	JAFQXV010000014.1	52402	52539	-	CDS	IJG01_03140	50S ribosomal protein L34	other
+E1	JAFQXV010000014.1	52764	54122	+	CDS	IJG01_03145	chromosomal replication initiator protein DnaA	replication
+E1	JAFQXV010000014.1	54363	55463	+	CDS	IJG01_03150	DNA polymerase III subunit beta	other
+E1	JAFQXV010000014.1	55460	56446	+	CDS	IJG01_03155	DNA replication/repair protein RecF	other
+E1	JAFQXV010000014.1	56459	57706	+	CDS	IJG01_03160	class I SAM-dependent RNA methyltransferase	other
+E1	JAFQXV010000014.1	57720	57809	+	tRNA	IJG01_03165	tRNA-Ser	other
+E1	JAFQXV010000014.1	57996	58754	+	CDS	IJG01_03170	ABC transporter ATP-binding protein	other
+E1	JAFQXV010000014.1	58755	59987	+	CDS	IJG01_03175	ABC transporter permease	other

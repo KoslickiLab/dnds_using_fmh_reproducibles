@@ -16,6 +16,7 @@
     - [Traditional dN/dS model estimations](#traditional-dnds-models)
     - [Main figures](#main-figures)
     - [Supplemental figures](#supplemental-figures)
+- [Biological applications](#biological-applications)
 - [References](#references)
 - [Please, cite us!](#please-cite-us)
 
@@ -144,29 +145,17 @@ python figure_scripts/figure4_now5.py
 ![Figure 4](manuscript_figures/updated_pdf/figure4_now5.png)
 
 
-### Figure 5: Identifying regions under selection between Methanobrevibacter sp. and Candidatus Saccharibacteria
+### Figure 5: Hierarchical edge bundling
 
-Hierarchical edge bundling visualization of pairwise selection between archaeal and bacterial genomes. B. Orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. Genes including uvrA, LytR/CpsA/Psr (LCP), yidC, rnpA, rpmH, dnaA, and RNA methyltransferases appear in conserved order across both genomes. This arrangement suggests a vertically inherited genomic island maintained across archaeal and bacterial domains. Gene order and synteny support the functional conservation of this region. C. 
+Hierarchical edge bundling visualization of pairwise FracMinHash dN/dS estimations between GTDB representative genomes.
 
-To reproduce Figure 5A, the hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
+To reproduce Figure 5, the hierarchical edge bundling figure, please refer to the following repo: [Hierarchichal Edge Bundling](https://github.com/KoslickiLab/DnDs-visualization)
 
-![Figure 5A: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
+![Figure 5: Hierarchical Edge Bundling Figure](https://github.com/KoslickiLab/DnDs-visualization/blob/main/figures/output_species.png?raw=true)
 
 ## Supplemental figures
 
-Figure S9 represents the identification of orthologous genes identified and annotated between Methanobrevibacter sp. and Candidatus Saccharibacteria. 
-
-```
-python figure_scripts/figure5b.py
-```
-
-![Figure S9: A vs B genomes](manuscript_figures/png/figure5b.png)
-
-Figure S10 shows results when performing traditional dN/dS analyses to study selection across evaluated orthologs.
-
-Please visit [instructions to Figure S10](figure_scripts/figure5c/) for reproducibility.
-
-![Figure S10: kaks values for orthologs](manuscript_figures/png/figure5c.png)
+The supplementary figures of the biological applications are reproduced as described in [Biological applications](#biological-applications).
 
 <!-->
 Figure 6:
@@ -177,6 +166,26 @@ Figure 7:
 
     python helper_scripts/mutation_simulations_on_real_data/histogram_different_scales_ecoli.py
 -->
+
+# Biological applications
+
+The analyses, figures and numbers of the section "Biological application of FracMinHash dN/dS"
+(the genome pairs of the hierarchical edge bundling figure, contigs assigned to the wrong
+metagenome-assembled genome, and mobile genetic elements shared by distantly related bacteria;
+Table 1, Table S1, S1 Text, S1 Data and S2 Data and the corresponding main and supplementary
+figures) are reproduced by the code in [`biological_applications/`](biological_applications/).
+It has its own conda environment and README:
+
+```
+cd biological_applications
+conda env create -f environment.yml
+conda activate fmh_dnds_applications
+bash reproduce_all.sh                 # everything, from the genome downloads (about one hour)
+bash figures/make_all_figures.sh      # only the figures, from the result tables in the folder (one minute)
+```
+
+The result tables, the number files used by the manuscript and the figures of our run are part of
+the folder, so a new run can be compared with ours file by file.
 
 # References
 

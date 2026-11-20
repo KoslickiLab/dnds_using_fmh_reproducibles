@@ -1,0 +1,135 @@
+% Generated file -- do not edit by hand. Re-run the analysis instead (see the code repository).
+\providecommand{\PAFmhDnds}{1.95}  % FracMinHash dN/dS of the pair, all genes
+\providecommand{\PAFmhDndsWithout}{0.96}  % FracMinHash dN/dS after removing near-identical genes from both genomes
+\providecommand{\PAFmhDndsWithoutLoose}{0.61}  % the same when genes sharing at least 25 percent of their 21-mers are removed
+\providecommand{\PAFmhDndsWithoutStrict}{1.33}  % the same when only genes sharing at least 75 percent of their 21-mers are removed
+\providecommand{\PAFmhDndsEveryKmer}{1.39}  % FracMinHash dN/dS of the pair computed from every k-mer (scale factor 1)
+\providecommand{\PAContainmentNt}{0.053}  % nucleotide 21-mer containment, all genes
+\providecommand{\PAContainmentAa}{0.091}  % protein 7-mer containment, all genes
+\providecommand{\PAContainmentNtWithout}{0.014}  % nucleotide containment without near-identical genes
+\providecommand{\PAContainmentAaWithout}{0.058}  % protein containment without near-identical genes
+\providecommand{\PAGenomeMbA}{2.09}  % genome A: assembly size (Mb)
+\providecommand{\PAContigsA}{11}  % genome A: number of contigs or scaffolds
+\providecommand{\PAGcA}{31.3}  % genome A: G+C content (percent)
+\providecommand{\PAGenesA}{2{,}036}  % genome A: predicted genes
+\providecommand{\PANearGenesA}{77}  % genome A: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\PANearPercentGenesA}{3.8}  % genome A: near-identical genes as percent of all genes
+\providecommand{\PANearKbA}{87}  % genome A: total length of near-identical genes (kb)
+\providecommand{\PANearShareA}{71}  % genome A: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\PAGenomeMbB}{2.12}  % genome B: assembly size (Mb)
+\providecommand{\PAContigsB}{16}  % genome B: number of contigs or scaffolds
+\providecommand{\PAGcB}{33.5}  % genome B: G+C content (percent)
+\providecommand{\PAGenesB}{1{,}916}  % genome B: predicted genes
+\providecommand{\PANearGenesB}{76}  % genome B: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\PANearPercentGenesB}{4.0}  % genome B: near-identical genes as percent of all genes
+\providecommand{\PANearKbB}{87}  % genome B: total length of near-identical genes (kb)
+\providecommand{\PANearShareB}{77}  % genome B: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\PACheckmCompletenessA}{98.8}  % genome A: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\PACheckmContaminationA}{0.61}  % genome A: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\PACheckmCompletenessB}{99.0}  % genome B: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\PACheckmContaminationB}{0.00}  % genome B: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\PAOrthologs}{984}  % reciprocal-best-hit orthologs that could be aligned
+\providecommand{\PANearOrthologs}{68}  % orthologs that are near-identical genes
+\providecommand{\PABackgroundOrthologs}{916}  % orthologs that are not near-identical
+\providecommand{\PABackgroundEstimable}{916}  % background orthologs with an estimable dN/dS
+\providecommand{\PAAaIdentity}{50}  % median amino-acid identity of background orthologs (percent)
+\providecommand{\PAConvDnds}{0.11}  % conventional dN/dS (YN), median over background orthologs
+\providecommand{\PAConvDs}{3.8}  % conventional dS (YN), median over background orthologs
+\providecommand{\PAConvAboveOne}{0}  % background orthologs with conventional dN/dS above 1
+\providecommand{\PARegions}{11}  % number of shared regions (blocks >= 1 kb and >= 95 percent identical, merged within 10 kb)
+\providecommand{\PARegionsKb}{106}  % total span of the shared regions in genome A (kb)
+\providecommand{\PARegionsPercentA}{5.1}  % shared regions as percent of genome A
+\providecommand{\PAAlignedKb}{100}  % aligned at >= 95 percent identity (kb)
+\providecommand{\PAAlignedNearPerfectKb}{3}  % aligned at >= 99.9 percent identity (kb)
+\providecommand{\PALongestBlockKb}{16.9}  % longest single alignment block (kb)
+\providecommand{\PALongestBlockIdentity}{97.76}  % identity of the longest block (percent; capped at 99.99)
+\providecommand{\PAPartnerContigs}{1}  % contigs of genome B that carry shared DNA
+\providecommand{\PAPartnerContigsEmbedded}{1}  % of those, contigs with >= 10 kb of other sequence as well
+\providecommand{\PALargestPartnerContigKb}{2106}  % largest contig of genome B that carries shared DNA (kb)
+\providecommand{\PAPartnerContigsWhollyShared}{0}  % contigs of genome B that consist of shared DNA only
+\providecommand{\PAGapsNearA}{0}  % genome A: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\PAGapsNearB}{13}  % genome B: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\PARegionsGcMin}{28.4}  % lowest G+C content among the shared regions (percent)
+\providecommand{\PARegionsGcMax}{33.2}  % highest G+C content among the shared regions (percent)
+\providecommand{\PARegionsIdentityMin}{95.3}  % lowest identity to genome B among the shared regions (percent)
+\providecommand{\PARegionsIdentityMax}{99.4}  % highest identity to genome B among the shared regions (percent; capped at 99.9)
+\providecommand{\PARegionOneKb}{1}  % E1: span (kb)
+\providecommand{\PARegionOneIdentity}{96.96}  % E1: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionOneGc}{29.0}  % E1: G+C content (percent)
+\providecommand{\PARegionOneGenes}{3}  % E1: annotated genes
+\providecommand{\PARegionOneIntegrases}{0}  % E1: genes annotated as integrase or recombinase
+\providecommand{\PARegionOneContigKb}{1{,}093}  % E1: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionTwoKb}{5}  % E2: span (kb)
+\providecommand{\PARegionTwoIdentity}{97.78}  % E2: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionTwoGc}{30.8}  % E2: G+C content (percent)
+\providecommand{\PARegionTwoGenes}{5}  % E2: annotated genes
+\providecommand{\PARegionTwoIntegrases}{0}  % E2: genes annotated as integrase or recombinase
+\providecommand{\PARegionTwoContigKb}{1{,}093}  % E2: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionThreeKb}{22}  % E3: span (kb)
+\providecommand{\PARegionThreeIdentity}{96.88}  % E3: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionThreeGc}{30.7}  % E3: G+C content (percent)
+\providecommand{\PARegionThreeGenes}{14}  % E3: annotated genes
+\providecommand{\PARegionThreeIntegrases}{0}  % E3: genes annotated as integrase or recombinase
+\providecommand{\PARegionThreeContigKb}{1{,}093}  % E3: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionFourKb}{4}  % E4: span (kb)
+\providecommand{\PARegionFourIdentity}{95.35}  % E4: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionFourGc}{32.1}  % E4: G+C content (percent)
+\providecommand{\PARegionFourGenes}{3}  % E4: annotated genes
+\providecommand{\PARegionFourIntegrases}{0}  % E4: genes annotated as integrase or recombinase
+\providecommand{\PARegionFourContigKb}{1{,}093}  % E4: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionFiveKb}{36}  % E5: span (kb)
+\providecommand{\PARegionFiveIdentity}{97.65}  % E5: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionFiveGc}{29.6}  % E5: G+C content (percent)
+\providecommand{\PARegionFiveGenes}{27}  % E5: annotated genes
+\providecommand{\PARegionFiveIntegrases}{1}  % E5: genes annotated as integrase or recombinase
+\providecommand{\PARegionFiveContigKb}{721}  % E5: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionSixKb}{7}  % E6: span (kb)
+\providecommand{\PARegionSixIdentity}{97.66}  % E6: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionSixGc}{28.4}  % E6: G+C content (percent)
+\providecommand{\PARegionSixGenes}{6}  % E6: annotated genes
+\providecommand{\PARegionSixIntegrases}{3}  % E6: genes annotated as integrase or recombinase
+\providecommand{\PARegionSixContigKb}{721}  % E6: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionSevenKb}{10}  % E7: span (kb)
+\providecommand{\PARegionSevenIdentity}{97.13}  % E7: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionSevenGc}{32.7}  % E7: G+C content (percent)
+\providecommand{\PARegionSevenGenes}{12}  % E7: annotated genes
+\providecommand{\PARegionSevenIntegrases}{0}  % E7: genes annotated as integrase or recombinase
+\providecommand{\PARegionSevenContigKb}{105}  % E7: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionEightKb}{13}  % E8: span (kb)
+\providecommand{\PARegionEightIdentity}{99.03}  % E8: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionEightGc}{30.1}  % E8: G+C content (percent)
+\providecommand{\PARegionEightGenes}{13}  % E8: annotated genes
+\providecommand{\PARegionEightIntegrases}{2}  % E8: genes annotated as integrase or recombinase
+\providecommand{\PARegionEightContigKb}{105}  % E8: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionNineKb}{5}  % E9: span (kb)
+\providecommand{\PARegionNineIdentity}{99.40}  % E9: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionNineGc}{28.6}  % E9: G+C content (percent)
+\providecommand{\PARegionNineGenes}{5}  % E9: annotated genes
+\providecommand{\PARegionNineIntegrases}{0}  % E9: genes annotated as integrase or recombinase
+\providecommand{\PARegionNineContigKb}{5}  % E9: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionTenKb}{3}  % E10: span (kb)
+\providecommand{\PARegionTenIdentity}{95.43}  % E10: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionTenGc}{32.0}  % E10: G+C content (percent)
+\providecommand{\PARegionTenGenes}{1}  % E10: annotated genes
+\providecommand{\PARegionTenIntegrases}{0}  % E10: genes annotated as integrase or recombinase
+\providecommand{\PARegionTenContigKb}{3}  % E10: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PARegionElevenKb}{1}  % E11: span (kb)
+\providecommand{\PARegionElevenIdentity}{95.74}  % E11: identity to genome B (percent; capped at 99.99)
+\providecommand{\PARegionElevenGc}{33.2}  % E11: G+C content (percent)
+\providecommand{\PARegionElevenGenes}{1}  % E11: annotated genes
+\providecommand{\PARegionElevenIntegrases}{0}  % E11: genes annotated as integrase or recombinase
+\providecommand{\PARegionElevenContigKb}{1}  % E11: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\PAPresentB}{11}  % regions at least 90 percent present in P. duerdenii ATCC BAA-1640 (GCF_000146345.1)
+\providecommand{\PASmallestHostContigKbB}{2{,}106}  % smallest contig of P. duerdenii ATCC BAA-1640 that carries one of these regions (kb)
+\providecommand{\PAPresentPdOne}{5}  % regions at least 90 percent present in P. duerdenii C0136B5 (GCF_056585935.1)
+\providecommand{\PASmallestHostContigKbPdOne}{108}  % smallest contig of P. duerdenii C0136B5 that carries one of these regions (kb)
+\providecommand{\PAPresentPdTwo}{9}  % regions at least 90 percent present in P. duerdenii C0173D1 (GCF_056585315.1)
+\providecommand{\PASmallestHostContigKbPdTwo}{169}  % smallest contig of P. duerdenii C0173D1 that carries one of these regions (kb)
+\providecommand{\PAPresentPdThree}{6}  % regions at least 90 percent present in P. duerdenii (Loyola) (GCF_030228525.1)
+\providecommand{\PASmallestHostContigKbPdThree}{11}  % smallest contig of P. duerdenii (Loyola) that carries one of these regions (kb)
+\providecommand{\PAPresentMediannikoviicoccus}{5}  % regions at least 90 percent present in M. vaginalis Marseille-Q5883 (GCF_928097925.1)
+\providecommand{\PASmallestHostContigKbMediannikoviicoccus}{1{,}951}  % smallest contig of M. vaginalis Marseille-Q5883 that carries one of these regions (kb)
+\providecommand{\PAPresentVaginalis}{5}  % regions at least 90 percent present in A. vaginalis PH9 (GCF_000307225.1)
+\providecommand{\PASmallestHostContigKbVaginalis}{192}  % smallest contig of A. vaginalis PH9 that carries one of these regions (kb)
+\providecommand{\PAPresentArgos}{6}  % regions at least 90 percent present in A. vaginalis FDAARGOS_988 (closed) (GCF_016127475.1)
+\providecommand{\PASmallestHostContigKbArgos}{1{,}894}  % smallest contig of A. vaginalis FDAARGOS_988 (closed) that carries one of these regions (kb)

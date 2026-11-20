@@ -1,0 +1,91 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_OCTP01000011.1	1616	2389	-	CDS	CS884_RS04910	replication initiator protein A	replication
+E1	NZ_OCTP01000011.1	2473	2754	-	CDS	CS884_RS04915	CD1845 family protein	other
+E1	NZ_OCTP01000011.1	2818	4731	-	CDS	CS884_RS04920	lysine--tRNA ligase	other
+E2	NZ_OCTP01000011.1	532418	534061	-	CDS	CS884_RS07890	ABC transporter substrate-binding protein	other
+E2	NZ_OCTP01000011.1	534064	534774	-	CDS	CS884_RS07895	ATP-binding cassette domain-containing protein	other
+E2	NZ_OCTP01000011.1	534756	535538	-	CDS	CS884_RS07900	ATP-binding cassette domain-containing protein	other
+E2	NZ_OCTP01000011.1	535543	536319	-	CDS	CS884_RS07905	ABC transporter permease	other
+E2	NZ_OCTP01000011.1	536319	537263	-	CDS	CS884_RS07910	ABC transporter permease	other
+E3	NZ_OCTP01000011.1	575554	583197	-	CDS	CS884_RS08070	helicase-related protein	replication
+E3	NZ_OCTP01000011.1	583280	585493	-	CDS	CS884_RS08075	hypothetical protein	hypothetical
+E3	NZ_OCTP01000011.1	585529	586491	-	pseudogene	CS884_RS08080	pseudogene	other
+E3	NZ_OCTP01000011.1	586484	588205	-	CDS	CS884_RS08085	DNA topoisomerase 3	other
+E3	NZ_OCTP01000011.1	588312	589742	-	CDS	CS884_RS08090	helix-turn-helix domain-containing protein	other
+E3	NZ_OCTP01000011.1	589823	590683	-	CDS	CS884_RS08095	CD1107 family mobile element protein	conjugation
+E3	NZ_OCTP01000011.1	590698	592281	-	CDS	CS884_RS08100	stalk domain-containing protein	other
+E3	NZ_OCTP01000011.1	592268	592507	-	CDS	CS884_RS08105	hypothetical protein	hypothetical
+E3	NZ_OCTP01000011.1	592522	595101	-	CDS	CS884_RS08110	C40 family peptidase	other
+E3	NZ_OCTP01000011.1	595109	597511	-	CDS	CS884_RS08115	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E3	NZ_OCTP01000011.1	597423	597833	-	CDS	CS884_RS08120	PrgI family protein	conjugation
+E3	NZ_OCTP01000011.1	597835	598125	-	CDS	CS884_RS08125	hypothetical protein	hypothetical
+E3	NZ_OCTP01000011.1	598135	598998	-	CDS	CS884_RS08130	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E3	NZ_OCTP01000011.1	599009	599107	-	pseudogene	CS884_RS08135	pseudogene	other
+E4	NZ_OCTP01000011.1	610466	611971	-	CDS	CS884_RS08210	ABC transporter ATP-binding protein	other
+E4	NZ_OCTP01000011.1	611974	613683	-	CDS	CS884_RS08215	ABC transporter ATP-binding protein	other
+E4	NZ_OCTP01000011.1	613676	615415	-	CDS	CS884_RS08220	ABC transporter ATP-binding protein	other
+E5	NZ_OCTP01000010.1	91871	92119	+	CDS	CS884_RS01760	hypothetical protein	hypothetical
+E5	NZ_OCTP01000010.1	92163	92453	+	CDS	CS884_RS01765	CD1845 family protein	other
+E5	NZ_OCTP01000010.1	92540	93514	+	CDS	CS884_RS01770	replication initiator protein A	replication
+E5	NZ_OCTP01000010.1	93529	94386	+	CDS	CS884_RS01775	ATP-binding protein	other
+E5	NZ_OCTP01000010.1	94401	94892	+	CDS	CS884_RS01780	PcfB family protein	conjugation
+E5	NZ_OCTP01000010.1	95081	95284	+	CDS	CS884_RS01785	hypothetical protein	hypothetical
+E5	NZ_OCTP01000010.1	95329	97131	+	CDS	CS884_RS01790	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E5	NZ_OCTP01000010.1	97283	98146	+	CDS	CS884_RS01795	Abi family protein	other
+E5	NZ_OCTP01000010.1	98338	98661	+	CDS	CS884_RS01800	single-stranded DNA-binding protein	other
+E5	NZ_OCTP01000010.1	98662	98790	+	pseudogene	CS884_RS01805	pseudogene	other
+E5	NZ_OCTP01000010.1	99511	101370	+	CDS	CS884_RS01810	group II intron reverse transcriptase/maturase	other
+E5	NZ_OCTP01000010.1	101527	101625	+	pseudogene	CS884_RS01815	pseudogene	other
+E5	NZ_OCTP01000010.1	101627	102490	+	CDS	CS884_RS01820	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E5	NZ_OCTP01000010.1	102508	102765	+	CDS	CS884_RS01825	hypothetical protein	hypothetical
+E5	NZ_OCTP01000010.1	102765	103103	+	CDS	CS884_RS01830	PrgI family protein	conjugation
+E5	NZ_OCTP01000010.1	103100	105595	+	CDS	CS884_RS01835	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E5	NZ_OCTP01000010.1	105567	106532	+	CDS	CS884_RS01840	site-specific DNA-methyltransferase	integration
+E5	NZ_OCTP01000010.1	106542	109505	+	CDS	CS884_RS01845	C40 family peptidase	other
+E5	NZ_OCTP01000010.1	109525	109782	+	CDS	CS884_RS01850	hypothetical protein	hypothetical
+E5	NZ_OCTP01000010.1	109779	112133	+	CDS	CS884_RS01855	leucine-rich repeat protein	other
+E5	NZ_OCTP01000010.1	112149	113027	+	CDS	CS884_RS01860	CD1107 family mobile element protein	conjugation
+E5	NZ_OCTP01000010.1	113244	113384	+	CDS	CS884_RS10565	hypothetical protein	hypothetical
+E5	NZ_OCTP01000010.1	113454	115160	+	CDS	CS884_RS01865	DNA topoisomerase 3	other
+E5	NZ_OCTP01000010.1	115438	115998	+	CDS	CS884_RS01870	type III toxin-antitoxin system ToxN/AbiQ family toxin	defence
+E5	NZ_OCTP01000010.1	117178	117486	+	CDS	CS884_RS10885	TnpV protein	conjugation
+E5	NZ_OCTP01000010.1	117870	127124	+	CDS	CS884_RS01875	SNF2-related protein	other
+E5	NZ_OCTP01000010.1	127158	128300	+	CDS	CS884_RS01880	transposase	transposase
+E6	NZ_OCTP01000010.1	164685	164852	+	CDS	CS884_RS02005	hypothetical protein	hypothetical
+E6	NZ_OCTP01000010.1	164950	166668	+	CDS	CS884_RS02010	recombinase family protein	integration
+E6	NZ_OCTP01000010.1	166661	168403	+	CDS	CS884_RS02015	recombinase family protein	integration
+E6	NZ_OCTP01000010.1	168396	169916	+	CDS	CS884_RS02020	recombinase family protein	integration
+E6	NZ_OCTP01000010.1	170106	170909	+	CDS	CS884_RS02025	KilA-N domain-containing protein	other
+E6	NZ_OCTP01000010.1	170979	171530	+	pseudogene	CS884_RS02030	pseudogene	other
+E7	NZ_OCTP01000008.1	43380	44582	-	CDS	CS884_RS00315	ABC transporter permease	other
+E7	NZ_OCTP01000008.1	44582	45007	-	CDS	CS884_RS00320	FMN-binding protein	other
+E7	NZ_OCTP01000008.1	45004	45723	-	CDS	CS884_RS00325	ABC transporter ATP-binding protein	other
+E7	NZ_OCTP01000008.1	45735	46883	-	CDS	CS884_RS00330	FtsX-like permease family protein	other
+E7	NZ_OCTP01000008.1	46873	48156	-	CDS	CS884_RS00335	ABC transporter permease	other
+E7	NZ_OCTP01000008.1	48165	49448	-	CDS	CS884_RS00340	DUF2318 domain-containing protein	hypothetical
+E7	NZ_OCTP01000008.1	49485	50186	-	CDS	CS884_RS00345	iron transporter	other
+E7	NZ_OCTP01000008.1	50196	51533	-	CDS	CS884_RS00350	FTR1 family protein	other
+E7	NZ_OCTP01000008.1	51508	52212	-	CDS	CS884_RS00355	ABC transporter ATP-binding protein	other
+E7	NZ_OCTP01000008.1	52212	52607	-	CDS	CS884_RS00360	DUF4418 family protein	hypothetical
+E7	NZ_OCTP01000008.1	52667	52803	-	pseudogene	CS884_RS00365	pseudogene	other
+E7	NZ_OCTP01000008.1	52805	53048	-	pseudogene	CS884_RS00370	pseudogene	other
+E8	NZ_OCTP01000008.1	64658	65134	-	pseudogene	CS884_RS00440	pseudogene	other
+E8	NZ_OCTP01000008.1	65279	66514	-	CDS	CS884_RS00445	tyrosine-type recombinase/integrase	integration
+E8	NZ_OCTP01000008.1	66592	66801	-	CDS	CS884_RS00450	excisionase	integration
+E8	NZ_OCTP01000008.1	67237	67647	-	CDS	CS884_RS00455	sigma-70 family RNA polymerase sigma factor	other
+E8	NZ_OCTP01000008.1	67967	69316	-	CDS	CS884_RS00465	MATE family efflux transporter	other
+E8	NZ_OCTP01000008.1	69353	71086	-	CDS	CS884_RS00470	ABC transporter ATP-binding protein	other
+E8	NZ_OCTP01000008.1	71083	72825	-	CDS	CS884_RS00475	ABC transporter ATP-binding protein	other
+E8	NZ_OCTP01000008.1	72861	74252	-	CDS	CS884_RS00480	ATP-binding cassette domain-containing protein	other
+E8	NZ_OCTP01000008.1	74245	74946	-	CDS	CS884_RS00485	energy-coupling factor transporter transmembrane component T	other
+E8	NZ_OCTP01000008.1	74971	75552	-	CDS	CS884_RS00490	MptD family putative ECF transporter S component	other
+E8	NZ_OCTP01000008.1	75570	76163	-	CDS	CS884_RS00495	TetR/AcrR family transcriptional regulator	other
+E8	NZ_OCTP01000008.1	76493	76849	+	CDS	CS884_RS00500	plasmid mobilization relaxosome protein MobC	conjugation
+E8	NZ_OCTP01000008.1	76851	78182	+	CDS	CS884_RS00505	relaxase/mobilization nuclease domain-containing protein	conjugation
+E9	NZ_OCTP01000004.1	1	545	+	CDS	CS884_RS00040	phage antirepressor KilAC domain-containing protein	phage
+E9	NZ_OCTP01000004.1	538	2328	+	CDS	CS884_RS00045	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E9	NZ_OCTP01000004.1	2390	2926	+	CDS	CS884_RS00050	ClbS/DfsB family four-helix bundle protein	other
+E9	NZ_OCTP01000004.1	2944	4413	+	CDS	CS884_RS00055	PIN-like domain-containing protein	other
+E9	NZ_OCTP01000004.1	4609	4920	+	CDS	CS884_RS00060	hypothetical protein	hypothetical
+E10	NZ_OCTP01000006.1	1	2581	+	CDS	CS884_RS00085	Eco57I restriction-modification methylase domain-containing protein	defence
+E11	NZ_OCTP01000002.1	1	1197	+	CDS	CS884_RS00020	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation

@@ -1,0 +1,6 @@
+genes	containment_nt	containment_aa	fmh_dnds
+all	0.05052005943536404	0.08823529411764706	1.8694231138633288
+without_near_identical	0.0	0.0	
+without_genes_sharing_25_percent	0.0	0.0	
+without_genes_sharing_75_percent	0.0	0.0	
+all_every_kmer	0.05036517413088865	0.05775433238472039	8.965330130254825

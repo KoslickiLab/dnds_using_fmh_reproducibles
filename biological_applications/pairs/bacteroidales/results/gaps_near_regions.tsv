@@ -1,0 +1,5 @@
+region	genome	contig	contig_length	start	end	bp_to_contig_start	bp_to_contig_end	gaps_left_20kb	gaps_inside	gaps_right_20kb	nearest_gap_left_bp	nearest_gap_right_bp
+E1	A	NZ_LT594621.1	4124789	1040649	1092313	1040648	3032476	0	0	0		
+E1	B	NZ_JH815205.1	721957	44020	98900	44019	623057	0	0	0		
+E2	A	NZ_LT594621.1	4124789	1334203	1492318	1334202	2632471	0	0	0		
+E2	B	NZ_JH815203.1	1217791	157909	313781	157908	904010	0	0	0		

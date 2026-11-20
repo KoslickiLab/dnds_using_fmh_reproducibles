@@ -1,0 +1,203 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_CP048437.1	150670	151974	-	CDS	GXM22_RS00660	tyrosine-type recombinase/integrase	integration
+E1	NZ_CP048437.1	151978	152214	-	CDS	GXM22_RS00665	MerR family transcriptional regulator	other
+E1	NZ_CP048437.1	152630	152881	-	CDS	GXM22_RS00675	helix-turn-helix domain-containing protein	other
+E1	NZ_CP048437.1	152878	153300	-	CDS	GXM22_RS00680	RNA polymerase sigma factor	other
+E1	NZ_CP048437.1	153764	154678	-	CDS	GXM22_RS00685	sensor histidine kinase	other
+E1	NZ_CP048437.1	154696	155502	-	CDS	GXM22_RS00690	ABC transporter permease	other
+E1	NZ_CP048437.1	155495	156415	-	CDS	GXM22_RS00695	ATP-binding cassette domain-containing protein	other
+E1	NZ_CP048437.1	156499	157164	-	CDS	GXM22_RS00700	response regulator transcription factor	other
+E1	NZ_CP048437.1	157142	157345	-	CDS	GXM22_RS00705	helix-turn-helix domain-containing protein	other
+E1	NZ_CP048437.1	157506	157859	+	CDS	GXM22_RS00710	helix-turn-helix domain-containing protein	other
+E1	NZ_CP048437.1	158114	158443	+	CDS	GXM22_RS00715	plasmid mobilization protein	conjugation
+E1	NZ_CP048437.1	158404	159744	+	CDS	GXM22_RS00720	relaxase/mobilization nuclease domain-containing protein	conjugation
+E1	NZ_CP048437.1	159837	160067	+	CDS	GXM22_RS00725	helix-turn-helix domain-containing protein	other
+E1	NZ_CP048437.1	160072	160440	+	CDS	GXM22_RS00730	DUF6050 family protein	hypothetical
+E1	NZ_CP048437.1	160618	160983	-	CDS	GXM22_RS00735	cysteine-rich VLP domain-containing protein	other
+E1	NZ_CP048437.1	160980	161186	-	CDS	GXM22_RS00740	transposon-transfer assisting family protein	conjugation
+E1	NZ_CP048437.1	161189	162142	-	CDS	GXM22_RS00745	hypothetical protein	hypothetical
+E1	NZ_CP048437.1	162146	165859	-	CDS	GXM22_RS00750	YodL domain-containing protein	other
+E1	NZ_CP048437.1	166062	166739	-	pseudogene	GXM22_RS00755	pseudogene	other
+E1	NZ_CP048437.1	166759	166959	-	CDS	GXM22_RS00760	transposon-encoded TnpW family protein	conjugation
+E1	NZ_CP048437.1	167074	168951	-	CDS	GXM22_RS00765	AAA family ATPase	other
+E1	NZ_CP048437.1	168968	170476	-	CDS	GXM22_RS00770	MobQ family relaxase	conjugation
+E1	NZ_CP048437.1	170692	171003	-	CDS	GXM22_RS00775	DUF3847 domain-containing protein	hypothetical
+E1	NZ_CP048437.1	171087	172004	-	CDS	GXM22_RS00780	hypothetical protein	hypothetical
+E1	NZ_CP048437.1	172001	172561	-	CDS	GXM22_RS00785	RNA polymerase sigma factor	other
+E1	NZ_CP048437.1	172646	172960	-	CDS	GXM22_RS00790	hypothetical protein	hypothetical
+E1	NZ_CP048437.1	173132	173458	-	CDS	GXM22_RS00795	TnpV protein	conjugation
+E1	NZ_CP048437.1	173455	175326	-	CDS	GXM22_RS00800	recombinase family protein	integration
+E1	NZ_CP048437.1	175382	176806	-	pseudogene	GXM22_RS00805	pseudogene	other
+E1	NZ_CP048437.1	176803	177501	-	CDS	GXM22_RS00810	DUF4366 domain-containing protein	hypothetical
+E1	NZ_CP048437.1	177491	177748	-	CDS	GXM22_RS00815	DUF4315 family protein	hypothetical
+E1	NZ_CP048437.1	177783	179846	-	CDS	GXM22_RS00820	C40 family peptidase	other
+E1	NZ_CP048437.1	179885	180766	-	CDS	GXM22_RS00825	DNA-methyltransferase	defence
+E1	NZ_CP048437.1	180763	183192	-	CDS	GXM22_RS00830	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E1	NZ_CP048437.1	183140	183550	-	CDS	GXM22_RS00835	PrgI family protein	conjugation
+E1	NZ_CP048437.1	183575	184444	-	CDS	GXM22_RS00840	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E1	NZ_CP048437.1	184461	184676	-	CDS	GXM22_RS00845	Maff2 family mobile element protein	conjugation
+E1	NZ_CP048437.1	184887	185099	-	CDS	GXM22_RS00850	hypothetical protein	hypothetical
+E1	NZ_CP048437.1	185092	186879	-	CDS	GXM22_RS00855	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E1	NZ_CP048437.1	186876	187352	-	CDS	GXM22_RS00860	PcfB family protein	conjugation
+E1	NZ_CP048437.1	187450	187668	-	CDS	GXM22_RS00865	DUF5348 domain-containing protein	hypothetical
+E1	NZ_CP048437.1	187692	188657	-	CDS	GXM22_RS00870	DUF6017 domain-containing protein	hypothetical
+E1	NZ_CP048437.1	188868	189230	-	CDS	GXM22_RS00875	hypothetical protein	hypothetical
+E1	NZ_CP048437.1	189399	189653	-	CDS	GXM22_RS00880	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	372412	372810	+	CDS	GXM22_RS01645	30S ribosomal protein S9	other
+E2	NZ_CP048437.1	373244	374074	+	CDS	GXM22_RS01650	phage antirepressor Ant	phage
+E2	NZ_CP048437.1	374071	374238	+	CDS	GXM22_RS15005	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	374219	374893	+	CDS	GXM22_RS01655	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	374890	375735	+	CDS	GXM22_RS01660	ATP-binding protein	other
+E2	NZ_CP048437.1	375811	376719	+	CDS	GXM22_RS01665	ParB/RepB/Spo0J family partition protein	replication
+E2	NZ_CP048437.1	376733	377239	+	CDS	GXM22_RS01670	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	377250	377885	+	CDS	GXM22_RS01675	DUF3846 domain-containing protein	hypothetical
+E2	NZ_CP048437.1	377904	378386	+	CDS	GXM22_RS01680	PcfB family protein	conjugation
+E2	NZ_CP048437.1	378383	380140	+	CDS	GXM22_RS01685	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E2	NZ_CP048437.1	380349	380501	+	pseudogene	GXM22_RS01690	pseudogene	other
+E2	NZ_CP048437.1	380573	380935	+	CDS	GXM22_RS01695	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	380895	381272	+	CDS	GXM22_RS01700	TnpV protein	conjugation
+E2	NZ_CP048437.1	381466	382125	+	CDS	GXM22_RS01705	phosphatase PAP2 family protein	other
+E2	NZ_CP048437.1	382148	382765	+	CDS	GXM22_RS01710	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	382877	383683	-	CDS	GXM22_RS01715	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	384167	384355	+	CDS	GXM22_RS01720	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	384352	384693	+	CDS	GXM22_RS01725	DeoR family transcriptional regulator	other
+E2	NZ_CP048437.1	384686	384982	+	CDS	GXM22_RS01730	DUF3847 domain-containing protein	hypothetical
+E2	NZ_CP048437.1	385284	385808	+	CDS	GXM22_RS01735	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	385979	387559	+	CDS	GXM22_RS01740	MobQ family relaxase	conjugation
+E2	NZ_CP048437.1	387625	388269	+	CDS	GXM22_RS01745	CHC2 zinc finger domain-containing protein	other
+E2	NZ_CP048437.1	388238	389575	+	CDS	GXM22_RS01750	virulence-associated E family protein	other
+E2	NZ_CP048437.1	389817	390014	+	CDS	GXM22_RS01760	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	390015	391685	+	CDS	GXM22_RS01765	recombinase family protein	integration
+E2	NZ_CP048437.1	391776	391859	+	pseudogene	GXM22_RS01770	pseudogene	other
+E2	NZ_CP048437.1	392166	393032	+	CDS	GXM22_RS01775	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E2	NZ_CP048437.1	393050	393442	+	CDS	GXM22_RS01780	PrgI family protein	conjugation
+E2	NZ_CP048437.1	393462	395849	+	CDS	GXM22_RS01785	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E2	NZ_CP048437.1	395853	397622	+	CDS	GXM22_RS01790	CD1108 family mobile element protein	conjugation
+E2	NZ_CP048437.1	397658	397909	+	CDS	GXM22_RS01795	DUF4315 family protein	hypothetical
+E2	NZ_CP048437.1	397906	399069	+	CDS	GXM22_RS01800	CD1107 family mobile element protein	conjugation
+E2	NZ_CP048437.1	399597	401093	+	CDS	GXM22_RS01805	glycosyltransferase	other
+E2	NZ_CP048437.1	401403	402806	-	CDS	GXM22_RS01810	IS1182 family transposase	transposase
+E2	NZ_CP048437.1	403048	405126	+	CDS	GXM22_RS01815	DNA topoisomerase 3	other
+E2	NZ_CP048437.1	405123	406010	+	CDS	GXM22_RS01820	LPD16 domain-containing protein	other
+E2	NZ_CP048437.1	406007	406315	+	CDS	GXM22_RS01825	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	406302	406895	+	CDS	GXM22_RS01830	YodL domain-containing protein	other
+E2	NZ_CP048437.1	406896	407102	+	CDS	GXM22_RS01835	transposon-transfer assisting family protein	conjugation
+E2	NZ_CP048437.1	407905	408249	+	CDS	GXM22_RS15175	TnpV protein	conjugation
+E2	NZ_CP048437.1	409653	414488	+	pseudogene	GXM22_RS01840	pseudogene	other
+E2	NZ_CP048437.1	414485	414817	+	CDS	GXM22_RS01845	plasmid mobilization protein	conjugation
+E2	NZ_CP048437.1	414972	415277	+	CDS	GXM22_RS01850	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	415294	415563	+	CDS	GXM22_RS01855	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	415618	417090	+	CDS	GXM22_RS01860	relaxase/mobilization nuclease domain-containing protein	conjugation
+E2	NZ_CP048437.1	417414	417641	+	CDS	GXM22_RS01865	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	417622	418230	+	CDS	GXM22_RS01870	DUF1819 family protein	hypothetical
+E2	NZ_CP048437.1	418232	418807	+	CDS	GXM22_RS01875	DUF1788 domain-containing protein	hypothetical
+E2	NZ_CP048437.1	418826	422479	+	CDS	GXM22_RS01880	BREX system P-loop protein BrxC	defence
+E2	NZ_CP048437.1	422500	426126	+	CDS	GXM22_RS01885	BREX-1 system adenine-specific DNA-methyltransferase PglX	defence
+E2	NZ_CP048437.1	426153	426524	+	CDS	GXM22_RS01890	chalcone synthase	other
+E2	NZ_CP048437.1	426512	429034	+	CDS	GXM22_RS01895	BREX-1 system phosphatase PglZ type A	defence
+E2	NZ_CP048437.1	429064	431178	+	CDS	GXM22_RS01900	protease Lon-related BREX system protein BrxL	defence
+E2	NZ_CP048437.1	431237	431917	+	CDS	GXM22_RS01905	GTP pyrophosphokinase	other
+E2	NZ_CP048437.1	431954	433513	+	CDS	GXM22_RS01910	cardiolipin synthase	other
+E2	NZ_CP048437.1	433712	435145	+	CDS	GXM22_RS01915	phospholipase D family protein	other
+E2	NZ_CP048437.1	435124	435834	+	CDS	GXM22_RS01920	response regulator transcription factor	other
+E2	NZ_CP048437.1	435834	436877	+	CDS	GXM22_RS01925	HAMP domain-containing sensor histidine kinase	other
+E2	NZ_CP048437.1	436911	437975	+	CDS	GXM22_RS01930	FUSC family protein	other
+E2	NZ_CP048437.1	437965	438536	+	pseudogene	GXM22_RS01935	pseudogene	other
+E2	NZ_CP048437.1	438564	439169	+	CDS	GXM22_RS01940	cation transporting ATPase C-terminal domain-containing protein	other
+E2	NZ_CP048437.1	439190	440386	+	CDS	GXM22_RS01945	AI-2E family transporter	other
+E2	NZ_CP048437.1	440467	441339	+	CDS	GXM22_RS01950	DegV family protein	other
+E2	NZ_CP048437.1	441583	441900	+	CDS	GXM22_RS01955	transposase	transposase
+E2	NZ_CP048437.1	442055	442237	+	pseudogene	GXM22_RS15385	pseudogene	other
+E2	NZ_CP048437.1	442259	443248	+	CDS	GXM22_RS01965	choloylglycine hydrolase	other
+E2	NZ_CP048437.1	443404	443916	-	CDS	GXM22_RS01970	ImmA/IrrE family metallo-endopeptidase	other
+E2	NZ_CP048437.1	443962	444378	-	CDS	GXM22_RS01975	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	444580	445815	+	CDS	GXM22_RS01980	DNA polymerase Y family protein	other
+E2	NZ_CP048437.1	445897	446157	+	CDS	GXM22_RS01985	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	446154	446885	+	CDS	GXM22_RS01990	ImmA/IrrE family metallo-endopeptidase	other
+E2	NZ_CP048437.1	447361	447651	+	CDS	GXM22_RS02000	helix-turn-helix domain-containing protein	other
+E2	NZ_CP048437.1	447629	448117	-	CDS	GXM22_RS15435	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	448257	449408	+	CDS	GXM22_RS02010	AAA family ATPase	other
+E2	NZ_CP048437.1	449568	450671	+	CDS	GXM22_RS02015	AAA family ATPase	other
+E2	NZ_CP048437.1	450661	451170	+	CDS	GXM22_RS02020	hypothetical protein	hypothetical
+E2	NZ_CP048437.1	451732	452154	+	CDS	GXM22_RS02030	type II toxin-antitoxin system PemK/MazF family toxin	defence
+E2	NZ_CP048437.1	452147	452377	+	CDS	GXM22_RS02035	MerR family transcriptional regulator	other
+E2	NZ_CP048437.1	452449	453657	+	CDS	GXM22_RS02040	tyrosine-type recombinase/integrase	integration
+E2	NZ_CP048437.1	453805	455016	+	CDS	GXM22_RS02050	tyrosine-type recombinase/integrase	integration
+E3	NZ_CP048437.1	539132	539632	+	CDS	GXM22_RS15180	hypothetical protein	hypothetical
+E3	NZ_CP048437.1	539847	540083	+	CDS	GXM22_RS02515	hypothetical protein	hypothetical
+E3	NZ_CP048437.1	540459	541679	+	CDS	GXM22_RS02520	MFS transporter	other
+E3	NZ_CP048437.1	541760	542560	-	CDS	GXM22_RS02525	helix-turn-helix domain-containing protein	other
+E3	NZ_CP048437.1	542639	542902	-	CDS	GXM22_RS02530	hypothetical protein	hypothetical
+E3	NZ_CP048437.1	543131	543544	+	CDS	GXM22_RS02535	cysteine-rich VLP domain-containing protein	other
+E3	NZ_CP048437.1	543656	544051	+	CDS	GXM22_RS02540	replication initiator protein A	replication
+E3	NZ_CP048437.1	544225	545169	+	CDS	GXM22_RS02550	MobV family relaxase	conjugation
+E3	NZ_CP048437.1	545174	545365	+	CDS	GXM22_RS02555	hypothetical protein	hypothetical
+E3	NZ_CP048437.1	545460	546971	+	CDS	GXM22_RS02560	recombinase family protein	integration
+E4	NZ_CP048437.1	1190031	1190897	-	CDS	GXM22_RS05720	aminoglycoside 6-adenylyltransferase	resistance
+E4	NZ_CP048437.1	1191071	1191586	-	CDS	GXM22_RS05725	hypothetical protein	hypothetical
+E4	NZ_CP048437.1	1191623	1192423	-	CDS	GXM22_RS05730	helix-turn-helix domain-containing protein	other
+E4	NZ_CP048437.1	1192465	1192821	-	CDS	GXM22_RS05735	hypothetical protein	hypothetical
+E4	NZ_CP048437.1	1193269	1193682	+	CDS	GXM22_RS05740	cysteine-rich VLP domain-containing protein	other
+E4	NZ_CP048437.1	1193794	1194189	+	CDS	GXM22_RS05745	replication initiator protein A	replication
+E4	NZ_CP048437.1	1194373	1195311	+	CDS	GXM22_RS05750	MobV family relaxase	conjugation
+E4	NZ_CP048437.1	1195316	1195507	+	CDS	GXM22_RS05755	hypothetical protein	hypothetical
+E4	NZ_CP048437.1	1195599	1197095	+	CDS	GXM22_RS05760	recombinase family protein	integration
+E4	NZ_CP048437.1	1197160	1197576	-	CDS	GXM22_RS05765	hypothetical protein	hypothetical
+E4	NZ_CP048437.1	1197604	1198635	-	CDS	GXM22_RS05770	sensor histidine kinase	other
+E4	NZ_CP048437.1	1198632	1199324	-	CDS	GXM22_RS05775	response regulator transcription factor	other
+E5	NZ_CP048437.1	1721915	1723597	-	CDS	GXM22_RS08370	recombinase family protein	integration
+E5	NZ_CP048437.1	1723716	1723952	-	CDS	GXM22_RS08375	DUF6870 family protein	hypothetical
+E5	NZ_CP048437.1	1724452	1724862	-	CDS	GXM22_RS08380	sigma-70 family RNA polymerase sigma factor	other
+E5	NZ_CP048437.1	1725330	1725698	-	CDS	GXM22_RS08385	YxeA family protein	other
+E5	NZ_CP048437.1	1725715	1726494	-	CDS	GXM22_RS08390	ABC transporter permease	other
+E5	NZ_CP048437.1	1726496	1727290	-	CDS	GXM22_RS08395	ABC transporter permease	other
+E5	NZ_CP048437.1	1727274	1728200	-	CDS	GXM22_RS08400	ABC transporter ATP-binding protein	other
+E5	NZ_CP048437.1	1728335	1729252	-	CDS	GXM22_RS08405	sensor histidine kinase	other
+E5	NZ_CP048437.1	1729258	1729950	-	CDS	GXM22_RS08410	response regulator transcription factor	other
+E5	NZ_CP048437.1	1729943	1730131	-	CDS	GXM22_RS08415	helix-turn-helix domain-containing protein	other
+E5	NZ_CP048437.1	1730282	1730641	+	CDS	GXM22_RS08420	helix-turn-helix transcriptional regulator	other
+E5	NZ_CP048437.1	1730845	1732191	-	CDS	GXM22_RS08425	relaxase/mobilization nuclease domain-containing protein	conjugation
+E5	NZ_CP048437.1	1732333	1732620	-	CDS	GXM22_RS08430	CD1845 family protein	other
+E5	NZ_CP048437.1	1732784	1733131	-	CDS	GXM22_RS08435	plasmid mobilization protein	conjugation
+E5	NZ_CP048437.1	1733128	1733298	-	CDS	GXM22_RS08440	DUF4316 domain-containing protein	hypothetical
+E5	NZ_CP048437.1	1733309	1733908	-	CDS	GXM22_RS08445	defense against restriction DarA-related protein	defence
+E5	NZ_CP048437.1	1733922	1734878	-	CDS	GXM22_RS08450	hypothetical protein	hypothetical
+E5	NZ_CP048437.1	1735041	1735409	-	CDS	GXM22_RS08455	cysteine-rich VLP domain-containing protein	other
+E5	NZ_CP048437.1	1735414	1735590	-	CDS	GXM22_RS15050	hypothetical protein	hypothetical
+E5	NZ_CP048437.1	1735587	1736327	-	CDS	GXM22_RS08460	DUF4366 domain-containing protein	hypothetical
+E5	NZ_CP048437.1	1736330	1736584	-	CDS	GXM22_RS08465	DUF4315 family protein	hypothetical
+E5	NZ_CP048437.1	1736598	1738301	-	CDS	GXM22_RS08470	C40 family peptidase	other
+E5	NZ_CP048437.1	1738282	1740645	-	CDS	GXM22_RS08475	VirB4-like conjugal transfer ATPase, CD1110 family	conjugation
+E5	NZ_CP048437.1	1740599	1740994	-	CDS	GXM22_RS08480	PrgI family protein	conjugation
+E5	NZ_CP048437.1	1740982	1741581	-	CDS	GXM22_RS08485	MT-A70 family methyltransferase	other
+E5	NZ_CP048437.1	1741578	1742372	-	CDS	GXM22_RS08490	DNA-methyltransferase	defence
+E5	NZ_CP048437.1	1742362	1742910	-	CDS	GXM22_RS08495	septation protein SpoVG family protein	other
+E5	NZ_CP048437.1	1742964	1743830	-	CDS	GXM22_RS08500	VirB6/TrbL-like conjugal transfer protein, CD1112 family	conjugation
+E5	NZ_CP048437.1	1743840	1744052	-	CDS	GXM22_RS08505	Maff2 family protein	conjugation
+E5	NZ_CP048437.1	1744153	1746006	-	CDS	GXM22_RS08510	VirD4-like conjugal transfer protein, CD1115 family	conjugation
+E5	NZ_CP048437.1	1745993	1746469	-	CDS	GXM22_RS08515	PcfB family protein	conjugation
+E5	NZ_CP048437.1	1746516	1747229	-	CDS	GXM22_RS08520	antirestriction protein ArdA	defence
+E5	NZ_CP048437.1	1747229	1747570	-	CDS	GXM22_RS08525	DUF7768 domain-containing protein	hypothetical
+E5	NZ_CP048437.1	1747856	1749307	-	CDS	GXM22_RS08530	ParB/RepB/Spo0J family partition protein	replication
+E5	NZ_CP048437.1	1749494	1749892	-	CDS	GXM22_RS08535	hypothetical protein	hypothetical
+E6	NZ_CP048437.1	1795264	1795956	+	CDS	GXM22_RS08780	response regulator transcription factor	other
+E6	NZ_CP048437.1	1795953	1796984	+	CDS	GXM22_RS08785	sensor histidine kinase	other
+E6	NZ_CP048437.1	1797206	1797871	+	CDS	GXM22_RS08790	ABC transporter ATP-binding protein	other
+E6	NZ_CP048437.1	1797889	1800381	+	CDS	GXM22_RS08795	ABC transporter permease	other
+E7	NZ_CP048437.1	2137254	2137754	+	CDS	GXM22_RS10315	hypothetical protein	hypothetical
+E7	NZ_CP048437.1	2137936	2139516	+	CDS	GXM22_RS10320	MobQ family relaxase	conjugation
+E7	NZ_CP048437.1	2139582	2140226	+	CDS	GXM22_RS10325	CHC2 zinc finger domain-containing protein	other
+E7	NZ_CP048437.1	2140195	2141532	+	CDS	GXM22_RS10330	virulence-associated E family protein	other
+E7	NZ_CP048437.1	2141774	2141971	+	CDS	GXM22_RS10340	hypothetical protein	hypothetical
+E7	NZ_CP048437.1	2141972	2143642	+	CDS	GXM22_RS10345	recombinase family protein	integration
+E7	NZ_CP048437.1	2143733	2143816	+	pseudogene	GXM22_RS10350	pseudogene	other
+E8	NZ_CP048437.1	2952116	2953450	-	CDS	GXM22_RS14230	recombinase family protein	integration
+E9	NZ_CP048437.1	3012274	3012594	-	CDS	GXM22_RS14545	recombinase family protein	integration
+E9	NZ_CP048437.1	3012695	3012889	-	CDS	GXM22_RS14550	hypothetical protein	hypothetical
+E9	NZ_CP048437.1	3012962	3013906	-	CDS	GXM22_RS14555	MobV family relaxase	conjugation
+E9	NZ_CP048437.1	3014090	3014485	-	CDS	GXM22_RS14565	replication initiator protein A	replication
+E9	NZ_CP048437.1	3014597	3015010	-	CDS	GXM22_RS14570	cysteine-rich VLP domain-containing protein	other
+E9	NZ_CP048437.1	3015673	3016473	+	CDS	GXM22_RS14575	helix-turn-helix domain-containing protein	other
+E9	NZ_CP048437.1	3016512	3017081	+	CDS	GXM22_RS14580	DNA-3-methyladenine glycosylase I	other
+E9	NZ_CP048437.1	3017264	3018130	+	CDS	GXM22_RS14585	aminoglycoside 6-adenylyltransferase AadE	resistance
+E9	NZ_CP048437.1	3018735	3018857	-	pseudogene	GXM22_RS14600	pseudogene	other

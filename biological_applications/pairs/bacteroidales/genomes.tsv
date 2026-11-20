@@ -1,0 +1,11 @@
+role	accession	label	group	key
+A	GCF_900091655.1	C. massiliensis Marseille-P2698	pair	A
+B	GCF_000296465.1	B. intestinihominis YIT 11860 (Broad)	pair	B
+control	GCF_964238885.1	B. intestinihominis (Monash isolate 1)	other B. intestinihominis strains	MonashOne
+control	GCF_964241605.1	B. intestinihominis (Monash isolate 2)	other B. intestinihominis strains	MonashTwo
+control	GCF_046603765.1	B. intestinihominis SFAD78 (closed)	other B. intestinihominis strains	Sfad
+control	GCF_988228745.1	B. intestinihominis AF117-105-WCA (closed)	other B. intestinihominis strains	Af
+control	GCF_015555135.1	B. intestinihominis 1001283B150304	other B. intestinihominis strains	Sinai
+control	GCF_048361195.1	C. massiliensis (FRCC isolate)	other C. massiliensis strains	CmOne
+control	GCF_062030091.1	C. massiliensis (Sichuan Univ.)	other C. massiliensis strains	CmTwo
+control	GCF_905201065.1	C. massiliensis (EMG)	other C. massiliensis strains	CmThree

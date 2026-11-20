@@ -1,0 +1,13 @@
+role	accession	label	group	key
+A	GCF_010509575.1	F. duncaniae A2-165 (closed; AIST)	pair	A
+B	GCF_000174195.1	R. inulinivorans A2-194 (draft; WashU 2009)	pair	B
+control	GCF_002734145.1	A2-165 (closed; UFMG)	other assemblies of A2-165	Ufmg
+control	GCF_000162015.1	A2-165 (draft; WashU)	other assemblies of A2-165	WashU
+control	GCF_032971305.1	A2-165 (draft; UMCG)	other assemblies of A2-165	Umcg
+control	GCF_061129375.1	A2-165 (draft; U Chile)	other assemblies of A2-165	Chile
+control	GCF_020731525.1	A2-194 (2 contigs; FDA-ARGOS)	other assembly of A2-194	Argos
+control	GCF_024167885.1	F. duncaniae NB2B-19-DCM	other strains	OtherFd
+control	GCF_001406855.1	R. inulinivorans L1-83	other strains	OtherRi
+control	GCF_000225345.1	R. hominis A2-183	same fecal sample as A2-165	Hominis
+control	GCF_900537995.1	R. intestinalis L1-82	other gut Lachnospiraceae	Intestinalis
+control	GCF_014287635.1	R. zhanii BX1005	other gut Lachnospiraceae	Zhanii

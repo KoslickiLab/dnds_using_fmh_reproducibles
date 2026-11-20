@@ -1,0 +1,2 @@
+region	contig	start	end	span_bp	aligned_bp	contig_length_bp	gc_percent	identity	longest_block_bp	partner_contigs	n_genes	n_resistance	n_conjugation	n_integration	n_transposase	n_defence	n_phage	n_replication	n_hypothetical	n_other
+E1	JAFQXV010000014.1	23203	58999	35797	35797	164250	35.2	99.82	35797	JAFRFB010000086.1	33	0	0	0	0	0	0	1	8	24

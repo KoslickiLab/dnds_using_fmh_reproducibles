@@ -1,0 +1,2 @@
+start_ref	end_ref	start_qry	end_qry	len_ref	len_qry	identity	contig_len_ref	contig_len_qry	cov_ref	cov_qry	contig_ref	contig_qry	region
+23203	58999	1	35797	35797	35797	99.82	164250	35797	21.79	100.0	JAFQXV010000014.1	JAFRFB010000086.1	E1

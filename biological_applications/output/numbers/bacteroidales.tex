@@ -1,0 +1,90 @@
+% Generated file -- do not edit by hand. Re-run the analysis instead (see the code repository).
+\providecommand{\BTFmhDnds}{1.75}  % FracMinHash dN/dS of the pair, all genes
+\providecommand{\BTFmhDndsWithout}{0.43}  % FracMinHash dN/dS after removing near-identical genes from both genomes
+\providecommand{\BTFmhDndsWithoutLoose}{0.38}  % the same when genes sharing at least 25 percent of their 21-mers are removed
+\providecommand{\BTFmhDndsWithoutStrict}{0.48}  % the same when only genes sharing at least 75 percent of their 21-mers are removed
+\providecommand{\BTFmhDndsEveryKmer}{1.72}  % FracMinHash dN/dS of the pair computed from every k-mer (scale factor 1)
+\providecommand{\BTContainmentNt}{0.054}  % nucleotide 21-mer containment, all genes
+\providecommand{\BTContainmentAa}{0.095}  % protein 7-mer containment, all genes
+\providecommand{\BTContainmentNtWithout}{0.001}  % nucleotide containment without near-identical genes
+\providecommand{\BTContainmentAaWithout}{0.048}  % protein containment without near-identical genes
+\providecommand{\BTGenomeMbA}{4.41}  % genome A: assembly size (Mb)
+\providecommand{\BTContigsA}{11}  % genome A: number of contigs or scaffolds
+\providecommand{\BTGcA}{42.9}  % genome A: G+C content (percent)
+\providecommand{\BTGenesA}{3{,}635}  % genome A: predicted genes
+\providecommand{\BTNearGenesA}{204}  % genome A: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\BTNearPercentGenesA}{5.6}  % genome A: near-identical genes as percent of all genes
+\providecommand{\BTNearKbA}{177}  % genome A: total length of near-identical genes (kb)
+\providecommand{\BTNearShareA}{97}  % genome A: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\BTGenomeMbB}{3.44}  % genome B: assembly size (Mb)
+\providecommand{\BTContigsB}{5}  % genome B: number of contigs or scaffolds
+\providecommand{\BTGcB}{43.8}  % genome B: G+C content (percent)
+\providecommand{\BTGenesB}{2{,}807}  % genome B: predicted genes
+\providecommand{\BTNearGenesB}{206}  % genome B: near-identical genes (>= 50 percent of 21-mers shared)
+\providecommand{\BTNearPercentGenesB}{7.3}  % genome B: near-identical genes as percent of all genes
+\providecommand{\BTNearKbB}{177}  % genome B: total length of near-identical genes (kb)
+\providecommand{\BTNearShareB}{98}  % genome B: percent of all shared gene 21-mers that lie in near-identical genes
+\providecommand{\BTCheckmCompletenessA}{99.9}  % genome A: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\BTCheckmContaminationA}{0.00}  % genome A: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\BTCheckmCompletenessB}{99.6}  % genome B: CheckM completeness in the GTDB R214 metadata (percent)
+\providecommand{\BTCheckmContaminationB}{0.00}  % genome B: CheckM contamination in the GTDB R214 metadata (percent)
+\providecommand{\BTOrthologs}{1{,}486}  % reciprocal-best-hit orthologs that could be aligned
+\providecommand{\BTNearOrthologs}{200}  % orthologs that are near-identical genes
+\providecommand{\BTBackgroundOrthologs}{1{,}286}  % orthologs that are not near-identical
+\providecommand{\BTBackgroundEstimable}{1{,}286}  % background orthologs with an estimable dN/dS
+\providecommand{\BTAaIdentity}{53}  % median amino-acid identity of background orthologs (percent)
+\providecommand{\BTConvDnds}{0.11}  % conventional dN/dS (YN), median over background orthologs
+\providecommand{\BTConvDs}{3.9}  % conventional dS (YN), median over background orthologs
+\providecommand{\BTConvAboveOne}{0}  % background orthologs with conventional dN/dS above 1
+\providecommand{\BTRegions}{2}  % number of shared regions (blocks >= 1 kb and >= 95 percent identical, merged within 10 kb)
+\providecommand{\BTRegionsKb}{210}  % total span of the shared regions in genome A (kb)
+\providecommand{\BTRegionsPercentA}{4.8}  % shared regions as percent of genome A
+\providecommand{\BTAlignedKb}{197}  % aligned at >= 95 percent identity (kb)
+\providecommand{\BTAlignedNearPerfectKb}{49}  % aligned at >= 99.9 percent identity (kb)
+\providecommand{\BTLongestBlockKb}{70.6}  % longest single alignment block (kb)
+\providecommand{\BTLongestBlockIdentity}{99.53}  % identity of the longest block (percent; capped at 99.99)
+\providecommand{\BTPartnerContigs}{2}  % contigs of genome B that carry shared DNA
+\providecommand{\BTPartnerContigsEmbedded}{2}  % of those, contigs with >= 10 kb of other sequence as well
+\providecommand{\BTLargestPartnerContigKb}{1218}  % largest contig of genome B that carries shared DNA (kb)
+\providecommand{\BTPartnerContigsWhollyShared}{0}  % contigs of genome B that consist of shared DNA only
+\providecommand{\BTGapsNearA}{0}  % genome A: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\BTGapsNearB}{0}  % genome B: scaffold gaps inside or within 20 kb of the shared regions
+\providecommand{\BTRegionsGcMin}{49.8}  % lowest G+C content among the shared regions (percent)
+\providecommand{\BTRegionsGcMax}{50.6}  % highest G+C content among the shared regions (percent)
+\providecommand{\BTRegionsIdentityMin}{99.4}  % lowest identity to genome B among the shared regions (percent)
+\providecommand{\BTRegionsIdentityMax}{99.9}  % highest identity to genome B among the shared regions (percent; capped at 99.9)
+\providecommand{\BTRegionOneKb}{52}  % E1: span (kb)
+\providecommand{\BTRegionOneIdentity}{99.99}  % E1: identity to genome B (percent; capped at 99.99)
+\providecommand{\BTRegionOneGc}{49.8}  % E1: G+C content (percent)
+\providecommand{\BTRegionOneGenes}{50}  % E1: annotated genes
+\providecommand{\BTRegionOneIntegrases}{1}  % E1: genes annotated as integrase or recombinase
+\providecommand{\BTRegionOneContigKb}{4{,}125}  % E1: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\BTRegionTwoKb}{158}  % E2: span (kb)
+\providecommand{\BTRegionTwoIdentity}{99.37}  % E2: identity to genome B (percent; capped at 99.99)
+\providecommand{\BTRegionTwoGc}{50.6}  % E2: G+C content (percent)
+\providecommand{\BTRegionTwoGenes}{180}  % E2: annotated genes
+\providecommand{\BTRegionTwoIntegrases}{3}  % E2: genes annotated as integrase or recombinase
+\providecommand{\BTRegionTwoContigKb}{4{,}125}  % E2: length of the genome-A contig or scaffold that carries it (kb)
+\providecommand{\BTPresentB}{2}  % regions at least 90 percent present in B. intestinihominis YIT 11860 (Broad) (GCF_000296465.1)
+\providecommand{\BTSmallestHostContigKbB}{722}  % smallest contig of B. intestinihominis YIT 11860 (Broad) that carries one of these regions (kb)
+\providecommand{\BTPresentMonashOne}{0}  % regions at least 90 percent present in B. intestinihominis (Monash isolate 1) (GCF_964238885.1)
+\providecommand{\BTPresentMonashTwo}{1}  % regions at least 90 percent present in B. intestinihominis (Monash isolate 2) (GCF_964241605.1)
+\providecommand{\BTSmallestHostContigKbMonashTwo}{88}  % smallest contig of B. intestinihominis (Monash isolate 2) that carries one of these regions (kb)
+\providecommand{\BTPresentSfad}{1}  % regions at least 90 percent present in B. intestinihominis SFAD78 (closed) (GCF_046603765.1)
+\providecommand{\BTSmallestHostContigKbSfad}{3{,}260}  % smallest contig of B. intestinihominis SFAD78 (closed) that carries one of these regions (kb)
+\providecommand{\BTPresentAf}{1}  % regions at least 90 percent present in B. intestinihominis AF117-105-WCA (closed) (GCF_988228745.1)
+\providecommand{\BTSmallestHostContigKbAf}{3{,}367}  % smallest contig of B. intestinihominis AF117-105-WCA (closed) that carries one of these regions (kb)
+\providecommand{\BTPresentSinai}{1}  % regions at least 90 percent present in B. intestinihominis 1001283B150304 (GCF_015555135.1)
+\providecommand{\BTSmallestHostContigKbSinai}{800}  % smallest contig of B. intestinihominis 1001283B150304 that carries one of these regions (kb)
+\providecommand{\BTPresentCmOne}{0}  % regions at least 90 percent present in C. massiliensis (FRCC isolate) (GCF_048361195.1)
+\providecommand{\BTPresentCmTwo}{0}  % regions at least 90 percent present in C. massiliensis (Sichuan Univ.) (GCF_062030091.1)
+\providecommand{\BTPresentCmThree}{0}  % regions at least 90 percent present in C. massiliensis (EMG) (GCF_905201065.1)
+\providecommand{\BTCoveredSinaiRegionTwo}{75}  % E2: percent present in Sinai
+\providecommand{\BTIdentitySinaiRegionTwo}{99.44}  % E2: identity in Sinai (percent)
+\providecommand{\BTFlankSinaiRegionTwo}{0}  % E2: percent of the 10-kb flanks aligned in Sinai
+\providecommand{\BTCountTransposonInBarnesiella}{4}  % E1: genomes among MonashOne+MonashTwo+Sfad+Af+Sinai with at least 90 percent of the region
+\providecommand{\BTCountTransposonInBarnesiellaOf}{5}  % E1: number of genomes in that list
+\providecommand{\BTCountTransposonInCulturomica}{0}  % E1: genomes among CmOne+CmTwo+CmThree with at least 90 percent of the region
+\providecommand{\BTCountTransposonInCulturomicaOf}{3}  % E1: number of genomes in that list
+\providecommand{\BTCountLargeRegionElsewhere}{0}  % E2: genomes among MonashOne+MonashTwo+Sfad+Af+Sinai+CmOne+CmTwo+CmThree with at least 90 percent of the region
+\providecommand{\BTCountLargeRegionElsewhereOf}{8}  % E2: number of genomes in that list

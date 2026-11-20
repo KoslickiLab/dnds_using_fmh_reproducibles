@@ -1,0 +1,262 @@
+region	contig	start	end	strand	type	locus_tag	product	function
+E1	NZ_FQZZ01000007.1	17846	18439	+	CDS	F3H87_RS16285	helix-turn-helix domain-containing protein	other
+E1	NZ_FQZZ01000007.1	18426	20753	+	CDS	F3H87_RS16290	relaxase/mobilization nuclease domain-containing protein	conjugation
+E1	NZ_FQZZ01000007.1	20753	22777	+	CDS	F3H87_RS16295	type IV secretory system conjugative DNA transfer family protein	conjugation
+E1	NZ_FQZZ01000007.1	22848	23411	-	CDS	F3H87_RS16300	hypothetical protein	hypothetical
+E1	NZ_FQZZ01000007.1	23404	23673	-	CDS	F3H87_RS16305	hypothetical protein	hypothetical
+E2	NZ_FQZZ01000007.1	38030	38770	-	CDS	F3H87_RS16395	MBL fold metallo-hydrolase	other
+E2	NZ_FQZZ01000007.1	38972	39538	-	CDS	F3H87_RS16400	biotin transporter BioY	other
+E2	NZ_FQZZ01000007.1	39588	40754	-	CDS	F3H87_RS16405	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	40751	42754	-	CDS	F3H87_RS16410	acetyl/propionyl/methylcrotonyl-CoA carboxylase subunit alpha	other
+E2	NZ_FQZZ01000007.1	42751	43545	-	CDS	F3H87_RS16415	crotonase/enoyl-CoA hydratase family protein	other
+E2	NZ_FQZZ01000007.1	43555	45153	-	CDS	F3H87_RS16420	acyl-CoA carboxylase subunit beta	other
+E2	NZ_FQZZ01000007.1	45158	45787	-	CDS	F3H87_RS16425	TetR/AcrR family transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	45968	46798	-	CDS	F3H87_RS16430	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	46823	48007	-	CDS	F3H87_RS16435	lipid-transfer protein	other
+E2	NZ_FQZZ01000007.1	48261	48872	+	CDS	F3H87_RS16440	acyltransferase	other
+E2	NZ_FQZZ01000007.1	48984	50591	-	CDS	F3H87_RS16445	acyl-CoA carboxylase subunit beta	other
+E2	NZ_FQZZ01000007.1	50594	51109	-	CDS	F3H87_RS16450	acetyl-CoA carboxylase biotin carboxyl carrier protein subunit	other
+E2	NZ_FQZZ01000007.1	51097	52566	-	CDS	F3H87_RS16455	acetyl-CoA carboxylase biotin carboxylase subunit	other
+E2	NZ_FQZZ01000007.1	52579	54378	-	CDS	F3H87_RS16460	acyclic terpene utilization AtuA family protein	other
+E2	NZ_FQZZ01000007.1	54400	55185	-	CDS	F3H87_RS16465	enoyl-CoA hydratase-related protein	other
+E2	NZ_FQZZ01000007.1	55319	56533	+	CDS	F3H87_RS16470	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	56547	57746	+	CDS	F3H87_RS16475	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	57758	58612	+	CDS	F3H87_RS16480	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	58605	59408	+	CDS	F3H87_RS16485	enoyl-CoA hydratase-related protein	other
+E2	NZ_FQZZ01000007.1	59421	59903	+	CDS	F3H87_RS16490	PaaI family thioesterase	other
+E2	NZ_FQZZ01000007.1	59903	60304	+	CDS	F3H87_RS16495	PaaI family thioesterase	other
+E2	NZ_FQZZ01000007.1	60286	61608	-	CDS	F3H87_RS16500	TetR/AcrR family transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	61778	62539	+	CDS	F3H87_RS16505	glucose 1-dehydrogenase	other
+E2	NZ_FQZZ01000007.1	62653	64590	+	CDS	F3H87_RS16510	AMP-binding protein	other
+E2	NZ_FQZZ01000007.1	64587	65441	+	CDS	F3H87_RS16515	SDR family oxidoreductase	other
+E2	NZ_FQZZ01000007.1	65446	66150	+	CDS	F3H87_RS16520	helix-turn-helix domain-containing protein	other
+E2	NZ_FQZZ01000007.1	66172	66627	+	CDS	F3H87_RS16525	PaaI family thioesterase	other
+E2	NZ_FQZZ01000007.1	66933	67202	+	pseudogene	F3H87_RS16530	pseudogene	other
+E2	NZ_FQZZ01000007.1	67270	68471	-	pseudogene	F3H87_RS16535	pseudogene	other
+E2	NZ_FQZZ01000007.1	68669	68866	+	CDS	F3H87_RS16540	DNA-3-methyladenine glycosylase I	other
+E2	NZ_FQZZ01000007.1	68956	69384	-	CDS	F3H87_RS16545	MarR family winged helix-turn-helix transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	69483	69917	+	CDS	F3H87_RS16550	DoxX family protein	other
+E2	NZ_FQZZ01000007.1	69914	70618	+	CDS	F3H87_RS16555	glutathione S-transferase family protein	other
+E2	NZ_FQZZ01000007.1	71082	72602	-	CDS	F3H87_RS16565	class I adenylate-forming enzyme family protein	other
+E2	NZ_FQZZ01000007.1	72629	74629	-	CDS	F3H87_RS16570	NADPH-dependent 2,4-dienoyl-CoA reductase	other
+E2	NZ_FQZZ01000007.1	74689	75939	+	CDS	F3H87_RS16575	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	75936	76715	+	CDS	F3H87_RS16580	enoyl-CoA hydratase/isomerase family protein	other
+E2	NZ_FQZZ01000007.1	76725	77885	+	CDS	F3H87_RS16585	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	77913	79304	+	CDS	F3H87_RS16590	phenylacetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	79301	80908	+	CDS	F3H87_RS16595	acyl-CoA carboxylase subunit beta	other
+E2	NZ_FQZZ01000007.1	80919	82925	+	CDS	F3H87_RS16600	acetyl/propionyl/methylcrotonyl-CoA carboxylase subunit alpha	other
+E2	NZ_FQZZ01000007.1	82930	83889	+	CDS	F3H87_RS16605	hydroxymethylglutaryl-CoA lyase	other
+E2	NZ_FQZZ01000007.1	83902	84816	+	CDS	F3H87_RS16610	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	84816	85610	+	CDS	F3H87_RS16615	citryl-CoA lyase	other
+E2	NZ_FQZZ01000007.1	85614	86777	+	CDS	F3H87_RS16620	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	86789	87628	+	CDS	F3H87_RS16625	FAS1-like dehydratase domain-containing protein	other
+E2	NZ_FQZZ01000007.1	87841	88620	+	CDS	F3H87_RS16630	ABC transporter ATP-binding protein	other
+E2	NZ_FQZZ01000007.1	88625	90622	+	CDS	F3H87_RS16635	AMP-binding protein	other
+E2	NZ_FQZZ01000007.1	90638	91522	+	CDS	F3H87_RS16640	branched-chain amino acid ABC transporter permease	other
+E2	NZ_FQZZ01000007.1	91526	92578	+	CDS	F3H87_RS16645	branched-chain amino acid ABC transporter permease	other
+E2	NZ_FQZZ01000007.1	92613	93851	+	CDS	F3H87_RS16650	ABC transporter substrate-binding protein	other
+E2	NZ_FQZZ01000007.1	93913	94704	+	CDS	F3H87_RS16655	ABC transporter ATP-binding protein	other
+E2	NZ_FQZZ01000007.1	94717	95505	+	CDS	F3H87_RS16660	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	95531	96634	-	CDS	F3H87_RS16665	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	96748	97536	+	CDS	F3H87_RS16670	enoyl-CoA hydratase/isomerase family protein	other
+E2	NZ_FQZZ01000007.1	97553	98791	+	CDS	F3H87_RS16675	thiolase family protein	other
+E2	NZ_FQZZ01000007.1	98808	99974	+	CDS	F3H87_RS16680	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	100059	101222	-	CDS	F3H87_RS16685	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	101227	102102	-	CDS	F3H87_RS16690	GntR family transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	102099	103358	-	CDS	F3H87_RS16695	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	103577	104170	+	CDS	F3H87_RS16700	TRAP transporter small permease	other
+E2	NZ_FQZZ01000007.1	104173	105453	+	CDS	F3H87_RS16705	TRAP transporter large permease	other
+E2	NZ_FQZZ01000007.1	105516	106562	+	CDS	F3H87_RS16710	TRAP transporter substrate-binding protein	other
+E2	NZ_FQZZ01000007.1	106958	107137	+	CDS	F3H87_RS16715	SDR family oxidoreductase	other
+E2	NZ_FQZZ01000007.1	107234	107920	-	pseudogene	F3H87_RS22100	pseudogene	other
+E2	NZ_FQZZ01000007.1	107895	108419	-	CDS	F3H87_RS22105	CoA transferase	other
+E2	NZ_FQZZ01000007.1	108669	109475	+	CDS	F3H87_RS16725	ABC transporter substrate-binding protein	other
+E2	NZ_FQZZ01000007.1	109488	109784	+	CDS	F3H87_RS16730	hypothetical protein	hypothetical
+E2	NZ_FQZZ01000007.1	109902	110258	+	CDS	F3H87_RS21995	ATP-binding cassette domain-containing protein	other
+E2	NZ_FQZZ01000007.1	110255	110497	+	CDS	F3H87_RS22000	ATP-binding cassette domain-containing protein	other
+E2	NZ_FQZZ01000007.1	110572	111726	-	CDS	F3H87_RS16740	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	111733	112854	-	CDS	F3H87_RS16745	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	112851	113669	-	CDS	F3H87_RS16750	citryl-CoA lyase	other
+E2	NZ_FQZZ01000007.1	113666	115777	-	CDS	F3H87_RS16755	acetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	115770	116261	-	CDS	F3H87_RS16760	MaoC family dehydratase	other
+E2	NZ_FQZZ01000007.1	116258	117772	-	CDS	F3H87_RS16765	class I adenylate-forming enzyme family protein	other
+E2	NZ_FQZZ01000007.1	117783	118955	-	CDS	F3H87_RS16770	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	118948	119697	-	CDS	F3H87_RS16775	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	119717	121006	-	CDS	F3H87_RS16780	TRAP transporter large permease	other
+E2	NZ_FQZZ01000007.1	121009	121476	-	CDS	F3H87_RS16785	TRAP transporter small permease	other
+E2	NZ_FQZZ01000007.1	121590	122633	-	CDS	F3H87_RS16790	TRAP transporter substrate-binding protein	other
+E2	NZ_FQZZ01000007.1	122946	123353	+	CDS	F3H87_RS16795	IS66-like element accessory protein TnpA	other
+E2	NZ_FQZZ01000007.1	123347	123700	+	CDS	F3H87_RS16800	IS66 family insertion sequence element accessory protein TnpB	transposase
+E2	NZ_FQZZ01000007.1	123755	125311	+	CDS	F3H87_RS16805	IS66 family transposase	transposase
+E2	NZ_FQZZ01000007.1	125643	126446	-	CDS	F3H87_RS16810	IclR family transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	126591	128690	-	CDS	F3H87_RS16815	acetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	128729	129895	-	CDS	F3H87_RS16820	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	129926	131134	-	CDS	F3H87_RS16825	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	131297	132712	+	CDS	F3H87_RS16830	acetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	132709	133380	+	CDS	F3H87_RS16835	acetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	133440	133877	+	CDS	F3H87_RS16840	MaoC/PaaZ C-terminal domain-containing protein	other
+E2	NZ_FQZZ01000007.1	133874	135016	+	CDS	F3H87_RS16845	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	135064	136236	+	CDS	F3H87_RS16850	acetyl-CoA acetyltransferase	other
+E2	NZ_FQZZ01000007.1	136241	136645	+	CDS	F3H87_RS16855	Zn-ribbon domain-containing OB-fold protein	other
+E2	NZ_FQZZ01000007.1	136729	138606	-	CDS	F3H87_RS16860	TRAP transporter permease	other
+E2	NZ_FQZZ01000007.1	138762	139733	-	CDS	F3H87_RS16865	TAXI family TRAP transporter solute-binding subunit	other
+E2	NZ_FQZZ01000007.1	139779	140546	-	CDS	F3H87_RS16870	CoA-transferase	other
+E2	NZ_FQZZ01000007.1	140543	141403	-	CDS	F3H87_RS16875	CoA transferase subunit A	other
+E2	NZ_FQZZ01000007.1	141628	143055	-	CDS	F3H87_RS16880	hypothetical protein	hypothetical
+E2	NZ_FQZZ01000007.1	143565	144995	+	CDS	F3H87_RS16885	MmgE/PrpD family protein	other
+E2	NZ_FQZZ01000007.1	144995	146053	+	CDS	F3H87_RS16890	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	146050	147198	+	CDS	F3H87_RS16895	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	147239	147994	-	CDS	F3H87_RS16900	IclR family transcriptional regulator	other
+E2	NZ_FQZZ01000007.1	148092	148574	-	CDS	F3H87_RS16905	MaoC family dehydratase	other
+E2	NZ_FQZZ01000007.1	148895	150007	+	CDS	F3H87_RS16910	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	150024	151250	+	CDS	F3H87_RS16915	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	151300	152445	+	CDS	F3H87_RS16920	TAXI family TRAP transporter solute-binding subunit	other
+E2	NZ_FQZZ01000007.1	152514	154481	+	CDS	F3H87_RS16925	TRAP transporter permease	other
+E2	NZ_FQZZ01000007.1	154483	154896	+	CDS	F3H87_RS16930	PaaI family thioesterase	other
+E2	NZ_FQZZ01000007.1	154957	155733	+	CDS	F3H87_RS16935	SDR family NAD(P)-dependent oxidoreductase	other
+E2	NZ_FQZZ01000007.1	155735	156130	+	CDS	F3H87_RS16940	Zn-ribbon domain-containing OB-fold protein	other
+E2	NZ_FQZZ01000007.1	156127	157272	+	CDS	F3H87_RS16945	thiolase	other
+E2	NZ_FQZZ01000007.1	157341	158474	-	CDS	F3H87_RS16950	C4-dicarboxylate TRAP transporter substrate-binding protein	other
+E2	NZ_FQZZ01000007.1	158541	159848	-	CDS	F3H87_RS16955	TRAP transporter large permease	other
+E2	NZ_FQZZ01000007.1	159859	160380	-	CDS	F3H87_RS16960	TRAP transporter small permease subunit	other
+E2	NZ_FQZZ01000007.1	160422	161198	-	CDS	F3H87_RS16965	enoyl-CoA hydratase/isomerase family protein	other
+E2	NZ_FQZZ01000007.1	161227	162381	-	CDS	F3H87_RS16970	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	162387	163562	-	CDS	F3H87_RS16975	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	163564	164754	-	CDS	F3H87_RS16980	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	164751	165521	-	CDS	F3H87_RS16985	enoyl-CoA hydratase/isomerase family protein	other
+E2	NZ_FQZZ01000007.1	165745	166710	+	CDS	F3H87_RS16990	NAD(P)H-dependent flavin oxidoreductase	other
+E2	NZ_FQZZ01000007.1	166782	167978	-	CDS	F3H87_RS16995	phenylacetate--CoA ligase family protein	other
+E2	NZ_FQZZ01000007.1	168006	168815	-	CDS	F3H87_RS17000	enoyl-CoA hydratase/isomerase family protein	other
+E2	NZ_FQZZ01000007.1	168843	169994	-	CDS	F3H87_RS17005	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	169991	171115	-	CDS	F3H87_RS17010	acyl-CoA dehydrogenase family protein	other
+E2	NZ_FQZZ01000007.1	171102	171551	-	CDS	F3H87_RS17015	MaoC family dehydratase	other
+E2	NZ_FQZZ01000007.1	171548	172267	-	CDS	F3H87_RS17020	transglutaminase-like domain-containing protein	other
+E2	NZ_FQZZ01000007.1	172330	173466	-	CDS	F3H87_RS17025	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	173477	174334	-	CDS	F3H87_RS17030	MaoC/PaaZ C-terminal domain-containing protein	other
+E2	NZ_FQZZ01000007.1	174358	175509	-	CDS	F3H87_RS17035	thiolase	other
+E2	NZ_FQZZ01000007.1	175513	175890	-	CDS	F3H87_RS17040	Zn-ribbon domain-containing OB-fold protein	other
+E2	NZ_FQZZ01000007.1	175995	177140	+	CDS	F3H87_RS17045	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	177157	178323	+	CDS	F3H87_RS17050	CaiB/BaiF CoA transferase family protein	other
+E2	NZ_FQZZ01000007.1	178347	179504	-	CDS	F3H87_RS17055	acyl-CoA dehydrogenase family protein	other
+E3	NZ_FQZZ01000007.1	193053	194318	+	CDS	F3H87_RS17125	IS256 family transposase	transposase
+E3	NZ_FQZZ01000007.1	194491	194736	-	CDS	F3H87_RS17135	type II toxin-antitoxin system ParD family antitoxin	defence
+E4	NZ_FQZZ01000010.1	6517	8502	-	CDS	F3H87_RS18665	type IV secretory system conjugative DNA transfer family protein	conjugation
+E4	NZ_FQZZ01000010.1	8495	10843	-	CDS	F3H87_RS18670	relaxase/mobilization nuclease domain-containing protein	conjugation
+E4	NZ_FQZZ01000010.1	10830	11336	-	CDS	F3H87_RS18675	plasmid mobilization relaxosome protein MobC	conjugation
+E4	NZ_FQZZ01000010.1	11970	12689	+	CDS	F3H87_RS18680	nucleotide-binding protein	other
+E4	NZ_FQZZ01000010.1	12700	13341	+	CDS	F3H87_RS18685	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	13609	15243	+	CDS	F3H87_RS18690	Mu transposase C-terminal domain-containing protein	transposase
+E4	NZ_FQZZ01000010.1	15245	16126	+	CDS	F3H87_RS18695	TniB family NTP-binding protein	other
+E4	NZ_FQZZ01000010.1	16063	16914	+	CDS	F3H87_RS18700	TniQ family protein	other
+E4	NZ_FQZZ01000010.1	17016	17417	-	CDS	F3H87_RS18705	MerR family transcriptional regulator	other
+E4	NZ_FQZZ01000010.1	17514	17921	+	CDS	F3H87_RS18710	mercuric transporter MerT family protein	resistance
+E4	NZ_FQZZ01000010.1	17934	18239	+	CDS	F3H87_RS18715	heavy-metal-associated domain-containing protein	other
+E4	NZ_FQZZ01000010.1	18256	18558	+	CDS	F3H87_RS18720	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	18656	18886	+	CDS	F3H87_RS18725	mercury resistance system transport protein MerF	resistance
+E4	NZ_FQZZ01000010.1	18950	20299	+	CDS	F3H87_RS18730	dihydrolipoyl dehydrogenase family protein	other
+E4	NZ_FQZZ01000010.1	20357	21808	+	CDS	F3H87_RS18735	mercury(II) reductase	resistance
+E4	NZ_FQZZ01000010.1	22058	23404	-	CDS	F3H87_RS18740	IS5 family transposase	transposase
+E4	NZ_FQZZ01000010.1	23343	23615	+	pseudogene	F3H87_RS22210	pseudogene	other
+E4	NZ_FQZZ01000010.1	23814	24026	+	CDS	F3H87_RS22215	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	24051	25058	+	CDS	F3H87_RS18745	transposase	transposase
+E4	NZ_FQZZ01000010.1	25035	25433	-	CDS	F3H87_RS18750	cation diffusion facilitator family transporter	other
+E4	NZ_FQZZ01000010.1	25435	26097	-	CDS	F3H87_RS18755	TVP38/TMEM64 family protein	other
+E4	NZ_FQZZ01000010.1	26101	26550	-	CDS	F3H87_RS18760	DUF6010 family protein	hypothetical
+E4	NZ_FQZZ01000010.1	26712	27149	-	CDS	F3H87_RS18765	ion channel	other
+E4	NZ_FQZZ01000010.1	27238	27711	-	CDS	F3H87_RS18770	rhodanese-like domain-containing protein	other
+E4	NZ_FQZZ01000010.1	27900	28622	+	CDS	F3H87_RS18775	response regulator	other
+E4	NZ_FQZZ01000010.1	28622	30088	+	CDS	F3H87_RS18780	ATP-binding protein	other
+E4	NZ_FQZZ01000010.1	30024	30329	+	CDS	F3H87_RS22015	SHOCT domain-containing protein	other
+E4	NZ_FQZZ01000010.1	30395	32395	+	CDS	F3H87_RS18790	heme lyase CcmF/NrfE family subunit	other
+E4	NZ_FQZZ01000010.1	32404	32970	+	CDS	F3H87_RS18795	DsbE family thiol:disulfide interchange protein	other
+E4	NZ_FQZZ01000010.1	32967	33440	+	CDS	F3H87_RS18800	cytochrome c-type biogenesis protein	other
+E4	NZ_FQZZ01000010.1	33437	34588	+	CDS	F3H87_RS18805	c-type cytochrome biogenesis protein CcmI	other
+E4	NZ_FQZZ01000010.1	34617	36746	-	CDS	F3H87_RS18810	protein-disulfide reductase DsbD family protein	other
+E4	NZ_FQZZ01000010.1	37030	37332	-	CDS	F3H87_RS18815	DUF2933 domain-containing protein	hypothetical
+E4	NZ_FQZZ01000010.1	37488	38048	+	CDS	F3H87_RS18820	L,D-transpeptidase	other
+E4	NZ_FQZZ01000010.1	38077	38535	+	CDS	F3H87_RS18825	c-type cytochrome	other
+E4	NZ_FQZZ01000010.1	38905	39498	+	CDS	F3H87_RS18830	c-type cytochrome	other
+E4	NZ_FQZZ01000010.1	39501	40418	+	CDS	F3H87_RS18835	c-type cytochrome	other
+E4	NZ_FQZZ01000010.1	40462	41856	+	CDS	F3H87_RS18840	multicopper oxidase family protein	resistance
+E4	NZ_FQZZ01000010.1	41853	42335	+	CDS	F3H87_RS18845	c-type cytochrome	other
+E4	NZ_FQZZ01000010.1	42337	43068	+	CDS	F3H87_RS18850	DsbA family protein	other
+E4	NZ_FQZZ01000010.1	43111	43311	-	CDS	F3H87_RS18855	heavy-metal-associated domain-containing protein	other
+E4	NZ_FQZZ01000010.1	43464	45974	+	CDS	F3H87_RS18860	heavy metal translocating P-type ATPase	resistance
+E4	NZ_FQZZ01000010.1	45987	46385	+	CDS	F3H87_RS18865	Cu(I)-responsive transcriptional regulator	other
+E4	NZ_FQZZ01000010.1	46407	47171	-	CDS	F3H87_RS18870	MauE/DoxX family redox-associated membrane protein	other
+E4	NZ_FQZZ01000010.1	47184	48020	-	CDS	F3H87_RS18875	DUF305 domain-containing protein	hypothetical
+E4	NZ_FQZZ01000010.1	48200	48781	+	CDS	F3H87_RS18880	L,D-transpeptidase	other
+E4	NZ_FQZZ01000010.1	48907	50169	+	CDS	F3H87_RS18885	multicopper oxidase family protein	resistance
+E4	NZ_FQZZ01000010.1	50283	50795	+	CDS	F3H87_RS18890	disulfide bond formation protein B	other
+E4	NZ_FQZZ01000010.1	50838	51503	+	CDS	F3H87_RS18895	L,D-transpeptidase	other
+E4	NZ_FQZZ01000010.1	51580	52137	-	CDS	F3H87_RS22185	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	52535	53143	+	CDS	F3H87_RS18905	EF-hand domain-containing protein	other
+E4	NZ_FQZZ01000010.1	53284	53670	+	CDS	F3H87_RS18910	DUF302 domain-containing protein	hypothetical
+E4	NZ_FQZZ01000010.1	53776	54696	+	CDS	F3H87_RS18915	prolipoprotein diacylglyceryl transferase	other
+E4	NZ_FQZZ01000010.1	54775	57120	+	CDS	F3H87_RS18920	copper-transporting P-type ATPase	resistance
+E4	NZ_FQZZ01000010.1	57169	58506	+	CDS	F3H87_RS18925	APC family permease	other
+E4	NZ_FQZZ01000010.1	58514	59158	-	CDS	F3H87_RS18930	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	59268	59387	+	pseudogene	F3H87_RS18935	pseudogene	other
+E4	NZ_FQZZ01000010.1	59375	60097	+	CDS	F3H87_RS18940	cytochrome c biogenesis CcdA family protein	other
+E4	NZ_FQZZ01000010.1	60291	60956	+	CDS	F3H87_RS18945	L,D-transpeptidase	other
+E4	NZ_FQZZ01000010.1	61004	61291	-	CDS	F3H87_RS18950	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	61469	63823	+	CDS	F3H87_RS18960	heavy metal translocating P-type ATPase	resistance
+E4	NZ_FQZZ01000010.1	63817	64092	-	CDS	F3H87_RS18965	hypothetical protein	hypothetical
+E4	NZ_FQZZ01000010.1	64190	64648	+	CDS	F3H87_RS18970	manganese-binding transcriptional regulator MntR	other
+E4	NZ_FQZZ01000010.1	64910	66481	-	CDS	F3H87_RS18980	apolipoprotein N-acyltransferase	other
+E4	NZ_FQZZ01000010.1	66478	66951	-	CDS	F3H87_RS18985	signal peptidase II	other
+E4	NZ_FQZZ01000010.1	66956	67738	-	CDS	F3H87_RS18990	ZIP family metal transporter	other
+E4	NZ_FQZZ01000010.1	67761	68219	-	CDS	F3H87_RS18995	DUF411 domain-containing protein	hypothetical
+E4	NZ_FQZZ01000010.1	68223	69596	-	CDS	F3H87_RS19000	M23 family metallopeptidase	other
+E4	NZ_FQZZ01000010.1	69593	70219	-	CDS	F3H87_RS19005	SCO family protein	other
+E4	NZ_FQZZ01000010.1	70219	70689	-	CDS	F3H87_RS19010	copper chaperone PCu(A)C	resistance
+E4	NZ_FQZZ01000010.1	70712	71371	-	CDS	F3H87_RS19015	DsbA family protein	other
+E4	NZ_FQZZ01000010.1	71368	71790	-	CDS	F3H87_RS19020	disulfide bond formation protein B	other
+E4	NZ_FQZZ01000010.1	71796	72362	-	CDS	F3H87_RS19025	SCO family protein	other
+E4	NZ_FQZZ01000010.1	72576	73004	+	CDS	F3H87_RS19030	MerR family transcriptional regulator	other
+E4	NZ_FQZZ01000010.1	73087	73707	+	CDS	F3H87_RS19035	cation transporter	other
+E4	NZ_FQZZ01000010.1	73777	74340	+	CDS	F3H87_RS19040	transglutaminase-like domain-containing protein	other
+E4	NZ_FQZZ01000010.1	74330	75295	+	CDS	F3H87_RS19045	cation diffusion facilitator family transporter	other
+E4	NZ_FQZZ01000010.1	75267	75578	+	CDS	F3H87_RS19050	SpoIIAA family protein	other
+E5	NZ_FQZZ01000012.1	19684	20046	-	CDS	F3H87_RS19660	SPW repeat domain-containing protein	other
+E5	NZ_FQZZ01000012.1	20076	20315	-	CDS	F3H87_RS19665	DNA-directed RNA polymerase subunit omega	other
+E5	NZ_FQZZ01000012.1	20312	21043	-	CDS	F3H87_RS19670	NADH dehydrogenase ubiquinone Fe-S protein 4	other
+E5	NZ_FQZZ01000012.1	21124	21621	-	CDS	F3H87_RS19675	Hsp20 family protein	other
+E5	NZ_FQZZ01000012.1	21835	22059	+	CDS	F3H87_RS19680	hypothetical protein	hypothetical
+E5	NZ_FQZZ01000012.1	22102	24306	-	CDS	F3H87_RS19685	amylo-alpha-1,6-glucosidase	other
+E5	NZ_FQZZ01000012.1	24324	25424	-	CDS	F3H87_RS19690	glycosyltransferase family 4 protein	other
+E5	NZ_FQZZ01000012.1	25749	26894	-	CDS	F3H87_RS19695	cation:proton antiporter	other
+E5	NZ_FQZZ01000012.1	26894	27478	-	CDS	F3H87_RS19700	NADH dehydrogenase ubiquinone Fe-S protein 4	other
+E5	NZ_FQZZ01000012.1	27538	30318	-	CDS	F3H87_RS19705	ATP-dependent Clp protease ATP-binding subunit	other
+E5	NZ_FQZZ01000012.1	30371	32203	-	CDS	F3H87_RS19710	ATP-dependent zinc metalloprotease FtsH	other
+E5	NZ_FQZZ01000012.1	32391	33326	+	CDS	F3H87_RS19715	zinc metalloprotease HtpX	other
+E5	NZ_FQZZ01000012.1	33592	34020	+	CDS	F3H87_RS19720	Hsp20/alpha crystallin family protein	other
+E5	NZ_FQZZ01000012.1	34036	34434	+	CDS	F3H87_RS19725	Hsp20/alpha crystallin family protein	other
+E5	NZ_FQZZ01000012.1	34475	34966	+	CDS	F3H87_RS19730	Hsp20/alpha crystallin family protein	other
+E5	NZ_FQZZ01000012.1	35233	36213	+	CDS	F3H87_RS19735	LysR family transcriptional regulator	other
+E5	NZ_FQZZ01000012.1	36146	36385	-	CDS	F3H87_RS19740	DUF2274 domain-containing protein	hypothetical
+E5	NZ_FQZZ01000012.1	36388	37509	-	CDS	F3H87_RS19745	TrbI/VirB10 family protein	conjugation
+E5	NZ_FQZZ01000012.1	37506	38534	-	CDS	F3H87_RS19750	P-type conjugative transfer protein TrbG	conjugation
+E5	NZ_FQZZ01000012.1	38531	39220	-	CDS	F3H87_RS19755	conjugal transfer protein TrbF	conjugation
+E5	NZ_FQZZ01000012.1	39217	40569	-	CDS	F3H87_RS19760	P-type conjugative transfer protein TrbL	conjugation
+E5	NZ_FQZZ01000012.1	40573	40860	-	CDS	F3H87_RS19765	putative entry exclusion protein TrbK-alt	other
+E5	NZ_FQZZ01000012.1	40879	41661	-	CDS	F3H87_RS19770	P-type conjugative transfer protein TrbJ	conjugation
+E5	NZ_FQZZ01000012.1	41658	44168	-	CDS	F3H87_RS19775	conjugal transfer protein TrbE	conjugation
+E5	NZ_FQZZ01000012.1	44175	44468	-	CDS	F3H87_RS19780	VirB3 family type IV secretion system protein	conjugation
+E5	NZ_FQZZ01000012.1	44535	44867	-	CDS	F3H87_RS19785	TrbC/VirB2 family protein	conjugation
+E5	NZ_FQZZ01000012.1	44864	45814	-	CDS	F3H87_RS19790	P-type conjugative transfer ATPase TrbB	conjugation
+E6	NZ_FQZZ01000013.1	9887	10912	-	CDS	F3H87_RS20005	type IV secretion system protein	conjugation
+E6	NZ_FQZZ01000013.1	10912	11331	-	CDS	F3H87_RS20010	hypothetical protein	hypothetical
+E6	NZ_FQZZ01000013.1	11348	12382	-	CDS	F3H87_RS20015	ATPase, T2SS/T4P/T4SS family	conjugation
+E6	NZ_FQZZ01000013.1	12384	13709	-	CDS	F3H87_RS20020	TrbI/VirB10 family protein	conjugation
+E6	NZ_FQZZ01000013.1	13706	14407	-	CDS	F3H87_RS20025	TrbG/VirB9 family P-type conjugative transfer protein	conjugation
+E6	NZ_FQZZ01000013.1	14404	15051	-	CDS	F3H87_RS20030	virB8 family protein	other
+E6	NZ_FQZZ01000013.1	15066	15863	-	CDS	F3H87_RS20035	type IV secretion system protein	conjugation
+E6	NZ_FQZZ01000013.1	15860	17026	-	CDS	F3H87_RS20040	lytic transglycosylase domain-containing protein	other
+E6	NZ_FQZZ01000013.1	17031	17246	-	CDS	F3H87_RS20045	hypothetical protein	hypothetical
+E6	NZ_FQZZ01000013.1	17243	19620	-	pseudogene	F3H87_RS20050	pseudogene	other
+E6	NZ_FQZZ01000013.1	19610	19888	-	CDS	F3H87_RS20055	type IV secretion system protein VirB3	conjugation
+E6	NZ_FQZZ01000013.1	19898	20188	-	CDS	F3H87_RS20060	TrbC/VirB2 family protein	conjugation
+E6	NZ_FQZZ01000013.1	20185	20868	-	CDS	F3H87_RS20065	lytic transglycosylase domain-containing protein	other
+E6	NZ_FQZZ01000013.1	20825	21151	-	CDS	F3H87_RS20070	hypothetical protein	hypothetical
+E6	NZ_FQZZ01000013.1	21346	21624	+	CDS	F3H87_RS20075	hypothetical protein	hypothetical
