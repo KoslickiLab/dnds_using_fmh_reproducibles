@@ -53,7 +53,7 @@ for i in range(3):
         axes[i,2].grid(False)
         axes[i,3].grid(False)
 
-        axes[i,0].set_ylabel('NG86 dN/dS estimates',fontsize=fs)
+        axes[i,0].set_ylabel('KaKs_Calculator (NG86)',fontsize=fs)
 
         axes[i,1].set_yticks(ticks_lst)
         axes[i,0].set_yticks(ticks_lst)
@@ -83,10 +83,10 @@ for i in range(3):
         axes[i,2].tick_params(axis='both', which='major', labelsize=fs-2)
         axes[i,3].tick_params(axis='both', which='major', labelsize=fs-2)
 
-axes[2,0].set_xlabel('FMH dN/dS estimates',fontsize=fs)
-axes[2,1].set_xlabel('FMH dN/dS estimates',fontsize=fs)
-axes[2,2].set_xlabel('FMH dN/dS estimates',fontsize=fs)
-axes[2,3].set_xlabel('FMH dN/dS estimates',fontsize=fs)
+axes[2,0].set_xlabel('FMH dN/dS',fontsize=fs)
+axes[2,1].set_xlabel('FMH dN/dS',fontsize=fs)
+axes[2,2].set_xlabel('FMH dN/dS',fontsize=fs)
+axes[2,3].set_xlabel('FMH dN/dS',fontsize=fs)
 
 axes[0,0].set_title(r"$\it{k}$"+"=5, 5000 bp", fontsize=fs)
 axes[0,1].set_title(r"$\it{k}$"+"=7, 5000 bp", fontsize=fs)
