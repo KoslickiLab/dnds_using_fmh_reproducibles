@@ -35,13 +35,13 @@ for i in range(3):
         axes[i].set_xlim(limits)  
         axes[i].set_xticks(ticks_lst)
         axes[i].tick_params(axis='both', which='major', labelsize=fs-2)
-        axes[i].set_xlabel('FMH dN/dS estimates',fontsize=fs)
+        axes[i].set_xlabel('FMH dN/dS',fontsize=fs)
 
 axes[0].set_title(r"$\it{k}$"+"=7",fontsize=fs)
 axes[1].set_title(r"$\it{k}$"+"=9",fontsize=fs)
 axes[2].set_title(r"$\it{k}$"+"=11",fontsize=fs)
 
-axes[0].set_ylabel('NG86 dN/dS estimates',fontsize=fs)
+axes[0].set_ylabel('KaKs_Calculator (NG86)',fontsize=fs)
 
 for k in range(3):
         fmh_negative=pd.read_csv(fmh_dnds_negative_files[k],sep=',')
