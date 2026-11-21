@@ -5,8 +5,8 @@ from matplotlib import rcParams
 import matplotlib.pyplot as plt
 
 rcParams['font.family'] = 'serif'
-#ylabeling = r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$"
-ylabeling = "FMH Omega"
+ylabeling = r"$\mathrm{FMH}\ d_{\mathrm{N}}/d_{\mathrm{S}}$"
+#ylabeling = "FMH Omega"
 # =========================
 # -------- HELPERS --------
 # =========================
@@ -390,5 +390,5 @@ fig.text(0.02, 0.98, 'A', fontsize=20, fontweight='bold')
 fig.text(0.02, 0.46, 'B', fontsize=20, fontweight='bold')
 fig.text(0.02, 0.22, "C", fontsize=20, fontweight="bold")
 
-fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.png",
+fig.savefig("/data/jzr5814/repositories/dnds_using_fmh_reproducibles/manuscript_figures/updated_pdf/figure2.pdf",
             bbox_inches='tight')
